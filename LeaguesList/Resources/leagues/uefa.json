@@ -1,0 +1,305 @@
+[
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/8/logo.png",
+    "full_name" : "AC Milan",
+    "name" : "AC Milan",
+    "location" : "AC Milan",
+    "colour_1" : "FB090B"
+  },
+  {
+    "full_name" : "AEK Larnaka",
+    "name" : "AEK Larnaka",
+    "location" : "AEK Larnaka",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1918/logo.png"
+  },
+  {
+    "full_name" : "Akhisarspor",
+    "name" : "Akhisarspor",
+    "location" : "Akhisarspor",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1919/logo.png"
+  },
+  {
+    "full_name" : "Anderlecht",
+    "name" : "Anderlecht",
+    "location" : "Anderlecht",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/101/logo.png"
+  },
+  {
+    "full_name" : "Apollon Limassol",
+    "name" : "Apollon Limassol",
+    "location" : "Limassol",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/508/logo.png"
+  },
+  {
+    "location" : "Arsenal",
+    "full_name" : "Arsenal",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/56/logo.png",
+    "colour_2" : "9D834B",
+    "name" : "Arsenal",
+    "colour_1" : "ED1C24"
+  },
+  {
+    "full_name" : "Astana",
+    "name" : "Astana",
+    "location" : "Astana",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/734/logo.png"
+  },
+  {
+    "full_name" : "BATE",
+    "name" : "BATE",
+    "location" : "BATE",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/110/logo.png"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/119/logo.png",
+    "full_name" : "Bayer Leverkusen",
+    "name" : "Bayer Leverkusen",
+    "location" : "Bayer Leverkusen",
+    "colour_1" : "EB312E"
+  },
+  {
+    "full_name" : "Besiktas",
+    "name" : "Besiktas",
+    "location" : "Besiktas",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/84/logo.png"
+  },
+  {
+    "full_name" : "Celtic",
+    "name" : "Celtic",
+    "location" : "Celtic",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/102/logo.png"
+  },
+  {
+    "location" : "Chelsea",
+    "full_name" : "Chelsea",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/58/logo.png",
+    "colour_2" : "DAA128",
+    "name" : "Chelsea",
+    "colour_1" : "144992"
+  },
+  {
+    "full_name" : "Dinamo Zagreb",
+    "name" : "Dinamo Zagreb",
+    "location" : "Dinamo Zagreb",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/267/logo.png"
+  },
+  {
+    "full_name" : "Dynamo Kyiv",
+    "name" : "Dynamo Kyiv",
+    "location" : "Dynamo Kyiv",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/92/logo.png"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/115/logo.png",
+    "full_name" : "Eintracht Frankfurt",
+    "name" : "Eintracht Frankfurt",
+    "location" : "Eintracht Frankfurt",
+    "colour_1" : "CB232D"
+  },
+  {
+    "full_name" : "F91 Dudelange",
+    "name" : "F91 Dudelange",
+    "location" : "F91 Dudelange",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/493/logo.png"
+  },
+  {
+    "full_name" : "FC Copenhagen",
+    "name" : "FC Copenhagen",
+    "location" : "FC Copenhagen",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/99/logo.png"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/995/logo.png",
+    "full_name" : "FC Girondins Bordeaux",
+    "name" : "FC Girondins Bordeaux",
+    "location" : "FC Girondins Bordeaux",
+    "colour_1" : "1D1A47"
+  },
+  {
+    "full_name" : "FC Krasnodar",
+    "name" : "FC Krasnodar",
+    "location" : "FC Krasnodar",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1135/logo.png"
+  },
+  {
+    "full_name" : "FC Zurich",
+    "name" : "FC Zurich",
+    "location" : "FC Zurich",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/86/logo.png"
+  },
+  {
+    "full_name" : "Fenerbahce",
+    "name" : "Fenerbahce",
+    "location" : "Fenerbahce",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/291/logo.png"
+  },
+  {
+    "full_name" : "FK Jablonec",
+    "name" : "FK Jablonec",
+    "location" : "FK Jablonec",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1922/logo.png"
+  },
+  {
+    "full_name" : "FK Qarabag",
+    "name" : "FK Qarabag",
+    "location" : "FK Qarabag",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/501/logo.png"
+  },
+  {
+    "full_name" : "Genk",
+    "name" : "Genk",
+    "location" : "Genk",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/324/logo.png"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/7/logo.png",
+    "full_name" : "Lazio",
+    "name" : "Lazio",
+    "location" : "Lazio",
+    "colour_1" : "7AD2F4"
+  },
+  {
+    "full_name" : "Ludogorets",
+    "name" : "Ludogorets",
+    "location" : "Ludogorets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/634/logo.png"
+  },
+  {
+    "full_name" : "Malmo",
+    "name" : "Malmo",
+    "location" : "Malmo",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/541/logo.png"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/85/logo.png",
+    "full_name" : "Marseille",
+    "name" : "Marseille",
+    "location" : "Marseille",
+    "colour_1" : "0C4B66"
+  },
+  {
+    "full_name" : "MOL Vidi",
+    "name" : "MOL Vidi",
+    "location" : "MOL Vidi",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1921/logo.png"
+  },
+  {
+    "full_name" : "Olympiacos",
+    "name" : "Olympiacos",
+    "location" : "Olympiacos",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/98/logo.png"
+  },
+  {
+    "full_name" : "PAOK",
+    "name" : "PAOK",
+    "location" : "PAOK",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/323/logo.png"
+  },
+  {
+    "full_name" : "Rangers",
+    "name" : "Rangers",
+    "location" : "Glasgow",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/94/logo.png"
+  },
+  {
+    "full_name" : "Rapid Wien",
+    "name" : "Rapid Wien",
+    "location" : "Rapid Wien",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/280/logo.png"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/838/logo.png",
+    "full_name" : "RB Leipzig",
+    "name" : "RB Leipzig",
+    "location" : "RB Leipzig",
+    "colour_1" : "DB1245"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/539/logo.png",
+    "full_name" : "Real Betis",
+    "name" : "Real Betis",
+    "location" : "Real Betis",
+    "colour_1" : "0BB363"
+  },
+  {
+    "full_name" : "Red Bull Salzburg",
+    "name" : "Red Bull Salzburg",
+    "location" : "Red Bull Salzburg",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/100/logo.png"
+  },
+  {
+    "full_name" : "Rosenborg",
+    "name" : "Rosenborg",
+    "location" : "Rosenborg",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/368/logo.png"
+  },
+  {
+    "full_name" : "Sarpsborg 08",
+    "name" : "Sarpsborg 08",
+    "location" : "Sarpsborg 08",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1920/logo.png"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/49/logo.png",
+    "full_name" : "Sevilla",
+    "name" : "Sevilla",
+    "location" : "Sevilla",
+    "colour_1" : "F59339"
+  },
+  {
+    "full_name" : "Slavia Prague",
+    "name" : "Slavia Prague",
+    "location" : "Slavia Prague",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1475/logo.png"
+  },
+  {
+    "full_name" : "Spartak Moscow",
+    "name" : "Spartak Moscow",
+    "location" : "Spartak Moscow",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/369/logo.png"
+  },
+  {
+    "full_name" : "Spartak Trnava",
+    "name" : "Spartak Trnava",
+    "location" : "Trnava",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/556/logo.png"
+  },
+  {
+    "full_name" : "Sporting CP",
+    "name" : "Sporting CP",
+    "location" : "Sporting CP",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/103/logo.png"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/998/logo.png",
+    "full_name" : "Stade Rennes",
+    "name" : "Stade Rennes",
+    "location" : "Stade Rennes",
+    "colour_1" : "D73A4E"
+  },
+  {
+    "full_name" : "Standard Liege",
+    "name" : "Standard Liege",
+    "location" : "Standard Liege",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/97/logo.png"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/47/logo.png",
+    "full_name" : "Villarreal",
+    "name" : "Villarreal",
+    "location" : "Villarreal",
+    "colour_1" : "F6E340"
+  },
+  {
+    "full_name" : "Vorskla Poltava",
+    "name" : "Vorskla Poltava",
+    "location" : "Vorskla Poltava",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/332/logo.png"
+  },
+  {
+    "full_name" : "Zenit St. Petersburg",
+    "name" : "Zenit St. Petersburg",
+    "location" : "Zenit St. Petersburg",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/328/logo.png"
+  }
+]

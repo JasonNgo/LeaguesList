@@ -1,0 +1,86 @@
+[
+    {
+        "full_name": "NHL Hockey",
+        "slug": "nhl",
+    },
+    {
+        "full_name": "NFL Football",
+        "slug": "nfl",
+    },
+    {
+        "full_name": "MLB Baseball",
+        "slug": "mlb",
+    },
+    {
+        "full_name": "NBA Basketball",
+        "slug": "nba",
+    },
+    {
+        "full_name": "NCAA Football",
+        "slug": "ncaaf",
+    },
+    {
+        "full_name": "World Junior Hockey Championship",
+        "slug": "wjhc",
+    },
+    {
+        "full_name": "CFL Football",
+        "slug": "cfl",
+    },
+    {
+        "full_name": "NCAA Women's Basketball",
+        "slug": "wcbk",
+    },
+    {
+        "full_name": "NCAA Men's Basketball",
+        "slug": "ncaab",
+    },
+    {
+        "full_name": "WNBA Basketball",
+        "slug": "wnba",
+    },
+    {
+        "full_name": "EPL Soccer",
+        "slug": "epl",
+    },
+    {
+        "full_name": "English Championship",
+        "slug": "engch",
+    },
+    {
+        "full_name": "League Cup",
+        "slug": "engcc",
+    },
+    {
+        "full_name": "FA Cup",
+        "slug": "engfa",
+    },
+    {
+        "full_name": "UEFA Champions League",
+        "slug": "chlg",
+    },
+    {
+        "full_name": "UEFA Europa League",
+        "slug": "uefa",
+    },
+    {
+        "full_name": "Nations League A",
+        "slug": "natleaguea",
+    },
+    {
+        "full_name": "Nations League B",
+        "slug": "natleagueb",
+    },
+    {
+        "full_name": "Nations League C",
+        "slug": "natleaguec",
+    },
+    {
+        "full_name": "Nations League D",
+        "slug": "natleagued",
+    },
+    {
+        "full_name": "MLS Soccer",
+        "slug": "mls",
+    }
+]

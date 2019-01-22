@@ -1,0 +1,186 @@
+[
+  {
+    "location" : "Atlanta United FC",
+    "full_name" : "Atlanta United FC",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1772/logo.png",
+    "colour_2" : "231F20",
+    "name" : "Atlanta United FC",
+    "colour_1" : "7F0009"
+  },
+  {
+    "location" : "Columbus",
+    "full_name" : "Columbus Crew",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/22/logo.png",
+    "colour_2" : "231F20",
+    "name" : "Crew",
+    "colour_1" : "FFF302"
+  },
+  {
+    "location" : "D.C. United",
+    "full_name" : "D.C. United",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/23/logo.png",
+    "colour_2" : "000000",
+    "name" : "D.C. United",
+    "colour_1" : "DA0000"
+  },
+  {
+    "location" : "Houston",
+    "full_name" : "Houston Dynamo",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/34/logo.png",
+    "colour_2" : "8DC6ED",
+    "name" : "Dynamo",
+    "colour_1" : "F68712"
+  },
+  {
+    "location" : "San Jose",
+    "full_name" : "San Jose Earthquakes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/31/logo.png",
+    "colour_2" : "000000",
+    "name" : "Earthquakes",
+    "colour_1" : "0067B1"
+  },
+  {
+    "location" : "FC Dallas",
+    "full_name" : "FC Dallas",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/29/logo.png",
+    "colour_2" : "E81F3E",
+    "name" : "FC Dallas",
+    "colour_1" : "2A4076"
+  },
+  {
+    "location" : "Chicago",
+    "full_name" : "Chicago Fire",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/21/logo.png",
+    "colour_2" : "CE1432",
+    "name" : "Fire",
+    "colour_1" : "00215B"
+  },
+  {
+    "location" : "Montreal",
+    "full_name" : "Montreal Impact",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/618/logo.png",
+    "colour_2" : "949799",
+    "name" : "Impact",
+    "colour_1" : "04549B"
+  },
+  {
+    "location" : "LA Galaxy",
+    "full_name" : "LA Galaxy",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/30/logo.png",
+    "colour_2" : "3365B1",
+    "name" : "LA Galaxy",
+    "colour_1" : "00245D"
+  },
+  {
+    "location" : "Los Angeles FC",
+    "full_name" : "Los Angeles FC",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1865/logo.png",
+    "colour_2" : "0F1117",
+    "name" : "Los Angeles FC",
+    "colour_1" : "CBA760"
+  },
+  {
+    "location" : "Minnesota United FC",
+    "full_name" : "Minnesota United FC",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1771/logo.png",
+    "colour_2" : "CFD4D8",
+    "name" : "Minnesota United FC",
+    "colour_1" : "6CADDF"
+  },
+  {
+    "location" : "New York City",
+    "full_name" : "New York City FC",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1430/logo.png",
+    "colour_2" : "28295C",
+    "name" : "New York City FC",
+    "colour_1" : "78A5DB"
+  },
+  {
+    "location" : "Orlando",
+    "full_name" : "Orlando City SC",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1429/logo.png",
+    "colour_2" : "FDE192",
+    "name" : "Orlando City SC",
+    "colour_1" : "633492"
+  },
+  {
+    "location" : "Colorado",
+    "full_name" : "Colorado Rapids",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/28/logo.png",
+    "colour_2" : "9CC2EA",
+    "name" : "Rapids",
+    "colour_1" : "960A2C"
+  },
+  {
+    "location" : "Real Salt Lake",
+    "full_name" : "Real Salt Lake",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/33/logo.png",
+    "colour_2" : "F1CB00",
+    "name" : "Real Salt Lake",
+    "colour_1" : "013A81"
+  },
+  {
+    "location" : "New York",
+    "full_name" : "New York Red Bulls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/26/logo.png",
+    "colour_2" : "23326A",
+    "name" : "Red Bulls",
+    "colour_1" : "ED1E36"
+  },
+  {
+    "location" : "New England",
+    "full_name" : "New England Revolution",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/25/logo.png",
+    "colour_2" : "222352",
+    "name" : "Revolution",
+    "colour_1" : "C63323"
+  },
+  {
+    "location" : "Seattle",
+    "full_name" : "Seattle Sounders FC",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/35/logo.png",
+    "colour_2" : "142530",
+    "name" : "Sounders FC",
+    "colour_1" : "5D9741"
+  },
+  {
+    "location" : "Sporting Kansas City",
+    "full_name" : "Sporting Kansas City",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/24/logo.png",
+    "colour_2" : "91B0D5",
+    "name" : "Sporting Kansas City",
+    "colour_1" : "002B5C"
+  },
+  {
+    "location" : "Portland",
+    "full_name" : "Portland Timbers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/530/logo.png",
+    "colour_2" : "EBE72B",
+    "name" : "Timbers",
+    "colour_1" : "004812"
+  },
+  {
+    "location" : "Toronto",
+    "full_name" : "Toronto FC",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/27/logo.png",
+    "colour_2" : "455560",
+    "name" : "Toronto FC",
+    "colour_1" : "E31937"
+  },
+  {
+    "location" : "Philadelphia",
+    "full_name" : "Philadelphia Union",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/126/logo.png",
+    "colour_2" : "B38708",
+    "name" : "Union",
+    "colour_1" : "002D55"
+  },
+  {
+    "location" : "Vancouver",
+    "full_name" : "Vancouver Whitecaps FC",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/529/logo.png",
+    "colour_2" : "9DC2EA",
+    "name" : "Whitecaps FC",
+    "colour_1" : "00245E"
+  }
+]

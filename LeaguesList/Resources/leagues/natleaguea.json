@@ -1,0 +1,94 @@
+[
+  {
+    "location" : "Belgium",
+    "full_name" : "Belgium",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1117/logo.png",
+    "colour_2" : "FAE042",
+    "name" : "Belgium",
+    "colour_1" : "ED2939"
+  },
+  {
+    "location" : "Croatia",
+    "full_name" : "Croatia",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/623/logo.png",
+    "colour_2" : "002B7F",
+    "name" : "Croatia",
+    "colour_1" : "FF0000"
+  },
+  {
+    "location" : "England",
+    "full_name" : "England",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/147/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "England",
+    "colour_1" : "CF081F"
+  },
+  {
+    "location" : "France",
+    "full_name" : "France",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/148/logo.png",
+    "colour_2" : "ED2939",
+    "name" : "France",
+    "colour_1" : "002395"
+  },
+  {
+    "location" : "Germany",
+    "full_name" : "Germany",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/149/logo.png",
+    "colour_2" : "DD0000",
+    "name" : "Germany",
+    "colour_1" : "FCBC00"
+  },
+  {
+    "location" : "Iceland",
+    "full_name" : "Iceland",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/859/logo.png",
+    "colour_2" : "D72828",
+    "name" : "Iceland",
+    "colour_1" : "003897"
+  },
+  {
+    "full_name" : "Italy",
+    "name" : "Italy",
+    "location" : "Italy",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/150/logo.png"
+  },
+  {
+    "full_name" : "Netherlands",
+    "name" : "Netherlands",
+    "location" : "Netherlands",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/151/logo.png"
+  },
+  {
+    "location" : "Poland",
+    "full_name" : "Poland",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/620/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Poland",
+    "colour_1" : "DC143C"
+  },
+  {
+    "location" : "Portugal",
+    "full_name" : "Portugal",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/152/logo.png",
+    "colour_2" : "006600",
+    "name" : "Portugal",
+    "colour_1" : "FF0000"
+  },
+  {
+    "location" : "Spain",
+    "full_name" : "Spain",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/153/logo.png",
+    "colour_2" : "0039F0",
+    "name" : "Spain",
+    "colour_1" : "C60B1E"
+  },
+  {
+    "location" : "Switzerland",
+    "full_name" : "Switzerland",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/154/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Switzerland",
+    "colour_1" : "FF0000"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "location" : "Buffalo",
+    "full_name" : "Buffalo Bills",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/1/logo.png",
+    "colour_2" : "C60C30",
+    "name" : "Bills",
+    "colour_1" : "00338D"
+  },
+  {
+    "location" : "Miami",
+    "full_name" : "Miami Dolphins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/2/logo.png",
+    "colour_2" : "F58220",
+    "name" : "Dolphins",
+    "colour_1" : "008E97"
+  },
+  {
+    "location" : "New England",
+    "full_name" : "New England Patriots",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/3/logo.png",
+    "colour_2" : "C60C30",
+    "name" : "Patriots",
+    "colour_1" : "0D396C"
+  },
+  {
+    "location" : "New York",
+    "full_name" : "New York Jets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/4/logo.png",
+    "colour_2" : "203731",
+    "name" : "Jets",
+    "colour_1" : "075543"
+  },
+  {
+    "location" : "Denver",
+    "full_name" : "Denver Broncos",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/5/logo.png",
+    "colour_2" : "0E326A",
+    "name" : "Broncos",
+    "colour_1" : "FB4F14"
+  },
+  {
+    "location" : "Kansas City",
+    "full_name" : "Kansas City Chiefs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/6/logo.png",
+    "colour_2" : "FFB612",
+    "name" : "Chiefs",
+    "colour_1" : "E31837"
+  },
+  {
+    "location" : "Oakland",
+    "full_name" : "Oakland Raiders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/7/logo.png",
+    "colour_2" : "343434",
+    "name" : "Raiders",
+    "colour_1" : "A5ACAF"
+  },
+  {
+    "location" : "Los Angeles",
+    "full_name" : "Los Angeles Chargers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/8/logo.png",
+    "colour_2" : "FFB612",
+    "name" : "Chargers",
+    "colour_1" : "0073CF"
+  },
+  {
+    "location" : "Cincinnati",
+    "full_name" : "Cincinnati Bengals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/9/logo.png",
+    "colour_2" : "343434",
+    "name" : "Bengals",
+    "colour_1" : "FB4F14"
+  },
+  {
+    "location" : "Cleveland",
+    "full_name" : "Cleveland Browns",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/10/logo.png",
+    "colour_2" : "343434",
+    "name" : "Browns",
+    "colour_1" : "FB4F14"
+  },
+  {
+    "location" : "Pittsburgh",
+    "full_name" : "Pittsburgh Steelers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/11/logo.png",
+    "colour_2" : "343434",
+    "name" : "Steelers",
+    "colour_1" : "FFB612"
+  },
+  {
+    "location" : "Baltimore",
+    "full_name" : "Baltimore Ravens",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/12/logo.png",
+    "colour_2" : "9E7C0C",
+    "name" : "Ravens",
+    "colour_1" : "2D3189"
+  },
+  {
+    "location" : "Houston",
+    "full_name" : "Houston Texans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/13/logo.png",
+    "colour_2" : "02284B",
+    "name" : "Texans",
+    "colour_1" : "A71930"
+  },
+  {
+    "location" : "Tennessee",
+    "full_name" : "Tennessee Titans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/14/logo.png",
+    "colour_2" : "C60C30",
+    "name" : "Titans",
+    "colour_1" : "4B92DB"
+  },
+  {
+    "location" : "Indianapolis",
+    "full_name" : "Indianapolis Colts",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/15/logo.png",
+    "colour_2" : "A5ACAF",
+    "name" : "Colts",
+    "colour_1" : "06447C"
+  },
+  {
+    "location" : "Jacksonville",
+    "full_name" : "Jacksonville Jaguars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/16/logo.png",
+    "colour_2" : "D5A138",
+    "name" : "Jaguars",
+    "colour_1" : "12839A"
+  },
+  {
+    "location" : "Dallas",
+    "full_name" : "Dallas Cowboys",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/17/logo.png",
+    "colour_2" : "ACC0C6",
+    "name" : "Cowboys",
+    "colour_1" : "00338D"
+  },
+  {
+    "location" : "New York",
+    "full_name" : "New York Giants",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/18/logo.png",
+    "colour_2" : "A71930",
+    "name" : "Giants",
+    "colour_1" : "063E7D"
+  },
+  {
+    "location" : "Philadelphia",
+    "full_name" : "Philadelphia Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/19/logo.png",
+    "colour_2" : "A5ACAF",
+    "name" : "Eagles",
+    "colour_1" : "054F59"
+  },
+  {
+    "location" : "Washington",
+    "full_name" : "Washington Redskins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/20/logo.png",
+    "colour_2" : "FFB612",
+    "name" : "Redskins",
+    "colour_1" : "94153D"
+  },
+  {
+    "location" : "Los Angeles",
+    "full_name" : "Los Angeles Rams",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/21/logo.png",
+    "colour_2" : "032B5A",
+    "name" : "Rams",
+    "colour_1" : "B3995D"
+  },
+  {
+    "location" : "Arizona",
+    "full_name" : "Arizona Cardinals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/22/logo.png",
+    "colour_2" : "FFB612",
+    "name" : "Cardinals",
+    "colour_1" : "97233F"
+  },
+  {
+    "location" : "San Francisco",
+    "full_name" : "San Francisco 49ers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/23/logo.png",
+    "colour_2" : "B3995D",
+    "name" : "49ers",
+    "colour_1" : "B70F41"
+  },
+  {
+    "location" : "Seattle",
+    "full_name" : "Seattle Seahawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/24/logo.png",
+    "colour_2" : "06346A",
+    "name" : "Seahawks",
+    "colour_1" : "69BE27"
+  },
+  {
+    "location" : "Chicago",
+    "full_name" : "Chicago Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/25/logo.png",
+    "colour_2" : "343434",
+    "name" : "Bears",
+    "colour_1" : "C83803"
+  },
+  {
+    "location" : "Detroit",
+    "full_name" : "Detroit Lions",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/26/logo.png",
+    "colour_2" : "B0B7BC",
+    "name" : "Lions",
+    "colour_1" : "006DB0"
+  },
+  {
+    "location" : "Green Bay",
+    "full_name" : "Green Bay Packers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/27/logo.png",
+    "colour_2" : "FFB612",
+    "name" : "Packers",
+    "colour_1" : "075543"
+  },
+  {
+    "location" : "Minnesota",
+    "full_name" : "Minnesota Vikings",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/28/logo.png",
+    "colour_2" : "FFC62F",
+    "name" : "Vikings",
+    "colour_1" : "4F2683"
+  },
+  {
+    "location" : "Atlanta",
+    "full_name" : "Atlanta Falcons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/29/logo.png",
+    "colour_2" : "A5ACAF",
+    "name" : "Falcons",
+    "colour_1" : "A71930"
+  },
+  {
+    "location" : "New Orleans",
+    "full_name" : "New Orleans Saints",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/30/logo.png",
+    "colour_2" : "343434",
+    "name" : "Saints",
+    "colour_1" : "C8B074"
+  },
+  {
+    "location" : "Tampa Bay",
+    "full_name" : "Tampa Bay Buccaneers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/31/logo.png",
+    "colour_2" : "FF7900",
+    "name" : "Buccaneers",
+    "colour_1" : "D50A0A"
+  },
+  {
+    "location" : "Carolina",
+    "full_name" : "Carolina Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/32/logo.png",
+    "colour_2" : "BFC0BF",
+    "name" : "Panthers",
+    "colour_1" : "0085CA"
+  }
+]

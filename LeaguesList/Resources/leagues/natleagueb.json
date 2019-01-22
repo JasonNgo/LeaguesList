@@ -1,0 +1,80 @@
+[
+  {
+    "full_name" : "Austria",
+    "name" : "Austria",
+    "location" : "Austria",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/848/logo.png"
+  },
+  {
+    "full_name" : "Bosnia-Herzegovina",
+    "name" : "Bosnia-Herzegovina",
+    "location" : "Bosnia-Herzegovina",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/1115/logo.png"
+  },
+  {
+    "full_name" : "Czech Republic",
+    "name" : "Czech Republic",
+    "location" : "Czech Republic",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/622/logo.png"
+  },
+  {
+    "location" : "Denmark",
+    "full_name" : "Denmark",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/146/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Denmark",
+    "colour_1" : "C60C30"
+  },
+  {
+    "full_name" : "Northern Ireland",
+    "name" : "Northern Ireland",
+    "location" : "Northern Ireland",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/864/logo.png"
+  },
+  {
+    "full_name" : "Republic of Ireland",
+    "name" : "Republic of Ireland",
+    "location" : "Republic of Ireland",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/624/logo.png"
+  },
+  {
+    "location" : "Russia",
+    "full_name" : "Russia",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/621/logo.png",
+    "colour_2" : "0039A6",
+    "name" : "Russia",
+    "colour_1" : "D52B1E"
+  },
+  {
+    "full_name" : "Slovakia",
+    "name" : "Slovakia",
+    "location" : "Slovakia",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/157/logo.png"
+  },
+  {
+    "location" : "Sweden",
+    "full_name" : "Sweden",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/625/logo.png",
+    "colour_2" : "006BA8",
+    "name" : "Sweden",
+    "colour_1" : "FECD01"
+  },
+  {
+    "full_name" : "Turkey",
+    "name" : "Turkey",
+    "location" : "Turkey",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/856/logo.png"
+  },
+  {
+    "full_name" : "Ukraine",
+    "name" : "Ukraine",
+    "location" : "Ukraine",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/626/logo.png"
+  },
+  {
+    "full_name" : "Wales",
+    "name" : "Wales",
+    "location" : "Wales",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/844/logo.png"
+  }
+]

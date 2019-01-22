@@ -1,0 +1,74 @@
+[
+  {
+    "location" : "Hamilton",
+    "full_name" : "Hamilton Tiger-Cats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/312/logo.png",
+    "colour_2" : "343434",
+    "name" : "Tiger-Cats",
+    "colour_1" : "EEAB16"
+  },
+  {
+    "location" : "Montreal",
+    "full_name" : "Montreal Alouettes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/314/logo.png",
+    "colour_2" : "003C78",
+    "name" : "Alouettes",
+    "colour_1" : "7F1D2C"
+  },
+  {
+    "location" : "Toronto",
+    "full_name" : "Toronto Argonauts",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/316/logo.png",
+    "colour_2" : "719FD3",
+    "name" : "Argonauts",
+    "colour_1" : "0E2240"
+  },
+  {
+    "location" : "Winnipeg",
+    "full_name" : "Winnipeg Blue Bombers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/318/logo.png",
+    "colour_2" : "00326D",
+    "name" : "Blue Bombers",
+    "colour_1" : "B18A52"
+  },
+  {
+    "location" : "BC",
+    "full_name" : "BC Lions",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/320/logo.png",
+    "colour_2" : "343434",
+    "name" : "Lions",
+    "colour_1" : "F05523"
+  },
+  {
+    "location" : "Calgary",
+    "full_name" : "Calgary Stampeders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/322/logo.png",
+    "colour_2" : "343434",
+    "name" : "Stampeders",
+    "colour_1" : "C30F28"
+  },
+  {
+    "location" : "Edmonton",
+    "full_name" : "Edmonton Eskimos",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/324/logo.png",
+    "colour_2" : "FCA816",
+    "name" : "Eskimos",
+    "colour_1" : "254A2E"
+  },
+  {
+    "location" : "Saskatchewan",
+    "full_name" : "Saskatchewan Roughriders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/326/logo.png",
+    "colour_2" : "343434",
+    "name" : "Roughriders",
+    "colour_1" : "046240"
+  },
+  {
+    "location" : "Ottawa",
+    "full_name" : "Ottawa RedBlacks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/football/team/800/logo.png",
+    "colour_2" : "343434",
+    "name" : "RedBlacks",
+    "colour_1" : "AD172B"
+  }
+]

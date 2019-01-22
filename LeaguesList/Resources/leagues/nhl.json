@@ -1,0 +1,274 @@
+[
+  {
+    "location" : "Boston",
+    "full_name" : "Boston Bruins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/1/logo.png",
+    "colour_2" : "343434",
+    "name" : "Bruins",
+    "colour_1" : "FDB930"
+  },
+  {
+    "location" : "Buffalo",
+    "full_name" : "Buffalo Sabres",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/2/logo.png",
+    "colour_2" : "FDB930",
+    "name" : "Sabres",
+    "colour_1" : "103662"
+  },
+  {
+    "location" : "Montreal",
+    "full_name" : "Montreal Canadiens",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/3/logo.png",
+    "colour_2" : "083A81",
+    "name" : "Canadiens",
+    "colour_1" : "B2222A"
+  },
+  {
+    "location" : "Ottawa",
+    "full_name" : "Ottawa Senators",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/4/logo.png",
+    "colour_2" : "D4A00F",
+    "name" : "Senators",
+    "colour_1" : "E51837"
+  },
+  {
+    "location" : "Toronto",
+    "full_name" : "Toronto Maple Leafs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/5/logo.png",
+    "colour_2" : "343434",
+    "name" : "Maple Leafs",
+    "colour_1" : "013E7F"
+  },
+  {
+    "location" : "New Jersey",
+    "full_name" : "New Jersey Devils",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/6/logo.png",
+    "colour_2" : "343434",
+    "name" : "Devils",
+    "colour_1" : "D02B2F"
+  },
+  {
+    "location" : "New York",
+    "full_name" : "New York Islanders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/7/logo.png",
+    "colour_2" : "00529B",
+    "name" : "Islanders",
+    "colour_1" : "F57D31"
+  },
+  {
+    "location" : "New York",
+    "full_name" : "New York Rangers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/8/logo.png",
+    "colour_2" : "0161AB",
+    "name" : "Rangers",
+    "colour_1" : "0161AB"
+  },
+  {
+    "location" : "Philadelphia",
+    "full_name" : "Philadelphia Flyers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/9/logo.png",
+    "colour_2" : "343434",
+    "name" : "Flyers",
+    "colour_1" : "E26327"
+  },
+  {
+    "location" : "Pittsburgh",
+    "full_name" : "Pittsburgh Penguins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/10/logo.png",
+    "colour_2" : "343434",
+    "name" : "Penguins",
+    "colour_1" : "C5B358"
+  },
+  {
+    "location" : "Winnipeg",
+    "full_name" : "Winnipeg Jets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/11/logo.png",
+    "colour_2" : "006EC8",
+    "name" : "Jets",
+    "colour_1" : "006EC8"
+  },
+  {
+    "location" : "Carolina",
+    "full_name" : "Carolina Hurricanes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/12/logo.png",
+    "colour_2" : "343434",
+    "name" : "Hurricanes",
+    "colour_1" : "E51A38"
+  },
+  {
+    "location" : "Florida",
+    "full_name" : "Florida Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/13/logo.png",
+    "colour_2" : "002D62",
+    "name" : "Panthers",
+    "colour_1" : "C51230"
+  },
+  {
+    "location" : "Tampa Bay",
+    "full_name" : "Tampa Bay Lightning",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/14/logo.png",
+    "colour_2" : "343434",
+    "name" : "Lightning",
+    "colour_1" : "003D7C"
+  },
+  {
+    "location" : "Washington",
+    "full_name" : "Washington Capitals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/15/logo.png",
+    "colour_2" : "002147",
+    "name" : "Capitals",
+    "colour_1" : "C60C30"
+  },
+  {
+    "location" : "Chicago",
+    "full_name" : "Chicago Blackhawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/16/logo.png",
+    "colour_2" : "E7AA21",
+    "name" : "Blackhawks",
+    "colour_1" : "C60C30"
+  },
+  {
+    "location" : "Columbus",
+    "full_name" : "Columbus Blue Jackets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/17/logo.png",
+    "colour_2" : "C60C30",
+    "name" : "Blue Jackets",
+    "colour_1" : "003168"
+  },
+  {
+    "location" : "Detroit",
+    "full_name" : "Detroit Red Wings",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/18/logo.png",
+    "colour_2" : "343434",
+    "name" : "Red Wings",
+    "colour_1" : "E51837"
+  },
+  {
+    "location" : "Nashville",
+    "full_name" : "Nashville Predators",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/19/logo.png",
+    "colour_2" : "002D62",
+    "name" : "Predators",
+    "colour_1" : "FDBB30"
+  },
+  {
+    "location" : "St. Louis",
+    "full_name" : "St. Louis Blues",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/20/logo.png",
+    "colour_2" : "FDB930",
+    "name" : "Blues",
+    "colour_1" : "00529C"
+  },
+  {
+    "location" : "Anaheim",
+    "full_name" : "Anaheim Ducks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/21/logo.png",
+    "colour_2" : "B6985A",
+    "name" : "Ducks",
+    "colour_1" : "F57D31"
+  },
+  {
+    "location" : "Dallas",
+    "full_name" : "Dallas Stars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/22/logo.png",
+    "colour_2" : "343434",
+    "name" : "Stars",
+    "colour_1" : "016F4A"
+  },
+  {
+    "location" : "Los Angeles",
+    "full_name" : "Los Angeles Kings",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/23/logo.png",
+    "colour_2" : "343434",
+    "name" : "Kings",
+    "colour_1" : "343434"
+  },
+  {
+    "location" : "Arizona",
+    "full_name" : "Arizona Coyotes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/24/logo.png",
+    "colour_2" : "CDB994",
+    "name" : "Coyotes",
+    "colour_1" : "98012E"
+  },
+  {
+    "location" : "San Jose",
+    "full_name" : "San Jose Sharks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/25/logo.png",
+    "colour_2" : "F4901E",
+    "name" : "Sharks",
+    "colour_1" : "007889"
+  },
+  {
+    "location" : "Calgary",
+    "full_name" : "Calgary Flames",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/26/logo.png",
+    "colour_2" : "FDBF12",
+    "name" : "Flames",
+    "colour_1" : "D1343A"
+  },
+  {
+    "location" : "Colorado",
+    "full_name" : "Colorado Avalanche",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/27/logo.png",
+    "colour_2" : "165788",
+    "name" : "Avalanche",
+    "colour_1" : "822433"
+  },
+  {
+    "location" : "Edmonton",
+    "full_name" : "Edmonton Oilers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/28/logo.png",
+    "colour_2" : "013E7F",
+    "name" : "Oilers",
+    "colour_1" : "EB6E1E"
+  },
+  {
+    "location" : "Minnesota",
+    "full_name" : "Minnesota Wild",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/29/logo.png",
+    "colour_2" : "C51230",
+    "name" : "Wild",
+    "colour_1" : "004F30"
+  },
+  {
+    "location" : "Vancouver",
+    "full_name" : "Vancouver Canucks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/30/logo.png",
+    "colour_2" : "008852",
+    "name" : "Canucks",
+    "colour_1" : "003E7E"
+  },
+  {
+    "full_name" : "Atlantic All-Stars",
+    "name" : "All-Stars",
+    "location" : "Team Atlantic",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/31/logo.png"
+  },
+  {
+    "full_name" : "Central All-Stars",
+    "name" : "All-Stars",
+    "location" : "Team Central",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/32/logo.png"
+  },
+  {
+    "full_name" : "Metropolitan All-Stars",
+    "name" : "All-Stars",
+    "location" : "Metropolitan",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/67/logo.png"
+  },
+  {
+    "full_name" : "Pacific All-Stars",
+    "name" : "All-Stars",
+    "location" : "Pacific",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/68/logo.png"
+  },
+  {
+    "location" : "Vegas",
+    "full_name" : "Vegas Golden Knights",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/102/logo.png",
+    "colour_2" : "334049",
+    "name" : "Golden Knights",
+    "colour_1" : "87704E"
+  }
+]

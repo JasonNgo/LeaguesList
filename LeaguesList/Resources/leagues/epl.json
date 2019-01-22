@@ -1,0 +1,156 @@
+[
+  {
+    "location" : "Arsenal",
+    "full_name" : "Arsenal",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/56/logo.png",
+    "colour_2" : "9D834B",
+    "name" : "Arsenal",
+    "colour_1" : "ED1C24"
+  },
+  {
+    "location" : "Bournemouth",
+    "full_name" : "Bournemouth",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/204/logo.png",
+    "colour_2" : "343434",
+    "name" : "Bournemouth",
+    "colour_1" : "CE1E44"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/201/logo.png",
+    "full_name" : "Brighton & Hove Albion",
+    "name" : "Brighton & Hove Albion",
+    "location" : "Brighton & Hove Albion",
+    "colour_1" : "0C5FA8"
+  },
+  {
+    "location" : "Burnley",
+    "full_name" : "Burnley",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/74/logo.png",
+    "colour_2" : "AAE0FA",
+    "name" : "Burnley",
+    "colour_1" : "6A003A"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/186/logo.png",
+    "full_name" : "Cardiff City",
+    "name" : "Cardiff City",
+    "location" : "Cardiff City",
+    "colour_1" : "1071B3"
+  },
+  {
+    "location" : "Chelsea",
+    "full_name" : "Chelsea",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/58/logo.png",
+    "colour_2" : "DAA128",
+    "name" : "Chelsea",
+    "colour_1" : "144992"
+  },
+  {
+    "location" : "Crystal Palace",
+    "full_name" : "Crystal Palace",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/168/logo.png",
+    "colour_2" : "114A8D",
+    "name" : "Crystal Palace",
+    "colour_1" : "C3202F"
+  },
+  {
+    "location" : "Everton",
+    "full_name" : "Everton",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/59/logo.png",
+    "colour_2" : "343434",
+    "name" : "Everton",
+    "colour_1" : "27315C"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/68/logo.png",
+    "full_name" : "Fulham",
+    "name" : "Fulham",
+    "location" : "Fulham",
+    "colour_1" : "1F1F1F"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/191/logo.png",
+    "full_name" : "Huddersfield Town",
+    "name" : "Huddersfield Town",
+    "location" : "Huddersfield Town",
+    "colour_1" : "3E9AD4"
+  },
+  {
+    "location" : "Leicester City",
+    "full_name" : "Leicester City",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/165/logo.png",
+    "colour_2" : "F2B615",
+    "name" : "Leicester City",
+    "colour_1" : "0A56A2"
+  },
+  {
+    "location" : "Liverpool",
+    "full_name" : "Liverpool",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/60/logo.png",
+    "colour_2" : "1DA498",
+    "name" : "Liverpool",
+    "colour_1" : "D3202B"
+  },
+  {
+    "location" : "Manchester City",
+    "full_name" : "Manchester City",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/61/logo.png",
+    "colour_2" : "343434",
+    "name" : "Manchester City",
+    "colour_1" : "6CACDE"
+  },
+  {
+    "location" : "Manchester",
+    "full_name" : "Manchester United",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/62/logo.png",
+    "colour_2" : "E8D709",
+    "name" : "Manchester United",
+    "colour_1" : "DC1F26"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/77/logo.png",
+    "full_name" : "Newcastle Utd",
+    "name" : "Newcastle Utd",
+    "location" : "Newcastle upon Tyne",
+    "colour_1" : "1F1F1F"
+  },
+  {
+    "location" : "Southampton",
+    "full_name" : "Southampton",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/166/logo.png",
+    "colour_2" : "343434",
+    "name" : "Southampton",
+    "colour_1" : "D92027"
+  },
+  {
+    "location" : "London",
+    "full_name" : "Tottenham Hotspur",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/64/logo.png",
+    "colour_2" : "343434",
+    "name" : "Tottenham Hotspur",
+    "colour_1" : "1B2455"
+  },
+  {
+    "location" : "Watford",
+    "full_name" : "Watford",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/175/logo.png",
+    "colour_2" : "ED232A",
+    "name" : "Watford",
+    "colour_1" : "D9D222"
+  },
+  {
+    "location" : "London",
+    "full_name" : "West Ham United",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/65/logo.png",
+    "colour_2" : "529AC7",
+    "name" : "West Ham United",
+    "colour_1" : "60223B"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/70/logo.png",
+    "full_name" : "Wolverhampton",
+    "name" : "Wolverhampton",
+    "location" : "Wolverhampton",
+    "colour_1" : "F8A532"
+  }
+]

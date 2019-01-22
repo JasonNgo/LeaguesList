@@ -1,0 +1,5624 @@
+[
+  {
+    "location" : "Kentucky",
+    "full_name" : "Kentucky Wildcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1300/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Wildcats",
+    "colour_1" : "0033A0"
+  },
+  {
+    "location" : "Morehead State",
+    "full_name" : "Morehead State Lady Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1301/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Eagles",
+    "colour_1" : "094FA3"
+  },
+  {
+    "location" : "Pittsburgh",
+    "full_name" : "Pittsburgh Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1302/logo.png",
+    "colour_2" : "CDB87D",
+    "name" : "Panthers",
+    "colour_1" : "1C2957"
+  },
+  {
+    "location" : "Youngstown State",
+    "full_name" : "Youngstown State Penguins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1303/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Penguins",
+    "colour_1" : "E51937"
+  },
+  {
+    "location" : "Cincinnati",
+    "full_name" : "Cincinnati Bearcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1304/logo.png",
+    "colour_2" : "000000",
+    "name" : "Bearcats",
+    "colour_1" : "FD0026"
+  },
+  {
+    "full_name" : "Southwest Baptist Bearcats",
+    "name" : "Bearcats",
+    "location" : "Southwest Baptist",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1305/logo.png"
+  },
+  {
+    "location" : "N.C. State",
+    "full_name" : "N.C. State Wolfpack",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1308/logo.png",
+    "colour_2" : "000000",
+    "name" : "Wolfpack",
+    "colour_1" : "CC0000"
+  },
+  {
+    "location" : "Charleston",
+    "full_name" : "Charleston Cougars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1309/logo.png",
+    "colour_2" : "6A0018",
+    "name" : "Cougars",
+    "colour_1" : "B5A172"
+  },
+  {
+    "location" : "Ole Miss",
+    "full_name" : "Ole Miss Lady Rebels",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1310/logo.png",
+    "colour_2" : "13294B",
+    "name" : "Lady Rebels",
+    "colour_1" : "C8102E"
+  },
+  {
+    "location" : "Jackson State",
+    "full_name" : "Jackson State Tigerettes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1311/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Tigerettes",
+    "colour_1" : "123297"
+  },
+  {
+    "location" : "Florida Atlantic",
+    "full_name" : "Florida Atlantic Owls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1312/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Owls",
+    "colour_1" : "004B85"
+  },
+  {
+    "full_name" : "Webber International Warriors",
+    "name" : "Warriors",
+    "location" : "Webber International",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1313/logo.png"
+  },
+  {
+    "location" : "Miami (FL)",
+    "full_name" : "Miami (FL) Hurricanes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1314/logo.png",
+    "colour_2" : "005030",
+    "name" : "Hurricanes",
+    "colour_1" : "F47321"
+  },
+  {
+    "location" : "Kennesaw State",
+    "full_name" : "Kennesaw State Owls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1315/logo.png",
+    "colour_2" : "000000",
+    "name" : "Owls",
+    "colour_1" : "F0B410"
+  },
+  {
+    "location" : "Stony Brook",
+    "full_name" : "Stony Brook Seawolves",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1316/logo.png",
+    "colour_2" : "B33A4E",
+    "name" : "Seawolves",
+    "colour_1" : "115F9A"
+  },
+  {
+    "location" : "Troy",
+    "full_name" : "Troy Trojans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1317/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Trojans",
+    "colour_1" : "AE0210"
+  },
+  {
+    "location" : "Oral Roberts",
+    "full_name" : "Oral Roberts Golden Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1318/logo.png",
+    "colour_2" : "D39B16",
+    "name" : "Golden Eagles",
+    "colour_1" : "002E70"
+  },
+  {
+    "location" : "Texas-Arlington",
+    "full_name" : "Texas-Arlington Mavericks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1319/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Mavericks",
+    "colour_1" : "004B7C"
+  },
+  {
+    "location" : "Columbia",
+    "full_name" : "Columbia Lions",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1320/logo.png",
+    "colour_2" : "004B85",
+    "name" : "Lions",
+    "colour_1" : "7CC2F1"
+  },
+  {
+    "location" : "Long Island",
+    "full_name" : "Long Island Blackbirds",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1321/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Blackbirds",
+    "colour_1" : "000000"
+  },
+  {
+    "location" : "Arkansas",
+    "full_name" : "Arkansas Lady Razorbacks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1322/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Razorbacks",
+    "colour_1" : "9D2235"
+  },
+  {
+    "location" : "Florida A&M",
+    "full_name" : "Florida A&M Rattlerettes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1323/logo.png",
+    "colour_2" : "00B552",
+    "name" : "Rattlerettes",
+    "colour_1" : "F89728"
+  },
+  {
+    "location" : "Southern Miss",
+    "full_name" : "Southern Miss Lady Golden Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1324/logo.png",
+    "colour_2" : "000000",
+    "name" : "Lady Golden Eagles",
+    "colour_1" : "FFC400"
+  },
+  {
+    "location" : "McNeese State",
+    "full_name" : "McNeese State Cowgirls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1325/logo.png",
+    "colour_2" : "00529C",
+    "name" : "Cowgirls",
+    "colour_1" : "FFD51D"
+  },
+  {
+    "location" : "Kansas State",
+    "full_name" : "Kansas State Wildcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1326/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Wildcats",
+    "colour_1" : "512888"
+  },
+  {
+    "location" : "Grambling State",
+    "full_name" : "Grambling State Lady Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1327/logo.png",
+    "colour_2" : "101008",
+    "name" : "Lady Tigers",
+    "colour_1" : "F88400"
+  },
+  {
+    "location" : "Sam Houston State",
+    "full_name" : "Sam Houston State Bearkats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1328/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bearkats",
+    "colour_1" : "F78F1E"
+  },
+  {
+    "location" : "Southeast Missouri State",
+    "full_name" : "Southeast Missouri State Redhawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1329/logo.png",
+    "colour_2" : "000000",
+    "name" : "Redhawks",
+    "colour_1" : "E2373E"
+  },
+  {
+    "location" : "Liberty",
+    "full_name" : "Liberty Lady Flames",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1330/logo.png",
+    "colour_2" : "A70F00",
+    "name" : "Lady Flames",
+    "colour_1" : "02298A"
+  },
+  {
+    "location" : "Creighton",
+    "full_name" : "Creighton Bluejays",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1331/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bluejays",
+    "colour_1" : "192DAA"
+  },
+  {
+    "location" : "St. John's",
+    "full_name" : "St. John's Red Storm",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1332/logo.png",
+    "colour_2" : "000000",
+    "name" : "Red Storm",
+    "colour_1" : "D31145"
+  },
+  {
+    "location" : "Marist",
+    "full_name" : "Marist Red Foxes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1333/logo.png",
+    "colour_2" : "000000",
+    "name" : "Red Foxes",
+    "colour_1" : "EF1216"
+  },
+  {
+    "location" : "Air Force",
+    "full_name" : "Air Force Falcons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1334/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Falcons",
+    "colour_1" : "0061AA"
+  },
+  {
+    "location" : "Lipscomb",
+    "full_name" : "Lipscomb Lady Bisons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1335/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Bisons",
+    "colour_1" : "122A65"
+  },
+  {
+    "location" : "Notre Dame",
+    "full_name" : "Notre Dame Fighting Irish",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1336/logo.png",
+    "colour_2" : "C89600",
+    "name" : "Fighting Irish",
+    "colour_1" : "0C2340"
+  },
+  {
+    "location" : "New Hampshire",
+    "full_name" : "New Hampshire Wildcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1337/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Wildcats",
+    "colour_1" : "004990"
+  },
+  {
+    "location" : "Towson",
+    "full_name" : "Towson Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1338/logo.png",
+    "colour_2" : "000000",
+    "name" : "Tigers",
+    "colour_1" : "FFC229"
+  },
+  {
+    "location" : "Coppin State",
+    "full_name" : "Coppin State Lady Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1339/logo.png",
+    "colour_2" : "FFF500",
+    "name" : "Lady Eagles",
+    "colour_1" : "2E3192"
+  },
+  {
+    "location" : "Villanova",
+    "full_name" : "Villanova Wildcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1340/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Wildcats",
+    "colour_1" : "123D7C"
+  },
+  {
+    "location" : "La Salle",
+    "full_name" : "La Salle Explorers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1341/logo.png",
+    "colour_2" : "FFF200",
+    "name" : "Explorers",
+    "colour_1" : "000F4C"
+  },
+  {
+    "location" : "USC",
+    "full_name" : "USC Trojans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1342/logo.png",
+    "colour_2" : "FFCC00",
+    "name" : "Trojans",
+    "colour_1" : "990000"
+  },
+  {
+    "location" : "Gonzaga",
+    "full_name" : "Gonzaga Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1343/logo.png",
+    "colour_2" : "DC272A",
+    "name" : "Bulldogs",
+    "colour_1" : "2D2161"
+  },
+  {
+    "location" : "North Carolina",
+    "full_name" : "North Carolina Tar Heels",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1344/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Tar Heels",
+    "colour_1" : "7BAFD4"
+  },
+  {
+    "location" : "North Florida",
+    "full_name" : "North Florida Ospreys",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1345/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Ospreys",
+    "colour_1" : "0A548D"
+  },
+  {
+    "location" : "Elon",
+    "full_name" : "Elon Phoenix",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1346/logo.png",
+    "colour_2" : "AEA460",
+    "name" : "Phoenix",
+    "colour_1" : "9E0152"
+  },
+  {
+    "location" : "Fordham",
+    "full_name" : "Fordham Lady Rams",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1347/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Rams",
+    "colour_1" : "830032"
+  },
+  {
+    "location" : "Appalachian State",
+    "full_name" : "Appalachian State Mountaineers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1348/logo.png",
+    "colour_2" : "000000",
+    "name" : "Mountaineers",
+    "colour_1" : "FFC520"
+  },
+  {
+    "location" : "Marshall",
+    "full_name" : "Marshall Thundering Herd",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1349/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Thundering Herd",
+    "colour_1" : "01592F"
+  },
+  {
+    "location" : "Purdue",
+    "full_name" : "Purdue Boilermakers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1350/logo.png",
+    "colour_2" : "000000",
+    "name" : "Boilermakers",
+    "colour_1" : "B89D29"
+  },
+  {
+    "location" : "Austin Peay",
+    "full_name" : "Austin Peay Lady Govs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1351/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Govs",
+    "colour_1" : "8E0B0B"
+  },
+  {
+    "location" : "St. Joseph's (PA)",
+    "full_name" : "St. Joseph's (PA) Hawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1352/logo.png",
+    "colour_2" : "000000",
+    "name" : "Hawks",
+    "colour_1" : "C2071B"
+  },
+  {
+    "location" : "Providence",
+    "full_name" : "Providence Lady Friars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1353/logo.png",
+    "colour_2" : "000000",
+    "name" : "Lady Friars",
+    "colour_1" : "C4C4C4"
+  },
+  {
+    "location" : "Mississippi State",
+    "full_name" : "Mississippi State Lady Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1354/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Bulldogs",
+    "colour_1" : "762123"
+  },
+  {
+    "location" : "South Carolina Upstate",
+    "full_name" : "South Carolina Upstate Spartans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1355/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Spartans",
+    "colour_1" : "00703C"
+  },
+  {
+    "location" : "Clemson",
+    "full_name" : "Clemson Lady Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1356/logo.png",
+    "colour_2" : "522D80",
+    "name" : "Lady Tigers",
+    "colour_1" : "F66733"
+  },
+  {
+    "location" : "North Carolina Greensboro",
+    "full_name" : "North Carolina Greensboro Spartans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1357/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Spartans",
+    "colour_1" : "003559"
+  },
+  {
+    "location" : "Bucknell",
+    "full_name" : "Bucknell Bison",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1358/logo.png",
+    "colour_2" : "FF7000",
+    "name" : "Bison",
+    "colour_1" : "000064"
+  },
+  {
+    "location" : "Rider",
+    "full_name" : "Rider Broncs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1359/logo.png",
+    "colour_2" : "ABADB0",
+    "name" : "Broncs",
+    "colour_1" : "A80532"
+  },
+  {
+    "location" : "Albany",
+    "full_name" : "Albany Great Danes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1360/logo.png",
+    "colour_2" : "FCBB0D",
+    "name" : "Great Danes",
+    "colour_1" : "3D2777"
+  },
+  {
+    "location" : "Brown",
+    "full_name" : "Brown Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1361/logo.png",
+    "colour_2" : "8A1E04",
+    "name" : "Bears",
+    "colour_1" : "543019"
+  },
+  {
+    "location" : "Wagner",
+    "full_name" : "Wagner Seahawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1362/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Seahawks",
+    "colour_1" : "00483A"
+  },
+  {
+    "location" : "Army",
+    "full_name" : "Army Black Knights",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1363/logo.png",
+    "colour_2" : "000000",
+    "name" : "Black Knights",
+    "colour_1" : "D19D00"
+  },
+  {
+    "location" : "Virginia Tech",
+    "full_name" : "Virginia Tech Hokies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1364/logo.png",
+    "colour_2" : "FF6600",
+    "name" : "Hokies",
+    "colour_1" : "660000"
+  },
+  {
+    "location" : "Presbyterian",
+    "full_name" : "Presbyterian Blue Hose",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1365/logo.png",
+    "colour_2" : "AA153B",
+    "name" : "Blue Hose",
+    "colour_1" : "194896"
+  },
+  {
+    "location" : "Central Michigan",
+    "full_name" : "Central Michigan Chippewas",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1366/logo.png",
+    "colour_2" : "E2A253",
+    "name" : "Chippewas",
+    "colour_1" : "780006"
+  },
+  {
+    "location" : "North Carolina A&T",
+    "full_name" : "North Carolina A&T Lady Aggies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1367/logo.png",
+    "colour_2" : "004186",
+    "name" : "Lady Aggies",
+    "colour_1" : "FFB700"
+  },
+  {
+    "location" : "Temple",
+    "full_name" : "Temple Owls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1368/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Owls",
+    "colour_1" : "A80532"
+  },
+  {
+    "location" : "Ohio State",
+    "full_name" : "Ohio State Buckeyes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1369/logo.png",
+    "colour_2" : "666666",
+    "name" : "Buckeyes",
+    "colour_1" : "BB0000"
+  },
+  {
+    "location" : "Montana State",
+    "full_name" : "Montana State Bobcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1370/logo.png",
+    "colour_2" : "003875",
+    "name" : "Bobcats",
+    "colour_1" : "D3AF7E"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1371/logo.png",
+    "full_name" : "Rice Owls",
+    "name" : "Owls",
+    "location" : "Rice",
+    "colour_1" : "003D7D"
+  },
+  {
+    "location" : "Massachusetts",
+    "full_name" : "Massachusetts Minutewomen",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1372/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Minutewomen",
+    "colour_1" : "9F011A"
+  },
+  {
+    "location" : "George Mason",
+    "full_name" : "George Mason Patriots",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1373/logo.png",
+    "colour_2" : "FBC52B",
+    "name" : "Patriots",
+    "colour_1" : "006539"
+  },
+  {
+    "location" : "Boston University",
+    "full_name" : "Boston University Terriers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1374/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Terriers",
+    "colour_1" : "DD072E"
+  },
+  {
+    "location" : "Boston College",
+    "full_name" : "Boston College Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1375/logo.png",
+    "colour_2" : "9DC2EA",
+    "name" : "Eagles",
+    "colour_1" : "98002E"
+  },
+  {
+    "location" : "Georgia Tech",
+    "full_name" : "Georgia Tech Yellow Jackets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1376/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Yellow Jackets",
+    "colour_1" : "C59353"
+  },
+  {
+    "location" : "Georgia State",
+    "full_name" : "Georgia State Lady Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1377/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Panthers",
+    "colour_1" : "005DAA"
+  },
+  {
+    "location" : "Saint Louis",
+    "full_name" : "Saint Louis Billikens",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1378/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Billikens",
+    "colour_1" : "00539C"
+  },
+  {
+    "location" : "Wisconsin",
+    "full_name" : "Wisconsin Badgers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1379/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Badgers",
+    "colour_1" : "A00000"
+  },
+  {
+    "location" : "UAB",
+    "full_name" : "UAB Blazers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1380/logo.png",
+    "colour_2" : "E7BD05",
+    "name" : "Blazers",
+    "colour_1" : "054338"
+  },
+  {
+    "location" : "Alabama A&M",
+    "full_name" : "Alabama A&M Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1381/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bulldogs",
+    "colour_1" : "750000"
+  },
+  {
+    "location" : "Longwood",
+    "full_name" : "Longwood Lancers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1382/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lancers",
+    "colour_1" : "B9B9BB"
+  },
+  {
+    "location" : "Weber State",
+    "full_name" : "Weber State Wildcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1383/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Wildcats",
+    "colour_1" : "29086B"
+  },
+  {
+    "location" : "Wyoming",
+    "full_name" : "Wyoming Cowgirls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1384/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Cowgirls",
+    "colour_1" : "533B22"
+  },
+  {
+    "location" : "William & Mary",
+    "full_name" : "William & Mary Tribe",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1385/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Tribe",
+    "colour_1" : "103217"
+  },
+  {
+    "location" : "Canisius",
+    "full_name" : "Canisius Golden Griffins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1386/logo.png",
+    "colour_2" : "002859",
+    "name" : "Golden Griffins",
+    "colour_1" : "EEB211"
+  },
+  {
+    "location" : "Jacksonville",
+    "full_name" : "Jacksonville Dolphins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1387/logo.png",
+    "colour_2" : "8B8B8B",
+    "name" : "Dolphins",
+    "colour_1" : "008568"
+  },
+  {
+    "location" : "Kent State",
+    "full_name" : "Kent State Golden Flashes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1388/logo.png",
+    "colour_2" : "F7BD0A",
+    "name" : "Golden Flashes",
+    "colour_1" : "131149"
+  },
+  {
+    "location" : "Jacksonville State",
+    "full_name" : "Jacksonville State Gamecocks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1389/logo.png",
+    "colour_2" : "000000",
+    "name" : "Gamecocks",
+    "colour_1" : "E53F40"
+  },
+  {
+    "location" : "Alabama State",
+    "full_name" : "Alabama State Hornets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1390/logo.png",
+    "colour_2" : "231F20",
+    "name" : "Hornets",
+    "colour_1" : "FECB09"
+  },
+  {
+    "location" : "Idaho",
+    "full_name" : "Idaho Vandals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1391/logo.png",
+    "colour_2" : "000000",
+    "name" : "Vandals",
+    "colour_1" : "FFCC13"
+  },
+  {
+    "location" : "California Riverside",
+    "full_name" : "UC Riverside Highlanders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1392/logo.png",
+    "colour_2" : "CCA61F",
+    "name" : "Highlanders",
+    "colour_1" : "247BC2"
+  },
+  {
+    "location" : "New Mexico",
+    "full_name" : "New Mexico Lobos",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1393/logo.png",
+    "colour_2" : "000000",
+    "name" : "Lobos",
+    "colour_1" : "D41045"
+  },
+  {
+    "location" : "Northern Colorado",
+    "full_name" : "Northern Colorado Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1394/logo.png",
+    "colour_2" : "13558D",
+    "name" : "Bears",
+    "colour_1" : "F9D245"
+  },
+  {
+    "location" : "Fresno State",
+    "full_name" : "Fresno State Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1395/logo.png",
+    "colour_2" : "E32F38",
+    "name" : "Bulldogs",
+    "colour_1" : "00427A"
+  },
+  {
+    "location" : "Cal State Bakersfield",
+    "full_name" : "Cal State Bakersfield Roadrunners",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1396/logo.png",
+    "colour_2" : "FFD204",
+    "name" : "Roadrunners",
+    "colour_1" : "005DAB"
+  },
+  {
+    "full_name" : "Virginia Union Panthers",
+    "name" : "Panthers",
+    "location" : "Virginia Union",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1397/logo.png"
+  },
+  {
+    "location" : "Richmond",
+    "full_name" : "Richmond Spiders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1398/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Spiders",
+    "colour_1" : "9E0712"
+  },
+  {
+    "location" : "Iowa",
+    "full_name" : "Iowa Hawkeyes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1399/logo.png",
+    "colour_2" : "000000",
+    "name" : "Hawkeyes",
+    "colour_1" : "FFE100"
+  },
+  {
+    "location" : "Chattanooga",
+    "full_name" : "Chattanooga Lady Mocs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1400/logo.png",
+    "colour_2" : "00437B",
+    "name" : "Lady Mocs",
+    "colour_1" : "EEB311"
+  },
+  {
+    "location" : "Southern University",
+    "full_name" : "Southern University Jaguars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1401/logo.png",
+    "colour_2" : "FFCD02",
+    "name" : "Jaguars",
+    "colour_1" : "004B97"
+  },
+  {
+    "location" : "Belmont",
+    "full_name" : "Belmont Bruins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1402/logo.png",
+    "colour_2" : "E82645",
+    "name" : "Bruins",
+    "colour_1" : "2A3F76"
+  },
+  {
+    "location" : "Milwaukee",
+    "full_name" : "Milwaukee Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1403/logo.png",
+    "colour_2" : "000000",
+    "name" : "Panthers",
+    "colour_1" : "F0B432"
+  },
+  {
+    "location" : "Chicago State",
+    "full_name" : "Chicago State Cougars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1404/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Cougars",
+    "colour_1" : "006700"
+  },
+  {
+    "location" : "Arkansas State",
+    "full_name" : "Arkansas State Red Wolves",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1405/logo.png",
+    "colour_2" : "231F20",
+    "name" : "Red Wolves",
+    "colour_1" : "ED1B2E"
+  },
+  {
+    "location" : "Alabama",
+    "full_name" : "Alabama Crimson Tide",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1406/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Crimson Tide",
+    "colour_1" : "990000"
+  },
+  {
+    "location" : "Tennessee State",
+    "full_name" : "Tennessee State Lady Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1407/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Tigers",
+    "colour_1" : "383C84"
+  },
+  {
+    "location" : "Utah State",
+    "full_name" : "Utah State Aggies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1408/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Aggies",
+    "colour_1" : "003263"
+  },
+  {
+    "full_name" : "Dixie State Red Storm",
+    "name" : "Red Storm",
+    "location" : "Dixie State",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1409/logo.png"
+  },
+  {
+    "location" : "Auburn",
+    "full_name" : "Auburn Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1410/logo.png",
+    "colour_2" : "03244D",
+    "name" : "Tigers",
+    "colour_1" : "F26522"
+  },
+  {
+    "location" : "Mercer",
+    "full_name" : "Mercer Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1411/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bears",
+    "colour_1" : "FF7F27"
+  },
+  {
+    "location" : "Wofford",
+    "full_name" : "Wofford Lady Terriers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1412/logo.png",
+    "colour_2" : "000000",
+    "name" : "Lady Terriers",
+    "colour_1" : "FFD700"
+  },
+  {
+    "location" : "Gardner-Webb",
+    "full_name" : "Gardner-Webb Runnin' Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1413/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Runnin' Bulldogs",
+    "colour_1" : "BF2C37"
+  },
+  {
+    "location" : "East Carolina",
+    "full_name" : "East Carolina Lady Pirates",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1414/logo.png",
+    "colour_2" : "FFCE28",
+    "name" : "Lady Pirates",
+    "colour_1" : "4A1F68"
+  },
+  {
+    "location" : "American University",
+    "full_name" : "American University Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1415/logo.png",
+    "colour_2" : "143D8D",
+    "name" : "Eagles",
+    "colour_1" : "C41130"
+  },
+  {
+    "location" : "Florida State",
+    "full_name" : "Florida State Seminoles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1416/logo.png",
+    "colour_2" : "CEB888",
+    "name" : "Seminoles",
+    "colour_1" : "782F40"
+  },
+  {
+    "location" : "Coastal Carolina",
+    "full_name" : "Coastal Carolina Chanticleers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1417/logo.png",
+    "colour_2" : "D59C3A",
+    "name" : "Chanticleers",
+    "colour_1" : "009297"
+  },
+  {
+    "full_name" : "Southern Virginia Knights",
+    "name" : "Knights",
+    "location" : "Southern Virginia",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1418/logo.png"
+  },
+  {
+    "location" : "Memphis",
+    "full_name" : "Memphis Lady Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1419/logo.png",
+    "colour_2" : "FEC003",
+    "name" : "Lady Tigers",
+    "colour_1" : "2A2A9B"
+  },
+  {
+    "location" : "Missouri",
+    "full_name" : "Missouri Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1420/logo.png",
+    "colour_2" : "000000",
+    "name" : "Tigers",
+    "colour_1" : "F1B82D"
+  },
+  {
+    "location" : "TCU",
+    "full_name" : "TCU Horned Frogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1421/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Horned Frogs",
+    "colour_1" : "4D1979"
+  },
+  {
+    "location" : "Houston Baptist",
+    "full_name" : "Houston Baptist Huskies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1422/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Huskies",
+    "colour_1" : "00529C"
+  },
+  {
+    "location" : "Missouri State",
+    "full_name" : "Missouri State Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1423/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bears",
+    "colour_1" : "5F0000"
+  },
+  {
+    "location" : "Lamar",
+    "full_name" : "Lamar Lady Cardinals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1424/logo.png",
+    "colour_2" : "000000",
+    "name" : "Lady Cardinals",
+    "colour_1" : "ED1B2E"
+  },
+  {
+    "location" : "Delaware",
+    "full_name" : "Delaware Fightin Blue Hens",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1425/logo.png",
+    "colour_2" : "FFDD00",
+    "name" : "Fightin Blue Hens",
+    "colour_1" : "01539B"
+  },
+  {
+    "location" : "Maryland-Baltimore County",
+    "full_name" : "Maryland-Baltimore County Retrievers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1426/logo.png",
+    "colour_2" : "AF8706",
+    "name" : "Retrievers",
+    "colour_1" : "FFC10E"
+  },
+  {
+    "location" : "UTSA",
+    "full_name" : "UTSA",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1427/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "UTSA",
+    "colour_1" : "002A5C"
+  },
+  {
+    "full_name" : "Our Lady of the Lake Saints",
+    "name" : "Saints",
+    "location" : "Our Lady of the Lake",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1428/logo.png"
+  },
+  {
+    "location" : "West Virginia",
+    "full_name" : "West Virginia Mountaineers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1429/logo.png",
+    "colour_2" : "EAAA00",
+    "name" : "Mountaineers",
+    "colour_1" : "002855"
+  },
+  {
+    "location" : "Loyola (MD)",
+    "full_name" : "Loyola (MD) Greyhounds",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1430/logo.png",
+    "colour_2" : "000000",
+    "name" : "Greyhounds",
+    "colour_1" : "016540"
+  },
+  {
+    "location" : "St. Francis (NY)",
+    "full_name" : "St. Francis (NY) Terriers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1431/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Terriers",
+    "colour_1" : "113682"
+  },
+  {
+    "location" : "Manhattan",
+    "full_name" : "Manhattan Lady Jaspers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1432/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Jaspers",
+    "colour_1" : "528C39"
+  },
+  {
+    "location" : "Northwestern State",
+    "full_name" : "Northwestern State Lady Demons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1433/logo.png",
+    "colour_2" : "F68428",
+    "name" : "Lady Demons",
+    "colour_1" : "492F91"
+  },
+  {
+    "full_name" : "Ouachita Baptist Tigers",
+    "name" : "Tigers",
+    "location" : "Ouachita Baptist",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1434/logo.png"
+  },
+  {
+    "location" : "Boise State",
+    "full_name" : "Boise State Broncos",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1435/logo.png",
+    "colour_2" : "F27E34",
+    "name" : "Broncos",
+    "colour_1" : "2D4492"
+  },
+  {
+    "location" : "Portland",
+    "full_name" : "Portland Pilots",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1436/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Pilots",
+    "colour_1" : "0E034E"
+  },
+  {
+    "location" : "Fairfield",
+    "full_name" : "Fairfield Stags",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1437/logo.png",
+    "colour_2" : "181111",
+    "name" : "Stags",
+    "colour_1" : "D4290F"
+  },
+  {
+    "location" : "Quinnipiac",
+    "full_name" : "Quinnipiac Bobcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1438/logo.png",
+    "colour_2" : "041B43",
+    "name" : "Bobcats",
+    "colour_1" : "BA9000"
+  },
+  {
+    "full_name" : "Siena Saints",
+    "name" : "Saints",
+    "location" : "Siena",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1439/logo.png"
+  },
+  {
+    "location" : "Navy",
+    "full_name" : "Navy Midshipmen",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1440/logo.png",
+    "colour_2" : "FCBA29",
+    "name" : "Midshipmen",
+    "colour_1" : "131630"
+  },
+  {
+    "location" : "Niagara",
+    "full_name" : "Niagara Purple Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1441/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Purple Eagles",
+    "colour_1" : "69207E"
+  },
+  {
+    "location" : "UIC",
+    "full_name" : "UIC Flames",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1442/logo.png",
+    "colour_2" : "DE3444",
+    "name" : "Flames",
+    "colour_1" : "234077"
+  },
+  {
+    "location" : "Detroit",
+    "full_name" : "Detroit Mercy Titans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1443/logo.png",
+    "colour_2" : "E51937",
+    "name" : "Titans",
+    "colour_1" : "1C64A4"
+  },
+  {
+    "location" : "Oakland",
+    "full_name" : "Oakland Golden Grizzlies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1444/logo.png",
+    "colour_2" : "000000",
+    "name" : "Golden Grizzlies",
+    "colour_1" : "998448"
+  },
+  {
+    "location" : "East Tennessee State",
+    "full_name" : "East Tennessee State Lady Buccaneers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1445/logo.png",
+    "colour_2" : "BE9434",
+    "name" : "Lady Buccaneers",
+    "colour_1" : "025BA3"
+  },
+  {
+    "location" : "Hofstra",
+    "full_name" : "Hofstra Pride",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1446/logo.png",
+    "colour_2" : "FFCf1B",
+    "name" : "Pride",
+    "colour_1" : "0756A4"
+  },
+  {
+    "location" : "Virginia",
+    "full_name" : "Virginia Cavaliers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1447/logo.png",
+    "colour_2" : "F36F21",
+    "name" : "Cavaliers",
+    "colour_1" : "002654"
+  },
+  {
+    "location" : "Southern Methodist",
+    "full_name" : "Southern Methodist Mustangs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1448/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Mustangs",
+    "colour_1" : "E32F38"
+  },
+  {
+    "location" : "Utah",
+    "full_name" : "Utah Utes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1449/logo.png",
+    "colour_2" : "808080",
+    "name" : "Utes",
+    "colour_1" : "CC0000"
+  },
+  {
+    "location" : "South Carolina",
+    "full_name" : "South Carolina Gamecocks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1450/logo.png",
+    "colour_2" : "000000",
+    "name" : "Gamecocks",
+    "colour_1" : "73000A"
+  },
+  {
+    "location" : "Xavier",
+    "full_name" : "Xavier Musketeers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1451/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Musketeers",
+    "colour_1" : "002144"
+  },
+  {
+    "location" : "Holy Cross",
+    "full_name" : "Holy Cross Crusaders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1452/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Crusaders",
+    "colour_1" : "1B2154"
+  },
+  {
+    "location" : "Yale",
+    "full_name" : "Yale Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1453/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bulldogs",
+    "colour_1" : "004A81"
+  },
+  {
+    "location" : "Louisville",
+    "full_name" : "Louisville Cardinals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1454/logo.png",
+    "colour_2" : "000000",
+    "name" : "Cardinals",
+    "colour_1" : "AD0000"
+  },
+  {
+    "location" : "Tennessee",
+    "full_name" : "Tennessee Lady Volunteers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1455/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Volunteers",
+    "colour_1" : "FF8200"
+  },
+  {
+    "location" : "Texas State",
+    "full_name" : "Texas State Bobcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1456/logo.png",
+    "colour_2" : "9B8449",
+    "name" : "Bobcats",
+    "colour_1" : "744143"
+  },
+  {
+    "full_name" : "East Texas Baptist Tigers",
+    "name" : "Tigers",
+    "location" : "East Texas Baptist",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1457/logo.png"
+  },
+  {
+    "location" : "Eastern Michigan",
+    "full_name" : "Eastern Michigan Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1458/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Eagles",
+    "colour_1" : "0B5F24"
+  },
+  {
+    "location" : "Loyola (IL)",
+    "full_name" : "Loyola (IL) Ramblers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1459/logo.png",
+    "colour_2" : "9E0E43",
+    "name" : "Ramblers",
+    "colour_1" : "FBC312"
+  },
+  {
+    "location" : "South Florida",
+    "full_name" : "South Florida Bulls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1460/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bulls",
+    "colour_1" : "004A36"
+  },
+  {
+    "location" : "Sacred Heart",
+    "full_name" : "Sacred Heart Pioneers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1461/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Pioneers",
+    "colour_1" : "CE1040"
+  },
+  {
+    "location" : "St. Peter's",
+    "full_name" : "St. Peter's Peahens",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1462/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Peahens",
+    "colour_1" : "004CC2"
+  },
+  {
+    "location" : "Western Carolina",
+    "full_name" : "Western Carolina Lady Catamounts",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1463/logo.png",
+    "colour_2" : "CFAB7A",
+    "name" : "Lady Catamounts",
+    "colour_1" : "492F91"
+  },
+  {
+    "location" : "Central Connecticut State",
+    "full_name" : "Central Connecticut State Lady Blue Devils",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1464/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Blue Devils",
+    "colour_1" : "1B49A2"
+  },
+  {
+    "location" : "Hartford",
+    "full_name" : "Hartford Hawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1465/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Hawks",
+    "colour_1" : "ED1B2E"
+  },
+  {
+    "location" : "Ball State",
+    "full_name" : "Ball State Cardinals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1466/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Cardinals",
+    "colour_1" : "DA0000"
+  },
+  {
+    "location" : "Indiana",
+    "full_name" : "Indiana Hoosiers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1467/logo.png",
+    "colour_2" : "EEEDEB",
+    "name" : "Hoosiers",
+    "colour_1" : "990000"
+  },
+  {
+    "location" : "Dayton",
+    "full_name" : "Dayton Flyers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1468/logo.png",
+    "colour_2" : "151A66",
+    "name" : "Flyers",
+    "colour_1" : "E70808"
+  },
+  {
+    "location" : "Penn State",
+    "full_name" : "Penn State Lady Lions",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1469/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Lions",
+    "colour_1" : "1E407C"
+  },
+  {
+    "location" : "Winthrop",
+    "full_name" : "Winthrop Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1470/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Eagles",
+    "colour_1" : "FFAF1E"
+  },
+  {
+    "location" : "Southeastern Louisiana",
+    "full_name" : "Southeastern Louisiana Lady Lions",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1471/logo.png",
+    "colour_2" : "007550",
+    "name" : "Lady Lions",
+    "colour_1" : "F0B510"
+  },
+  {
+    "full_name" : "Millsaps Lady Majors",
+    "name" : "Lady Majors",
+    "location" : "Millsaps",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1472/logo.png"
+  },
+  {
+    "location" : "Michigan",
+    "full_name" : "Michigan Wolverines",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1473/logo.png",
+    "colour_2" : "FFC72C",
+    "name" : "Wolverines",
+    "colour_1" : "041E42"
+  },
+  {
+    "location" : "Alcorn State",
+    "full_name" : "Alcorn State Lady Braves",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1474/logo.png",
+    "colour_2" : "FCF5BA",
+    "name" : "Lady Braves",
+    "colour_1" : "42094A"
+  },
+  {
+    "location" : "Louisiana-Monroe",
+    "full_name" : "Louisiana-Monroe Warhawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1475/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Warhawks",
+    "colour_1" : "98012E"
+  },
+  {
+    "location" : "New Orleans",
+    "full_name" : "New Orleans Privateers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1476/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Privateers",
+    "colour_1" : "2B3986"
+  },
+  {
+    "location" : "IUPUI",
+    "full_name" : "IUPUI Jaguars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1477/logo.png",
+    "colour_2" : "DC973C",
+    "name" : "Jaguars",
+    "colour_1" : "A81F30"
+  },
+  {
+    "location" : "Wright State",
+    "full_name" : "Wright State Raiders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1478/logo.png",
+    "colour_2" : "E9AF10",
+    "name" : "Raiders",
+    "colour_1" : "006F53"
+  },
+  {
+    "location" : "Pennsylvania",
+    "full_name" : "Pennsylvania Quakers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1479/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Quakers",
+    "colour_1" : "082A74"
+  },
+  {
+    "location" : "Bryant",
+    "full_name" : "Bryant Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1480/logo.png",
+    "colour_2" : "231F20",
+    "name" : "Bulldogs",
+    "colour_1" : "A59474"
+  },
+  {
+    "location" : "Baylor",
+    "full_name" : "Baylor Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1481/logo.png",
+    "colour_2" : "FDBB2F",
+    "name" : "Bears",
+    "colour_1" : "004834"
+  },
+  {
+    "location" : "FIU",
+    "full_name" : "FIU Golden Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1482/logo.png",
+    "colour_2" : "002D62",
+    "name" : "Golden Panthers",
+    "colour_1" : "C5960B"
+  },
+  {
+    "location" : "DePaul",
+    "full_name" : "DePaul Blue Demons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1483/logo.png",
+    "colour_2" : "BD0F10",
+    "name" : "Blue Demons",
+    "colour_1" : "336698"
+  },
+  {
+    "location" : "Valparaiso",
+    "full_name" : "Valparaiso Crusaders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1484/logo.png",
+    "colour_2" : "794500",
+    "name" : "Crusaders",
+    "colour_1" : "FFD204"
+  },
+  {
+    "location" : "Illinois",
+    "full_name" : "Illinois Fighting Illini",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1485/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Fighting Illini",
+    "colour_1" : "F5873C"
+  },
+  {
+    "location" : "Illinois State",
+    "full_name" : "Illinois State Redbirds",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1486/logo.png",
+    "colour_2" : "000000",
+    "name" : "Redbirds",
+    "colour_1" : "E61731"
+  },
+  {
+    "location" : "James Madison",
+    "full_name" : "James Madison Dukes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1487/logo.png",
+    "colour_2" : "263997",
+    "name" : "Dukes",
+    "colour_1" : "D5A10E"
+  },
+  {
+    "location" : "Hampton",
+    "full_name" : "Hampton Pirates",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1488/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Pirates",
+    "colour_1" : "0067AC"
+  },
+  {
+    "location" : "High Point",
+    "full_name" : "High Point Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1489/logo.png",
+    "colour_2" : "000000",
+    "name" : "Panthers",
+    "colour_1" : "342B88"
+  },
+  {
+    "location" : "Virginia Commonwealth",
+    "full_name" : "Virginia Commonwealth Lady Rams",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1490/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Rams",
+    "colour_1" : "7D7D7A"
+  },
+  {
+    "location" : "Northwestern",
+    "full_name" : "Northwestern Wildcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1491/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Wildcats",
+    "colour_1" : "4E2A84"
+  },
+  {
+    "location" : "Dartmouth",
+    "full_name" : "Dartmouth Big Green",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1492/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Big Green",
+    "colour_1" : "005730"
+  },
+  {
+    "location" : "Drake",
+    "full_name" : "Drake Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1493/logo.png",
+    "colour_2" : "B4B6B8",
+    "name" : "Bulldogs",
+    "colour_1" : "0053A0"
+  },
+  {
+    "location" : "UMKC",
+    "full_name" : "UMKC Kangaroos",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1494/logo.png",
+    "colour_2" : "005486",
+    "name" : "Kangaroos",
+    "colour_1" : "FFD204"
+  },
+  {
+    "location" : "Texas",
+    "full_name" : "Texas Longhorns",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1495/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Longhorns",
+    "colour_1" : "BF5700"
+  },
+  {
+    "location" : "Mississippi Valley State",
+    "full_name" : "Mississippi Valley State Devilettes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1496/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Devilettes",
+    "colour_1" : "054105"
+  },
+  {
+    "location" : "Campbell",
+    "full_name" : "Campbell Fighting Camels",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1497/logo.png",
+    "colour_2" : "000000",
+    "name" : "Fighting Camels",
+    "colour_1" : "FF8931"
+  },
+  {
+    "location" : "UNLV",
+    "full_name" : "UNLV Lady Rebels",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1498/logo.png",
+    "colour_2" : "000000",
+    "name" : "Rebels",
+    "colour_1" : "D50026"
+  },
+  {
+    "location" : "Southern Utah",
+    "full_name" : "Southern Utah Thunderbirds",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1499/logo.png",
+    "colour_2" : "000000",
+    "name" : "Thunderbirds",
+    "colour_1" : "D12947"
+  },
+  {
+    "location" : "Indiana State",
+    "full_name" : "Indiana State Sycamores",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1500/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Sycamores",
+    "colour_1" : "00669A"
+  },
+  {
+    "location" : "Furman",
+    "full_name" : "Furman Lady Paladins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1501/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Paladins",
+    "colour_1" : "3A1769"
+  },
+  {
+    "location" : "St. Bonaventure",
+    "full_name" : "St. Bonaventure Bonnies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1502/logo.png",
+    "colour_2" : "FEE8AB",
+    "name" : "Bonnies",
+    "colour_1" : "70261D"
+  },
+  {
+    "location" : "Binghamton",
+    "full_name" : "Binghamton Bearcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1503/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bearcats",
+    "colour_1" : "006F53"
+  },
+  {
+    "location" : "South Dakota",
+    "full_name" : "South Dakota Coyotes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1504/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "South Dakota",
+    "colour_1" : "CD1241"
+  },
+  {
+    "location" : "Central Arkansas",
+    "full_name" : "Central Arkansas Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1505/logo.png",
+    "colour_2" : "939BA1",
+    "name" : "Bears",
+    "colour_1" : "4F2683"
+  },
+  {
+    "full_name" : "Hendrix College Warriors",
+    "name" : "Warriors",
+    "location" : "Hendrix College",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1506/logo.png"
+  },
+  {
+    "location" : "Buffalo",
+    "full_name" : "Buffalo Bulls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1507/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bulls",
+    "colour_1" : "0068B4"
+  },
+  {
+    "location" : "Howard",
+    "full_name" : "Howard Bison",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1508/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bison",
+    "colour_1" : "09347A"
+  },
+  {
+    "location" : "Arkansas-Little Rock",
+    "full_name" : "Little Rock",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1509/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Little Rock",
+    "colour_1" : "AD0000"
+  },
+  {
+    "location" : "Davidson",
+    "full_name" : "Davidson Wildcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1510/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Wildcats",
+    "colour_1" : "E51937"
+  },
+  {
+    "location" : "Florida Gulf Coast",
+    "full_name" : "Florida Gulf Coast Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1511/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Florida Gulf Coast",
+    "colour_1" : "009569"
+  },
+  {
+    "location" : "Seton Hall",
+    "full_name" : "Seton Hall Pirates",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1512/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Pirates",
+    "colour_1" : "0857B1"
+  },
+  {
+    "location" : "Toledo",
+    "full_name" : "Toledo Rockets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1513/logo.png",
+    "colour_2" : "FFD51D",
+    "name" : "Rockets",
+    "colour_1" : "00488F"
+  },
+  {
+    "location" : "St. Francis (PA)",
+    "full_name" : "St. Francis (PA) Red Flash",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1514/logo.png",
+    "colour_2" : "000000",
+    "name" : "Red Flash",
+    "colour_1" : "F41650"
+  },
+  {
+    "location" : "South Dakota State",
+    "full_name" : "South Dakota State Jackrabbits",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1515/logo.png",
+    "colour_2" : "005DAB",
+    "name" : "South Dakota State",
+    "colour_1" : "FFDE00"
+  },
+  {
+    "location" : "Utah Valley University",
+    "full_name" : "Utah Valley University Wolverines",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1516/logo.png",
+    "colour_2" : "E8D766",
+    "name" : "Wolverines",
+    "colour_1" : "004812"
+  },
+  {
+    "location" : "Colorado",
+    "full_name" : "Colorado Buffaloes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1517/logo.png",
+    "colour_2" : "A2A4A3",
+    "name" : "Buffaloes",
+    "colour_1" : "CFB87C"
+  },
+  {
+    "full_name" : "Regis Rangers",
+    "name" : "Rangers",
+    "location" : "Regis",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1518/logo.png"
+  },
+  {
+    "location" : "North Texas",
+    "full_name" : "North Texas Mean Green",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1519/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Mean Green",
+    "colour_1" : "00853D"
+  },
+  {
+    "location" : "Stephen F. Austin",
+    "full_name" : "Stephen F. Austin Ladyjacks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1520/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Ladyjacks",
+    "colour_1" : "393996"
+  },
+  {
+    "location" : "Duquesne",
+    "full_name" : "Duquesne Lady Dukes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1521/logo.png",
+    "colour_2" : "D31145",
+    "name" : "Lady Dukes",
+    "colour_1" : "002D62"
+  },
+  {
+    "location" : "Lehigh",
+    "full_name" : "Lehigh Mountain Hawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1522/logo.png",
+    "colour_2" : "CFAB7A",
+    "name" : "Mountain Hawks",
+    "colour_1" : "994708"
+  },
+  {
+    "location" : "Western Michigan",
+    "full_name" : "Western Michigan Broncos",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1523/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Broncos",
+    "colour_1" : "B59966"
+  },
+  {
+    "location" : "Eastern Illinois",
+    "full_name" : "Eastern Illinois Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1524/logo.png",
+    "colour_2" : "000000",
+    "name" : "Panthers",
+    "colour_1" : "0675D0"
+  },
+  {
+    "location" : "San Francisco",
+    "full_name" : "San Francisco Lady Dons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1525/logo.png",
+    "colour_2" : "FFE13A",
+    "name" : "Lady Dons",
+    "colour_1" : "22523F"
+  },
+  {
+    "location" : "UC Davis",
+    "full_name" : "UC Davis Aggies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1526/logo.png",
+    "colour_2" : "CB992B",
+    "name" : "Aggies",
+    "colour_1" : "183563"
+  },
+  {
+    "location" : "Savannah State",
+    "full_name" : "Savannah State Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1527/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Tigers",
+    "colour_1" : "F78F1E"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Edward Waters",
+    "full_name" : "Edward Waters Tigers"
+  },
+  {
+    "location" : "Arizona State",
+    "full_name" : "Arizona State Sun Devils",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1529/logo.png",
+    "colour_2" : "9DC2EA",
+    "name" : "Sun Devils",
+    "colour_1" : "990033"
+  },
+  {
+    "location" : "Northern Arizona",
+    "full_name" : "Northern Arizona Lumberjacks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1530/logo.png",
+    "colour_2" : "FFD51F",
+    "name" : "Lumberjacks",
+    "colour_1" : "003976"
+  },
+  {
+    "location" : "Bethune-Cookman",
+    "full_name" : "Bethune-Cookman Wildcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1531/logo.png",
+    "colour_2" : "FEB65F",
+    "name" : "Wildcats",
+    "colour_1" : "841B35"
+  },
+  {
+    "full_name" : "Florida Memorial Lions",
+    "name" : "Lions",
+    "location" : "Florida Memorial",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1532/logo.png"
+  },
+  {
+    "location" : "Wichita State",
+    "full_name" : "Wichita State Shockers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1533/logo.png",
+    "colour_2" : "000000",
+    "name" : "Shockers",
+    "colour_1" : "F8D429"
+  },
+  {
+    "location" : "Arizona",
+    "full_name" : "Arizona Wildcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1534/logo.png",
+    "colour_2" : "003366",
+    "name" : "Wildcats",
+    "colour_1" : "9D2235"
+  },
+  {
+    "location" : "North Dakota State",
+    "full_name" : "North Dakota State Bison",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1535/logo.png",
+    "colour_2" : "FFC400",
+    "name" : "Bison",
+    "colour_1" : "005E3C"
+  },
+  {
+    "location" : "New Mexico State",
+    "full_name" : "New Mexico State Aggies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1536/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Aggies",
+    "colour_1" : "891216"
+  },
+  {
+    "location" : "Evansville",
+    "full_name" : "Evansville Lady Aces",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1537/logo.png",
+    "colour_2" : "FF6B0F",
+    "name" : "Lady Aces",
+    "colour_1" : "663399"
+  },
+  {
+    "location" : "Bowling Green",
+    "full_name" : "Bowling Green Falcons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1538/logo.png",
+    "colour_2" : "F5793F",
+    "name" : "Falcons",
+    "colour_1" : "4E2400"
+  },
+  {
+    "location" : "Denver",
+    "full_name" : "Denver Pioneer Women",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1539/logo.png",
+    "colour_2" : "AA976C",
+    "name" : "Pioneer Women",
+    "colour_1" : "98002E"
+  },
+  {
+    "location" : "Southern Illinois",
+    "full_name" : "Southern Illinois Salukis",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1540/logo.png",
+    "colour_2" : "000000",
+    "name" : "Salukis",
+    "colour_1" : "85283D"
+  },
+  {
+    "location" : "Tennessee-Martin",
+    "full_name" : "Tennessee-Martin Skyhawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1541/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Skyhawks",
+    "colour_1" : "000099"
+  },
+  {
+    "location" : "Idaho State",
+    "full_name" : "Idaho State Bengals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1542/logo.png",
+    "colour_2" : "000000",
+    "name" : "Bengals",
+    "colour_1" : "FF8400"
+  },
+  {
+    "location" : "Loyola Marymount",
+    "full_name" : "Loyola Marymount Lions",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1543/logo.png",
+    "colour_2" : "00314A",
+    "name" : "Lions",
+    "colour_1" : "8C0029"
+  },
+  {
+    "location" : "Pepperdine",
+    "full_name" : "Pepperdine Waves",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1544/logo.png",
+    "colour_2" : "F58026",
+    "name" : "Waves",
+    "colour_1" : "003A72"
+  },
+  {
+    "location" : "UC-Santa Barbara",
+    "full_name" : "UC-Santa Barbara Gauchos",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1545/logo.png",
+    "colour_2" : "1D1160",
+    "name" : "Gauchos",
+    "colour_1" : "0160A8"
+  },
+  {
+    "location" : "Colorado State",
+    "full_name" : "Colorado State Rams",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1546/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Rams",
+    "colour_1" : "008C75"
+  },
+  {
+    "location" : "Northern Iowa",
+    "full_name" : "Northern Iowa Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1547/logo.png",
+    "colour_2" : "E4AE2F",
+    "name" : "Panthers",
+    "colour_1" : "473282"
+  },
+  {
+    "location" : "SIU Edwardsville",
+    "full_name" : "SIU Edwardsville Cougars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1548/logo.png",
+    "colour_2" : "BC9B6A",
+    "name" : "Cougars",
+    "colour_1" : "674B20"
+  },
+  {
+    "location" : "Morgan State",
+    "full_name" : "Morgan State Lady Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1549/logo.png",
+    "colour_2" : "014786",
+    "name" : "Lady Bears",
+    "colour_1" : "F47937"
+  },
+  {
+    "location" : "Texas Tech",
+    "full_name" : "Texas Tech Lady Raiders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1550/logo.png",
+    "colour_2" : "000000",
+    "name" : "Lady Raiders",
+    "colour_1" : "CC0000"
+  },
+  {
+    "location" : "Saint Mary's",
+    "full_name" : "Saint Mary's Gaels",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1551/logo.png",
+    "colour_2" : "E51B24",
+    "name" : "Gaels",
+    "colour_1" : "003768"
+  },
+  {
+    "location" : "Washington State",
+    "full_name" : "Washington State Cougars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1552/logo.png",
+    "colour_2" : "5E6A71",
+    "name" : "Cougars",
+    "colour_1" : "981E32"
+  },
+  {
+    "location" : "Texas A&M-Corpus Christi",
+    "full_name" : "Texas A&M-Corpus Christi Islanders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1553/logo.png",
+    "colour_2" : "014B80",
+    "name" : "Islanders",
+    "colour_1" : "007CC4"
+  },
+  {
+    "location" : "Syracuse",
+    "full_name" : "Syracuse Orange",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1554/logo.png",
+    "colour_2" : "0D1D37",
+    "name" : "Orange",
+    "colour_1" : "D44500"
+  },
+  {
+    "location" : "Northeastern",
+    "full_name" : "Northeastern Huskies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1555/logo.png",
+    "colour_2" : "000000",
+    "name" : "Huskies",
+    "colour_1" : "CC0001"
+  },
+  {
+    "location" : "Nevada",
+    "full_name" : "Nevada Wolf Pack",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1556/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Wolf Pack",
+    "colour_1" : "153E5F"
+  },
+  {
+    "name" : "Broncos",
+    "location" : "Cal Poly-Pomona",
+    "full_name" : "Cal Poly-Pomona Broncos"
+  },
+  {
+    "location" : "San Diego State",
+    "full_name" : "San Diego State Aztecs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1558/logo.png",
+    "colour_2" : "000000",
+    "name" : "Aztecs",
+    "colour_1" : "BF2C37"
+  },
+  {
+    "location" : "UCLA",
+    "full_name" : "UCLA Bruins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1559/logo.png",
+    "colour_2" : "FFE800",
+    "name" : "Bruins",
+    "colour_1" : "3284BF"
+  },
+  {
+    "location" : "Pacific",
+    "full_name" : "Pacific Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1560/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Tigers",
+    "colour_1" : "F47820"
+  },
+  {
+    "location" : "Sacramento State",
+    "full_name" : "Sacramento State Hornets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1561/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Hornets",
+    "colour_1" : "00573C"
+  },
+  {
+    "location" : "Seattle",
+    "full_name" : "Seattle Redhawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1562/logo.png",
+    "colour_2" : "000000",
+    "name" : "Redhawks",
+    "colour_1" : "BF2E1A"
+  },
+  {
+    "location" : "Cal Poly",
+    "full_name" : "Cal Poly Mustangs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1563/logo.png",
+    "colour_2" : "FFF1D0",
+    "name" : "Mustangs",
+    "colour_1" : "123C31"
+  },
+  {
+    "location" : "Eastern Washington",
+    "full_name" : "Eastern Washington Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1564/logo.png",
+    "colour_2" : "000000",
+    "name" : "Eagles",
+    "colour_1" : "D72E34"
+  },
+  {
+    "location" : "Cal State Fullerton",
+    "full_name" : "Cal State Fullerton Titans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1565/logo.png",
+    "colour_2" : "F68F1E",
+    "name" : "Titans",
+    "colour_1" : "003768"
+  },
+  {
+    "location" : "California",
+    "full_name" : "California Golden Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1566/logo.png",
+    "colour_2" : "FFC72C",
+    "name" : "Golden Bears",
+    "colour_1" : "041E42"
+  },
+  {
+    "location" : "Rutgers",
+    "full_name" : "Rutgers Scarlet Knights",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1567/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Scarlet Knights",
+    "colour_1" : "EE363D"
+  },
+  {
+    "location" : "Montana",
+    "full_name" : "Montana Lady Grizzlies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1568/logo.png",
+    "colour_2" : "000000",
+    "name" : "Lady Grizzlies",
+    "colour_1" : "751D4A"
+  },
+  {
+    "location" : "San Jose State",
+    "full_name" : "San Jose State Spartans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1569/logo.png",
+    "colour_2" : "FFC021",
+    "name" : "Spartans",
+    "colour_1" : "005893"
+  },
+  {
+    "location" : "Santa Clara",
+    "full_name" : "Santa Clara Broncos",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1570/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Broncos",
+    "colour_1" : "690B0B"
+  },
+  {
+    "name" : "Penguins",
+    "location" : "Dominican (CA)",
+    "full_name" : "Dominican (CA) Penguins"
+  },
+  {
+    "location" : "Nicholls",
+    "full_name" : "Nicholls Lady Colonels",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1572/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Colonels",
+    "colour_1" : "C41230"
+  },
+  {
+    "full_name" : "Southern-New Orleans Knights",
+    "name" : "Knights",
+    "location" : "Southern-New Orleans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1573/logo.png"
+  },
+  {
+    "location" : "Maine",
+    "full_name" : "Maine Black Bears",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1574/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Black Bears",
+    "colour_1" : "2E8DC4"
+  },
+  {
+    "location" : "Harvard",
+    "full_name" : "Harvard Crimson",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1575/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Crimson",
+    "colour_1" : "C41130"
+  },
+  {
+    "location" : "Stetson",
+    "full_name" : "Stetson Hatters",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1576/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Hatters",
+    "colour_1" : "18581C"
+  },
+  {
+    "name" : "Lions",
+    "location" : "St. Leo",
+    "full_name" : "St. Leo Lions"
+  },
+  {
+    "location" : "Rhode Island",
+    "full_name" : "Rhode Island Rams",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1578/logo.png",
+    "colour_2" : "003559",
+    "name" : "Rams",
+    "colour_1" : "3691C6"
+  },
+  {
+    "location" : "Colgate",
+    "full_name" : "Colgate Raiders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1579/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Raiders",
+    "colour_1" : "8B011D"
+  },
+  {
+    "location" : "Oklahoma State",
+    "full_name" : "Oklahoma State Cowgirls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1580/logo.png",
+    "colour_2" : "000000",
+    "name" : "Cowgirls",
+    "colour_1" : "FF7300"
+  },
+  {
+    "location" : "Texas Southern",
+    "full_name" : "Texas Southern Lady Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1581/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Tigers",
+    "colour_1" : "6A0403"
+  },
+  {
+    "location" : "Cornell",
+    "full_name" : "Cornell Big Red",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1582/logo.png",
+    "colour_2" : "000000",
+    "name" : "Big Red",
+    "colour_1" : "D60027"
+  },
+  {
+    "location" : "Cleveland State",
+    "full_name" : "Cleveland State Vikings",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1583/logo.png",
+    "colour_2" : "A7A9AC",
+    "name" : "Vikings",
+    "colour_1" : "00573D"
+  },
+  {
+    "location" : "Oklahoma",
+    "full_name" : "Oklahoma Sooners",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1584/logo.png",
+    "colour_2" : "FCFADA",
+    "name" : "Sooners",
+    "colour_1" : "841617"
+  },
+  {
+    "location" : "Georgetown",
+    "full_name" : "Georgetown Hoyas",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1585/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Hoyas",
+    "colour_1" : "49487C"
+  },
+  {
+    "full_name" : "Augusta State Jaguars",
+    "name" : "Jaguars",
+    "location" : "Augusta State",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1586/logo.png"
+  },
+  {
+    "location" : "Nebraska",
+    "full_name" : "Nebraska Cornhuskers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1587/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Cornhuskers",
+    "colour_1" : "F20017"
+  },
+  {
+    "location" : "Vermont",
+    "full_name" : "Vermont Catamounts",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1588/logo.png",
+    "colour_2" : "FFCE0E",
+    "name" : "Catamounts",
+    "colour_1" : "013C24"
+  },
+  {
+    "location" : "Michigan State",
+    "full_name" : "Michigan State Spartans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1589/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Spartans",
+    "colour_1" : "1C453A"
+  },
+  {
+    "location" : "IPFW",
+    "full_name" : "IPFW Mastodons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1590/logo.png",
+    "colour_2" : "929497",
+    "name" : "Mastodons",
+    "colour_1" : "1B3F95"
+  },
+  {
+    "location" : "Minnesota",
+    "full_name" : "Minnesota Golden Gophers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1591/logo.png",
+    "colour_2" : "7F011B",
+    "name" : "Golden Gophers",
+    "colour_1" : "FFF63E"
+  },
+  {
+    "location" : "Northern Illinois",
+    "full_name" : "Northern Illinois Huskies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1592/logo.png",
+    "colour_2" : "000000",
+    "name" : "Huskies",
+    "colour_1" : "F1122C"
+  },
+  {
+    "location" : "Tulsa",
+    "full_name" : "Tulsa Golden Hurricane",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1593/logo.png",
+    "colour_2" : "E21721",
+    "name" : "Golden Hurricane",
+    "colour_1" : "004371"
+  },
+  {
+    "full_name" : "Emporia State Hornets",
+    "name" : "Hornets",
+    "location" : "Emporia State",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1594/logo.png"
+  },
+  {
+    "location" : "Bradley",
+    "full_name" : "Bradley Braves",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1595/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Braves",
+    "colour_1" : "FF151A"
+  },
+  {
+    "location" : "Butler",
+    "full_name" : "Butler Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1596/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bulldogs",
+    "colour_1" : "0D1361"
+  },
+  {
+    "location" : "Oregon",
+    "full_name" : "Oregon Ducks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1597/logo.png",
+    "colour_2" : "FEE123",
+    "name" : "Ducks",
+    "colour_1" : "154733"
+  },
+  {
+    "full_name" : "Western Oregon Wolves",
+    "name" : "Wolves",
+    "location" : "Western Oregon",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1598/logo.png"
+  },
+  {
+    "location" : "Eastern Kentucky",
+    "full_name" : "Eastern Kentucky Colonels",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1599/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Colonels",
+    "colour_1" : "730B27"
+  },
+  {
+    "location" : "Princeton",
+    "full_name" : "Princeton Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1600/logo.png",
+    "colour_2" : "000000",
+    "name" : "Tigers",
+    "colour_1" : "F9A13A"
+  },
+  {
+    "location" : "Fairleigh Dickinson",
+    "full_name" : "Fairleigh Dickinson Lady Knights",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1601/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Knights",
+    "colour_1" : "004898"
+  },
+  {
+    "location" : "Florida",
+    "full_name" : "Florida Gators",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1602/logo.png",
+    "colour_2" : "FA4616",
+    "name" : "Gators",
+    "colour_1" : "0021A4"
+  },
+  {
+    "location" : "UCF",
+    "full_name" : "UCF Knights",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1603/logo.png",
+    "colour_2" : "000000",
+    "name" : "Knights",
+    "colour_1" : "B4985A"
+  },
+  {
+    "location" : "UTEP",
+    "full_name" : "UTEP Miners",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1604/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Miners",
+    "colour_1" : "F9783B"
+  },
+  {
+    "location" : "UC-Irvine",
+    "full_name" : "UC-Irvine Anteaters",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1605/logo.png",
+    "colour_2" : "FBC22D",
+    "name" : "Anteaters",
+    "colour_1" : "002B5C"
+  },
+  {
+    "location" : "Charlotte",
+    "full_name" : "Charlotte 49ers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1606/logo.png",
+    "colour_2" : "949431",
+    "name" : "49ers",
+    "colour_1" : "006331"
+  },
+  {
+    "location" : "Iona",
+    "full_name" : "Iona Gaels",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1607/logo.png",
+    "colour_2" : "FDC10D",
+    "name" : "Gaels",
+    "colour_1" : "910126"
+  },
+  {
+    "location" : "North Carolina Asheville",
+    "full_name" : "North Carolina Asheville Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1608/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Bulldogs",
+    "colour_1" : "156199"
+  },
+  {
+    "full_name" : "Montreat Cavaliers",
+    "name" : "Cavaliers",
+    "location" : "Montreat",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1609/logo.png"
+  },
+  {
+    "location" : "Green Bay",
+    "full_name" : "Green Bay Phoenix",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1610/logo.png",
+    "colour_2" : "A7A9AC",
+    "name" : "Phoenix",
+    "colour_1" : "006F51"
+  },
+  {
+    "location" : "George Washington",
+    "full_name" : "George Washington Colonials",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1611/logo.png",
+    "colour_2" : "FFB923",
+    "name" : "Colonials",
+    "colour_1" : "063065"
+  },
+  {
+    "location" : "Maryland",
+    "full_name" : "Maryland Terrapins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1612/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Terrapins",
+    "colour_1" : "C8102E"
+  },
+  {
+    "location" : "Monmouth",
+    "full_name" : "Monmouth Hawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1613/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Hawks",
+    "colour_1" : "051844"
+  },
+  {
+    "location" : "Duke",
+    "full_name" : "Duke Blue Devils",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1614/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Blue Devils",
+    "colour_1" : "0736A4"
+  },
+  {
+    "location" : "Brigham Young",
+    "full_name" : "Brigham Young Cougars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1615/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Cougars",
+    "colour_1" : "002D62"
+  },
+  {
+    "location" : "Louisiana Tech",
+    "full_name" : "Louisiana Tech Lady Techsters",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1616/logo.png",
+    "colour_2" : "ED1C24",
+    "name" : "Lady Techsters",
+    "colour_1" : "006AB5"
+  },
+  {
+    "location" : "Prairie View A&M",
+    "full_name" : "Prairie View A&M Lady Panthers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1617/logo.png",
+    "colour_2" : "000000",
+    "name" : "Lady Panthers",
+    "colour_1" : "7D1D8E"
+  },
+  {
+    "location" : "Iowa State",
+    "full_name" : "Iowa State Cyclones",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1618/logo.png",
+    "colour_2" : "F1BE48",
+    "name" : "Cyclones",
+    "colour_1" : "CC0000"
+  },
+  {
+    "location" : "Western Illinois",
+    "full_name" : "Western Illinois Leathernecks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1619/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Leathernecks",
+    "colour_1" : "6812BB"
+  },
+  {
+    "full_name" : "Eastern Oregon Mountaineers",
+    "name" : "Mountaineers",
+    "location" : "Eastern Oregon",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1620/logo.png"
+  },
+  {
+    "location" : "Marquette",
+    "full_name" : "Marquette Golden Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1621/logo.png",
+    "colour_2" : "002F78",
+    "name" : "Golden Eagles",
+    "colour_1" : "FDB826"
+  },
+  {
+    "location" : "Arkansas-Pine Bluff",
+    "full_name" : "Arkansas-Pine Bluff Golden Lionettes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1622/logo.png",
+    "colour_2" : "000000",
+    "name" : "Golden Lionettes",
+    "colour_1" : "EEBB00"
+  },
+  {
+    "location" : "Oregon State",
+    "full_name" : "Oregon State Beavers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1623/logo.png",
+    "colour_2" : "000000",
+    "name" : "Beavers",
+    "colour_1" : "D85A1A"
+  },
+  {
+    "location" : "Long Beach State",
+    "full_name" : "Long Beach State 49ers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1624/logo.png",
+    "colour_2" : "000000",
+    "name" : "49ers",
+    "colour_1" : "FFCC00"
+  },
+  {
+    "location" : "North Dakota",
+    "full_name" : "North Dakota",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1625/logo.png",
+    "colour_2" : "000000",
+    "name" : "North Dakota",
+    "colour_1" : "00A26B"
+  },
+  {
+    "location" : "Murray State",
+    "full_name" : "Murray State Lady Racers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1626/logo.png",
+    "colour_2" : "002148",
+    "name" : "Lady Racers",
+    "colour_1" : "FFE000"
+  },
+  {
+    "full_name" : "St. Catherine Patriots",
+    "name" : "Patriots",
+    "location" : "St. Catherine",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1627/logo.png"
+  },
+  {
+    "location" : "Tulane",
+    "full_name" : "Tulane Green Wave",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1628/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Green Wave",
+    "colour_1" : "6EA396"
+  },
+  {
+    "location" : "South Alabama",
+    "full_name" : "South Alabama Jaguars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1629/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Jaguars",
+    "colour_1" : "003E7E"
+  },
+  {
+    "location" : "Charleston Southern",
+    "full_name" : "Charleston Southern Buccaneers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1630/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Buccaneers",
+    "colour_1" : "00447C"
+  },
+  {
+    "name" : "Flying Fleet",
+    "location" : "Erskine",
+    "full_name" : "Erskine Flying Fleet"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "St. Paul's College",
+    "full_name" : "St. Paul's College Tigers"
+  },
+  {
+    "location" : "Norfolk State",
+    "full_name" : "Norfolk State Spartanettes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1633/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Spartanettes",
+    "colour_1" : "046546"
+  },
+  {
+    "location" : "Robert Morris",
+    "full_name" : "Robert Morris Colonials",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1634/logo.png",
+    "colour_2" : "AF1C2E",
+    "name" : "Colonials",
+    "colour_1" : "00214D"
+  },
+  {
+    "location" : "Mount St. Mary's",
+    "full_name" : "Mount St. Mary's Mountaineers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1635/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Mountaineers",
+    "colour_1" : "005596"
+  },
+  {
+    "location" : "Georgia",
+    "full_name" : "Georgia Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1636/logo.png",
+    "colour_2" : "000000",
+    "name" : "Bulldogs",
+    "colour_1" : "DA291C"
+  },
+  {
+    "location" : "Georgia Southern",
+    "full_name" : "Georgia Southern Lady Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1637/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Eagles",
+    "colour_1" : "003775"
+  },
+  {
+    "location" : "NJIT",
+    "full_name" : "NJIT Highlanders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1638/logo.png",
+    "colour_2" : "002D6D",
+    "name" : "Highlanders",
+    "colour_1" : "EE3024"
+  },
+  {
+    "location" : "Connecticut",
+    "full_name" : "Connecticut",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1639/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Connecticut",
+    "colour_1" : "0A1D5A"
+  },
+  {
+    "location" : "Old Dominion",
+    "full_name" : "Old Dominion Lady Monarchs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1640/logo.png",
+    "colour_2" : "999DA0",
+    "name" : "Lady Monarchs",
+    "colour_1" : "00507D"
+  },
+  {
+    "location" : "Wake Forest",
+    "full_name" : "Wake Forest Demon Deacons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1641/logo.png",
+    "colour_2" : "000000",
+    "name" : "Demon Deacons",
+    "colour_1" : "9E7E38"
+  },
+  {
+    "location" : "North Carolina Central",
+    "full_name" : "North Carolina Central Eagles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1642/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Eagles",
+    "colour_1" : "880023"
+  },
+  {
+    "location" : "Lafayette",
+    "full_name" : "Lafayette Leopards",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1643/logo.png",
+    "colour_2" : "9A0024",
+    "name" : "Leopards",
+    "colour_1" : "CDBDA3"
+  },
+  {
+    "location" : "Ohio",
+    "full_name" : "Ohio Bobcats",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1644/logo.png",
+    "colour_2" : "E7CEAD",
+    "name" : "Bobcats",
+    "colour_1" : "295A29"
+  },
+  {
+    "location" : "Middle Tennessee",
+    "full_name" : "Middle Tennessee Lady Raiders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1645/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Raiders",
+    "colour_1" : "0079C2"
+  },
+  {
+    "full_name" : "Huston-Tillotson Rams",
+    "name" : "Rams",
+    "location" : "Huston-Tillotson",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1646/logo.png"
+  },
+  {
+    "location" : "Miami (OH)",
+    "full_name" : "Miami (OH) RedHawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1647/logo.png",
+    "colour_2" : "000000",
+    "name" : "RedHawks",
+    "colour_1" : "C60808"
+  },
+  {
+    "location" : "Vanderbilt",
+    "full_name" : "Vanderbilt Commodores",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1648/logo.png",
+    "colour_2" : "000000",
+    "name" : "Commodores",
+    "colour_1" : "997F3D"
+  },
+  {
+    "location" : "Kansas",
+    "full_name" : "Kansas Jayhawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1649/logo.png",
+    "colour_2" : "E8000D",
+    "name" : "Jayhawks",
+    "colour_1" : "0051BA"
+  },
+  {
+    "location" : "LSU",
+    "full_name" : "LSU Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1650/logo.png",
+    "colour_2" : "461D7C",
+    "name" : "Tigers",
+    "colour_1" : "FFD700"
+  },
+  {
+    "location" : "Maryland-Eastern Shore",
+    "full_name" : "Maryland-Eastern Shore Lady Hawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1651/logo.png",
+    "colour_2" : "231F20",
+    "name" : "Lady Hawks",
+    "colour_1" : "98012E"
+  },
+  {
+    "full_name" : "Stillman Tigers",
+    "name" : "Tigers",
+    "location" : "Stillman",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1652/logo.png"
+  },
+  {
+    "location" : "Washington",
+    "full_name" : "Washington Huskies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1653/logo.png",
+    "colour_2" : "E8E3E3",
+    "name" : "Huskies",
+    "colour_1" : "4B2E83"
+  },
+  {
+    "location" : "Portland State",
+    "full_name" : "Portland State Vikings",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1654/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Vikings",
+    "colour_1" : "005E60"
+  },
+  {
+    "location" : "Stanford",
+    "full_name" : "Stanford Cardinal",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1655/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Cardinal",
+    "colour_1" : "A80532"
+  },
+  {
+    "full_name" : "UT Rio Grande Valley Vaqueros",
+    "name" : "Texas-Rio Grande Valley",
+    "location" : "Edinburg, Texas",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1656/logo.png"
+  },
+  {
+    "location" : "Houston",
+    "full_name" : "Houston Cougars",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1657/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Cougars",
+    "colour_1" : "C90822"
+  },
+  {
+    "name" : "Missionaries",
+    "location" : "Whitman",
+    "full_name" : "Whitman Missionaries"
+  },
+  {
+    "location" : "Louisiana-Lafayette",
+    "full_name" : "Louisiana-Lafayette Lady Cajuns",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1659/logo.png",
+    "colour_2" : "231F20",
+    "name" : "Lady Cajuns",
+    "colour_1" : "D73347"
+  },
+  {
+    "name" : "Pilots",
+    "location" : "LSU-Shreveport",
+    "full_name" : "LSU-Shreveport Pilots"
+  },
+  {
+    "full_name" : "Mid-Continent University Cougars",
+    "name" : "Cougars",
+    "location" : "Mid-Continent University",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1661/logo.png"
+  },
+  {
+    "full_name" : "Tougaloo Bulldogs",
+    "name" : "Bulldogs",
+    "location" : "Tougaloo",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1662/logo.png"
+  },
+  {
+    "location" : "Radford",
+    "full_name" : "Radford Highlanders",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1663/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Highlanders",
+    "colour_1" : "BC1515"
+  },
+  {
+    "full_name" : "Ferrum Panthers",
+    "name" : "Panthers",
+    "location" : "Ferrum",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1664/logo.png"
+  },
+  {
+    "location" : "Akron",
+    "full_name" : "Akron Zips",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1665/logo.png",
+    "colour_2" : "C29C41",
+    "name" : "Zips",
+    "colour_1" : "000E41"
+  },
+  {
+    "location" : "North Carolina Wilmington",
+    "full_name" : "North Carolina Wilmington Seahawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1666/logo.png",
+    "colour_2" : "1D2F68",
+    "name" : "Seahawks",
+    "colour_1" : "006561"
+  },
+  {
+    "location" : "Samford",
+    "full_name" : "Samford Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1667/logo.png",
+    "colour_2" : "D2D4D5",
+    "name" : "Bulldogs",
+    "colour_1" : "005485"
+  },
+  {
+    "full_name" : "Dickinson State Blue Hawks",
+    "name" : "Blue Hawks",
+    "location" : "Dickinson State",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1668/logo.png"
+  },
+  {
+    "full_name" : "Spring Hill Badgers",
+    "name" : "Badgers",
+    "location" : "Spring Hill",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1669/logo.png"
+  },
+  {
+    "location" : "Tennessee Tech",
+    "full_name" : "Tennessee Tech Golden Eaglettes",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1670/logo.png",
+    "colour_2" : "FFDE00",
+    "name" : "Golden Eaglettes",
+    "colour_1" : "5A4099"
+  },
+  {
+    "full_name" : "Texas-Tyler Patriots",
+    "name" : "Patriots",
+    "location" : "Texas-Tyler",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1671/logo.png"
+  },
+  {
+    "location" : "San Diego",
+    "full_name" : "San Diego Toreros",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1672/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Toreros",
+    "colour_1" : "2F99D4"
+  },
+  {
+    "name" : "Rams",
+    "location" : "Mobile",
+    "full_name" : "Mobile Rams"
+  },
+  {
+    "location" : "Drexel",
+    "full_name" : "Drexel Lady Dragons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1674/logo.png",
+    "colour_2" : "FFDC3E",
+    "name" : "Lady Dragons",
+    "colour_1" : "010160"
+  },
+  {
+    "full_name" : "Rockhurst Hawks",
+    "name" : "Hawks",
+    "location" : "Rockhurst",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1675/logo.png"
+  },
+  {
+    "name" : "Crusaders",
+    "location" : "William Carey",
+    "full_name" : "William Carey Crusaders"
+  },
+  {
+    "location" : "Texas A&M",
+    "full_name" : "Texas A&M Aggies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1677/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Aggies",
+    "colour_1" : "500000"
+  },
+  {
+    "location" : "Western Kentucky",
+    "full_name" : "Western Kentucky Lady Toppers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1678/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Toppers",
+    "colour_1" : "F32026"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Voorhees College",
+    "full_name" : "Voorhees College Tigers"
+  },
+  {
+    "location" : "Centenary",
+    "full_name" : "Centenary Ladies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1680/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Ladies",
+    "colour_1" : "A20B36"
+  },
+  {
+    "name" : "Mavericks",
+    "location" : "Medaille",
+    "full_name" : "Medaille Mavericks"
+  },
+  {
+    "full_name" : "Jamestown Jimmies",
+    "name" : "Jimmies",
+    "location" : "Jamestown",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1682/logo.png"
+  },
+  {
+    "full_name" : "Montana-Western Bulldogs",
+    "name" : "Bulldogs",
+    "location" : "Montana-Western",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1683/logo.png"
+  },
+  {
+    "location" : "Cal State Northridge",
+    "full_name" : "Cal State Northridge Matadors",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1684/logo.png",
+    "colour_2" : "231F20",
+    "name" : "Matadors",
+    "colour_1" : "CD1041"
+  },
+  {
+    "location" : "South Carolina State",
+    "full_name" : "South Carolina State Lady Bulldogs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1685/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Lady Bulldogs",
+    "colour_1" : "7E1812"
+  },
+  {
+    "name" : "Lady Bulldogs",
+    "location" : "Cumberland University",
+    "full_name" : "Cumberland University Lady Bulldogs"
+  },
+  {
+    "location" : "Delaware State",
+    "full_name" : "Delaware State Hornets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1687/logo.png",
+    "colour_2" : "01A9EF",
+    "name" : "Hornets",
+    "colour_1" : "F11A2D"
+  },
+  {
+    "location" : "Hawaii",
+    "full_name" : "Hawaii Warriors",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1688/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Warriors",
+    "colour_1" : "004231"
+  },
+  {
+    "name" : "Steers",
+    "location" : "Texas College",
+    "full_name" : "Texas College Steers"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "Ohio Dominican",
+    "full_name" : "Ohio Dominican Panthers"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "St. Xavier (IL)",
+    "full_name" : "St. Xavier (IL) Cougars"
+  },
+  {
+    "name" : "Zias",
+    "location" : "Eastern New Mexico",
+    "full_name" : "Eastern New Mexico Zias"
+  },
+  {
+    "full_name" : "Rochester (MI) Warriors",
+    "name" : "Warriors",
+    "location" : "Rochester (MI)",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1693/logo.png"
+  },
+  {
+    "name" : "Rams",
+    "location" : "Winston-Salem State",
+    "full_name" : "Winston-Salem State Rams"
+  },
+  {
+    "name" : "Pacers",
+    "location" : "South Carolina-Aiken",
+    "full_name" : "South Carolina-Aiken Pacers"
+  },
+  {
+    "full_name" : "Texas A&M-Kingsville Javelinas",
+    "name" : "Javelinas",
+    "location" : "Texas A&M-Kingsville",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1696/logo.png"
+  },
+  {
+    "name" : "Mustangs",
+    "location" : "Western New Mexico",
+    "full_name" : "Western New Mexico Mustangs"
+  },
+  {
+    "name" : "Lady Knights",
+    "location" : "Queens College",
+    "full_name" : "Queens College Lady Knights"
+  },
+  {
+    "name" : "Choctaws",
+    "location" : "Mississippi College",
+    "full_name" : "Mississippi College Choctaws"
+  },
+  {
+    "name" : "Lady Cobras",
+    "location" : "Virginia Intermont",
+    "full_name" : "Virginia Intermont Lady Cobras"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Indiana Tech",
+    "full_name" : "Indiana Tech Warriors"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "Birmingham-Southern",
+    "full_name" : "Birmingham-Southern Panthers"
+  },
+  {
+    "name" : "Cotton Blossoms",
+    "location" : "Arkansas-Monticello",
+    "full_name" : "Arkansas-Monticello Cotton Blossoms"
+  },
+  {
+    "name" : "Peacocks",
+    "location" : "Upper Iowa",
+    "full_name" : "Upper Iowa Peacocks"
+  },
+  {
+    "name" : "Saints",
+    "location" : "Maryville (MO)",
+    "full_name" : "Maryville (MO) Saints"
+  },
+  {
+    "name" : "Grenadiers",
+    "location" : "Indiana-Southeast",
+    "full_name" : "Indiana-Southeast Grenadiers"
+  },
+  {
+    "full_name" : "Alaska-Anchorage Seawolves",
+    "name" : "Seawolves",
+    "location" : "Alaska-Anchorage",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1707/logo.png"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Lewis & Clark",
+    "full_name" : "Lewis & Clark Pioneers"
+  },
+  {
+    "name" : "Lady RedHawks",
+    "location" : "Indiana-Northwest",
+    "full_name" : "Indiana-Northwest Lady RedHawks"
+  },
+  {
+    "name" : "Blue Devils",
+    "location" : "Dillard",
+    "full_name" : "Dillard Blue Devils"
+  },
+  {
+    "full_name" : "Nebraska-Omaha Mavericks",
+    "name" : "Mavericks",
+    "location" : "Nebraska-Omaha",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1711/logo.png"
+  },
+  {
+    "full_name" : "Xavier (LA) Gold Nuggets",
+    "name" : "Gold Nuggets",
+    "location" : "Xavier (LA)",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1712/logo.png"
+  },
+  {
+    "name" : "Lady Barons",
+    "location" : "Brewton Parker College",
+    "full_name" : "Brewton Parker College Lady Barons"
+  },
+  {
+    "name" : "Bearcats",
+    "location" : "Lander",
+    "full_name" : "Lander Bearcats"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Northern New Mexico",
+    "full_name" : "Northern New Mexico Eagles"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Tennessee Wesleyan",
+    "full_name" : "Tennessee Wesleyan Bulldogs"
+  },
+  {
+    "name" : "Cobras",
+    "location" : "Coker",
+    "full_name" : "Coker Cobras"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "Colorado Christian",
+    "full_name" : "Colorado Christian Cougars"
+  },
+  {
+    "name" : "Lady Tornadoes",
+    "location" : "Brevard College",
+    "full_name" : "Brevard College Lady Tornadoes"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Lincoln (PA)",
+    "full_name" : "Lincoln (PA) Lions"
+  },
+  {
+    "name" : "Lady Pioneers",
+    "location" : "Glenville State",
+    "full_name" : "Glenville State Lady Pioneers"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Wiley",
+    "full_name" : "Wiley Wildcats"
+  },
+  {
+    "name" : "Lady Reddies",
+    "location" : "Henderson State",
+    "full_name" : "Henderson State Lady Reddies"
+  },
+  {
+    "full_name" : "Belhaven College Blazers",
+    "name" : "Blazers",
+    "location" : "Belhaven College",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1724/logo.png"
+  },
+  {
+    "name" : "Lady Braves",
+    "location" : "North Carolina Pembroke",
+    "full_name" : "North Carolina Pembroke Lady Braves"
+  },
+  {
+    "name" : "Seasiders",
+    "location" : "BYU-Hawaii",
+    "full_name" : "BYU-Hawaii Seasiders"
+  },
+  {
+    "name" : "Hardrockers",
+    "location" : "South Dakota Tech",
+    "full_name" : "South Dakota Tech Hardrockers"
+  },
+  {
+    "name" : "Mustangs",
+    "location" : "Central Baptist",
+    "full_name" : "Central Baptist Mustangs"
+  },
+  {
+    "name" : "Lady Griffins",
+    "location" : "Westminster (UT)",
+    "full_name" : "Westminster (UT) Lady Griffins"
+  },
+  {
+    "name" : "Lady Lions",
+    "location" : "Southwestern Assemblies of God",
+    "full_name" : "Southwestern Assemblies of God Lady Lions"
+  },
+  {
+    "name" : "Lady Magicians",
+    "location" : "Le Moyne-Owen",
+    "full_name" : "Le Moyne-Owen Lady Magicians"
+  },
+  {
+    "name" : "Yellow Jackets",
+    "location" : "West Virginia State",
+    "full_name" : "West Virginia State Yellow Jackets"
+  },
+  {
+    "name" : "Vikings",
+    "location" : "Berry College",
+    "full_name" : "Berry College Vikings"
+  },
+  {
+    "name" : "Comets",
+    "location" : "Mayville State",
+    "full_name" : "Mayville State Comets"
+  },
+  {
+    "name" : "Falcons",
+    "location" : "Pfeiffer",
+    "full_name" : "Pfeiffer Falcons"
+  },
+  {
+    "name" : "Wolfpack",
+    "location" : "Loyola (LA)",
+    "full_name" : "Loyola (LA) Wolfpack"
+  },
+  {
+    "name" : "Dustdevils",
+    "location" : "Texas A&M-International",
+    "full_name" : "Texas A&M-International Dustdevils"
+  },
+  {
+    "name" : "Owls",
+    "location" : "William Woods",
+    "full_name" : "William Woods Owls"
+  },
+  {
+    "name" : "Ramblin' Rams",
+    "location" : "Bluefield College",
+    "full_name" : "Bluefield College Ramblin' Rams"
+  },
+  {
+    "name" : "Saints",
+    "location" : "St. Martin's",
+    "full_name" : "St. Martin's Saints"
+  },
+  {
+    "name" : "Tornadoes",
+    "location" : "Talladega",
+    "full_name" : "Talladega Tornadoes"
+  },
+  {
+    "name" : "Hornets",
+    "location" : "Southern Poly",
+    "full_name" : "Southern Poly Hornets"
+  },
+  {
+    "name" : "Valkyries",
+    "location" : "Converse",
+    "full_name" : "Converse Valkyries"
+  },
+  {
+    "name" : "Bluejays",
+    "location" : "Tabor College",
+    "full_name" : "Tabor College Bluejays"
+  },
+  {
+    "name" : "Yellow Jackets",
+    "location" : "LeTourneau",
+    "full_name" : "LeTourneau Yellow Jackets"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "Kean",
+    "full_name" : "Kean Cougars"
+  },
+  {
+    "name" : "Rams",
+    "location" : "Texas Wesleyan",
+    "full_name" : "Texas Wesleyan Rams"
+  },
+  {
+    "name" : "Ambassadors",
+    "location" : "Oakwood",
+    "full_name" : "Oakwood Ambassadors"
+  },
+  {
+    "name" : "Hilltoppers",
+    "location" : "St. Edwards",
+    "full_name" : "St. Edwards Hilltoppers"
+  },
+  {
+    "full_name" : "American International Yellow Jackets",
+    "name" : "Yellow Jackets",
+    "location" : "American International",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1750/logo.png"
+  },
+  {
+    "name" : "Arrows",
+    "location" : "Ursuline",
+    "full_name" : "Ursuline Arrows"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Judson",
+    "full_name" : "Judson Eagles"
+  },
+  {
+    "name" : "Raiders",
+    "location" : "Southern Oregon",
+    "full_name" : "Southern Oregon Raiders"
+  },
+  {
+    "name" : "Hornets",
+    "location" : "Morris College",
+    "full_name" : "Morris College Hornets"
+  },
+  {
+    "name" : "Yellow Jackets",
+    "location" : "Allen",
+    "full_name" : "Allen Yellow Jackets"
+  },
+  {
+    "name" : "Lynx",
+    "location" : "Lindenwood-Belleville",
+    "full_name" : "Lindenwood-Belleville Lynx"
+  },
+  {
+    "name" : "Lady T's",
+    "location" : "Dakota State",
+    "full_name" : "Dakota State Lady T's"
+  },
+  {
+    "name" : "Mustangs",
+    "location" : "University of the Southwest",
+    "full_name" : "University of the Southwest Mustangs"
+  },
+  {
+    "name" : "Argonauts",
+    "location" : "University of Great Falls",
+    "full_name" : "University of Great Falls Argonauts"
+  },
+  {
+    "name" : "Mustangs",
+    "location" : "Marygrove College",
+    "full_name" : "Marygrove College Mustangs"
+  },
+  {
+    "name" : "Saints",
+    "location" : "Flagler",
+    "full_name" : "Flagler Saints"
+  },
+  {
+    "name" : "Storm",
+    "location" : "Lake Erie College",
+    "full_name" : "Lake Erie College Storm"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Southern Wesleyan",
+    "full_name" : "Southern Wesleyan Warriors"
+  },
+  {
+    "name" : "Crusaders",
+    "location" : "Tennessee Temple",
+    "full_name" : "Tennessee Temple Crusaders"
+  },
+  {
+    "name" : "Urban Knights",
+    "location" : "Academy of Art University",
+    "full_name" : "Academy of Art University Urban Knights"
+  },
+  {
+    "name" : "Senators",
+    "location" : "Auburn-Montgomery",
+    "full_name" : "Auburn-Montgomery Senators"
+  },
+  {
+    "name" : "Bearcats",
+    "location" : "Willamette",
+    "full_name" : "Willamette Bearcats"
+  },
+  {
+    "name" : "Bombers",
+    "location" : "Ithaca",
+    "full_name" : "Ithaca Bombers"
+  },
+  {
+    "name" : "Wolverines",
+    "location" : "Wesley College",
+    "full_name" : "Wesley College Wolverines"
+  },
+  {
+    "name" : "Lady Eagles",
+    "location" : "Oklahoma Wesleyan",
+    "full_name" : "Oklahoma Wesleyan Lady Eagles"
+  },
+  {
+    "full_name" : "Montana Tech Orediggers",
+    "name" : "Orediggers",
+    "location" : "Montana Tech",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1771/logo.png"
+  },
+  {
+    "name" : "Blazers",
+    "location" : "Valdosta State",
+    "full_name" : "Valdosta State Blazers"
+  },
+  {
+    "name" : "Vikings",
+    "location" : "Elizabeth City State",
+    "full_name" : "Elizabeth City State Vikings"
+  },
+  {
+    "name" : "Lady Yotes",
+    "location" : "College of Idaho",
+    "full_name" : "College of Idaho Lady Yotes"
+  },
+  {
+    "name" : "Riverhawks",
+    "location" : "Northeastern State",
+    "full_name" : "Northeastern State Riverhawks"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Corban",
+    "full_name" : "Corban Warriors"
+  },
+  {
+    "name" : "Royals",
+    "location" : "Ecclesia College",
+    "full_name" : "Ecclesia College Royals"
+  },
+  {
+    "name" : "Crusaders",
+    "location" : "Dallas Christian",
+    "full_name" : "Dallas Christian Crusaders"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Concordia University (CA)",
+    "full_name" : "Concordia University (CA) Eagles"
+  },
+  {
+    "name" : "Beavers",
+    "location" : "Minot State",
+    "full_name" : "Minot State Beavers"
+  },
+  {
+    "name" : "Crusaders",
+    "location" : "University of Dallas",
+    "full_name" : "University of Dallas Crusaders"
+  },
+  {
+    "name" : "Lady Panthers",
+    "location" : "Drury",
+    "full_name" : "Drury Lady Panthers"
+  },
+  {
+    "name" : "Bearcats",
+    "location" : "Northwest Missouri State",
+    "full_name" : "Northwest Missouri State Bearcats"
+  },
+  {
+    "name" : "Sailfish",
+    "location" : "Palm Beach Atlantic",
+    "full_name" : "Palm Beach Atlantic Sailfish"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Paine College",
+    "full_name" : "Paine College Lions"
+  },
+  {
+    "name" : "Lady Trojans",
+    "location" : "Hannibal-LaGrange",
+    "full_name" : "Hannibal-LaGrange Lady Trojans"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "Claflin",
+    "full_name" : "Claflin Panthers"
+  },
+  {
+    "full_name" : "St. Cloud State Huskies",
+    "name" : "Huskies",
+    "location" : "St. Cloud State",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1788/logo.png"
+  },
+  {
+    "name" : "Lady Crusaders",
+    "location" : "North Greenville",
+    "full_name" : "North Greenville Lady Crusaders"
+  },
+  {
+    "name" : "Mighty Oaks",
+    "location" : "Oakland City",
+    "full_name" : "Oakland City Mighty Oaks"
+  },
+  {
+    "name" : "Royals",
+    "location" : "Warner",
+    "full_name" : "Warner Royals"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "Cal State San Marcos",
+    "full_name" : "Cal State San Marcos Cougars"
+  },
+  {
+    "name" : "Vulcans",
+    "location" : "Hawaii-Hilo",
+    "full_name" : "Hawaii-Hilo Vulcans"
+  },
+  {
+    "name" : "Royals",
+    "location" : "Eastern Mennonite",
+    "full_name" : "Eastern Mennonite Royals"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Wilmington (DE)",
+    "full_name" : "Wilmington (DE) Wildcats"
+  },
+  {
+    "name" : "Cyrenes",
+    "location" : "Ave Maria",
+    "full_name" : "Ave Maria Cyrenes"
+  },
+  {
+    "name" : "Knights",
+    "location" : "St. Andrews Presbyterian",
+    "full_name" : "St. Andrews Presbyterian Knights"
+  },
+  {
+    "name" : "Roadrunners",
+    "location" : "Metro State",
+    "full_name" : "Metro State Roadrunners"
+  },
+  {
+    "name" : "Mountaineers",
+    "location" : "Western State",
+    "full_name" : "Western State Mountaineers"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Paul Quinn",
+    "full_name" : "Paul Quinn Tigers"
+  },
+  {
+    "name" : "Tornados",
+    "location" : "Concordia-Austin",
+    "full_name" : "Concordia-Austin Tornados"
+  },
+  {
+    "name" : "Grizzlies",
+    "location" : "Adams State",
+    "full_name" : "Adams State Grizzlies"
+  },
+  {
+    "name" : "Hawks",
+    "location" : "Chowan",
+    "full_name" : "Chowan Hawks"
+  },
+  {
+    "name" : "Lancers",
+    "location" : "Grace",
+    "full_name" : "Grace Lancers"
+  },
+  {
+    "name" : "Lady Eagles",
+    "location" : "Chadron State",
+    "full_name" : "Chadron State Lady Eagles"
+  },
+  {
+    "name" : "Crusaders",
+    "location" : "Mary Hardin-Baylor",
+    "full_name" : "Mary Hardin-Baylor Crusaders"
+  },
+  {
+    "name" : "Hornets",
+    "location" : "Concordia College (AL)",
+    "full_name" : "Concordia College (AL) Hornets"
+  },
+  {
+    "name" : "Koalas",
+    "location" : "Columbia College",
+    "full_name" : "Columbia College Koalas"
+  },
+  {
+    "name" : "Highland Cavaliers",
+    "location" : "Virginia-Wise",
+    "full_name" : "Virginia-Wise Highland Cavaliers"
+  },
+  {
+    "name" : "Lopers",
+    "location" : "Nebraska-Kearney",
+    "full_name" : "Nebraska-Kearney Lopers"
+  },
+  {
+    "name" : "War Hawks",
+    "location" : "McMurry",
+    "full_name" : "McMurry War Hawks"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Central Methodist",
+    "full_name" : "Central Methodist Eagles"
+  },
+  {
+    "name" : "Valiants",
+    "location" : "Manhattanville",
+    "full_name" : "Manhattanville Valiants"
+  },
+  {
+    "name" : "Devils",
+    "location" : "Philadelphia Sciences",
+    "full_name" : "Philadelphia Sciences Devils"
+  },
+  {
+    "name" : "Vikings",
+    "location" : "Valley City State",
+    "full_name" : "Valley City State Vikings"
+  },
+  {
+    "name" : "V-Hawks",
+    "location" : "Viterbo",
+    "full_name" : "Viterbo V-Hawks"
+  },
+  {
+    "name" : "Lady Wolves",
+    "location" : "Cheyney",
+    "full_name" : "Cheyney Lady Wolves"
+  },
+  {
+    "name" : "Lady Knights",
+    "location" : "Kentucky Christian",
+    "full_name" : "Kentucky Christian Lady Knights"
+  },
+  {
+    "name" : "Mariners",
+    "location" : "Maine Maritime",
+    "full_name" : "Maine Maritime Mariners"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "William Jessup",
+    "full_name" : "William Jessup Warriors"
+  },
+  {
+    "name" : "Fighting Knights",
+    "location" : "Lynn",
+    "full_name" : "Lynn Fighting Knights"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "York (NE)",
+    "full_name" : "York (NE) Panthers"
+  },
+  {
+    "name" : "Sunbirds",
+    "location" : "Fresno Pacific",
+    "full_name" : "Fresno Pacific Sunbirds"
+  },
+  {
+    "name" : "Chargers",
+    "location" : "Briar Cliff",
+    "full_name" : "Briar Cliff Chargers"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Lindenwood",
+    "full_name" : "Lindenwood Lions"
+  },
+  {
+    "name" : "Golden Bulls",
+    "location" : "Johnson C. Smith",
+    "full_name" : "Johnson C. Smith Golden Bulls"
+  },
+  {
+    "name" : "Flames",
+    "location" : "College of Saint Mary",
+    "full_name" : "College of Saint Mary Flames"
+  },
+  {
+    "name" : "Fighting Saints",
+    "location" : "Carroll (MT)",
+    "full_name" : "Carroll (MT) Fighting Saints"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Texas Lutheran",
+    "full_name" : "Texas Lutheran Bulldogs"
+  },
+  {
+    "name" : "Tritons",
+    "location" : "Missouri-St. Louis",
+    "full_name" : "Missouri-St. Louis Tritons"
+  },
+  {
+    "name" : "Knights",
+    "location" : "Marian",
+    "full_name" : "Marian Knights"
+  },
+  {
+    "name" : "Lakers",
+    "location" : "Roosevelt",
+    "full_name" : "Roosevelt Lakers"
+  },
+  {
+    "name" : "Greyhounds",
+    "location" : "Indianapolis",
+    "full_name" : "Indianapolis Greyhounds"
+  },
+  {
+    "full_name" : "Bemidji State Beavers",
+    "name" : "Beavers",
+    "location" : "Bemidji State",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1834/logo.png"
+  },
+  {
+    "name" : "Lady Aggies",
+    "location" : "Panhandle State",
+    "full_name" : "Panhandle State Lady Aggies"
+  },
+  {
+    "name" : "Crusaders",
+    "location" : "Madonna University",
+    "full_name" : "Madonna University Crusaders"
+  },
+  {
+    "name" : "Yellow Jackets",
+    "location" : "Black Hills State",
+    "full_name" : "Black Hills State Yellow Jackets"
+  },
+  {
+    "name" : "Griffons",
+    "location" : "Missouri Western State",
+    "full_name" : "Missouri Western State Griffons"
+  },
+  {
+    "name" : "Bears",
+    "location" : "Shaw",
+    "full_name" : "Shaw Bears"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Wingate",
+    "full_name" : "Wingate Bulldogs"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "Philander Smith",
+    "full_name" : "Philander Smith Panthers"
+  },
+  {
+    "name" : "Celts",
+    "location" : "St. Thomas (TX)",
+    "full_name" : "St. Thomas (TX) Celts"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Asbury College",
+    "full_name" : "Asbury College Eagles"
+  },
+  {
+    "name" : "Thunder",
+    "location" : "Trine",
+    "full_name" : "Trine Thunder"
+  },
+  {
+    "name" : "Bearcats",
+    "location" : "Rust College",
+    "full_name" : "Rust College Bearcats"
+  },
+  {
+    "name" : "Trojans",
+    "location" : "Trinity International (IL)",
+    "full_name" : "Trinity International (IL) Trojans"
+  },
+  {
+    "name" : "Bearcats",
+    "location" : "Baruch College",
+    "full_name" : "Baruch College Bearcats"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "Sioux Falls",
+    "full_name" : "Sioux Falls Cougars"
+  },
+  {
+    "name" : "Wolves",
+    "location" : "Walla Walla",
+    "full_name" : "Walla Walla Wolves"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Concordia (NE)",
+    "full_name" : "Concordia (NE) Bulldogs"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Dakota Wesleyan",
+    "full_name" : "Dakota Wesleyan Tigers"
+  },
+  {
+    "name" : "Bobcats",
+    "location" : "Lees-McRae",
+    "full_name" : "Lees-McRae Bobcats"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Trinity Baptist",
+    "full_name" : "Trinity Baptist Eagles"
+  },
+  {
+    "name" : "Norse",
+    "location" : "Northern Kentucky",
+    "full_name" : "Northern Kentucky Norse"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Tusculum",
+    "full_name" : "Tusculum Pioneers"
+  },
+  {
+    "name" : "Golden Bears",
+    "location" : "Miles",
+    "full_name" : "Miles Golden Bears"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Truman State",
+    "full_name" : "Truman State Bulldogs"
+  },
+  {
+    "name" : "Indians",
+    "location" : "Cumberland College",
+    "full_name" : "Cumberland College Indians"
+  },
+  {
+    "name" : "Bruins",
+    "location" : "George Fox",
+    "full_name" : "George Fox Bruins"
+  },
+  {
+    "name" : "Gators",
+    "location" : "San Francisco State",
+    "full_name" : "San Francisco State Gators"
+  },
+  {
+    "name" : "Terriers",
+    "location" : "Hiram",
+    "full_name" : "Hiram Terriers"
+  },
+  {
+    "name" : "Vikings",
+    "location" : "Western Washington",
+    "full_name" : "Western Washington Vikings"
+  },
+  {
+    "name" : "Mountaineers",
+    "location" : "Schreiner",
+    "full_name" : "Schreiner Mountaineers"
+  },
+  {
+    "name" : "Crusaders",
+    "location" : "Clarke",
+    "full_name" : "Clarke Crusaders"
+  },
+  {
+    "name" : "Skylights",
+    "location" : "Montana State-Northern",
+    "full_name" : "Montana State-Northern Skylights"
+  },
+  {
+    "name" : "Lady Lakers",
+    "location" : "Purdue-Calumet",
+    "full_name" : "Purdue-Calumet Lady Lakers"
+  },
+  {
+    "name" : "Cyclones",
+    "location" : "Centenary (NJ)",
+    "full_name" : "Centenary (NJ) Cyclones"
+  },
+  {
+    "name" : "Scarlet Raiders",
+    "location" : "Rutgers-Newark",
+    "full_name" : "Rutgers-Newark Scarlet Raiders"
+  },
+  {
+    "name" : "Toros",
+    "location" : "Cal State Dominguez Hills",
+    "full_name" : "Cal State Dominguez Hills Toros"
+  },
+  {
+    "name" : "Knights",
+    "location" : "Northwood",
+    "full_name" : "Northwood Knights"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Bowie State",
+    "full_name" : "Bowie State Bulldogs"
+  },
+  {
+    "name" : "Kangaroos",
+    "location" : "Austin College",
+    "full_name" : "Austin College Kangaroos"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Eastern University",
+    "full_name" : "Eastern University Eagles"
+  },
+  {
+    "name" : "Mustangs",
+    "location" : "Southwest Minnesota State",
+    "full_name" : "Southwest Minnesota State Mustangs"
+  },
+  {
+    "name" : "Wolves",
+    "location" : "Michigan-Dearborn",
+    "full_name" : "Michigan-Dearborn Wolves"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Fisk University",
+    "full_name" : "Fisk University Bulldogs"
+  },
+  {
+    "name" : "Lady Lions",
+    "location" : "Texas A&M-Commerce",
+    "full_name" : "Texas A&M-Commerce Lady Lions"
+  },
+  {
+    "name" : "Lady Crusaders",
+    "location" : "Point Loma Nazarene",
+    "full_name" : "Point Loma Nazarene Lady Crusaders"
+  },
+  {
+    "name" : "Lady Crusaders",
+    "location" : "Evangel",
+    "full_name" : "Evangel Lady Crusaders"
+  },
+  {
+    "name" : "Lady Falcons",
+    "location" : "St. Augustine",
+    "full_name" : "St. Augustine Lady Falcons"
+  },
+  {
+    "name" : "Quakers",
+    "location" : "Wilmington (OH)",
+    "full_name" : "Wilmington (OH) Quakers"
+  },
+  {
+    "name" : "Jets",
+    "location" : "Newman",
+    "full_name" : "Newman Jets"
+  },
+  {
+    "name" : "Argonauts",
+    "location" : "Notre Dame de Namur",
+    "full_name" : "Notre Dame de Namur Argonauts"
+  },
+  {
+    "name" : "Golden Eagles",
+    "location" : "Cal State-Los Angeles",
+    "full_name" : "Cal State-Los Angeles Golden Eagles"
+  },
+  {
+    "name" : "Blue Knights",
+    "location" : "Urbana",
+    "full_name" : "Urbana Blue Knights"
+  },
+  {
+    "name" : "Mariners",
+    "location" : "U.S. Merchant Marine",
+    "full_name" : "U.S. Merchant Marine Mariners"
+  },
+  {
+    "name" : "Blues",
+    "location" : "Bluefield State",
+    "full_name" : "Bluefield State Blues"
+  },
+  {
+    "name" : "Golden Tigers",
+    "location" : "Tuskegee",
+    "full_name" : "Tuskegee Golden Tigers"
+  },
+  {
+    "name" : "Bobcats",
+    "location" : "Peru State",
+    "full_name" : "Peru State Bobcats"
+  },
+  {
+    "name" : "Buccaneers",
+    "location" : "Christian Brothers",
+    "full_name" : "Christian Brothers Buccaneers"
+  },
+  {
+    "name" : "Anchorwomen",
+    "location" : "Rhode Island College",
+    "full_name" : "Rhode Island College Anchorwomen"
+  },
+  {
+    "name" : "Timberwolves",
+    "location" : "Northwood",
+    "full_name" : "Northwood Timberwolves"
+  },
+  {
+    "name" : "Sea Warriors",
+    "location" : "Hawaii Pacific",
+    "full_name" : "Hawaii Pacific Sea Warriors"
+  },
+  {
+    "name" : "Yellow Jackets",
+    "location" : "Rochester",
+    "full_name" : "Rochester Yellow Jackets"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Bethel (TN)",
+    "full_name" : "Bethel (TN) Wildcats"
+  },
+  {
+    "name" : "Gorillas",
+    "location" : "Pittsburg State",
+    "full_name" : "Pittsburg State Gorillas"
+  },
+  {
+    "name" : "Yellowjackets",
+    "location" : "Montana State-Billings",
+    "full_name" : "Montana State-Billings Yellowjackets"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Johnson & Wales (CO)",
+    "full_name" : "Johnson & Wales (CO) Wildcats"
+  },
+  {
+    "name" : "Ladies",
+    "location" : "Langston",
+    "full_name" : "Langston Ladies"
+  },
+  {
+    "name" : "Keelhaulers",
+    "location" : "California Maritime Academy",
+    "full_name" : "California Maritime Academy Keelhaulers"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Reinhardt University",
+    "full_name" : "Reinhardt University Eagles"
+  },
+  {
+    "name" : "Maple Leafs",
+    "location" : "Goshen College",
+    "full_name" : "Goshen College Maple Leafs"
+  },
+  {
+    "name" : "Gray Wolves",
+    "location" : "Lourdes",
+    "full_name" : "Lourdes Gray Wolves"
+  },
+  {
+    "name" : "Knights",
+    "location" : "Warner-Pacific",
+    "full_name" : "Warner-Pacific Knights"
+  },
+  {
+    "name" : "Sabers",
+    "location" : "Barber-Scotia College",
+    "full_name" : "Barber-Scotia College Sabers"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Indiana Dabney",
+    "full_name" : "Indiana Dabney Lions"
+  },
+  {
+    "name" : "Lady Muleriders",
+    "location" : "Southern Arkansas",
+    "full_name" : "Southern Arkansas Lady Muleriders"
+  },
+  {
+    "name" : "Lady Warriors",
+    "location" : "Daemen",
+    "full_name" : "Daemen Lady Warriors"
+  },
+  {
+    "name" : "River Hawks",
+    "location" : "Massachusetts-Lowell",
+    "full_name" : "Massachusetts-Lowell River Hawks"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Cal State-Stanislaus",
+    "full_name" : "Cal State-Stanislaus Warriors"
+  },
+  {
+    "full_name" : "Abilene Christian Wildcats",
+    "name" : "Wildcats",
+    "location" : "Abilene Christian",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1994/logo.png"
+  },
+  {
+    "full_name" : "Incarnate Word Crusaders",
+    "name" : "Crusaders",
+    "location" : "Incarnate Word",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1995/logo.png"
+  },
+  {
+    "name" : "Antelopes",
+    "location" : "Grand Canyon",
+    "full_name" : "Grand Canyon Antelopes"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "West Alabama",
+    "full_name" : "West Alabama Tigers"
+  },
+  {
+    "name" : "Drovers",
+    "location" : "USAO",
+    "full_name" : "USAO Drovers"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Robert Morris (IL)",
+    "full_name" : "Robert Morris (IL) Eagles"
+  },
+  {
+    "name" : "Lady Falcons",
+    "location" : "Texas-Permian Basin",
+    "full_name" : "Texas-Permian Basin Lady Falcons"
+  },
+  {
+    "name" : "Mountain Lions",
+    "location" : "Colorado-Colorado Springs",
+    "full_name" : "Colorado-Colorado Springs Mountain Lions"
+  },
+  {
+    "name" : "Golden Bobcats",
+    "location" : "UC Merced",
+    "full_name" : "UC Merced Golden Bobcats"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Wayland Baptist",
+    "full_name" : "Wayland Baptist Pioneers"
+  },
+  {
+    "name" : "Wolves",
+    "location" : "Newberry",
+    "full_name" : "Newberry Wolves"
+  },
+  {
+    "name" : "Lancers",
+    "location" : "Worcester State",
+    "full_name" : "Worcester State Lancers"
+  },
+  {
+    "name" : "Wasps",
+    "location" : "Emory & Henry",
+    "full_name" : "Emory & Henry Wasps"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Occidental",
+    "full_name" : "Occidental Tigers"
+  },
+  {
+    "name" : "Blue Devils",
+    "location" : "Lawrence Tech",
+    "full_name" : "Lawrence Tech Blue Devils"
+  },
+  {
+    "name" : "Huskies",
+    "location" : "Southern Maine",
+    "full_name" : "Southern Maine Huskies"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Louisiana College",
+    "full_name" : "Louisiana College Wildcats"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Lewis-Clark State",
+    "full_name" : "Lewis-Clark State Warriors"
+  },
+  {
+    "name" : "Hornets",
+    "location" : "Lynchburg",
+    "full_name" : "Lynchburg Hornets"
+  },
+  {
+    "name" : "Bobcats",
+    "location" : "St. Thomas (FL)",
+    "full_name" : "St. Thomas (FL) Bobcats"
+  },
+  {
+    "name" : "Belles",
+    "location" : "Angelo State",
+    "full_name" : "Angelo State Belles"
+  },
+  {
+    "name" : "Yellowjackets",
+    "location" : "Graceland",
+    "full_name" : "Graceland Yellowjackets"
+  },
+  {
+    "name" : "Senators",
+    "location" : "Davis and Elkins",
+    "full_name" : "Davis and Elkins Senators"
+  },
+  {
+    "name" : "Trojans",
+    "location" : "Trevecca Nazarene",
+    "full_name" : "Trevecca Nazarene Trojans"
+  },
+  {
+    "name" : "Seahawks",
+    "location" : "Northwood (FL)",
+    "full_name" : "Northwood (FL) Seahawks"
+  },
+  {
+    "name" : "Golden Bears",
+    "location" : "Kutztown",
+    "full_name" : "Kutztown Golden Bears"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Cal State-East Bay",
+    "full_name" : "Cal State-East Bay Pioneers"
+  },
+  {
+    "name" : "Fighting Scots",
+    "location" : "Ohio Valley",
+    "full_name" : "Ohio Valley Fighting Scots"
+  },
+  {
+    "full_name" : "Alabama-Huntsville Chargers",
+    "name" : "Chargers",
+    "location" : "Alabama-Huntsville",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/2025/logo.png"
+  },
+  {
+    "name" : "Buffaloes",
+    "location" : "West Texas A&M",
+    "full_name" : "West Texas A&M Buffaloes"
+  },
+  {
+    "name" : "Royals",
+    "location" : "Hope International",
+    "full_name" : "Hope International Royals"
+  },
+  {
+    "name" : "Trojans",
+    "location" : "Anderson (SC)",
+    "full_name" : "Anderson (SC) Trojans"
+  },
+  {
+    "name" : "Clippers",
+    "location" : "Concordia (NY)",
+    "full_name" : "Concordia (NY) Clippers"
+  },
+  {
+    "name" : "Hawks",
+    "location" : "San Diego Christian",
+    "full_name" : "San Diego Christian Hawks"
+  },
+  {
+    "name" : "Lady Golden Bears",
+    "location" : "West Virginia Tech",
+    "full_name" : "West Virginia Tech Lady Golden Bears"
+  },
+  {
+    "name" : "Prairie Stars",
+    "location" : "Illinois-Springfield",
+    "full_name" : "Illinois-Springfield Prairie Stars"
+  },
+  {
+    "name" : "Red Devils",
+    "location" : "Eureka",
+    "full_name" : "Eureka Red Devils"
+  },
+  {
+    "name" : "Falcons",
+    "location" : "Notre Dame (OH)",
+    "full_name" : "Notre Dame (OH) Falcons"
+  },
+  {
+    "name" : "Red Hawks",
+    "location" : "Martin Methodist",
+    "full_name" : "Martin Methodist Red Hawks"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Malone",
+    "full_name" : "Malone Pioneers"
+  },
+  {
+    "name" : "Bears",
+    "location" : "Truett-McConnell",
+    "full_name" : "Truett-McConnell Bears"
+  },
+  {
+    "name" : "Firestorm",
+    "location" : "Arizona Christian",
+    "full_name" : "Arizona Christian Firestorm"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Northwest College",
+    "full_name" : "Northwest College Eagles"
+  },
+  {
+    "name" : "Mountaineers",
+    "location" : "Berea College",
+    "full_name" : "Berea College Mountaineers"
+  },
+  {
+    "name" : "Dragons",
+    "location" : "Virginia-Lynchburg",
+    "full_name" : "Virginia-Lynchburg Dragons"
+  },
+  {
+    "name" : "Trojans",
+    "location" : "Mount Olive",
+    "full_name" : "Mount Olive Trojans"
+  },
+  {
+    "name" : "Dolphins",
+    "location" : "Staten Island",
+    "full_name" : "Staten Island Dolphins"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Molloy",
+    "full_name" : "Molloy Lions"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Doane",
+    "full_name" : "Doane Tigers"
+  },
+  {
+    "name" : "Redhawks",
+    "location" : "Roberts Wesleyan",
+    "full_name" : "Roberts Wesleyan Redhawks"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Culver-Stockton",
+    "full_name" : "Culver-Stockton Wildcats"
+  },
+  {
+    "name" : "Storm",
+    "location" : "Simpson",
+    "full_name" : "Simpson Storm"
+  },
+  {
+    "name" : "Leopards",
+    "location" : "La Verne",
+    "full_name" : "La Verne Leopards"
+  },
+  {
+    "name" : "Aggies",
+    "location" : "Cameron",
+    "full_name" : "Cameron Aggies"
+  },
+  {
+    "name" : "Fighting Saints",
+    "location" : "St. Francis (IL)",
+    "full_name" : "St. Francis (IL) Fighting Saints"
+  },
+  {
+    "name" : "Mustangs",
+    "location" : "Mount Ida",
+    "full_name" : "Mount Ida Mustangs"
+  },
+  {
+    "name" : "Patriots",
+    "location" : "Arlington Baptist",
+    "full_name" : "Arlington Baptist Patriots"
+  },
+  {
+    "name" : "Red Hawks",
+    "location" : "Simpson",
+    "full_name" : "Simpson Red Hawks"
+  },
+  {
+    "name" : "Coyotes",
+    "location" : "Cal State-San Bernadino",
+    "full_name" : "Cal State-San Bernadino Coyotes"
+  },
+  {
+    "name" : "Bison",
+    "location" : "Gallaudet University",
+    "full_name" : "Gallaudet University Bison"
+  },
+  {
+    "full_name" : "North Alabama Lions",
+    "name" : "Lions",
+    "location" : "North Alabama",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/2082/logo.png"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "Clearwater Christian",
+    "full_name" : "Clearwater Christian Cougars"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Cincinnati Christian",
+    "full_name" : "Cincinnati Christian Eagles"
+  },
+  {
+    "name" : "Purple Knights",
+    "location" : "Bridgeport",
+    "full_name" : "Bridgeport Purple Knights"
+  },
+  {
+    "name" : "Orediggers",
+    "location" : "Colorado School of Mines",
+    "full_name" : "Colorado School of Mines Orediggers"
+  },
+  {
+    "name" : "Cavaliers",
+    "location" : "Concordia (OR)",
+    "full_name" : "Concordia (OR) Cavaliers"
+  },
+  {
+    "name" : "Crusaders",
+    "location" : "Northwest Nazarene",
+    "full_name" : "Northwest Nazarene Crusaders"
+  },
+  {
+    "name" : "Bearcats",
+    "location" : "Brescia",
+    "full_name" : "Brescia Bearcats"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Barton College",
+    "full_name" : "Barton College Bulldogs"
+  },
+  {
+    "name" : "Chargers",
+    "location" : "Hillsdale",
+    "full_name" : "Hillsdale Chargers"
+  },
+  {
+    "name" : "Cowboys",
+    "location" : "New Mexico Highlands",
+    "full_name" : "New Mexico Highlands Cowboys"
+  },
+  {
+    "name" : "Skyhawks",
+    "location" : "Fort Lewis",
+    "full_name" : "Fort Lewis Skyhawks"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Central Washington",
+    "full_name" : "Central Washington Wildcats"
+  },
+  {
+    "name" : "Thorobreds",
+    "location" : "Kentucky State",
+    "full_name" : "Kentucky State Thorobreds"
+  },
+  {
+    "name" : "Yeomen",
+    "location" : "Oberlin College",
+    "full_name" : "Oberlin College Yeomen"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Daniel Webster",
+    "full_name" : "Daniel Webster Eagles"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Multnomah University",
+    "full_name" : "Multnomah University Lions"
+  },
+  {
+    "name" : "Fighting Tigers",
+    "location" : "Salem International",
+    "full_name" : "Salem International Fighting Tigers"
+  },
+  {
+    "name" : "Night Hawks",
+    "location" : "Thomas University",
+    "full_name" : "Thomas University Night Hawks"
+  },
+  {
+    "name" : "Cardinals",
+    "location" : "Concordia College (MI)",
+    "full_name" : "Concordia College (MI) Cardinals"
+  },
+  {
+    "name" : "Red Raiders",
+    "location" : "Northwestern College",
+    "full_name" : "Northwestern College Red Raiders"
+  },
+  {
+    "name" : "Bees",
+    "location" : "Savannah College",
+    "full_name" : "Savannah College Bees"
+  },
+  {
+    "name" : "Flames",
+    "location" : "Bethesda",
+    "full_name" : "Bethesda Flames"
+  },
+  {
+    "name" : "Spartans",
+    "location" : "St. Thomas Aquinas",
+    "full_name" : "St. Thomas Aquinas Spartans"
+  },
+  {
+    "name" : "Cardinals",
+    "location" : "William Jewell",
+    "full_name" : "William Jewell Cardinals"
+  },
+  {
+    "name" : "Trailblazers",
+    "location" : "Ohio Christian",
+    "full_name" : "Ohio Christian Trailblazers"
+  },
+  {
+    "name" : "Rangers",
+    "location" : "Wisconsin-Parkside",
+    "full_name" : "Wisconsin-Parkside Rangers"
+  },
+  {
+    "name" : "Monarchs",
+    "location" : "King's College (PA)",
+    "full_name" : "King's College (PA) Monarchs"
+  },
+  {
+    "name" : "Bears",
+    "location" : "Lenoir-Rhyne",
+    "full_name" : "Lenoir-Rhyne Bears"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "Davenport University",
+    "full_name" : "Davenport University Panthers"
+  },
+  {
+    "name" : "Oaks",
+    "location" : "Menlo",
+    "full_name" : "Menlo Oaks"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Georgetown (KY)",
+    "full_name" : "Georgetown (KY) Tigers"
+  },
+  {
+    "name" : "Rams",
+    "location" : "Columbia International",
+    "full_name" : "Columbia International Rams"
+  },
+  {
+    "name" : "Saints",
+    "location" : "St. Joseph (VT)",
+    "full_name" : "St. Joseph (VT) Saints"
+  },
+  {
+    "name" : "Bears",
+    "location" : "St. Joseph's (NY-Brooklyn)",
+    "full_name" : "St. Joseph's (NY-Brooklyn) Bears"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "East Stroudsburg",
+    "full_name" : "East Stroudsburg Warriors"
+  },
+  {
+    "name" : "Blue Bears",
+    "location" : "Livingstone",
+    "full_name" : "Livingstone Blue Bears"
+  },
+  {
+    "name" : "Yellow Jackets",
+    "location" : "Howard Payne",
+    "full_name" : "Howard Payne Yellow Jackets"
+  },
+  {
+    "name" : "Beavers",
+    "location" : "Blackburn",
+    "full_name" : "Blackburn Beavers"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Mary Washington",
+    "full_name" : "Mary Washington Eagles"
+  },
+  {
+    "name" : "Pipers",
+    "location" : "Lyon",
+    "full_name" : "Lyon Pipers"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Southwestern Christian",
+    "full_name" : "Southwestern Christian Eagles"
+  },
+  {
+    "name" : "Lady Eagles",
+    "location" : "Williams Baptist",
+    "full_name" : "Williams Baptist Lady Eagles"
+  },
+  {
+    "name" : "Toppers",
+    "location" : "Blue Mountain College",
+    "full_name" : "Blue Mountain College Toppers"
+  },
+  {
+    "name" : "Vikings",
+    "location" : "Missouri Valley",
+    "full_name" : "Missouri Valley Vikings"
+  },
+  {
+    "name" : "Cossacks",
+    "location" : "Sonoma State",
+    "full_name" : "Sonoma State Cossacks"
+  },
+  {
+    "name" : "Otters",
+    "location" : "Cal State-Monterey Bay",
+    "full_name" : "Cal State-Monterey Bay Otters"
+  },
+  {
+    "name" : "Generals",
+    "location" : "LSU-Alexandria",
+    "full_name" : "LSU-Alexandria Generals"
+  },
+  {
+    "name" : "Terriers",
+    "location" : "Thomas",
+    "full_name" : "Thomas Terriers"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Toccoa Falls",
+    "full_name" : "Toccoa Falls Eagles"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Crowley's Ridge College",
+    "full_name" : "Crowley's Ridge College Pioneers"
+  },
+  {
+    "name" : "Pumas",
+    "location" : "St. Joseph's (IN)",
+    "full_name" : "St. Joseph's (IN) Pumas"
+  },
+  {
+    "name" : "Indians",
+    "location" : "Catawba",
+    "full_name" : "Catawba Indians"
+  },
+  {
+    "name" : "Lady Pioneers",
+    "location" : "Washington Adventist",
+    "full_name" : "Washington Adventist Lady Pioneers"
+  },
+  {
+    "name" : "Marauders",
+    "location" : "Millersville",
+    "full_name" : "Millersville Marauders"
+  },
+  {
+    "name" : "Lady Cavaliers",
+    "location" : "St. Gregory's",
+    "full_name" : "St. Gregory's Lady Cavaliers"
+  },
+  {
+    "name" : "Quakers",
+    "location" : "Guilford",
+    "full_name" : "Guilford Quakers"
+  },
+  {
+    "name" : "Spires",
+    "location" : "Saint Mary",
+    "full_name" : "Saint Mary Spires"
+  },
+  {
+    "name" : "Bears",
+    "location" : "Bristol University",
+    "full_name" : "Bristol University Bears"
+  },
+  {
+    "name" : "Golden Flash",
+    "location" : "Kent State-Tuscarawas",
+    "full_name" : "Kent State-Tuscarawas Golden Flash"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Johnson & Wales (FL)",
+    "full_name" : "Johnson & Wales (FL) Wildcats"
+  },
+  {
+    "name" : "Lady Dragons",
+    "location" : "Lane",
+    "full_name" : "Lane Lady Dragons"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Johnson & Wales (NC)",
+    "full_name" : "Johnson & Wales (NC) Wildcats"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "Indiana-Kokomo",
+    "full_name" : "Indiana-Kokomo Cougars"
+  },
+  {
+    "name" : "Cardinals",
+    "location" : "Otterbein",
+    "full_name" : "Otterbein Cardinals"
+  },
+  {
+    "name" : "Lady Marauders",
+    "location" : "Central State",
+    "full_name" : "Central State Lady Marauders"
+  },
+  {
+    "name" : "Falcons",
+    "location" : "Cedar Crest College",
+    "full_name" : "Cedar Crest College Falcons"
+  },
+  {
+    "name" : "Lady Pirates",
+    "location" : "Armstrong Atlantic",
+    "full_name" : "Armstrong Atlantic Lady Pirates"
+  },
+  {
+    "name" : "Rockets",
+    "location" : "Slippery Rock",
+    "full_name" : "Slippery Rock Rockets"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Nyack",
+    "full_name" : "Nyack Warriors"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Mars Hill",
+    "full_name" : "Mars Hill Lions"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "Misericordia",
+    "full_name" : "Misericordia Cougars"
+  },
+  {
+    "name" : "Hawks",
+    "location" : "Holy Names",
+    "full_name" : "Holy Names Hawks"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Wisconsin Lutheran",
+    "full_name" : "Wisconsin Lutheran Warriors"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "MidAmerica Nazarene",
+    "full_name" : "MidAmerica Nazarene Pioneers"
+  },
+  {
+    "name" : "Mules",
+    "location" : "Colby",
+    "full_name" : "Colby Mules"
+  },
+  {
+    "name" : "Fighting Indians",
+    "location" : "Haskell",
+    "full_name" : "Haskell Fighting Indians"
+  },
+  {
+    "name" : "Statesmen",
+    "location" : "William Penn",
+    "full_name" : "William Penn Statesmen"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Oklahoma Christian",
+    "full_name" : "Oklahoma Christian Eagles"
+  },
+  {
+    "name" : "Falcons",
+    "location" : "Albertus Magnus",
+    "full_name" : "Albertus Magnus Falcons"
+  },
+  {
+    "name" : "Wolves",
+    "location" : "Cardinal Stritch",
+    "full_name" : "Cardinal Stritch Wolves"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Mount St. Joseph",
+    "full_name" : "Mount St. Joseph Lions"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Emerson",
+    "full_name" : "Emerson Lions"
+  },
+  {
+    "name" : "Knights",
+    "location" : "Central Pennsylvania College",
+    "full_name" : "Central Pennsylvania College Knights"
+  },
+  {
+    "name" : "Stars",
+    "location" : "Stephens College",
+    "full_name" : "Stephens College Stars"
+  },
+  {
+    "name" : "Swedes",
+    "location" : "Bethany (KS)",
+    "full_name" : "Bethany (KS) Swedes"
+  },
+  {
+    "name" : "Chargers",
+    "location" : "Colby-Sawyer",
+    "full_name" : "Colby-Sawyer Chargers"
+  },
+  {
+    "name" : "Mountain Lions",
+    "location" : "Concord",
+    "full_name" : "Concord Mountain Lions"
+  },
+  {
+    "name" : "Hornets",
+    "location" : "Harris Stowe",
+    "full_name" : "Harris Stowe Hornets"
+  },
+  {
+    "name" : "Blue Jays",
+    "location" : "Johns Hopkins",
+    "full_name" : "Johns Hopkins Blue Jays"
+  },
+  {
+    "name" : "Bobcats",
+    "location" : "West Virginia Wesleyan",
+    "full_name" : "West Virginia Wesleyan Bobcats"
+  },
+  {
+    "name" : "Mountain Cats",
+    "location" : "Pittsburgh-Johnstown",
+    "full_name" : "Pittsburgh-Johnstown Mountain Cats"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Faulkner",
+    "full_name" : "Faulkner Eagles"
+  },
+  {
+    "name" : "Patriots",
+    "location" : "Francis Marion",
+    "full_name" : "Francis Marion Patriots"
+  },
+  {
+    "name" : "Lady Lobos",
+    "location" : "Sul Ross State",
+    "full_name" : "Sul Ross State Lady Lobos"
+  },
+  {
+    "name" : "Hawks",
+    "location" : "Shorter",
+    "full_name" : "Shorter Hawks"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Trinity (TX)",
+    "full_name" : "Trinity (TX) Tigers"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Jarvis Christian",
+    "full_name" : "Jarvis Christian Bulldogs"
+  },
+  {
+    "name" : "Owls",
+    "location" : "Warren Wilson",
+    "full_name" : "Warren Wilson Owls"
+  },
+  {
+    "name" : "Geoducks",
+    "location" : "Evergreen State",
+    "full_name" : "Evergreen State Geoducks"
+  },
+  {
+    "name" : "Lady Wildcats",
+    "location" : "Fort Valley State",
+    "full_name" : "Fort Valley State Lady Wildcats"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "Clark Atlanta",
+    "full_name" : "Clark Atlanta Panthers"
+  },
+  {
+    "name" : "Mariners",
+    "location" : "College of Coastal Georgia",
+    "full_name" : "College of Coastal Georgia Mariners"
+  },
+  {
+    "name" : "Mustangs",
+    "location" : "Mid-Atlantic Christian",
+    "full_name" : "Mid-Atlantic Christian Mustangs"
+  },
+  {
+    "name" : "Pride",
+    "location" : "Greensboro",
+    "full_name" : "Greensboro Pride"
+  },
+  {
+    "name" : "Battling Bishops",
+    "location" : "North Carolina Wesleyan",
+    "full_name" : "North Carolina Wesleyan Battling Bishops"
+  },
+  {
+    "name" : "Rams",
+    "location" : "Shepherd",
+    "full_name" : "Shepherd Rams"
+  },
+  {
+    "name" : "Gators",
+    "location" : "Notre Dame of Maryland",
+    "full_name" : "Notre Dame of Maryland Gators"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Waldorf",
+    "full_name" : "Waldorf Warriors"
+  },
+  {
+    "name" : "Beascons",
+    "location" : "Northwest Christian",
+    "full_name" : "Northwest Christian Beascons"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Midland",
+    "full_name" : "Midland Warriors"
+  },
+  {
+    "name" : "Lady Statesmen",
+    "location" : "Delta State",
+    "full_name" : "Delta State Lady Statesmen"
+  },
+  {
+    "name" : "Saints",
+    "location" : "Ashford",
+    "full_name" : "Ashford Saints"
+  },
+  {
+    "name" : "Mustangs",
+    "location" : "Mount Mercy",
+    "full_name" : "Mount Mercy Mustangs"
+  },
+  {
+    "name" : "Bruins",
+    "location" : "Bob Jones University",
+    "full_name" : "Bob Jones University Bruins"
+  },
+  {
+    "name" : "Mountain Lions",
+    "location" : "Young Harris",
+    "full_name" : "Young Harris Mountain Lions"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Ferris State",
+    "full_name" : "Ferris State Bulldogs"
+  },
+  {
+    "name" : "Big Blue",
+    "location" : "Millikin",
+    "full_name" : "Millikin Big Blue"
+  },
+  {
+    "name" : "Bullets",
+    "location" : "Gettysburg",
+    "full_name" : "Gettysburg Bullets"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Alice Lloyd College",
+    "full_name" : "Alice Lloyd College Eagles"
+  },
+  {
+    "name" : "Golden Bears",
+    "location" : "Concordia-St. Paul",
+    "full_name" : "Concordia-St. Paul Golden Bears"
+  },
+  {
+    "name" : "Regals",
+    "location" : "Cal Lutheran",
+    "full_name" : "Cal Lutheran Regals"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Vanguard University",
+    "full_name" : "Vanguard University Lions"
+  },
+  {
+    "name" : "Highlanders",
+    "location" : "MacMurray",
+    "full_name" : "MacMurray Highlanders"
+  },
+  {
+    "name" : "Golden Eagles",
+    "location" : "Clarion",
+    "full_name" : "Clarion Golden Eagles"
+  },
+  {
+    "name" : "Owls",
+    "location" : "Keene State",
+    "full_name" : "Keene State Owls"
+  },
+  {
+    "name" : "Pirates",
+    "location" : "Southwestern University",
+    "full_name" : "Southwestern University Pirates"
+  },
+  {
+    "name" : "Lady Bisons",
+    "location" : "Harding",
+    "full_name" : "Harding Lady Bisons"
+  },
+  {
+    "name" : "Bears",
+    "location" : "Rocky Mountain",
+    "full_name" : "Rocky Mountain Bears"
+  },
+  {
+    "name" : "Mavericks",
+    "location" : "Mercy College",
+    "full_name" : "Mercy College Mavericks"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Emmanuel",
+    "full_name" : "Emmanuel Lions"
+  },
+  {
+    "name" : "Gophers",
+    "location" : "Goucher",
+    "full_name" : "Goucher Gophers"
+  },
+  {
+    "name" : "Wolves",
+    "location" : "West Georgia",
+    "full_name" : "West Georgia Wolves"
+  },
+  {
+    "name" : "Yellow Jackets",
+    "location" : "Cedarville",
+    "full_name" : "Cedarville Yellow Jackets"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Biola",
+    "full_name" : "Biola Eagles"
+  },
+  {
+    "name" : "Foresters",
+    "location" : "Lake Forest",
+    "full_name" : "Lake Forest Foresters"
+  },
+  {
+    "name" : "Red Wolves",
+    "location" : "Indiana-East",
+    "full_name" : "Indiana-East Red Wolves"
+  },
+  {
+    "name" : "Dragons",
+    "location" : "Tiffin",
+    "full_name" : "Tiffin Dragons"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Point Park",
+    "full_name" : "Point Park Pioneers"
+  },
+  {
+    "name" : "Ducks",
+    "location" : "Stevens Tech",
+    "full_name" : "Stevens Tech Ducks"
+  },
+  {
+    "name" : "Poets",
+    "location" : "Whittier",
+    "full_name" : "Whittier Poets"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Antelope Valley",
+    "full_name" : "Antelope Valley Pioneers"
+  },
+  {
+    "name" : "Hilltoppers",
+    "location" : "West Liberty State",
+    "full_name" : "West Liberty State Hilltoppers"
+  },
+  {
+    "name" : "Buffaloes",
+    "location" : "Milligan",
+    "full_name" : "Milligan Buffaloes"
+  },
+  {
+    "name" : "Lady Tornado",
+    "location" : "King",
+    "full_name" : "King Lady Tornado"
+  },
+  {
+    "name" : "Fighting Scots",
+    "location" : "Monmouth (IL)",
+    "full_name" : "Monmouth (IL) Fighting Scots"
+  },
+  {
+    "name" : "Banana Slugs",
+    "location" : "California-Santa Cruz",
+    "full_name" : "California-Santa Cruz Banana Slugs"
+  },
+  {
+    "name" : "Marauders",
+    "location" : "University of Mary",
+    "full_name" : "University of Mary Marauders"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Pacific Union",
+    "full_name" : "Pacific Union Pioneers"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Central Christian",
+    "full_name" : "Central Christian Tigers"
+  },
+  {
+    "name" : "Silverswords",
+    "location" : "Chaminade",
+    "full_name" : "Chaminade Silverswords"
+  },
+  {
+    "name" : "Bengals",
+    "location" : "Maine-Fort Kent",
+    "full_name" : "Maine-Fort Kent Bengals"
+  },
+  {
+    "name" : "Yellow Jackets",
+    "location" : "Defiance",
+    "full_name" : "Defiance Yellow Jackets"
+  },
+  {
+    "name" : "Pilgrims",
+    "location" : "New England College",
+    "full_name" : "New England College Pilgrims"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Merrimack",
+    "full_name" : "Merrimack Warriors"
+  },
+  {
+    "name" : "Eagles",
+    "location" : "Post",
+    "full_name" : "Post Eagles"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Georgian Court",
+    "full_name" : "Georgian Court Lions"
+  },
+  {
+    "name" : "Pirates",
+    "location" : "Puerto Rico-Bayamon",
+    "full_name" : "Puerto Rico-Bayamon Pirates"
+  },
+  {
+    "name" : "Blue Tigers",
+    "location" : "Lincoln (MO)",
+    "full_name" : "Lincoln (MO) Blue Tigers"
+  },
+  {
+    "name" : "Evangels",
+    "location" : "Mid-American Christian",
+    "full_name" : "Mid-American Christian Evangels"
+  },
+  {
+    "name" : "Pilots",
+    "location" : "Bethel (IN)",
+    "full_name" : "Bethel (IN) Pilots"
+  },
+  {
+    "name" : "Lady Blues",
+    "location" : "Illinois College",
+    "full_name" : "Illinois College Lady Blues"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Bryan College",
+    "full_name" : "Bryan College Lions"
+  },
+  {
+    "name" : "Jennies",
+    "location" : "Central Missouri",
+    "full_name" : "Central Missouri Jennies"
+  },
+  {
+    "name" : "Magicians",
+    "location" : "LeMoyne-Owen",
+    "full_name" : "LeMoyne-Owen Magicians"
+  },
+  {
+    "name" : "Rams",
+    "location" : "Farmingdale State",
+    "full_name" : "Farmingdale State Rams"
+  },
+  {
+    "name" : "Ravens",
+    "location" : "Benedictine",
+    "full_name" : "Benedictine Ravens"
+  },
+  {
+    "name" : "Hawks",
+    "location" : "Quincy",
+    "full_name" : "Quincy Hawks"
+  },
+  {
+    "name" : "Miners",
+    "location" : "Missouri Science & Technology",
+    "full_name" : "Missouri Science & Technology Miners"
+  },
+  {
+    "name" : "Saints",
+    "location" : "Limestone",
+    "full_name" : "Limestone Saints"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Iowa Wesleyan",
+    "full_name" : "Iowa Wesleyan Tigers"
+  },
+  {
+    "name" : "Lynx",
+    "location" : "Rhodes",
+    "full_name" : "Rhodes Lynx"
+  },
+  {
+    "name" : "Falcons",
+    "location" : "Montevallo",
+    "full_name" : "Montevallo Falcons"
+  },
+  {
+    "name" : "Mustangs",
+    "location" : "Midwestern State",
+    "full_name" : "Midwestern State Mustangs"
+  },
+  {
+    "name" : "Raiders",
+    "location" : "Shippensburg",
+    "full_name" : "Shippensburg Raiders"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "Chapman",
+    "full_name" : "Chapman Panthers"
+  },
+  {
+    "name" : "Flames",
+    "location" : "Lee University",
+    "full_name" : "Lee University Flames"
+  },
+  {
+    "name" : "Wildcats",
+    "location" : "Johnson & Wales (RI)",
+    "full_name" : "Johnson & Wales (RI) Wildcats"
+  },
+  {
+    "name" : "Lancers",
+    "location" : "Mount Marty",
+    "full_name" : "Mount Marty Lancers"
+  },
+  {
+    "name" : "Blue Jays",
+    "location" : "Westminster (MO)",
+    "full_name" : "Westminster (MO) Blue Jays"
+  },
+  {
+    "name" : "Red Dragons",
+    "location" : "SUNY-Cortland",
+    "full_name" : "SUNY-Cortland Red Dragons"
+  },
+  {
+    "name" : "Cadets",
+    "location" : "Norwich",
+    "full_name" : "Norwich Cadets"
+  },
+  {
+    "name" : "Falcons",
+    "location" : "Fisher",
+    "full_name" : "Fisher Falcons"
+  },
+  {
+    "name" : "Saints",
+    "location" : "Aquinas",
+    "full_name" : "Aquinas Saints"
+  },
+  {
+    "name" : "Owls",
+    "location" : "Southern Connecticut",
+    "full_name" : "Southern Connecticut Owls"
+  },
+  {
+    "name" : "Pacers",
+    "location" : "William Peace",
+    "full_name" : "William Peace Pacers"
+  },
+  {
+    "name" : "Patriots",
+    "location" : "Valley Forge",
+    "full_name" : "Valley Forge Patriots"
+  },
+  {
+    "name" : "Racers",
+    "location" : "Northwestern Ohio",
+    "full_name" : "Northwestern Ohio Racers"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "La Grange",
+    "full_name" : "La Grange Panthers"
+  },
+  {
+    "name" : "Comets",
+    "location" : "Olivet College",
+    "full_name" : "Olivet College Comets"
+  },
+  {
+    "name" : "Lions",
+    "location" : "Penn State - Beaver",
+    "full_name" : "Penn State - Beaver Lions"
+  },
+  {
+    "name" : "Griffins",
+    "location" : "Gwynedd Mercy",
+    "full_name" : "Gwynedd Mercy Griffins"
+  },
+  {
+    "name" : "Griffins",
+    "location" : "Seton Hill",
+    "full_name" : "Seton Hill Griffins"
+  },
+  {
+    "name" : "Mountaineers",
+    "location" : "Mansfield",
+    "full_name" : "Mansfield Mountaineers"
+  },
+  {
+    "name" : "Oilers",
+    "location" : "FIndlay",
+    "full_name" : "FIndlay Oilers"
+  },
+  {
+    "name" : "Bruins",
+    "location" : "Bellevue",
+    "full_name" : "Bellevue Bruins"
+  },
+  {
+    "name" : "Hurricanes",
+    "location" : "Georgia Southwestern",
+    "full_name" : "Georgia Southwestern Hurricanes"
+  },
+  {
+    "name" : "Argonauts",
+    "location" : "Providence (MT)",
+    "full_name" : "Providence (MT) Argonauts"
+  },
+  {
+    "name" : "Redhawks",
+    "location" : "Benedictine Mesa",
+    "full_name" : "Benedictine Mesa Redhawks"
+  },
+  {
+    "name" : "Fire",
+    "location" : "Southeastern University",
+    "full_name" : "Southeastern University Fire"
+  },
+  {
+    "name" : "Saints",
+    "location" : "Central Christian (MO)",
+    "full_name" : "Central Christian (MO) Saints"
+  },
+  {
+    "name" : "Knights",
+    "location" : "Middle Georgia State",
+    "full_name" : "Middle Georgia State Knights"
+  },
+  {
+    "name" : "Crusaders",
+    "location" : "Belmont Abbey",
+    "full_name" : "Belmont Abbey Crusaders"
+  },
+  {
+    "name" : "Cardinals",
+    "location" : "Catholic University",
+    "full_name" : "Catholic University Cardinals"
+  },
+  {
+    "full_name" : "California Baptist Lancers",
+    "name" : "Lancers",
+    "location" : "California Baptist",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/2837/logo.png"
+  },
+  {
+    "name" : "Red Lions",
+    "location" : "Lincoln Christian",
+    "full_name" : "Lincoln Christian Red Lions"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "Caldwell",
+    "full_name" : "Caldwell Cougars"
+  },
+  {
+    "name" : "Hawks",
+    "location" : "SUNY-New Palz",
+    "full_name" : "SUNY-New Palz Hawks"
+  },
+  {
+    "name" : "Golden Eagles",
+    "location" : "La Sierra University",
+    "full_name" : "La Sierra University Golden Eagles"
+  },
+  {
+    "name" : "Bearcats",
+    "location" : "McKendree",
+    "full_name" : "McKendree Bearcats"
+  },
+  {
+    "name" : "Lady Broncos",
+    "location" : "Fayetteville State",
+    "full_name" : "Fayetteville State Lady Broncos"
+  },
+  {
+    "name" : "Mules",
+    "location" : "Muhlenberg",
+    "full_name" : "Muhlenberg Mules"
+  },
+  {
+    "name" : "Nor'Easters",
+    "location" : "University of New England",
+    "full_name" : "University of New England Nor'Easters"
+  },
+  {
+    "name" : "Knights",
+    "location" : "Bellarmine",
+    "full_name" : "Bellarmine Knights"
+  },
+  {
+    "name" : "Golden Rams",
+    "location" : "West Chester",
+    "full_name" : "West Chester Golden Rams"
+  },
+  {
+    "name" : "Tigers",
+    "location" : "Grace Christian",
+    "full_name" : "Grace Christian Tigers"
+  },
+  {
+    "name" : "Battlers",
+    "location" : "Alderson Broaddus",
+    "full_name" : "Alderson Broaddus Battlers"
+  },
+  {
+    "name" : "Celtics",
+    "location" : "Carlow",
+    "full_name" : "Carlow Celtics"
+  },
+  {
+    "name" : "Tomcats",
+    "location" : "Thiel",
+    "full_name" : "Thiel Tomcats"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Union (TN)",
+    "full_name" : "Union (TN) Bulldogs"
+  },
+  {
+    "name" : "Fords",
+    "location" : "Haverford",
+    "full_name" : "Haverford Fords"
+  },
+  {
+    "name" : "Knights",
+    "location" : "Vermont Tech",
+    "full_name" : "Vermont Tech Knights"
+  },
+  {
+    "name" : "Cardinals",
+    "location" : "Saginaw Valley",
+    "full_name" : "Saginaw Valley Cardinals"
+  },
+  {
+    "name" : "Bulldogs",
+    "location" : "Wilberforce",
+    "full_name" : "Wilberforce Bulldogs"
+  },
+  {
+    "name" : "Sho'men",
+    "location" : "Washington College",
+    "full_name" : "Washington College Sho'men"
+  },
+  {
+    "name" : "Trojans",
+    "location" : "Taylor",
+    "full_name" : "Taylor Trojans"
+  },
+  {
+    "name" : "Avenging Angels",
+    "location" : "Meredith",
+    "full_name" : "Meredith Avenging Angels"
+  },
+  {
+    "name" : "Mavericks",
+    "location" : "Minnesota State-Mankato",
+    "full_name" : "Minnesota State-Mankato Mavericks"
+  },
+  {
+    "name" : "Camels",
+    "location" : "Connecticut College",
+    "full_name" : "Connecticut College Camels"
+  },
+  {
+    "name" : "Nanooks",
+    "location" : "Alaska-Fairbanks",
+    "full_name" : "Alaska-Fairbanks Nanooks"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "LIfe Pacific College",
+    "full_name" : "LIfe Pacific College Warriors"
+  },
+  {
+    "name" : "Spirit",
+    "location" : "Ottawa (AZ)",
+    "full_name" : "Ottawa (AZ) Spirit"
+  },
+  {
+    "name" : "Warriors",
+    "location" : "Westcliff",
+    "full_name" : "Westcliff Warriors"
+  },
+  {
+    "name" : "Royals",
+    "location" : "Regent",
+    "full_name" : "Regent Royals"
+  },
+  {
+    "name" : "Knights",
+    "location" : "Warner Pacific",
+    "full_name" : "Warner Pacific Knights"
+  },
+  {
+    "name" : "Golden Rams",
+    "location" : "Albany State",
+    "full_name" : "Albany State Golden Rams"
+  },
+  {
+    "name" : "Pioneers",
+    "location" : "Wesleyan College (Ga.)",
+    "full_name" : "Wesleyan College (Ga.) Pioneers"
+  },
+  {
+    "name" : "Cougars",
+    "location" : "Carver College",
+    "full_name" : "Carver College Cougars"
+  },
+  {
+    "name" : "Golden Eagles",
+    "location" : "Charleston Univ",
+    "full_name" : "Charleston Univ Golden Eagles"
+  },
+  {
+    "name" : "Royals",
+    "location" : "Queens University",
+    "full_name" : "Queens University Royals"
+  },
+  {
+    "name" : "Panthers",
+    "location" : "Adelphi",
+    "full_name" : "Adelphi Panthers"
+  }
+]

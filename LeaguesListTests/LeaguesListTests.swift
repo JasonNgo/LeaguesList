@@ -18,17 +18,44 @@ class LeaguesListTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testLeagueCellViewModelProducer() {
+        let fullName = "NHL Hockey"
+        let slug = "nhl"
+        
+        let league = League(fullName: fullName, slug: slug)
+        let leagueViewModel = league.toLeagueCellViewModel()
+        
+        let expected = "NHL Hockey"
+        let actual = leagueViewModel.fullNameLabelText
+        
+        XCTAssert(expected == actual)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testLeagueDecodable() {
+        let fullName = "NFL Football"
+        let slug = "nfl"
+        
+        let jsonObject = [
+            "full_name": fullName,
+            "slug": slug
+        ]
+        
+        do {
+            let data = try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted)
+            let decodedLeague = try JSONDecoder().decode(League.self, from: data)
+            
+            let expectedFullName = "NFL Football"
+            let expectedSlug = "nfl"
+            
+            let actualFullName = decodedLeague.fullName
+            let actualSlug = decodedLeague.slug
+            
+            XCTAssert(expectedFullName == actualFullName)
+            XCTAssert(expectedSlug == actualSlug)
+        } catch {
+            XCTAssert(false)
         }
     }
-
+    
 }

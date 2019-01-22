@@ -1,0 +1,254 @@
+[
+  {
+    "location" : "Boston",
+    "full_name" : "Boston Celtics",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1/logo.png",
+    "colour_2" : "FFD700",
+    "name" : "Celtics",
+    "colour_1" : "008348"
+  },
+  {
+    "location" : "Brooklyn",
+    "full_name" : "Brooklyn Nets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/2/logo.png",
+    "colour_2" : "343434",
+    "name" : "Nets",
+    "colour_1" : "343434"
+  },
+  {
+    "location" : "New York",
+    "full_name" : "New York Knicks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/3/logo.png",
+    "colour_2" : "1778BC",
+    "name" : "Knicks",
+    "colour_1" : "F58426"
+  },
+  {
+    "location" : "Philadelphia",
+    "full_name" : "Philadelphia 76ers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/4/logo.png",
+    "colour_2" : "ED174C",
+    "name" : "76ers",
+    "colour_1" : "006BB6"
+  },
+  {
+    "location" : "Toronto",
+    "full_name" : "Toronto Raptors",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/5/logo.png",
+    "colour_2" : "343434",
+    "name" : "Raptors",
+    "colour_1" : "CE1141"
+  },
+  {
+    "location" : "Chicago",
+    "full_name" : "Chicago Bulls",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/6/logo.png",
+    "colour_2" : "343434",
+    "name" : "Bulls",
+    "colour_1" : "C01335"
+  },
+  {
+    "location" : "Cleveland",
+    "full_name" : "Cleveland Cavaliers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/7/logo.png",
+    "colour_2" : "FDBB30",
+    "name" : "Cavaliers",
+    "colour_1" : "860038"
+  },
+  {
+    "location" : "Detroit",
+    "full_name" : "Detroit Pistons",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/8/logo.png",
+    "colour_2" : "006BB6",
+    "name" : "Pistons",
+    "colour_1" : "ED174C"
+  },
+  {
+    "location" : "Indiana",
+    "full_name" : "Indiana Pacers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/9/logo.png",
+    "colour_2" : "00285D",
+    "name" : "Pacers",
+    "colour_1" : "FEC23E"
+  },
+  {
+    "location" : "Milwaukee",
+    "full_name" : "Milwaukee Bucks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/10/logo.png",
+    "colour_2" : "D7CBB1",
+    "name" : "Bucks",
+    "colour_1" : "00471B"
+  },
+  {
+    "location" : "Atlanta",
+    "full_name" : "Atlanta Hawks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/11/logo.png",
+    "colour_2" : "C3D600",
+    "name" : "Hawks",
+    "colour_1" : "D1202F"
+  },
+  {
+    "location" : "Charlotte",
+    "full_name" : "Charlotte Hornets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/12/logo.png",
+    "colour_2" : "361B6B",
+    "name" : "Hornets",
+    "colour_1" : "008CA8"
+  },
+  {
+    "location" : "Miami",
+    "full_name" : "Miami Heat",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/13/logo.png",
+    "colour_2" : "F9A01B",
+    "name" : "Heat",
+    "colour_1" : "98002E"
+  },
+  {
+    "location" : "Orlando",
+    "full_name" : "Orlando Magic",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/14/logo.png",
+    "colour_2" : "B6C1C7",
+    "name" : "Magic",
+    "colour_1" : "007DC5"
+  },
+  {
+    "location" : "Washington",
+    "full_name" : "Washington Wizards",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/15/logo.png",
+    "colour_2" : "0B2C62",
+    "name" : "Wizards",
+    "colour_1" : "F5002F"
+  },
+  {
+    "location" : "Golden State",
+    "full_name" : "Golden State Warriors",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/16/logo.png",
+    "colour_2" : "FDB927",
+    "name" : "Warriors",
+    "colour_1" : "006BB6"
+  },
+  {
+    "location" : "Los Angeles",
+    "full_name" : "Los Angeles Clippers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/17/logo.png",
+    "colour_2" : "006BB6",
+    "name" : "Clippers",
+    "colour_1" : "ED174C"
+  },
+  {
+    "location" : "Los Angeles",
+    "full_name" : "Los Angeles Lakers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/18/logo.png",
+    "colour_2" : "FDB927",
+    "name" : "Lakers",
+    "colour_1" : "552582"
+  },
+  {
+    "location" : "Phoenix",
+    "full_name" : "Phoenix Suns",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/19/logo.png",
+    "colour_2" : "231D72",
+    "name" : "Suns",
+    "colour_1" : "E56020"
+  },
+  {
+    "location" : "Sacramento",
+    "full_name" : "Sacramento Kings",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/20/logo.png",
+    "colour_2" : "8E9090",
+    "name" : "Kings",
+    "colour_1" : "724C9F"
+  },
+  {
+    "location" : "Dallas",
+    "full_name" : "Dallas Mavericks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/21/logo.png",
+    "colour_2" : "20385B",
+    "name" : "Mavericks",
+    "colour_1" : "007DC5"
+  },
+  {
+    "location" : "Houston",
+    "full_name" : "Houston Rockets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/22/logo.png",
+    "colour_2" : "FDB927",
+    "name" : "Rockets",
+    "colour_1" : "E72230"
+  },
+  {
+    "location" : "Memphis",
+    "full_name" : "Memphis Grizzlies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/23/logo.png",
+    "colour_2" : "ECAE31",
+    "name" : "Grizzlies",
+    "colour_1" : "5C76A8"
+  },
+  {
+    "location" : "New Orleans",
+    "full_name" : "New Orleans Pelicans",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/24/logo.png",
+    "colour_2" : "E31937",
+    "name" : "Pelicans",
+    "colour_1" : "B4975A"
+  },
+  {
+    "location" : "San Antonio",
+    "full_name" : "San Antonio Spurs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/25/logo.png",
+    "colour_2" : "343434",
+    "name" : "Spurs",
+    "colour_1" : "343434"
+  },
+  {
+    "location" : "Denver",
+    "full_name" : "Denver Nuggets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/26/logo.png",
+    "colour_2" : "8B2131",
+    "name" : "Nuggets",
+    "colour_1" : "0E2240"
+  },
+  {
+    "location" : "Minnesota",
+    "full_name" : "Minnesota Timberwolves",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/27/logo.png",
+    "colour_2" : "00A94F",
+    "name" : "Timberwolves",
+    "colour_1" : "005083"
+  },
+  {
+    "location" : "Oklahoma City",
+    "full_name" : "Oklahoma City Thunder",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/28/logo.png",
+    "colour_2" : "007DC3",
+    "name" : "Thunder",
+    "colour_1" : "F05133"
+  },
+  {
+    "location" : "Portland",
+    "full_name" : "Portland Trail Blazers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/29/logo.png",
+    "colour_2" : "B6BFBF",
+    "name" : "Trail Blazers",
+    "colour_1" : "CE1731"
+  },
+  {
+    "location" : "Utah",
+    "full_name" : "Utah Jazz",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/30/logo.png",
+    "colour_2" : "00471B",
+    "name" : "Jazz",
+    "colour_1" : "F9A01B"
+  },
+  {
+    "full_name" : "Team LeBron",
+    "name" : "Team LeBron",
+    "location" : "Team LeBron",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/31/logo.png"
+  },
+  {
+    "full_name" : "Team Steph",
+    "name" : "Team Steph",
+    "location" : "Team Steph",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/32/logo.png"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "location" : "Slovakia",
+    "full_name" : "Slovakia",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/34/logo.png",
+    "colour_2" : "EE2200",
+    "name" : "Slovakia",
+    "colour_1" : "004394"
+  },
+  {
+    "location" : "Switzerland",
+    "full_name" : "Switzerland",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/35/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Switzerland",
+    "colour_1" : "EE2200"
+  },
+  {
+    "location" : "Russia",
+    "full_name" : "Russia",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/36/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Russia",
+    "colour_1" : "EE2200"
+  },
+  {
+    "location" : "Sweden",
+    "full_name" : "Sweden",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/37/logo.png",
+    "colour_2" : "2C469C",
+    "name" : "Sweden",
+    "colour_1" : "FBCD33"
+  },
+  {
+    "location" : "Canada",
+    "full_name" : "Canada",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/38/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Canada",
+    "colour_1" : "E9221F"
+  },
+  {
+    "location" : "United States",
+    "full_name" : "United States",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/40/logo.png",
+    "colour_2" : "C01F21",
+    "name" : "United States",
+    "colour_1" : "1B3265"
+  },
+  {
+    "location" : "Czech Republic",
+    "full_name" : "Czech Republic",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/41/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Czech Republic",
+    "colour_1" : "EE2200"
+  },
+  {
+    "location" : "Finland",
+    "full_name" : "Finland",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/42/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Finland",
+    "colour_1" : "0080C7"
+  },
+  {
+    "location" : "Denmark",
+    "full_name" : "Denmark",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/65/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Denmark",
+    "colour_1" : "FF2600"
+  },
+  {
+    "location" : "Kazakhstan",
+    "full_name" : "Kazakhstan",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/hockey/team/127/logo.png",
+    "colour_2" : "FEC50C",
+    "name" : "Kazakhstan",
+    "colour_1" : "00AFCA"
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/57/logo.png",
+    "full_name" : "Aston Villa",
+    "name" : "Aston Villa",
+    "location" : "Aston Villa",
+    "colour_1" : "79153E"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/71/logo.png",
+    "full_name" : "Birmingham City",
+    "name" : "Birmingham City",
+    "location" : "Birmingham",
+    "colour_1" : "293752"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/66/logo.png",
+    "full_name" : "Blackburn Rovers",
+    "name" : "Blackburn Rovers",
+    "location" : "Blackburn Rovers",
+    "colour_1" : "289ED6"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/67/logo.png",
+    "full_name" : "Bolton Wanderers",
+    "name" : "Bolton Wanderers",
+    "location" : "Bolton",
+    "colour_1" : "6CAAD6"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/210/logo.png",
+    "full_name" : "Brentford",
+    "name" : "Brentford",
+    "location" : "London",
+    "colour_1" : "BF0712"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/184/logo.png",
+    "full_name" : "Bristol City",
+    "name" : "Bristol City",
+    "location" : "Bristol City",
+    "colour_1" : "CF1E29"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/162/logo.png",
+    "full_name" : "Derby County",
+    "name" : "Derby County",
+    "location" : "Derby County",
+    "colour_1" : "1F1F1F"
+  },
+  {
+    "location" : "Hull City",
+    "full_name" : "Hull City",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/73/logo.png",
+    "colour_2" : "343434",
+    "name" : "Hull City",
+    "colour_1" : "E89A45"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/163/logo.png",
+    "full_name" : "Ipswich Town",
+    "name" : "Ipswich Town",
+    "location" : "Ipswich Town",
+    "colour_1" : "3A66A3"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/164/logo.png",
+    "full_name" : "Leeds United",
+    "name" : "Leeds United",
+    "location" : "Leeds United",
+    "colour_1" : "125A92"
+  },
+  {
+    "location" : "Middlesbrough",
+    "full_name" : "Middlesbrough",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/76/logo.png",
+    "colour_2" : "343434",
+    "name" : "Middlesbrough",
+    "colour_1" : "ED202A"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/178/logo.png",
+    "full_name" : "Millwall",
+    "name" : "Millwall",
+    "location" : "Millwall",
+    "colour_1" : "053878"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/169/logo.png",
+    "full_name" : "Norwich City",
+    "name" : "Norwich City",
+    "location" : "Norwich City",
+    "colour_1" : "23A754"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/170/logo.png",
+    "full_name" : "Nottingham Forest",
+    "name" : "Nottingham Forest",
+    "location" : "Nottingham Forest",
+    "colour_1" : "66000E"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/189/logo.png",
+    "full_name" : "Preston North End",
+    "name" : "Preston North End",
+    "location" : "Preston North End",
+    "colour_1" : "071B3E"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/172/logo.png",
+    "full_name" : "Queens Park Rangers",
+    "name" : "Queens Park Rangers",
+    "location" : "London",
+    "colour_1" : "0E6CA3"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/183/logo.png",
+    "full_name" : "Reading",
+    "name" : "Reading",
+    "location" : "Reading",
+    "colour_1" : "074692"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/221/logo.png",
+    "full_name" : "Rotherham United",
+    "name" : "Rotherham United",
+    "location" : "Rotherham United",
+    "colour_1" : "EA2432"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/177/logo.png",
+    "full_name" : "Sheffield United",
+    "name" : "Sheffield United",
+    "location" : "Sheffield United",
+    "colour_1" : "EA2832"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/173/logo.png",
+    "full_name" : "Sheffield Wednesday",
+    "name" : "Sheffield Wednesday",
+    "location" : "Sheffield Wednesday",
+    "colour_1" : "4A82BC"
+  },
+  {
+    "location" : "Stoke City",
+    "full_name" : "Stoke City",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/75/logo.png",
+    "colour_2" : "1D479B",
+    "name" : "Stoke City",
+    "colour_1" : "E23A40"
+  },
+  {
+    "location" : "Swansea City",
+    "full_name" : "Swansea City",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/192/logo.png",
+    "colour_2" : "343434",
+    "name" : "Swansea City",
+    "colour_1" : "343434"
+  },
+  {
+    "location" : "West Bromwich",
+    "full_name" : "West Bromwich Albion",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/78/logo.png",
+    "colour_2" : "343434",
+    "name" : "West Bromwich Albion",
+    "colour_1" : "1C1D51"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/72/logo.png",
+    "full_name" : "Wigan Athletic",
+    "name" : "Wigan Athletic",
+    "location" : "Wigan Athletic",
+    "colour_1" : "285EA8"
+  }
+]

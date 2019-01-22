@@ -1,0 +1,241 @@
+[
+  {
+    "location" : "Baltimore",
+    "full_name" : "Baltimore Orioles",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/1/logo.png",
+    "colour_2" : "343434",
+    "name" : "Orioles",
+    "colour_1" : "F4632A"
+  },
+  {
+    "location" : "Boston",
+    "full_name" : "Boston Red Sox",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/2/logo.png",
+    "colour_2" : "0F3263",
+    "name" : "Red Sox",
+    "colour_1" : "C60C30"
+  },
+  {
+    "location" : "New York",
+    "full_name" : "New York Yankees",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/3/logo.png",
+    "colour_2" : "808080",
+    "name" : "Yankees",
+    "colour_1" : "1C2841"
+  },
+  {
+    "location" : "Toronto",
+    "full_name" : "Toronto Blue Jays",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/4/logo.png",
+    "colour_2" : "E8281C",
+    "name" : "Blue Jays",
+    "colour_1" : "134A8E"
+  },
+  {
+    "location" : "Tampa Bay",
+    "full_name" : "Tampa Bay Rays",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/5/logo.png",
+    "colour_2" : "FFD700",
+    "name" : "Rays",
+    "colour_1" : "8FBCE6"
+  },
+  {
+    "location" : "Chicago",
+    "full_name" : "Chicago White Sox",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/6/logo.png",
+    "colour_2" : "343434",
+    "name" : "White Sox",
+    "colour_1" : "343434"
+  },
+  {
+    "location" : "Cleveland",
+    "full_name" : "Cleveland Indians",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/7/logo.png",
+    "colour_2" : "0F3263",
+    "name" : "Indians",
+    "colour_1" : "B70B1C"
+  },
+  {
+    "location" : "Detroit",
+    "full_name" : "Detroit Tigers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/8/logo.png",
+    "colour_2" : "F2680D",
+    "name" : "Tigers",
+    "colour_1" : "0C2C56"
+  },
+  {
+    "location" : "Kansas City",
+    "full_name" : "Kansas City Royals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/9/logo.png",
+    "colour_2" : "6AB3E8",
+    "name" : "Royals",
+    "colour_1" : "004687"
+  },
+  {
+    "location" : "Minnesota",
+    "full_name" : "Minnesota Twins",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/10/logo.png",
+    "colour_2" : "042462",
+    "name" : "Twins",
+    "colour_1" : "D31145"
+  },
+  {
+    "location" : "Los Angeles",
+    "full_name" : "Los Angeles Angels",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/11/logo.png",
+    "colour_2" : "003262",
+    "name" : "Angels",
+    "colour_1" : "CE1141"
+  },
+  {
+    "location" : "Oakland",
+    "full_name" : "Oakland Athletics",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/12/logo.png",
+    "colour_2" : "F0B21F",
+    "name" : "Athletics",
+    "colour_1" : "035444"
+  },
+  {
+    "location" : "Seattle",
+    "full_name" : "Seattle Mariners",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/13/logo.png",
+    "colour_2" : "003166",
+    "name" : "Mariners",
+    "colour_1" : "1C8B85"
+  },
+  {
+    "location" : "Texas",
+    "full_name" : "Texas Rangers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/14/logo.png",
+    "colour_2" : "C0111F",
+    "name" : "Rangers",
+    "colour_1" : "00437C"
+  },
+  {
+    "location" : "Atlanta",
+    "full_name" : "Atlanta Braves",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/15/logo.png",
+    "colour_2" : "042448",
+    "name" : "Braves",
+    "colour_1" : "AD0D28"
+  },
+  {
+    "location" : "Washington",
+    "full_name" : "Washington Nationals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/16/logo.png",
+    "colour_2" : "003166",
+    "name" : "Nationals",
+    "colour_1" : "BA122B"
+  },
+  {
+    "location" : "New York",
+    "full_name" : "New York Mets",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/17/logo.png",
+    "colour_2" : "004683",
+    "name" : "Mets",
+    "colour_1" : "FF5910"
+  },
+  {
+    "location" : "Philadelphia",
+    "full_name" : "Philadelphia Phillies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/18/logo.png",
+    "colour_2" : "00549C",
+    "name" : "Phillies",
+    "colour_1" : "B7103B"
+  },
+  {
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/19/logo.png",
+    "full_name" : "Miami Marlins",
+    "name" : "Marlins",
+    "location" : "Miami",
+    "colour_1" : "1BA4DE"
+  },
+  {
+    "location" : "Milwaukee",
+    "full_name" : "Milwaukee Brewers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/20/logo.png",
+    "colour_2" : "092C50",
+    "name" : "Brewers",
+    "colour_1" : "C4953B"
+  },
+  {
+    "location" : "Chicago",
+    "full_name" : "Chicago Cubs",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/21/logo.png",
+    "colour_2" : "CC3236",
+    "name" : "Cubs",
+    "colour_1" : "00538D"
+  },
+  {
+    "location" : "Cincinnati",
+    "full_name" : "Cincinnati Reds",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/22/logo.png",
+    "colour_2" : "343434",
+    "name" : "Reds",
+    "colour_1" : "C6011F"
+  },
+  {
+    "location" : "Houston",
+    "full_name" : "Houston Astros",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/23/logo.png",
+    "colour_2" : "072854",
+    "name" : "Astros",
+    "colour_1" : "FF7F00"
+  },
+  {
+    "location" : "Pittsburgh",
+    "full_name" : "Pittsburgh Pirates",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/24/logo.png",
+    "colour_2" : "343434",
+    "name" : "Pirates",
+    "colour_1" : "FDB827"
+  },
+  {
+    "location" : "St. Louis",
+    "full_name" : "St. Louis Cardinals",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/25/logo.png",
+    "colour_2" : "113B5D",
+    "name" : "Cardinals",
+    "colour_1" : "C41E3A"
+  },
+  {
+    "location" : "Los Angeles",
+    "full_name" : "Los Angeles Dodgers",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/26/logo.png",
+    "colour_2" : "343434",
+    "name" : "Dodgers",
+    "colour_1" : "3399FF"
+  },
+  {
+    "location" : "San Diego",
+    "full_name" : "San Diego Padres",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/27/logo.png",
+    "colour_2" : "CCC59B",
+    "name" : "Padres",
+    "colour_1" : "1C3465"
+  },
+  {
+    "location" : "San Francisco",
+    "full_name" : "San Francisco Giants",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/28/logo.png",
+    "colour_2" : "FFFDD0",
+    "name" : "Giants",
+    "colour_1" : "FB5B1F"
+  },
+  {
+    "location" : "Colorado",
+    "full_name" : "Colorado Rockies",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/29/logo.png",
+    "colour_2" : "343434",
+    "name" : "Rockies",
+    "colour_1" : "3D3D76"
+  },
+  {
+    "location" : "Arizona",
+    "full_name" : "Arizona Diamondbacks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/baseball/team/30/logo.png",
+    "colour_2" : "DBCEAC",
+    "name" : "Diamondbacks",
+    "colour_1" : "A71930"
+  }
+]

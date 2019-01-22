@@ -1,0 +1,94 @@
+[
+  {
+    "full_name" : "Albania",
+    "name" : "Albania",
+    "location" : "Albania",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/857/logo.png"
+  },
+  {
+    "full_name" : "Bulgaria",
+    "name" : "Bulgaria",
+    "location" : "Bulgaria",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/846/logo.png"
+  },
+  {
+    "full_name" : "Cyprus",
+    "name" : "Cyprus",
+    "location" : "Cyprus",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/858/logo.png"
+  },
+  {
+    "full_name" : "Estonia",
+    "name" : "Estonia",
+    "location" : "Estonia",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/853/logo.png"
+  },
+  {
+    "full_name" : "Finland",
+    "name" : "Finland",
+    "location" : "Finland",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/871/logo.png"
+  },
+  {
+    "full_name" : "Greece",
+    "name" : "Greece",
+    "location" : "Greece",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/155/logo.png"
+  },
+  {
+    "full_name" : "Hungary",
+    "name" : "Hungary",
+    "location" : "Hungary",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/854/logo.png"
+  },
+  {
+    "full_name" : "Israel",
+    "name" : "Israel",
+    "location" : "Israel",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/862/logo.png"
+  },
+  {
+    "full_name" : "Lithuania",
+    "name" : "Lithuania",
+    "location" : "Lithuania",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/868/logo.png"
+  },
+  {
+    "full_name" : "Montenegro",
+    "name" : "Montenegro",
+    "location" : "Montenegro",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/870/logo.png"
+  },
+  {
+    "full_name" : "Norway",
+    "name" : "Norway",
+    "location" : "Norway",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/860/logo.png"
+  },
+  {
+    "full_name" : "Romania",
+    "name" : "Romania",
+    "location" : "Romania",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/855/logo.png"
+  },
+  {
+    "full_name" : "Scotland",
+    "name" : "Scotland",
+    "location" : "Scotland",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/843/logo.png"
+  },
+  {
+    "location" : "Serbia",
+    "full_name" : "Serbia",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/158/logo.png",
+    "colour_2" : "0C4076",
+    "name" : "Serbia",
+    "colour_1" : "C6363C"
+  },
+  {
+    "full_name" : "Slovenia",
+    "name" : "Slovenia",
+    "location" : "Slovenia",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/soccer/team/156/logo.png"
+  }
+]

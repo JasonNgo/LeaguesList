@@ -1,0 +1,108 @@
+[
+  {
+    "location" : "Los Angeles",
+    "full_name" : "Los Angeles Sparks",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1852/logo.png",
+    "colour_2" : "FFB900",
+    "name" : "Sparks",
+    "colour_1" : "5F0084"
+  },
+  {
+    "location" : "Minnesota",
+    "full_name" : "Minnesota Lynx",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1853/logo.png",
+    "colour_2" : "58C916",
+    "name" : "Lynx",
+    "colour_1" : "125F94"
+  },
+  {
+    "location" : "Seattle",
+    "full_name" : "Seattle Storm",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1854/logo.png",
+    "colour_2" : "1C5635",
+    "name" : "Storm",
+    "colour_1" : "FFE600"
+  },
+  {
+    "location" : "Phoenix",
+    "full_name" : "Phoenix Mercury",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1855/logo.png",
+    "colour_2" : "270061",
+    "name" : "Mercury",
+    "colour_1" : "F44B00"
+  },
+  {
+    "location" : "Connecticut",
+    "full_name" : "Connecticut Sun",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1856/logo.png",
+    "colour_2" : "002863",
+    "name" : "Sun",
+    "colour_1" : "CE002A"
+  },
+  {
+    "location" : "Washington",
+    "full_name" : "Washington Mystics",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1857/logo.png",
+    "colour_2" : "F1002B",
+    "name" : "Mystics",
+    "colour_1" : "00265D"
+  },
+  {
+    "location" : "Indiana",
+    "full_name" : "Indiana Fever",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1858/logo.png",
+    "colour_2" : "FFD900",
+    "name" : "Fever",
+    "colour_1" : "F1002B"
+  },
+  {
+    "location" : "Chicago",
+    "full_name" : "Chicago Sky",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1859/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Sky",
+    "colour_1" : "418DD0"
+  },
+  {
+    "location" : "Las Vegas",
+    "full_name" : "Las Vegas Aces",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1860/logo.png",
+    "colour_2" : "B79854",
+    "name" : "Aces",
+    "colour_1" : "DF0033"
+  },
+  {
+    "location" : "Dallas",
+    "full_name" : "Dallas Wings",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1861/logo.png",
+    "colour_2" : "00265D",
+    "name" : "Wings",
+    "colour_1" : "B79854"
+  },
+  {
+    "location" : "Atlanta",
+    "full_name" : "Atlanta Dream",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1862/logo.png",
+    "colour_2" : "FFFFFF",
+    "name" : "Dream",
+    "colour_1" : "F6002A"
+  },
+  {
+    "location" : "New York",
+    "full_name" : "New York Liberty",
+    "logo" : "https://d12smlnp5321d2.cloudfront.net/basketball/team/1863/logo.png",
+    "colour_2" : "FF7900",
+    "name" : "Liberty",
+    "colour_1" : "6FD4BE"
+  },
+  {
+    "name" : "All-Stars",
+    "location" : "Western",
+    "full_name" : "Western All-Stars"
+  },
+  {
+    "name" : "All-Stars",
+    "location" : "Eastern",
+    "full_name" : "Eastern All-Stars"
+  }
+]

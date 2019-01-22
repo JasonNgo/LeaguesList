@@ -1,23 +1,17 @@
 //
-//  LeaguesListTests.swift
+//  LeaguesListModelTests.swift
 //  LeaguesListTests
 //
-//  Created by Jason Ngo on 2019-01-21.
+//  Created by Jason Ngo on 2019-01-22.
 //  Copyright © 2019 Jason Ngo. All rights reserved.
 //
 
 import XCTest
 @testable import LeaguesList
 
-class LeaguesListTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+class LeaguesListModelTests: XCTestCase {
+    
+    // MARK: - League Model Tests
     
     func testLeagueCellViewModelProducer() {
         let fullName = "NHL Hockey"
@@ -54,8 +48,27 @@ class LeaguesListTests: XCTestCase {
             XCTAssert(expectedFullName == actualFullName)
             XCTAssert(expectedSlug == actualSlug)
         } catch {
-            XCTAssert(false)
+            XCTFail()
         }
+    }
+    
+    // MARK: - Team Model Tests
+    
+    func testTeamCellViewModelProducer() {
+        let fullName = "Boston Bruins"
+        let location = "Boston"
+        let logo = "https://d12smlnp5321d2.cloudfront.net/hockey/team/1/logo.png"
+        let colour1 = "FDB930"
+        let colour2 = "343434"
+        let name = "Bruins"
+        
+        let team = Team(fullName: fullName, name: name, location: location, logoImageUrl: logo, colour1: colour1, colour2: colour2)
+        let teamViewModel = team.toTeamCellViewModel()
+        
+        let expected = "Boston Bruins"
+        let actual = teamViewModel.fullNameLabelText
+        
+        XCTAssert(expected == actual)
     }
     
 }

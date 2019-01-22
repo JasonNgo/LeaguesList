@@ -1,5 +1,5 @@
 //
-//  LeaguesListController.swift
+//  Coordinator.swift
 //  LeaguesList
 //
 //  Created by Jason Ngo on 2019-01-22.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol Coordinator {
+    func start()
+}

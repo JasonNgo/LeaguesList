@@ -42,4 +42,11 @@ class LeaguesDataManagerTests: XCTestCase {
         let actual = leaguesDataManager.getListOfLeagues()
         XCTAssert(expected == actual)
     }
+    
+    func testTeamsDataManagerNHLDataTransformation() {
+        let fileAccessor = FileAccessor<TheScoreEndPoint>()
+        let teamsDataManager = TeamsDataManager()
+        
+        
+    }
 }

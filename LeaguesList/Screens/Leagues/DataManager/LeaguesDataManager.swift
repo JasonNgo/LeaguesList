@@ -8,9 +8,12 @@
 
 import Foundation
 
-class LeaguesDataManager {
+/// Acts as a bridge between ViewControllers and the data associated with that controller.
+/// Interacts with TheScoreEndPoint to fetch data and performs the required data transformations to
+/// League objects that the LeagueController can interact with.
+final class LeaguesDataManager {
     private var fileAccessor: FileAccessor<TheScoreEndPoint>
-    private (set) var leagues: [League] = []
+    private var leagues: [League] = []
     
     init(fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.fileAccessor = fileAccessor

@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Coordinators are a class used to control the navigation flow and are used to inject the
+/// required depenecies into the screens they control.
 protocol Coordinator {
     func start()
 }

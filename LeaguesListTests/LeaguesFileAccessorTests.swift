@@ -17,7 +17,7 @@ class LeaguesFileAccessorTests: XCTestCase {
         fileAccessor.request(.leagues) { (result) in
             switch result {
             case .success(let data):
-                XCTAssertNoThrow(try! JSONDecoder().decode([League].self, from: data))
+                XCTAssertNotNil(data)
             case .failure:
                 XCTFail()
             }

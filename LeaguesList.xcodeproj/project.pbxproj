@@ -46,6 +46,8 @@
 		7D6C13B221F8CDCC002B8A09 /* TeamsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13B121F8CDCC002B8A09 /* TeamsDataManager.swift */; };
 		7D6C13B421F8D48C002B8A09 /* leagues in Resources */ = {isa = PBXBuildFile; fileRef = 7D6C13B321F8D48C002B8A09 /* leagues */; };
 		7D6C13B521F8D48C002B8A09 /* leagues in Resources */ = {isa = PBXBuildFile; fileRef = 7D6C13B321F8D48C002B8A09 /* leagues */; };
+		7D6C13BA21F8ECCE002B8A09 /* TeamsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */; };
+		7D6C13C021F8EDCC002B8A09 /* LeaguesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		7D6C13AE21F8C659002B8A09 /* LeaguesDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDataManagerTests.swift; sourceTree = "<group>"; };
 		7D6C13B121F8CDCC002B8A09 /* TeamsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDataManager.swift; sourceTree = "<group>"; };
 		7D6C13B321F8D48C002B8A09 /* leagues */ = {isa = PBXFileReference; lastKnownFileType = folder; path = leagues; sourceTree = "<group>"; };
+		7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsFactory.swift; sourceTree = "<group>"; };
+		7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				7D06A12521F7826E000598EB /* League.swift */,
+				7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				7D06A13221F78BB0000598EB /* Team.swift */,
+				7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -473,11 +479,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6C138C21F7CCF5002B8A09 /* URLParameterEncoder.swift in Sources */,
+				7D6C13C021F8EDCC002B8A09 /* LeaguesFactory.swift in Sources */,
 				7D6C138B21F7CCF5002B8A09 /* ParameterEncoding.swift in Sources */,
 				7D6C138921F7CCF5002B8A09 /* JSONParameterEncoder.swift in Sources */,
 				7D06A13321F78BB0000598EB /* Team.swift in Sources */,
 				7D6C138021F7C5DC002B8A09 /* LeagueCell.swift in Sources */,
 				7D6C139821F7CD1C002B8A09 /* Result.swift in Sources */,
+				7D6C13BA21F8ECCE002B8A09 /* TeamsFactory.swift in Sources */,
 				7D6C137A21F7BF71002B8A09 /* ApplicationCoordinator.swift in Sources */,
 				7D6C13A321F7D6AA002B8A09 /* FileManagerRequest.swift in Sources */,
 				7D6C137E21F7C08A002B8A09 /* LeaguesCoordinator.swift in Sources */,

@@ -8,12 +8,41 @@
 
 import Foundation
 
+enum TeamsDataManagerError: Error {
+    case unableToFetchListOfTeams
+    case unableToDecodeListOfTeams
+}
+
+typealias TeamsDataManagerCompletion = (Result<[Team], TeamsDataManagerError>) -> Void
+
 final class TeamsDataManager {
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
+    private var teamsCache: [String: [Team]] = [:]
     
     init(fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.fileAccessor = fileAccessor
     }
     
-    
+    func getTeamsForSlug(_ slug: String, completion: @escaping TeamsDataManagerCompletion) {
+        if let teams = teamsCache[slug] {
+            completion(.success(teams))
+            return
+        }
+        
+        fileAccessor.request(.teams(slug: slug)) { (result) in
+            switch result {
+            case .success(let data):
+                do {
+                    let teams = try JSONDecoder().decode([Team].self, from: data)
+                    self.teamsCache[slug] = teams
+                    completion(.success(teams))
+                } catch {
+                    completion(.failure(TeamsDataManagerError.unableToDecodeListOfTeams))
+                    return
+                }
+            case .failure:
+                completion(.failure(TeamsDataManagerError.unableToFetchListOfTeams))
+            }
+        }
+    }
 }

@@ -8,9 +8,16 @@
 
 import Foundation
 
+/// Model object representing a League. Conforms to Decodable and is able to produce LeagueCellViewModels.
 struct League {
     var fullName: String
     var slug: String
+}
+
+extension League: Equatable {
+    static func == (lhs: League, rhs: League) -> Bool {
+        return lhs.fullName == rhs.fullName && lhs.slug == rhs.slug
+    }
 }
 
 extension League: Decodable {

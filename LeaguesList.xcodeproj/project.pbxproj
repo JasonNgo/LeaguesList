@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7D06A0D421F66563000598EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D06A0D321F66563000598EB /* AppDelegate.swift */; };
-		7D06A0D621F66563000598EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D06A0D521F66563000598EB /* ViewController.swift */; };
-		7D06A0D921F66563000598EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0D721F66563000598EB /* Main.storyboard */; };
 		7D06A0DB21F66564000598EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0DA21F66564000598EB /* Assets.xcassets */; };
 		7D06A0DE21F66564000598EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0DC21F66564000598EB /* LaunchScreen.storyboard */; };
 		7D06A0F921F78243000598EB /* leagues.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0F821F78243000598EB /* leagues.json */; };
@@ -40,7 +38,7 @@
 		7D06A13321F78BB0000598EB /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D06A13221F78BB0000598EB /* Team.swift */; };
 		7D06A13521F78D52000598EB /* TeamCellViewModelProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D06A13421F78D52000598EB /* TeamCellViewModelProducer.swift */; };
 		7D06A13721F78D6F000598EB /* TeamCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D06A13621F78D6F000598EB /* TeamCellViewModel.swift */; };
-		7D6C136E21F79930002B8A09 /* LeaguesListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C136D21F79930002B8A09 /* LeaguesListModelTests.swift */; };
+		7D6C136E21F79930002B8A09 /* LeaguesModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C136D21F79930002B8A09 /* LeaguesModelTests.swift */; };
 		7D6C137021F7B2AB002B8A09 /* LeaguesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C136F21F7B2AB002B8A09 /* LeaguesController.swift */; };
 		7D6C137421F7BBD5002B8A09 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C137321F7BBD5002B8A09 /* UIView+Extensions.swift */; };
 		7D6C137621F7BBFB002B8A09 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C137521F7BBFB002B8A09 /* UIColor+Extensions.swift */; };
@@ -48,6 +46,24 @@
 		7D6C137A21F7BF71002B8A09 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C137921F7BF71002B8A09 /* ApplicationCoordinator.swift */; };
 		7D6C137E21F7C08A002B8A09 /* LeaguesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C137D21F7C08A002B8A09 /* LeaguesCoordinator.swift */; };
 		7D6C138021F7C5DC002B8A09 /* LeagueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C137F21F7C5DC002B8A09 /* LeagueCell.swift */; };
+		7D6C138921F7CCF5002B8A09 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C138521F7CCF4002B8A09 /* JSONParameterEncoder.swift */; };
+		7D6C138A21F7CCF5002B8A09 /* EncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C138621F7CCF4002B8A09 /* EncodingError.swift */; };
+		7D6C138B21F7CCF5002B8A09 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C138721F7CCF4002B8A09 /* ParameterEncoding.swift */; };
+		7D6C138C21F7CCF5002B8A09 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C138821F7CCF5002B8A09 /* URLParameterEncoder.swift */; };
+		7D6C139221F7CD0D002B8A09 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C138D21F7CD0D002B8A09 /* HTTPMethod.swift */; };
+		7D6C139321F7CD0D002B8A09 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C138E21F7CD0D002B8A09 /* NetworkRouter.swift */; };
+		7D6C139421F7CD0D002B8A09 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C138F21F7CD0D002B8A09 /* EndPointType.swift */; };
+		7D6C139521F7CD0D002B8A09 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139021F7CD0D002B8A09 /* Router.swift */; };
+		7D6C139621F7CD0D002B8A09 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139121F7CD0D002B8A09 /* HTTPTask.swift */; };
+		7D6C139821F7CD1C002B8A09 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139721F7CD1C002B8A09 /* Result.swift */; };
+		7D6C139C21F7D0B7002B8A09 /* TheScoreEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139B21F7D0B7002B8A09 /* TheScoreEndPoint.swift */; };
+		7D6C139F21F7D369002B8A09 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139E21F7D369002B8A09 /* FileManager.swift */; };
+		7D6C13A121F7D3FA002B8A09 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A021F7D3FA002B8A09 /* RouterError.swift */; };
+		7D6C13A321F7D6AA002B8A09 /* FileManagerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A221F7D6AA002B8A09 /* FileManagerRequest.swift */; };
+		7D6C13A521F7D8CD002B8A09 /* LeaguesFileAccessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A421F7D8CD002B8A09 /* LeaguesFileAccessorTests.swift */; };
+		7D6C13A721F7DB61002B8A09 /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A621F7DB60002B8A09 /* MovieEndPoint.swift */; };
+		7D6C13AA21F80498002B8A09 /* LeaguesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */; };
+		7D6C13AF21F8C659002B8A09 /* LeaguesDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13AE21F8C659002B8A09 /* LeaguesDataManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +79,6 @@
 /* Begin PBXFileReference section */
 		7D06A0D021F66563000598EB /* LeaguesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaguesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D06A0D321F66563000598EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D06A0D521F66563000598EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D06A0D821F66563000598EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D06A0DA21F66564000598EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D06A0DD21F66564000598EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D06A0DF21F66564000598EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,7 +112,7 @@
 		7D06A13221F78BB0000598EB /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		7D06A13421F78D52000598EB /* TeamCellViewModelProducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCellViewModelProducer.swift; sourceTree = "<group>"; };
 		7D06A13621F78D6F000598EB /* TeamCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCellViewModel.swift; sourceTree = "<group>"; };
-		7D6C136D21F79930002B8A09 /* LeaguesListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesListModelTests.swift; sourceTree = "<group>"; };
+		7D6C136D21F79930002B8A09 /* LeaguesModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesModelTests.swift; sourceTree = "<group>"; };
 		7D6C136F21F7B2AB002B8A09 /* LeaguesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesController.swift; sourceTree = "<group>"; };
 		7D6C137321F7BBD5002B8A09 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		7D6C137521F7BBFB002B8A09 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
@@ -106,6 +120,24 @@
 		7D6C137921F7BF71002B8A09 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		7D6C137D21F7C08A002B8A09 /* LeaguesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesCoordinator.swift; sourceTree = "<group>"; };
 		7D6C137F21F7C5DC002B8A09 /* LeagueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCell.swift; sourceTree = "<group>"; };
+		7D6C138521F7CCF4002B8A09 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		7D6C138621F7CCF4002B8A09 /* EncodingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingError.swift; sourceTree = "<group>"; };
+		7D6C138721F7CCF4002B8A09 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		7D6C138821F7CCF5002B8A09 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		7D6C138D21F7CD0D002B8A09 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		7D6C138E21F7CD0D002B8A09 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		7D6C138F21F7CD0D002B8A09 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		7D6C139021F7CD0D002B8A09 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7D6C139121F7CD0D002B8A09 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		7D6C139721F7CD1C002B8A09 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7D6C139B21F7D0B7002B8A09 /* TheScoreEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheScoreEndPoint.swift; sourceTree = "<group>"; };
+		7D6C139E21F7D369002B8A09 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		7D6C13A021F7D3FA002B8A09 /* RouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterError.swift; sourceTree = "<group>"; };
+		7D6C13A221F7D6AA002B8A09 /* FileManagerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerRequest.swift; sourceTree = "<group>"; };
+		7D6C13A421F7D8CD002B8A09 /* LeaguesFileAccessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesFileAccessorTests.swift; sourceTree = "<group>"; };
+		7D6C13A621F7DB60002B8A09 /* MovieEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
+		7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDataManager.swift; sourceTree = "<group>"; };
+		7D6C13AE21F8C659002B8A09 /* LeaguesDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDataManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,17 +179,15 @@
 		7D06A0D221F66563000598EB /* LeaguesList */ = {
 			isa = PBXGroup;
 			children = (
-				7D06A0D321F66563000598EB /* AppDelegate.swift */,
-				7D6C137B21F7BF76002B8A09 /* Coordinators */,
-				7D06A12C21F785E4000598EB /* Leagues */,
-				7D06A12D21F785F4000598EB /* Teams */,
-				7D6C137121F7BB8A002B8A09 /* Util */,
-				7D06A0F721F78230000598EB /* Resources */,
-				7D06A0D521F66563000598EB /* ViewController.swift */,
-				7D06A0D721F66563000598EB /* Main.storyboard */,
 				7D06A0DA21F66564000598EB /* Assets.xcassets */,
 				7D06A0DC21F66564000598EB /* LaunchScreen.storyboard */,
 				7D06A0DF21F66564000598EB /* Info.plist */,
+				7D06A0D321F66563000598EB /* AppDelegate.swift */,
+				7D6C137B21F7BF76002B8A09 /* Coordinators */,
+				7D6C13AD21F80894002B8A09 /* Screens */,
+				7D6C138121F7CBE3002B8A09 /* Networking */,
+				7D6C137121F7BB8A002B8A09 /* Util */,
+				7D06A0F721F78230000598EB /* Resources */,
 			);
 			path = LeaguesList;
 			sourceTree = "<group>";
@@ -165,7 +195,9 @@
 		7D06A0E721F66564000598EB /* LeaguesListTests */ = {
 			isa = PBXGroup;
 			children = (
-				7D6C136D21F79930002B8A09 /* LeaguesListModelTests.swift */,
+				7D6C136D21F79930002B8A09 /* LeaguesModelTests.swift */,
+				7D6C13A421F7D8CD002B8A09 /* LeaguesFileAccessorTests.swift */,
+				7D6C13AE21F8C659002B8A09 /* LeaguesDataManagerTests.swift */,
 				7D06A0EA21F66564000598EB /* Info.plist */,
 			);
 			path = LeaguesListTests;
@@ -245,10 +277,11 @@
 			isa = PBXGroup;
 			children = (
 				7D6C137C21F7C07D002B8A09 /* Coordinator */,
+				7D6C13A821F8037C002B8A09 /* DataManager */,
 				7D06A0F321F781FC000598EB /* Model */,
-				7D06A0F521F78212000598EB /* View */,
-				7D06A0F421F78200000598EB /* Controller */,
 				7D06A0F621F7821F000598EB /* ViewModel */,
+				7D06A0F421F78200000598EB /* Controller */,
+				7D06A0F521F78212000598EB /* View */,
 			);
 			path = Leagues;
 			sourceTree = "<group>";
@@ -298,6 +331,7 @@
 		7D6C137121F7BB8A002B8A09 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				7D6C139721F7CD1C002B8A09 /* Result.swift */,
 				7D6C137321F7BBD5002B8A09 /* UIView+Extensions.swift */,
 				7D6C137521F7BBFB002B8A09 /* UIColor+Extensions.swift */,
 			);
@@ -319,6 +353,76 @@
 				7D6C137D21F7C08A002B8A09 /* LeaguesCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7D6C138121F7CBE3002B8A09 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7D6C138221F7CC29002B8A09 /* EndPoint */,
+				7D6C139D21F7D358002B8A09 /* FileManager */,
+				7D6C138321F7CCCE002B8A09 /* Router */,
+				7D6C138421F7CCD6002B8A09 /* Encoding */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7D6C138221F7CC29002B8A09 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				7D6C139B21F7D0B7002B8A09 /* TheScoreEndPoint.swift */,
+				7D6C13A621F7DB60002B8A09 /* MovieEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		7D6C138321F7CCCE002B8A09 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7D6C138E21F7CD0D002B8A09 /* NetworkRouter.swift */,
+				7D6C13A021F7D3FA002B8A09 /* RouterError.swift */,
+				7D6C139021F7CD0D002B8A09 /* Router.swift */,
+				7D6C138F21F7CD0D002B8A09 /* EndPointType.swift */,
+				7D6C138D21F7CD0D002B8A09 /* HTTPMethod.swift */,
+				7D6C139121F7CD0D002B8A09 /* HTTPTask.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7D6C138421F7CCD6002B8A09 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				7D6C138721F7CCF4002B8A09 /* ParameterEncoding.swift */,
+				7D6C138621F7CCF4002B8A09 /* EncodingError.swift */,
+				7D6C138821F7CCF5002B8A09 /* URLParameterEncoder.swift */,
+				7D6C138521F7CCF4002B8A09 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		7D6C139D21F7D358002B8A09 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				7D6C13A221F7D6AA002B8A09 /* FileManagerRequest.swift */,
+				7D6C139E21F7D369002B8A09 /* FileManager.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		7D6C13A821F8037C002B8A09 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		7D6C13AD21F80894002B8A09 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7D06A12C21F785E4000598EB /* Leagues */,
+				7D06A12D21F785F4000598EB /* Teams */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,7 +524,6 @@
 				7D06A11A21F7824E000598EB /* nfl.json in Resources */,
 				7D06A11021F7824E000598EB /* cfl.json in Resources */,
 				7D06A11D21F7824E000598EB /* nba.json in Resources */,
-				7D06A0D921F66563000598EB /* Main.storyboard in Resources */,
 				7D06A11C21F7824E000598EB /* natleaguea.json in Resources */,
 				7D06A11121F7824E000598EB /* mlb.json in Resources */,
 				7D06A11521F7824E000598EB /* ncaab.json in Resources */,
@@ -444,21 +547,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6C138C21F7CCF5002B8A09 /* URLParameterEncoder.swift in Sources */,
+				7D6C138B21F7CCF5002B8A09 /* ParameterEncoding.swift in Sources */,
+				7D6C138921F7CCF5002B8A09 /* JSONParameterEncoder.swift in Sources */,
 				7D06A13321F78BB0000598EB /* Team.swift in Sources */,
-				7D06A0D621F66563000598EB /* ViewController.swift in Sources */,
 				7D6C138021F7C5DC002B8A09 /* LeagueCell.swift in Sources */,
+				7D6C139821F7CD1C002B8A09 /* Result.swift in Sources */,
 				7D6C137A21F7BF71002B8A09 /* ApplicationCoordinator.swift in Sources */,
+				7D6C13A321F7D6AA002B8A09 /* FileManagerRequest.swift in Sources */,
 				7D6C137E21F7C08A002B8A09 /* LeaguesCoordinator.swift in Sources */,
+				7D6C139221F7CD0D002B8A09 /* HTTPMethod.swift in Sources */,
 				7D6C137421F7BBD5002B8A09 /* UIView+Extensions.swift in Sources */,
+				7D6C139C21F7D0B7002B8A09 /* TheScoreEndPoint.swift in Sources */,
 				7D06A12821F7831A000598EB /* LeagueCellViewModelProducer.swift in Sources */,
 				7D06A12A21F78336000598EB /* LeagueCellViewModel.swift in Sources */,
+				7D6C139621F7CD0D002B8A09 /* HTTPTask.swift in Sources */,
+				7D6C139F21F7D369002B8A09 /* FileManager.swift in Sources */,
 				7D06A13521F78D52000598EB /* TeamCellViewModelProducer.swift in Sources */,
 				7D06A13721F78D6F000598EB /* TeamCellViewModel.swift in Sources */,
 				7D6C137021F7B2AB002B8A09 /* LeaguesController.swift in Sources */,
 				7D6C137821F7BF41002B8A09 /* Coordinator.swift in Sources */,
+				7D6C139521F7CD0D002B8A09 /* Router.swift in Sources */,
+				7D6C139421F7CD0D002B8A09 /* EndPointType.swift in Sources */,
 				7D6C137621F7BBFB002B8A09 /* UIColor+Extensions.swift in Sources */,
+				7D6C13A121F7D3FA002B8A09 /* RouterError.swift in Sources */,
+				7D6C13AA21F80498002B8A09 /* LeaguesDataManager.swift in Sources */,
+				7D6C138A21F7CCF5002B8A09 /* EncodingError.swift in Sources */,
 				7D06A12621F7826E000598EB /* League.swift in Sources */,
 				7D06A0D421F66563000598EB /* AppDelegate.swift in Sources */,
+				7D6C139321F7CD0D002B8A09 /* NetworkRouter.swift in Sources */,
+				7D6C13A721F7DB61002B8A09 /* MovieEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +584,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D6C136E21F79930002B8A09 /* LeaguesListModelTests.swift in Sources */,
+				7D6C13AF21F8C659002B8A09 /* LeaguesDataManagerTests.swift in Sources */,
+				7D6C136E21F79930002B8A09 /* LeaguesModelTests.swift in Sources */,
+				7D6C13A521F7D8CD002B8A09 /* LeaguesFileAccessorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,14 +601,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D06A0D721F66563000598EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D06A0D821F66563000598EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7D06A0DC21F66564000598EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

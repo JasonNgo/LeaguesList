@@ -1,5 +1,5 @@
 //
-//  LeaguesListModelTests.swift
+//  LeaguesModelTests.swift
 //  LeaguesListTests
 //
 //  Created by Jason Ngo on 2019-01-22.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import LeaguesList
 
-class LeaguesListModelTests: XCTestCase {
+class LeaguesModelTests: XCTestCase {
     
     // MARK: - League Model Tests
     
@@ -54,21 +54,21 @@ class LeaguesListModelTests: XCTestCase {
     
     // MARK: - Team Model Tests
     
-    func testTeamCellViewModelProducer() {
-        let fullName = "Boston Bruins"
-        let location = "Boston"
-        let logo = "https://d12smlnp5321d2.cloudfront.net/hockey/team/1/logo.png"
-        let colour1 = "FDB930"
-        let colour2 = "343434"
-        let name = "Bruins"
-        
-        let team = Team(fullName: fullName, name: name, location: location, logoImageUrl: logo, colour1: colour1, colour2: colour2)
-        let teamViewModel = team.toTeamCellViewModel()
-        
-        let expected = "Boston Bruins"
-        let actual = teamViewModel.fullNameLabelText
-        
-        XCTAssert(expected == actual)
-    }
+//    func testTeamCellViewModelProducer() {
+//        let fullName = "Boston Bruins"
+//        let location = "Boston"
+//        let logo = "https://d12smlnp5321d2.cloudfront.net/hockey/team/1/logo.png"
+//        let colour1 = "FDB930"
+//        let colour2 = "343434"
+//        let name = "Bruins"
+//
+//        let team = Team(fullName: fullName, name: name, location: location, logoImageUrl: logo, colour1: colour1, colour2: colour2)
+//        let teamViewModel = team.toTeamCellViewModel()
+//
+//        let expected = "Boston Bruins"
+//        let actual = teamViewModel.fullNameLabelText
+//
+//        XCTAssert(expected == actual)
+//    }
     
 }

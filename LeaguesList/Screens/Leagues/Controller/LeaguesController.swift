@@ -8,13 +8,23 @@
 
 import UIKit
 
+/// LeaguesController delegates responsibilities of didSelectItem back to LeagueCoordinator
+protocol LeaguesControllerDelegate: class {
+    func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath)
+}
+
+/// LeaguesController manages a CollectionView of a list of leagues
 final class LeaguesController: UIViewController {
+    
+    // MARK: - Delegate
+    weak var delegate: LeaguesControllerDelegate?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
-    private let cellHeight: CGFloat = 75
+    private let cellHeight: CGFloat = 50
     private let minimumLineSpacingForSection: CGFloat = 5
     
+    // MARK: - CollectionView
     private let reuseId = "LeagueCell"
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -26,24 +36,31 @@ final class LeaguesController: UIViewController {
         return cv
     }()
     
+    // MARK: - Model
+    var leagueViewModels: [LeagueCellViewModel] = []
+    
+    // MARK: - Overrides
+    
     override func loadView() {
         super.loadView()
         view.addSubview(collectionView)
         collectionView.fillSuperview()
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+}
+
+// MARK: - UICollectionViewDelegate
+
+extension LeaguesController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.leaguesControllerDidSelectItemAt(indexPath)
     }
 }
 
-extension LeaguesController: UICollectionViewDelegate {
-    
-}
+// MARK: - UICollectionViewDataSource
 
 extension LeaguesController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return leagueViewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -51,12 +68,13 @@ extension LeaguesController: UICollectionViewDataSource {
             fatalError("Unable to dequeue League Cell")
         }
         
-        let viewModel = LeagueCellViewModel(fullNameLabelText: "Hello World")
-        cell.leagueViewModel = viewModel
-        
+        cell.leagueViewModel = leagueViewModels[indexPath.item]
         return cell
     }
 }
+
+
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension LeaguesController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

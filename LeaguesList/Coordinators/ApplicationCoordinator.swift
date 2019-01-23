@@ -8,9 +8,13 @@
 
 import UIKit
 
+/// ApplicationCoordinator is represents the initial Coordinator that instantiates all the dependencies required by
+/// the project. It uses dependency injection to insert the required dependencies to other coordinators.
 class ApplicationCoordinator: Coordinator {
     let window: UIWindow
     let rootViewController: UINavigationController
+    let fileAccessor: FileAccessor<TheScoreEndPoint>
+    let leaguesDataManager: LeaguesDataManager
     
     let leaguesCoordinator: LeaguesCoordinator
     
@@ -18,8 +22,10 @@ class ApplicationCoordinator: Coordinator {
         self.window = window
         rootViewController = UINavigationController()
         rootViewController.navigationBar.prefersLargeTitles = true
+        fileAccessor = FileAccessor<TheScoreEndPoint>()
+        leaguesDataManager = LeaguesDataManager(fileAccessor: fileAccessor)
         
-        leaguesCoordinator = LeaguesCoordinator(presenter: rootViewController)
+        leaguesCoordinator = LeaguesCoordinator(presenter: rootViewController, leaguesDataManager: leaguesDataManager)
     }
     
     func start() {

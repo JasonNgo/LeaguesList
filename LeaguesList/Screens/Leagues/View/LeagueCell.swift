@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// CollectionView Cell displayed on the collectionView of Leagues Controller
+/// CollectionViewCell displayed on collectionView of Leagues Controller
 final class LeagueCell: UICollectionViewCell {
     
     // MARK: - Subviews

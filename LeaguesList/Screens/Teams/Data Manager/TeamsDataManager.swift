@@ -9,5 +9,11 @@
 import Foundation
 
 final class TeamsDataManager {
+    private let fileAccessor: FileAccessor<TheScoreEndPoint>
+    
+    init(fileAccessor: FileAccessor<TheScoreEndPoint>) {
+        self.fileAccessor = fileAccessor
+    }
+    
     
 }

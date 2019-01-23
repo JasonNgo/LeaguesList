@@ -53,12 +53,6 @@ extension Team: Decodable {
 
 extension Team: TeamCellViewModelProducer {
     func toTeamCellViewModel() -> TeamCellViewModel {
-        
-        
-        
-        
-        
-        
         let viewModel = TeamCellViewModel(fullNameLabelText: "Hello")
         return viewModel
     }    

@@ -45,7 +45,6 @@ class LeaguesDataManagerTests: XCTestCase {
     
     func testTeamsDataManagerNHLDataTransformation() {
         let fileAccessor = FileAccessor<TheScoreEndPoint>()
-        let teamsDataManager = TeamsDataManager()
         
         
     }

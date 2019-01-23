@@ -12,7 +12,7 @@ import Foundation
 /// Interacts with TheScoreEndPoint to fetch data and performs the required data transformations to
 /// League objects that the LeagueController can interact with.
 final class LeaguesDataManager {
-    private var fileAccessor: FileAccessor<TheScoreEndPoint>
+    private let fileAccessor: FileAccessor<TheScoreEndPoint>
     private var leagues: [League] = []
     
     init(fileAccessor: FileAccessor<TheScoreEndPoint>) {

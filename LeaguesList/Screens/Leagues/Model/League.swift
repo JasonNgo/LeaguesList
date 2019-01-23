@@ -21,16 +21,16 @@ extension League: Equatable {
 }
 
 extension League: Decodable {
-    enum LeagueEncodingKeys: String, CodingKey {
+    enum LeagueDecodingKeys: String, CodingKey {
         case fullName = "full_name"
         case slug
     }
     
     init(from decoder: Decoder) throws {
-        let leagueContainer = try decoder.container(keyedBy: LeagueEncodingKeys.self)
+        let values = try decoder.container(keyedBy: LeagueDecodingKeys.self)
         
-        fullName = try leagueContainer.decode(String.self, forKey: .fullName)
-        slug = try leagueContainer.decode(String.self, forKey: .slug)
+        fullName = try values.decode(String.self, forKey: .fullName)
+        slug = try values.decode(String.self, forKey: .slug)
     }
 }
 

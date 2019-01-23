@@ -11,27 +11,6 @@
 		7D06A0DB21F66564000598EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0DA21F66564000598EB /* Assets.xcassets */; };
 		7D06A0DE21F66564000598EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0DC21F66564000598EB /* LaunchScreen.storyboard */; };
 		7D06A0F921F78243000598EB /* leagues.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0F821F78243000598EB /* leagues.json */; };
-		7D06A11021F7824E000598EB /* cfl.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0FB21F7824E000598EB /* cfl.json */; };
-		7D06A11121F7824E000598EB /* mlb.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0FC21F7824E000598EB /* mlb.json */; };
-		7D06A11221F7824E000598EB /* wnba.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0FD21F7824E000598EB /* wnba.json */; };
-		7D06A11321F7824E000598EB /* natleagued.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0FE21F7824E000598EB /* natleagued.json */; };
-		7D06A11421F7824E000598EB /* natleaguec.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A0FF21F7824E000598EB /* natleaguec.json */; };
-		7D06A11521F7824E000598EB /* ncaab.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10021F7824E000598EB /* ncaab.json */; };
-		7D06A11621F7824E000598EB /* engfa.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10121F7824E000598EB /* engfa.json */; };
-		7D06A11721F7824E000598EB /* wjhc.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10221F7824E000598EB /* wjhc.json */; };
-		7D06A11821F7824E000598EB /* nhl.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10321F7824E000598EB /* nhl.json */; };
-		7D06A11921F7824E000598EB /* natleagueb.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10421F7824E000598EB /* natleagueb.json */; };
-		7D06A11A21F7824E000598EB /* nfl.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10521F7824E000598EB /* nfl.json */; };
-		7D06A11B21F7824E000598EB /* engch.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10621F7824E000598EB /* engch.json */; };
-		7D06A11C21F7824E000598EB /* natleaguea.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10721F7824E000598EB /* natleaguea.json */; };
-		7D06A11D21F7824E000598EB /* nba.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10821F7824E000598EB /* nba.json */; };
-		7D06A11E21F7824E000598EB /* uefa.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10921F7824E000598EB /* uefa.json */; };
-		7D06A11F21F7824E000598EB /* mls.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10A21F7824E000598EB /* mls.json */; };
-		7D06A12021F7824E000598EB /* ncaaf.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10B21F7824E000598EB /* ncaaf.json */; };
-		7D06A12121F7824E000598EB /* epl.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10C21F7824E000598EB /* epl.json */; };
-		7D06A12221F7824E000598EB /* engcc.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10D21F7824E000598EB /* engcc.json */; };
-		7D06A12321F7824E000598EB /* wcbk.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10E21F7824E000598EB /* wcbk.json */; };
-		7D06A12421F7824E000598EB /* chlg.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D06A10F21F7824E000598EB /* chlg.json */; };
 		7D06A12621F7826E000598EB /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D06A12521F7826E000598EB /* League.swift */; };
 		7D06A12821F7831A000598EB /* LeagueCellViewModelProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D06A12721F7831A000598EB /* LeagueCellViewModelProducer.swift */; };
 		7D06A12A21F78336000598EB /* LeagueCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D06A12921F78336000598EB /* LeagueCellViewModel.swift */; };
@@ -64,6 +43,11 @@
 		7D6C13A721F7DB61002B8A09 /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A621F7DB60002B8A09 /* MovieEndPoint.swift */; };
 		7D6C13AA21F80498002B8A09 /* LeaguesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */; };
 		7D6C13AF21F8C659002B8A09 /* LeaguesDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13AE21F8C659002B8A09 /* LeaguesDataManagerTests.swift */; };
+		7D6C13B221F8CDCC002B8A09 /* TeamsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13B121F8CDCC002B8A09 /* TeamsDataManager.swift */; };
+		7D6C13B421F8D48C002B8A09 /* leagues in Resources */ = {isa = PBXBuildFile; fileRef = 7D6C13B321F8D48C002B8A09 /* leagues */; };
+		7D6C13B521F8D48C002B8A09 /* leagues in Resources */ = {isa = PBXBuildFile; fileRef = 7D6C13B321F8D48C002B8A09 /* leagues */; };
+		7D6C13BA21F8ECCE002B8A09 /* TeamsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */; };
+		7D6C13C021F8EDCC002B8A09 /* LeaguesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,27 +69,6 @@
 		7D06A0E421F66564000598EB /* LeaguesListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaguesListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D06A0EA21F66564000598EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D06A0F821F78243000598EB /* leagues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = leagues.json; sourceTree = "<group>"; };
-		7D06A0FB21F7824E000598EB /* cfl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cfl.json; sourceTree = "<group>"; };
-		7D06A0FC21F7824E000598EB /* mlb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mlb.json; sourceTree = "<group>"; };
-		7D06A0FD21F7824E000598EB /* wnba.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wnba.json; sourceTree = "<group>"; };
-		7D06A0FE21F7824E000598EB /* natleagued.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = natleagued.json; sourceTree = "<group>"; };
-		7D06A0FF21F7824E000598EB /* natleaguec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = natleaguec.json; sourceTree = "<group>"; };
-		7D06A10021F7824E000598EB /* ncaab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ncaab.json; sourceTree = "<group>"; };
-		7D06A10121F7824E000598EB /* engfa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = engfa.json; sourceTree = "<group>"; };
-		7D06A10221F7824E000598EB /* wjhc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wjhc.json; sourceTree = "<group>"; };
-		7D06A10321F7824E000598EB /* nhl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nhl.json; sourceTree = "<group>"; };
-		7D06A10421F7824E000598EB /* natleagueb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = natleagueb.json; sourceTree = "<group>"; };
-		7D06A10521F7824E000598EB /* nfl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nfl.json; sourceTree = "<group>"; };
-		7D06A10621F7824E000598EB /* engch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = engch.json; sourceTree = "<group>"; };
-		7D06A10721F7824E000598EB /* natleaguea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = natleaguea.json; sourceTree = "<group>"; };
-		7D06A10821F7824E000598EB /* nba.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nba.json; sourceTree = "<group>"; };
-		7D06A10921F7824E000598EB /* uefa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = uefa.json; sourceTree = "<group>"; };
-		7D06A10A21F7824E000598EB /* mls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mls.json; sourceTree = "<group>"; };
-		7D06A10B21F7824E000598EB /* ncaaf.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ncaaf.json; sourceTree = "<group>"; };
-		7D06A10C21F7824E000598EB /* epl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = epl.json; sourceTree = "<group>"; };
-		7D06A10D21F7824E000598EB /* engcc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = engcc.json; sourceTree = "<group>"; };
-		7D06A10E21F7824E000598EB /* wcbk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wcbk.json; sourceTree = "<group>"; };
-		7D06A10F21F7824E000598EB /* chlg.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chlg.json; sourceTree = "<group>"; };
 		7D06A12521F7826E000598EB /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		7D06A12721F7831A000598EB /* LeagueCellViewModelProducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCellViewModelProducer.swift; sourceTree = "<group>"; };
 		7D06A12921F78336000598EB /* LeagueCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCellViewModel.swift; sourceTree = "<group>"; };
@@ -138,6 +101,10 @@
 		7D6C13A621F7DB60002B8A09 /* MovieEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
 		7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDataManager.swift; sourceTree = "<group>"; };
 		7D6C13AE21F8C659002B8A09 /* LeaguesDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDataManagerTests.swift; sourceTree = "<group>"; };
+		7D6C13B121F8CDCC002B8A09 /* TeamsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDataManager.swift; sourceTree = "<group>"; };
+		7D6C13B321F8D48C002B8A09 /* leagues */ = {isa = PBXFileReference; lastKnownFileType = folder; path = leagues; sourceTree = "<group>"; };
+		7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsFactory.swift; sourceTree = "<group>"; };
+		7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				7D06A12521F7826E000598EB /* League.swift */,
+				7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,37 +208,9 @@
 			isa = PBXGroup;
 			children = (
 				7D06A0F821F78243000598EB /* leagues.json */,
-				7D06A0FA21F7824E000598EB /* leagues */,
+				7D6C13B321F8D48C002B8A09 /* leagues */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		7D06A0FA21F7824E000598EB /* leagues */ = {
-			isa = PBXGroup;
-			children = (
-				7D06A0FB21F7824E000598EB /* cfl.json */,
-				7D06A0FC21F7824E000598EB /* mlb.json */,
-				7D06A0FD21F7824E000598EB /* wnba.json */,
-				7D06A0FE21F7824E000598EB /* natleagued.json */,
-				7D06A0FF21F7824E000598EB /* natleaguec.json */,
-				7D06A10021F7824E000598EB /* ncaab.json */,
-				7D06A10121F7824E000598EB /* engfa.json */,
-				7D06A10221F7824E000598EB /* wjhc.json */,
-				7D06A10321F7824E000598EB /* nhl.json */,
-				7D06A10421F7824E000598EB /* natleagueb.json */,
-				7D06A10521F7824E000598EB /* nfl.json */,
-				7D06A10621F7824E000598EB /* engch.json */,
-				7D06A10721F7824E000598EB /* natleaguea.json */,
-				7D06A10821F7824E000598EB /* nba.json */,
-				7D06A10921F7824E000598EB /* uefa.json */,
-				7D06A10A21F7824E000598EB /* mls.json */,
-				7D06A10B21F7824E000598EB /* ncaaf.json */,
-				7D06A10C21F7824E000598EB /* epl.json */,
-				7D06A10D21F7824E000598EB /* engcc.json */,
-				7D06A10E21F7824E000598EB /* wcbk.json */,
-				7D06A10F21F7824E000598EB /* chlg.json */,
-			);
-			path = leagues;
 			sourceTree = "<group>";
 		};
 		7D06A12C21F785E4000598EB /* Leagues */ = {
@@ -289,6 +229,7 @@
 		7D06A12D21F785F4000598EB /* Teams */ = {
 			isa = PBXGroup;
 			children = (
+				7D6C13B021F8CDBB002B8A09 /* Data Manager */,
 				7D06A12E21F78B76000598EB /* Model */,
 				7D06A13021F78B84000598EB /* Controller */,
 				7D06A12F21F78B7F000598EB /* View */,
@@ -301,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				7D06A13221F78BB0000598EB /* Team.swift */,
+				7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -425,6 +367,14 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		7D6C13B021F8CDBB002B8A09 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7D6C13B121F8CDCC002B8A09 /* TeamsDataManager.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -506,30 +456,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D06A11E21F7824E000598EB /* uefa.json in Resources */,
 				7D06A0DE21F66564000598EB /* LaunchScreen.storyboard in Resources */,
-				7D06A11721F7824E000598EB /* wjhc.json in Resources */,
-				7D06A11321F7824E000598EB /* natleagued.json in Resources */,
-				7D06A12021F7824E000598EB /* ncaaf.json in Resources */,
-				7D06A12121F7824E000598EB /* epl.json in Resources */,
+				7D6C13B421F8D48C002B8A09 /* leagues in Resources */,
 				7D06A0DB21F66564000598EB /* Assets.xcassets in Resources */,
 				7D06A0F921F78243000598EB /* leagues.json in Resources */,
-				7D06A12321F7824E000598EB /* wcbk.json in Resources */,
-				7D06A11221F7824E000598EB /* wnba.json in Resources */,
-				7D06A11421F7824E000598EB /* natleaguec.json in Resources */,
-				7D06A12421F7824E000598EB /* chlg.json in Resources */,
-				7D06A11F21F7824E000598EB /* mls.json in Resources */,
-				7D06A11B21F7824E000598EB /* engch.json in Resources */,
-				7D06A11921F7824E000598EB /* natleagueb.json in Resources */,
-				7D06A11A21F7824E000598EB /* nfl.json in Resources */,
-				7D06A11021F7824E000598EB /* cfl.json in Resources */,
-				7D06A11D21F7824E000598EB /* nba.json in Resources */,
-				7D06A11C21F7824E000598EB /* natleaguea.json in Resources */,
-				7D06A11121F7824E000598EB /* mlb.json in Resources */,
-				7D06A11521F7824E000598EB /* ncaab.json in Resources */,
-				7D06A11621F7824E000598EB /* engfa.json in Resources */,
-				7D06A11821F7824E000598EB /* nhl.json in Resources */,
-				7D06A12221F7824E000598EB /* engcc.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6C13B521F8D48C002B8A09 /* leagues in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,11 +479,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6C138C21F7CCF5002B8A09 /* URLParameterEncoder.swift in Sources */,
+				7D6C13C021F8EDCC002B8A09 /* LeaguesFactory.swift in Sources */,
 				7D6C138B21F7CCF5002B8A09 /* ParameterEncoding.swift in Sources */,
 				7D6C138921F7CCF5002B8A09 /* JSONParameterEncoder.swift in Sources */,
 				7D06A13321F78BB0000598EB /* Team.swift in Sources */,
 				7D6C138021F7C5DC002B8A09 /* LeagueCell.swift in Sources */,
 				7D6C139821F7CD1C002B8A09 /* Result.swift in Sources */,
+				7D6C13BA21F8ECCE002B8A09 /* TeamsFactory.swift in Sources */,
 				7D6C137A21F7BF71002B8A09 /* ApplicationCoordinator.swift in Sources */,
 				7D6C13A321F7D6AA002B8A09 /* FileManagerRequest.swift in Sources */,
 				7D6C137E21F7C08A002B8A09 /* LeaguesCoordinator.swift in Sources */,
@@ -566,6 +499,7 @@
 				7D06A13521F78D52000598EB /* TeamCellViewModelProducer.swift in Sources */,
 				7D06A13721F78D6F000598EB /* TeamCellViewModel.swift in Sources */,
 				7D6C137021F7B2AB002B8A09 /* LeaguesController.swift in Sources */,
+				7D6C13B221F8CDCC002B8A09 /* TeamsDataManager.swift in Sources */,
 				7D6C137821F7BF41002B8A09 /* Coordinator.swift in Sources */,
 				7D6C139521F7CD0D002B8A09 /* Router.swift in Sources */,
 				7D6C139421F7CD0D002B8A09 /* EndPointType.swift in Sources */,

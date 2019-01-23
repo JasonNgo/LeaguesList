@@ -12,11 +12,14 @@ import UIKit
 final class LeaguesCoordinator: Coordinator {
     private let presenter: UINavigationController
     private let leaguesDataManager: LeaguesDataManager
+    private let teamsDataManager: TeamsDataManager
+    
     private var leaguesController: LeaguesController?
     
-    init(presenter: UINavigationController, leaguesDataManager: LeaguesDataManager) {
+    init(presenter: UINavigationController, leaguesDataManager: LeaguesDataManager, teamsDataManager: TeamsDataManager) {
         self.presenter = presenter
         self.leaguesDataManager = leaguesDataManager
+        self.teamsDataManager = teamsDataManager
     }
     
     func start() {

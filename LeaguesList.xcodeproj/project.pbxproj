@@ -48,6 +48,8 @@
 		7D6C13B521F8D48C002B8A09 /* leagues in Resources */ = {isa = PBXBuildFile; fileRef = 7D6C13B321F8D48C002B8A09 /* leagues */; };
 		7D6C13BA21F8ECCE002B8A09 /* TeamsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */; };
 		7D6C13C021F8EDCC002B8A09 /* LeaguesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */; };
+		7D6C13C321F8FD3E002B8A09 /* TeamsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */; };
+		7D6C13C421F8FD3E002B8A09 /* TeamsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,7 @@
 		7D6C13B321F8D48C002B8A09 /* leagues */ = {isa = PBXFileReference; lastKnownFileType = folder; path = leagues; sourceTree = "<group>"; };
 		7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsFactory.swift; sourceTree = "<group>"; };
 		7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesFactory.swift; sourceTree = "<group>"; };
+		7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +260,7 @@
 		7D06A13021F78B84000598EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -488,6 +492,7 @@
 				7D6C13BA21F8ECCE002B8A09 /* TeamsFactory.swift in Sources */,
 				7D6C137A21F7BF71002B8A09 /* ApplicationCoordinator.swift in Sources */,
 				7D6C13A321F7D6AA002B8A09 /* FileManagerRequest.swift in Sources */,
+				7D6C13C321F8FD3E002B8A09 /* TeamsController.swift in Sources */,
 				7D6C137E21F7C08A002B8A09 /* LeaguesCoordinator.swift in Sources */,
 				7D6C139221F7CD0D002B8A09 /* HTTPMethod.swift in Sources */,
 				7D6C137421F7BBD5002B8A09 /* UIView+Extensions.swift in Sources */,
@@ -520,6 +525,7 @@
 			files = (
 				7D6C13AF21F8C659002B8A09 /* LeaguesDataManagerTests.swift in Sources */,
 				7D6C136E21F79930002B8A09 /* LeaguesModelTests.swift in Sources */,
+				7D6C13C421F8FD3E002B8A09 /* TeamsController.swift in Sources */,
 				7D6C13A521F7D8CD002B8A09 /* LeaguesFileAccessorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

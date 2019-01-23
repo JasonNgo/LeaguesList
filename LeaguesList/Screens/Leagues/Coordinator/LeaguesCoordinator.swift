@@ -15,6 +15,7 @@ final class LeaguesCoordinator: Coordinator {
     private let teamsDataManager: TeamsDataManager
     
     private var leaguesController: LeaguesController?
+    private var teamsController: TeamsController?
     
     init(presenter: UINavigationController, leaguesDataManager: LeaguesDataManager, teamsDataManager: TeamsDataManager) {
         self.presenter = presenter
@@ -38,5 +39,8 @@ final class LeaguesCoordinator: Coordinator {
 extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath) {
         print(indexPath.item)
+        let teamsController = TeamsController()
+        teamsController.title = "Teams"
+        presenter.show(teamsController, sender: self)
     }
 }

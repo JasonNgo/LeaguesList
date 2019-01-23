@@ -26,6 +26,10 @@ final class LeaguesController: UIViewController {
         return cv
     }()
     
+    var leagues: [League] = []
+    
+    // MARK: - Overrides
+    
     override func loadView() {
         super.loadView()
         view.addSubview(collectionView)
@@ -34,11 +38,22 @@ final class LeaguesController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let fileAccessor = FileAccessor<TheScoreEndPoint>()
+        fileAccessor.request(.leagues) { (result) in
+            switch result {
+            case .success(let data):
+                do {
+                    let jsonData = try JSONDecoder().decode([League].self, from: data)
+                    jsonData.forEach { print("Full Name: \($0.fullName), Slug: \($0.slug)") }
+                } catch {
+                    print(error)
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
-}
-
-extension LeaguesController: UICollectionViewDelegate {
-    
 }
 
 extension LeaguesController: UICollectionViewDataSource {
@@ -57,6 +72,14 @@ extension LeaguesController: UICollectionViewDataSource {
         return cell
     }
 }
+
+// MARK: - UICollectionViewDelegate
+
+extension LeaguesController: UICollectionViewDelegate {
+    
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension LeaguesController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

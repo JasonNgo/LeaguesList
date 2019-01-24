@@ -25,6 +25,12 @@ final class TeamsController: UIViewController {
         return cv
     }()
     
+    private lazy var refreshControl: UIRefreshControl = {
+        let rc = UIRefreshControl()
+        rc.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
+        return rc
+    }()
+    
     // MARK: - ViewModel
     var teamViewModels: [TeamCellViewModel] = []
     
@@ -44,6 +50,13 @@ final class TeamsController: UIViewController {
         collectionView.emptyDataSetDelegate = self
         collectionView.emptyDataSetSource = self
         collectionView.backgroundView = UIView()
+        collectionView.refreshControl = refreshControl
+    }
+    
+    // MARK: - Target Actions
+    
+    @objc private func handleRefreshControl() {
+        
     }
 }
 

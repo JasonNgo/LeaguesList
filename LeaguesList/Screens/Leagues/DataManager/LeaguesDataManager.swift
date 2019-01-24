@@ -13,11 +13,14 @@ import Foundation
 /// League objects that the LeagueController can interact with.
 final class LeaguesDataManager {
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
-    private var leagues: [League] = []
+    var leagues: [League] = []
     
     init(fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.fileAccessor = fileAccessor
-        
+        fetchListOfLeagues()
+    }
+    
+    func fetchListOfLeagues() {
         fileAccessor.request(.leagues) { (result) in
             switch result {
             case .success(let data):
@@ -30,10 +33,6 @@ final class LeaguesDataManager {
                 print("Failure attempting to fetch list of leagues \(error.localizedDescription)")
             }
         }
-    }
-    
-    func getListOfLeagues() -> [League] {
-        return leagues
     }
     
     func getLeagueAt(_ index: Int) -> League {

@@ -11,6 +11,7 @@ import UIKit
 /// LeaguesController delegates responsibilities of didSelectItem back to LeagueCoordinator
 protocol LeaguesControllerDelegate: class {
     func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath)
+    func leaguesControllerDidRefresh()
 }
 
 /// LeaguesController manages a CollectionView of a list of leagues
@@ -36,8 +37,19 @@ final class LeaguesController: UIViewController {
         return cv
     }()
     
+    private lazy var refreshControl: UIRefreshControl = {
+        let rc = UIRefreshControl()
+        rc.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
+        return rc
+    }()
+    
     // MARK: - ViewModel
-    var leagueViewModels: [LeagueCellViewModel] = []
+    var leagueViewModels: [LeagueCellViewModel] = [] {
+        didSet {
+            collectionView.refreshControl?.endRefreshing()
+            collectionView.reloadData()
+        }
+    }
     
     // MARK: - Overrides
     
@@ -55,6 +67,13 @@ final class LeaguesController: UIViewController {
         collectionView.emptyDataSetDelegate = self
         collectionView.emptyDataSetSource = self
         collectionView.backgroundView = UIView()
+        collectionView.refreshControl = refreshControl
+    }
+    
+    // MARK: - Target Actions
+    
+    @objc private func handleRefreshControl() {
+        delegate?.leaguesControllerDidRefresh()
     }
 }
 
@@ -106,5 +125,9 @@ extension LeaguesController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
         let str = "Try reloading the page at a later time."
         let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body).withSize(20)]
         return NSAttributedString(string: str, attributes: attrs)
+    }
+    
+    func emptyDataSetShouldAllowScroll(_ scrollView: UIScrollView!) -> Bool {
+        return true
     }
 }

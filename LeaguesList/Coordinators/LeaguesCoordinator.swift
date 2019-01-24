@@ -25,18 +25,27 @@ final class LeaguesCoordinator: Coordinator {
     
     func start() {
         let leaguesController = LeaguesController()
-        let leagues = leaguesDataManager.getListOfLeagues()
-        let leagueViewModels = leagues.map { LeagueCellViewModel(league: $0) }
-
+        let leagueViewModels = fetchLeagueViewModels()
+        
         leaguesController.title = "Leagues"
-        leaguesController.leagueViewModels = leagueViewModels
         leaguesController.delegate = self
+        leaguesController.leagueViewModels = leagueViewModels
         
         presenter.show(leaguesController, sender: self)
+        self.leaguesController = leaguesController
+    }
+    
+    private func fetchLeagueViewModels() -> [LeagueCellViewModel] {
+        leaguesDataManager.fetchListOfLeagues()
+        let leagues = leaguesDataManager.leagues
+        let leagueViewModels = leagues.map { LeagueCellViewModel(league: $0) }
+        
+        return leagueViewModels
     }
 }
 
 extension LeaguesCoordinator: LeaguesControllerDelegate {
+    
     func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath) {
         let selectedLeague = leaguesDataManager.getLeagueAt(indexPath.item)
         
@@ -56,6 +65,10 @@ extension LeaguesCoordinator: LeaguesControllerDelegate {
             
             self.presenter.show(teamsController, sender: self)
         }
-        
     }
+    
+    func leaguesControllerDidRefresh() {
+        leaguesController?.leagueViewModels = fetchLeagueViewModels()
+    }
+    
 }

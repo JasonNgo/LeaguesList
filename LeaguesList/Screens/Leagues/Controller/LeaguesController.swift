@@ -70,6 +70,7 @@ final class LeaguesController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
+        collectionView.refreshControl?.endRefreshing()
         delegate?.leaguesControllerDidRefresh()
     }
 }
@@ -86,6 +87,15 @@ extension LeaguesController: UICollectionViewDelegate {
 
 extension LeaguesController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if leagueViewModels.count == 0 {
+            collectionView.setEmptyMessage(
+                "No data found",
+                description: "\n\nPlease try loading the page\nagain at a later time"
+            )
+        } else {
+            collectionView.restore()
+        }
+        
         return leagueViewModels.count
     }
     

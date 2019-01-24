@@ -17,6 +17,7 @@ final class TeamCell: UICollectionViewCell {
         var label = UILabel()
         label.numberOfLines = 0
         label.text = "Team Name"
+        label.font = UIFont.systemFont(ofSize: 20)
         return label
     }()
     
@@ -27,9 +28,17 @@ final class TeamCell: UICollectionViewCell {
         return iv
     }()
     
+    private let dividerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        view.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
+        return view
+    }()
+    
     // MARK: - Constraints
-    var logoMaximizedWidthConstraint: NSLayoutConstraint!
-    var logoMinimizedWidthConstraint: NSLayoutConstraint!
+    private var logoMaximizedWidthConstraint: NSLayoutConstraint!
+    private var logoMinimizedWidthConstraint: NSLayoutConstraint!
+    private let logoImageViewSize: CGFloat = 44
     
     // MARK: - ViewModel
     var teamCellViewModel: TeamCellViewModel! {
@@ -72,8 +81,9 @@ final class TeamCell: UICollectionViewCell {
     private func setupSubviews() {
         addSubview(teamFullNameLabel)
         addSubview(logoImageView)
+        addSubview(dividerView)
         
-        logoMaximizedWidthConstraint = logoImageView.widthAnchor.constraint(equalToConstant: 30)
+        logoMaximizedWidthConstraint = logoImageView.widthAnchor.constraint(equalToConstant: logoImageViewSize)
         logoMinimizedWidthConstraint = logoImageView.widthAnchor.constraint(equalToConstant: 0)
         
         logoImageView.anchor(
@@ -83,7 +93,7 @@ final class TeamCell: UICollectionViewCell {
             trailing: nil,
             padding: .init(top: 8, left: 8, bottom: 0, right: 0)
         )
-        logoImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        logoImageView.heightAnchor.constraint(equalToConstant: logoImageViewSize).isActive = true
         logoMaximizedWidthConstraint.isActive = true
         logoMinimizedWidthConstraint.isActive = false
         
@@ -93,6 +103,14 @@ final class TeamCell: UICollectionViewCell {
             bottom: bottomAnchor,
             trailing: trailingAnchor,
             padding: .init(top: 8, left: 8, bottom: 8, right: 8)
+        )
+        
+        dividerView.anchor(
+            top: nil,
+            leading: leadingAnchor,
+            bottom: bottomAnchor,
+            trailing: trailingAnchor,
+            padding: .init(top: 0, left: 16, bottom: 0, right: 0)
         )
     }
     

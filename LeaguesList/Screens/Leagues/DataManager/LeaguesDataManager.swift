@@ -25,9 +25,12 @@ final class LeaguesDataManager {
             switch result {
             case .success(let data):
                 do {
-                    self.leagues = try JSONDecoder().decode([League].self, from: data)
+                    let leagues = try JSONDecoder().decode([League].self, from: data)
+                    let sortedLeagues = leagues.sorted { return $0.fullName < $1.fullName }
+                    self.leagues = sortedLeagues
                 } catch {
                     print("Failure attempting to decode list of leagues")
+                    self.leagues = []
                 }
             case .failure(let error):
                 print("Failure attempting to fetch list of leagues \(error.localizedDescription)")

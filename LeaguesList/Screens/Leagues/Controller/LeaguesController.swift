@@ -24,7 +24,7 @@ final class LeaguesController: UIViewController {
     private let cellHeight: CGFloat = 50
     private let minimumLineSpacingForSection: CGFloat = 5
     
-    // MARK: - CollectionView
+    // MARK: - UICollectionView
     private let reuseId = "LeagueCell"
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -36,7 +36,7 @@ final class LeaguesController: UIViewController {
         return cv
     }()
     
-    // MARK: - Model
+    // MARK: - ViewModel
     var leagueViewModels: [LeagueCellViewModel] = []
     
     // MARK: - Overrides

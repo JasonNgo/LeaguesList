@@ -48,6 +48,7 @@
 		7D6C13C021F8EDCC002B8A09 /* LeaguesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */; };
 		7D6C13C321F8FD3E002B8A09 /* TeamsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */; };
 		7D6C13C421F8FD3E002B8A09 /* TeamsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */; };
+		7DAE2A2221F953CB00AEA116 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAE2A2121F953CB00AEA116 /* TeamCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsFactory.swift; sourceTree = "<group>"; };
 		7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesFactory.swift; sourceTree = "<group>"; };
 		7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsController.swift; sourceTree = "<group>"; };
+		7DAE2A2121F953CB00AEA116 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +216,6 @@
 		7D06A12C21F785E4000598EB /* Leagues */ = {
 			isa = PBXGroup;
 			children = (
-				7D6C137C21F7C07D002B8A09 /* Coordinator */,
 				7D6C13A821F8037C002B8A09 /* DataManager */,
 				7D06A0F321F781FC000598EB /* Model */,
 				7D06A0F621F7821F000598EB /* ViewModel */,
@@ -229,9 +230,9 @@
 			children = (
 				7D6C13B021F8CDBB002B8A09 /* Data Manager */,
 				7D06A12E21F78B76000598EB /* Model */,
+				7D06A13121F78B89000598EB /* ViewModel */,
 				7D06A13021F78B84000598EB /* Controller */,
 				7D06A12F21F78B7F000598EB /* View */,
-				7D06A13121F78B89000598EB /* ViewModel */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -248,6 +249,7 @@
 		7D06A12F21F78B7F000598EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7DAE2A2121F953CB00AEA116 /* TeamCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,16 +285,9 @@
 			children = (
 				7D6C137721F7BF41002B8A09 /* Coordinator.swift */,
 				7D6C137921F7BF71002B8A09 /* ApplicationCoordinator.swift */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		7D6C137C21F7C07D002B8A09 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
 				7D6C137D21F7C08A002B8A09 /* LeaguesCoordinator.swift */,
 			);
-			path = Coordinator;
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		7D6C138121F7CBE3002B8A09 /* Networking */ = {
@@ -502,6 +497,7 @@
 				7D6C139421F7CD0D002B8A09 /* EndPointType.swift in Sources */,
 				7D6C137621F7BBFB002B8A09 /* UIColor+Extensions.swift in Sources */,
 				7D6C13A121F7D3FA002B8A09 /* RouterError.swift in Sources */,
+				7DAE2A2221F953CB00AEA116 /* TeamCell.swift in Sources */,
 				7D6C13AA21F80498002B8A09 /* LeaguesDataManager.swift in Sources */,
 				7D6C138A21F7CCF5002B8A09 /* EncodingError.swift in Sources */,
 				7D06A12621F7826E000598EB /* League.swift in Sources */,

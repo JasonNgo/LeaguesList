@@ -11,7 +11,7 @@ import Foundation
 struct Team {
     var fullName: String
     var name: String
-    var location: String
+    var location: String?
     var logoUrl: String?
     var colour1Hex: String?
     var colour2Hex: String?
@@ -44,7 +44,7 @@ extension Team: Decodable {
         
         fullName = try values.decode(String.self, forKey: .fullName)
         name = try values.decode(String.self, forKey: .name)
-        location = try values.decode(String.self, forKey: .location)
+        location = try? values.decode(String.self, forKey: .location)
         logoUrl = try? values.decode(String.self, forKey: .logoUrl)
         colour1Hex = try? values.decode(String.self, forKey: .colour1Hex)
         colour2Hex = try? values.decode(String.self, forKey: .colour2Hex)

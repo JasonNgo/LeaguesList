@@ -15,7 +15,7 @@ struct TeamCellViewModel {
     var colour2: String?
     
     // Included in ViewModel for filtering purposes
-    var location: String
+    var location: String?
     var name: String
 }
 

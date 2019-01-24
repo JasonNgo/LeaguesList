@@ -12,8 +12,7 @@ import UIKit
 final class LeagueCell: UICollectionViewCell {
     
     // MARK: - Subviews
-    
-    let leagueFullNameLabel: UILabel = {
+    private let leagueFullNameLabel: UILabel = {
         var label = UILabel()
         label.numberOfLines = 0
         label.text = "League Name"
@@ -21,8 +20,6 @@ final class LeagueCell: UICollectionViewCell {
     }()
     
     // MARK: - ViewModel
-    
-    // Force unwrapping viewModel since cell must have viewModel set
     var leagueViewModel: LeagueCellViewModel! {
         didSet {
             leagueFullNameLabel.text = leagueViewModel.fullNameLabelText

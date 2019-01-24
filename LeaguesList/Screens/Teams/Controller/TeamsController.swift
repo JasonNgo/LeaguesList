@@ -8,7 +8,14 @@
 
 import UIKit
 
+protocol TeamsControllerDelegate: class {
+    func teamsControllerDidRefresh(_ slug: String)
+}
+
 final class TeamsController: UIViewController {
+    
+    // MARK: - Delegate
+    weak var delegate: TeamsControllerDelegate?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
@@ -32,7 +39,13 @@ final class TeamsController: UIViewController {
     }()
     
     // MARK: - ViewModel
-    var teamViewModels: [TeamCellViewModel] = []
+    var teamViewModels: [TeamCellViewModel] = [] {
+        didSet {
+            collectionView.refreshControl?.endRefreshing()
+            collectionView.reloadData()
+        }
+    }
+    var slug: String?
     
     // MARK: - Overrides
     
@@ -47,19 +60,29 @@ final class TeamsController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.backgroundView = UIView()
         collectionView.refreshControl = refreshControl
     }
     
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        
+        guard let slug = self.slug else { return }
+        delegate?.teamsControllerDidRefresh(slug)
     }
 }
 
 extension TeamsController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if teamViewModels.count == 0 {
+            collectionView.setEmptyMessage(
+                "No data found",
+                description: "\n\nPlease try loading the page\nagain at a later time"
+            )
+        } else {
+            collectionView.restore()
+        }
+        
+        
         return teamViewModels.count
     }
     

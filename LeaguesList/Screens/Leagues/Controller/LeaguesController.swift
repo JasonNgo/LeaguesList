@@ -70,7 +70,6 @@ final class LeaguesController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        collectionView.refreshControl?.endRefreshing()
         delegate?.leaguesControllerDidRefresh()
     }
 }

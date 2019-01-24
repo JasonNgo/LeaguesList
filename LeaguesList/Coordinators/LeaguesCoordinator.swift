@@ -34,6 +34,42 @@ final class LeaguesCoordinator: Coordinator {
         presenter.show(leaguesController, sender: self)
         self.leaguesController = leaguesController
     }
+}
+
+extension LeaguesCoordinator: LeaguesControllerDelegate {
+    
+    func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath) {
+        let selectedLeague = leaguesDataManager.getLeagueAt(indexPath.item)
+        
+        fetchTeamViewModels(for: selectedLeague.slug) { (teamViewModels) in
+            let teamsController = TeamsController()
+            teamsController.title = selectedLeague.fullName
+            teamsController.delegate = self
+            teamsController.slug = selectedLeague.slug
+            teamsController.teamViewModels = teamViewModels
+            
+            self.presenter.show(teamsController, sender: self)
+            
+            self.teamsController = teamsController
+        }
+    }
+    
+    func leaguesControllerDidRefresh() {
+        leaguesController?.leagueViewModels = fetchLeagueViewModels()
+    }
+    
+}
+
+extension LeaguesCoordinator: TeamsControllerDelegate {
+    func teamsControllerDidRefresh(_ slug: String) {
+        fetchTeamViewModels(for: slug) { (teamViewModels) in
+            self.teamsController?.teamViewModels = teamViewModels
+        }
+    }
+}
+
+// MARK: - Fetching Helpers
+private extension LeaguesCoordinator {
     
     private func fetchLeagueViewModels() -> [LeagueCellViewModel] {
         leaguesDataManager.fetchListOfLeagues()
@@ -42,33 +78,17 @@ final class LeaguesCoordinator: Coordinator {
         
         return leagueViewModels
     }
-}
-
-extension LeaguesCoordinator: LeaguesControllerDelegate {
     
-    func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath) {
-        let selectedLeague = leaguesDataManager.getLeagueAt(indexPath.item)
-        
-        teamsDataManager.getTeamsForSlug(selectedLeague.slug) { (result) in
-            var teamViewModels: [TeamCellViewModel]
-            
+    private func fetchTeamViewModels(for slug: String, completion: @escaping ([TeamCellViewModel]) -> Void) {
+        teamsDataManager.getTeamsForSlug(slug) { (result) in
             switch result {
             case .success(let teams):
-                teamViewModels = teams.map { TeamCellViewModel(team: $0) }
+                let teamViewModels = teams.map { TeamCellViewModel(team: $0) }
+                completion(teamViewModels)
             case .failure:
-                teamViewModels = []
+                completion([])
             }
-            
-            let teamsController = TeamsController()
-            teamsController.title = selectedLeague.fullName
-            teamsController.teamViewModels = teamViewModels
-            
-            self.presenter.show(teamsController, sender: self)
         }
-    }
-    
-    func leaguesControllerDidRefresh() {
-        leaguesController?.leagueViewModels = fetchLeagueViewModels()
     }
     
 }

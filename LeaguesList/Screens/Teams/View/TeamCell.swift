@@ -27,6 +27,10 @@ final class TeamCell: UICollectionViewCell {
         return iv
     }()
     
+    // MARK: - Constraints
+    var logoMaximizedWidthConstraint: NSLayoutConstraint!
+    var logoMinimizedWidthConstraint: NSLayoutConstraint!
+    
     // MARK: - ViewModel
     var teamCellViewModel: TeamCellViewModel! {
         didSet {
@@ -36,13 +40,15 @@ final class TeamCell: UICollectionViewCell {
             guard let logoUrl = teamCellViewModel.logoUrl, let url = URL(string: logoUrl) else {
                 // If imageUrl doesn't exist attempt to load teams main colour as an image
                 guard let mainColour = teamCellViewModel.colour1 else {
-                    logoImageView.widthAnchor.constraint(equalToConstant: 0).isActive = true
-                    logoImageView.heightAnchor.constraint(equalToConstant: 0).isActive = true
+                    logoMaximizedWidthConstraint.isActive = false
+                    logoMinimizedWidthConstraint.isActive = true
                     return
                 }
-                
+                                
                 let colourImage = UIColor(hexFromString: mainColour).image()
                 logoImageView.image = colourImage
+                logoMinimizedWidthConstraint.isActive = false
+                logoMaximizedWidthConstraint.isActive = true
                 return
             }
             
@@ -50,9 +56,12 @@ final class TeamCell: UICollectionViewCell {
                 (image, _, _, _) in
                 guard let image = image else { return }
                 self.logoImageView.image = image
+                self.logoMinimizedWidthConstraint.isActive = false
+                self.logoMaximizedWidthConstraint.isActive = true
             }
         }
     }
+    
     
     // MARK: - Overrides
     
@@ -65,14 +74,20 @@ final class TeamCell: UICollectionViewCell {
         addSubview(teamFullNameLabel)
         addSubview(logoImageView)
         
+        logoMaximizedWidthConstraint = logoImageView.widthAnchor.constraint(equalToConstant: 30)
+        logoMinimizedWidthConstraint = logoImageView.widthAnchor.constraint(equalToConstant: 0)
+        
         logoImageView.anchor(
             top: topAnchor,
             leading: leadingAnchor,
             bottom: nil,
             trailing: nil,
-            padding: .init(top: 8, left: 8, bottom: 0, right: 0),
-            size: .init(width: 30, height: 30)
+            padding: .init(top: 8, left: 8, bottom: 0, right: 0)
         )
+        
+        logoImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        logoMaximizedWidthConstraint.isActive = true
+        logoMinimizedWidthConstraint.isActive = false
         
         teamFullNameLabel.anchor(
             top: topAnchor,

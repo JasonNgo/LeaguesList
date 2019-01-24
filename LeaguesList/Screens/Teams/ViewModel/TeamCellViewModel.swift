@@ -15,8 +15,6 @@ struct TeamCellViewModel {
     var logoUrl: String?
     var colour1: String?
     var colour2: String?
-    
-    // Included in ViewModel for filtering purposes
 }
 
 extension TeamCellViewModel {

@@ -51,6 +51,7 @@ final class TeamsController: UIViewController {
     
     override func loadView() {
         super.loadView()
+        
         view.addSubview(collectionView)
         collectionView.fillSuperview()
     }
@@ -74,14 +75,12 @@ final class TeamsController: UIViewController {
 extension TeamsController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if teamViewModels.count == 0 {
-            collectionView.setEmptyMessage(
-                "No data found",
-                description: "\n\nPlease try loading the page\nagain at a later time"
-            )
+            let message = "No Data Found"
+            let description = "\n\nPlease try loading the page\nagain at a later time"
+            collectionView.setEmptyMessage(message, description: description)
         } else {
             collectionView.restore()
         }
-        
         
         return teamViewModels.count
     }

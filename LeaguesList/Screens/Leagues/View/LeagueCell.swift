@@ -16,7 +16,15 @@ final class LeagueCell: UICollectionViewCell {
         var label = UILabel()
         label.numberOfLines = 0
         label.text = "League Name"
+        label.font = UIFont.systemFont(ofSize: 18)
         return label
+    }()
+    
+    private let dividerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        view.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
+        return view
     }()
     
     // MARK: - ViewModel
@@ -37,12 +45,22 @@ final class LeagueCell: UICollectionViewCell {
     
     private func setupSubviews() {
         addSubview(leagueFullNameLabel)
+        addSubview(dividerView)
+        
         leagueFullNameLabel.anchor(
             top: topAnchor,
             leading: leadingAnchor,
             bottom: bottomAnchor,
             trailing: trailingAnchor,
-            padding: .init(top: 16, left: 16, bottom: 16, right: 16)
+            padding: .init(top: 8, left: 16, bottom: 8, right: 16)
+        )
+        
+        dividerView.anchor(
+            top: nil,
+            leading: leadingAnchor,
+            bottom: bottomAnchor,
+            trailing: trailingAnchor,
+            padding: .init(top: 0, left: 16, bottom: 0, right: 0)
         )
     }
     

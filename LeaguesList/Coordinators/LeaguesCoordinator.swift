@@ -37,7 +37,6 @@ final class LeaguesCoordinator: Coordinator {
 }
 
 extension LeaguesCoordinator: LeaguesControllerDelegate {
-    
     func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath) {
         let selectedLeague = leaguesDataManager.getLeagueAt(indexPath.item)
         
@@ -57,7 +56,6 @@ extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidRefresh() {
         leaguesController?.leagueViewModels = fetchLeagueViewModels()
     }
-    
 }
 
 extension LeaguesCoordinator: TeamsControllerDelegate {
@@ -70,8 +68,7 @@ extension LeaguesCoordinator: TeamsControllerDelegate {
 
 // MARK: - Fetching Helpers
 private extension LeaguesCoordinator {
-    
-    private func fetchLeagueViewModels() -> [LeagueCellViewModel] {
+    func fetchLeagueViewModels() -> [LeagueCellViewModel] {
         leaguesDataManager.fetchListOfLeagues()
         let leagues = leaguesDataManager.leagues
         let leagueViewModels = leagues.map { LeagueCellViewModel(league: $0) }
@@ -79,7 +76,7 @@ private extension LeaguesCoordinator {
         return leagueViewModels
     }
     
-    private func fetchTeamViewModels(for slug: String, completion: @escaping ([TeamCellViewModel]) -> Void) {
+    func fetchTeamViewModels(for slug: String, completion: @escaping ([TeamCellViewModel]) -> Void) {
         teamsDataManager.getTeamsForSlug(slug) { (result) in
             switch result {
             case .success(let teams):
@@ -90,5 +87,4 @@ private extension LeaguesCoordinator {
             }
         }
     }
-    
 }

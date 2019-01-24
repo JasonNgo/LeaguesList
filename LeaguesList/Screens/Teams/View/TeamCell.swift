@@ -44,7 +44,7 @@ final class TeamCell: UICollectionViewCell {
                     logoMinimizedWidthConstraint.isActive = true
                     return
                 }
-                                
+                
                 let colourImage = UIColor(hexFromString: mainColour).image()
                 logoImageView.image = colourImage
                 logoMinimizedWidthConstraint.isActive = false
@@ -61,7 +61,6 @@ final class TeamCell: UICollectionViewCell {
             }
         }
     }
-    
     
     // MARK: - Overrides
     
@@ -84,7 +83,6 @@ final class TeamCell: UICollectionViewCell {
             trailing: nil,
             padding: .init(top: 8, left: 8, bottom: 0, right: 0)
         )
-        
         logoImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
         logoMaximizedWidthConstraint.isActive = true
         logoMinimizedWidthConstraint.isActive = false

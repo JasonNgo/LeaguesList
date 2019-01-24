@@ -10,10 +10,12 @@ import Foundation
 
 struct LeagueCellViewModel {
     var fullNameLabelText: String
+    var slug: String
 }
 
 extension LeagueCellViewModel {
     init(league: League) {
         self.fullNameLabelText = league.fullName
+        self.slug = league.slug
     }
 }

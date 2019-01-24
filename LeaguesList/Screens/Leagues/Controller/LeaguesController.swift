@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// LeaguesController delegates responsibilities of didSelectItem back to LeagueCoordinator
+/// LeaguesController delegates responsibilities back to LeagueCoordinator
 protocol LeaguesControllerDelegate: class {
     func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath)
     func leaguesControllerDidRefresh()
@@ -22,8 +22,10 @@ final class LeaguesController: UIViewController {
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
-    private let cellHeight: CGFloat = 50
-    private let minimumLineSpacingForSection: CGFloat = 5
+    private let cellHeight: CGFloat = 45
+    private let minimumLineSpacingForSection: CGFloat = 1
+    private let emptyStateMessage = "No Data Found"
+    private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
     
     // MARK: - UICollectionView
     private let reuseId = "LeagueCell"
@@ -55,6 +57,7 @@ final class LeaguesController: UIViewController {
     
     override func loadView() {
         super.loadView()
+        
         view.addSubview(collectionView)
         collectionView.fillSuperview()
     }
@@ -87,10 +90,7 @@ extension LeaguesController: UICollectionViewDelegate {
 extension LeaguesController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if leagueViewModels.count == 0 {
-            collectionView.setEmptyMessage(
-                "No data found",
-                description: "\n\nPlease try loading the page\nagain at a later time"
-            )
+            collectionView.setEmptyMessage(emptyStateMessage, description: emptyStateDescription)
         } else {
             collectionView.restore()
         }

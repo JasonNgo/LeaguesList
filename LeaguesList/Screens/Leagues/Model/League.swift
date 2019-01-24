@@ -16,7 +16,9 @@ struct League {
 
 extension League: Equatable {
     static func == (lhs: League, rhs: League) -> Bool {
-        return lhs.fullName == rhs.fullName && lhs.slug == rhs.slug
+        return
+            lhs.fullName == rhs.fullName &&
+            lhs.slug == rhs.slug
     }
 }
 

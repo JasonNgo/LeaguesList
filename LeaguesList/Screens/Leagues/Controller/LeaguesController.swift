@@ -45,11 +45,16 @@ final class LeaguesController: UIViewController {
         return rc
     }()
     
+    // MARK: - SearchController
+    private let leaguesSearchController = UISearchController(searchResultsController: nil)
+    private var filteredLeagueViewModels: [LeagueCellViewModel] = []
+    
     // MARK: - ViewModel
     var leagueViewModels: [LeagueCellViewModel] = [] {
         didSet {
             collectionView.refreshControl?.endRefreshing()
             collectionView.reloadData()
+            filteredLeagueViewModels = leagueViewModels
         }
     }
     
@@ -65,15 +70,49 @@ final class LeaguesController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupCollectionView()
+        setupLeaguesSearchController()
+    }
+    
+    // MARK: - Setup
+    
+    private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.refreshControl = refreshControl
+    }
+    
+    private func setupLeaguesSearchController() {
+        self.definesPresentationContext = true
+        navigationItem.searchController = leaguesSearchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        leaguesSearchController.dimsBackgroundDuringPresentation = false
+        leaguesSearchController.searchBar.delegate = self
+        leaguesSearchController.searchBar.placeholder = "Search leagues by name or slug"
     }
     
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
         delegate?.leaguesControllerDidRefresh()
+    }
+}
+
+// MARK: - Search Controller
+
+extension LeaguesController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            filteredLeagueViewModels = leagueViewModels
+        } else {
+            filteredLeagueViewModels = leagueViewModels.filter({ (leagueViewModel) -> Bool in
+                return
+                    leagueViewModel.fullNameLabelText.lowercased().contains(searchText.lowercased()) ||
+                    leagueViewModel.slug.lowercased().contains(searchText.lowercased())  
+            })
+        }
+        
+        collectionView.reloadData()
     }
 }
 
@@ -95,7 +134,7 @@ extension LeaguesController: UICollectionViewDataSource {
             collectionView.restore()
         }
         
-        return leagueViewModels.count
+        return filteredLeagueViewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -103,7 +142,7 @@ extension LeaguesController: UICollectionViewDataSource {
             fatalError("Unable to dequeue League Cell")
         }
         
-        cell.leagueViewModel = leagueViewModels[indexPath.item]
+        cell.leagueViewModel = filteredLeagueViewModels[indexPath.item]
         return cell
     }
 }

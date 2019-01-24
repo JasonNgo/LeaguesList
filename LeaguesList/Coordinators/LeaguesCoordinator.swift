@@ -43,14 +43,8 @@ extension LeaguesCoordinator: LeaguesControllerDelegate {
         teamsDataManager.getTeamsForSlug(selectedLeague.slug) { (result) in
             switch result {
             case .success(let teams):
-                var teamViewModels: [TeamCellViewModel] = []
-                
-                teams.forEach {
-                    let imageData = self.teamsDataManager.getImageDataForTeam($0)
-                    let viewModel = TeamCellViewModel(team: $0, imageData: imageData)
-                    teamViewModels.append(viewModel)
-                }
-                
+                let teamViewModels = teams.map { TeamCellViewModel(team: $0) }
+
                 let teamsController = TeamsController()
                 teamsController.title = selectedLeague.fullName
                 teamsController.teamViewModels = teamViewModels

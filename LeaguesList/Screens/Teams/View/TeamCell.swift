@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 final class TeamCell: UICollectionViewCell {
     
@@ -23,7 +24,6 @@ final class TeamCell: UICollectionViewCell {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
-        
         return iv
     }()
     
@@ -31,9 +31,14 @@ final class TeamCell: UICollectionViewCell {
     var teamCellViewModel: TeamCellViewModel! {
         didSet {
             teamFullNameLabel.text = teamCellViewModel.fullNameLabelText
-            guard let data = teamCellViewModel.imageData else { return }
-            let image = UIImage(data: data)
-            logoImageView.image = image
+            
+            guard let logoUrl = teamCellViewModel.logoUrl else { return }
+            guard let url = URL(string: logoUrl) else { return }
+            logoImageView.sd_setImage(with: url, placeholderImage: nil, options: .continueInBackground) {
+                (image, _, _, _) in
+                guard let image = image else { return }
+                self.logoImageView.image = image
+            }
         }
     }
     
@@ -48,9 +53,18 @@ final class TeamCell: UICollectionViewCell {
         addSubview(teamFullNameLabel)
         addSubview(logoImageView)
         
-        teamFullNameLabel.anchor(
+        logoImageView.anchor(
             top: topAnchor,
             leading: leadingAnchor,
+            bottom: nil,
+            trailing: nil,
+            padding: .init(top: 8, left: 8, bottom: 0, right: 0),
+            size: .init(width: 30, height: 30)
+        )
+        
+        teamFullNameLabel.anchor(
+            top: topAnchor,
+            leading: logoImageView.trailingAnchor,
             bottom: bottomAnchor,
             trailing: trailingAnchor,
             padding: .init(top: 8, left: 8, bottom: 8, right: 8)

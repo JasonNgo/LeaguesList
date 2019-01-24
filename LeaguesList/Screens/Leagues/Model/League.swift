@@ -33,9 +33,3 @@ extension League: Decodable {
         slug = try values.decode(String.self, forKey: .slug)
     }
 }
-
-extension League: LeagueCellViewModelProducer {
-    func toLeagueCellViewModel() -> LeagueCellViewModel {
-        return LeagueCellViewModel(fullNameLabelText: fullName)
-    }
-}

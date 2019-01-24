@@ -50,10 +50,3 @@ extension Team: Decodable {
         colour2Hex = try? values.decode(String.self, forKey: .colour2Hex)
     }
 }
-
-extension Team: TeamCellViewModelProducer {
-    func toTeamCellViewModel() -> TeamCellViewModel {
-        let viewModel = TeamCellViewModel(fullNameLabelText: "Hello")
-        return viewModel
-    }    
-}

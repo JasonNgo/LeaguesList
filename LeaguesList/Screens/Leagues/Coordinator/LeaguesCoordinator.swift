@@ -26,7 +26,7 @@ final class LeaguesCoordinator: Coordinator {
     func start() {
         let leaguesController = LeaguesController()
         let leagues = leaguesDataManager.getListOfLeagues()
-        let leagueViewModels = leagues.map { $0.toLeagueCellViewModel() }
+        let leagueViewModels = leagues.map { LeagueCellViewModel(league: $0) }
         
         leaguesController.title = "Leagues"
         leaguesController.leagueViewModels = leagueViewModels

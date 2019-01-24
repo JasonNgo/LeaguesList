@@ -11,3 +11,9 @@ import Foundation
 struct LeagueCellViewModel {
     var fullNameLabelText: String
 }
+
+extension LeagueCellViewModel {
+    init(league: League) {
+        self.fullNameLabelText = league.fullName
+    }
+}

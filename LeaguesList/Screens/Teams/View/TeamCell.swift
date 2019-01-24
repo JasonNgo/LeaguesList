@@ -35,7 +35,7 @@ final class TeamCell: UICollectionViewCell {
         return view
     }()
     
-    // MARK: - Constraints
+    // MARK: - Constraints and Constants
     private var logoMaximizedWidthConstraint: NSLayoutConstraint!
     private var logoMinimizedWidthConstraint: NSLayoutConstraint!
     private let logoImageViewSize: CGFloat = 44

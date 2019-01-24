@@ -8,9 +8,10 @@
 
 import UIKit
 
-/// LeaguesController delegates responsibilities of didSelectItem back to LeagueCoordinator
+/// LeaguesController delegates responsibilities back to LeagueCoordinator
 protocol LeaguesControllerDelegate: class {
     func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath)
+    func leaguesControllerDidRefresh()
 }
 
 /// LeaguesController manages a CollectionView of a list of leagues
@@ -21,10 +22,13 @@ final class LeaguesController: UIViewController {
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
-    private let cellHeight: CGFloat = 50
-    private let minimumLineSpacingForSection: CGFloat = 5
+    private let cellHeight: CGFloat = 45
+    private let minimumLineSpacingForSection: CGFloat = 1
+    private let emptyStateMessage = "No Data Found"
+    private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
+    private let noSearchResultsString = "No results found"
     
-    // MARK: - CollectionView
+    // MARK: - UICollectionView
     private let reuseId = "LeagueCell"
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -36,15 +40,80 @@ final class LeaguesController: UIViewController {
         return cv
     }()
     
-    // MARK: - Model
-    var leagueViewModels: [LeagueCellViewModel] = []
+    private lazy var refreshControl: UIRefreshControl = {
+        let rc = UIRefreshControl()
+        rc.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
+        return rc
+    }()
+    
+    // MARK: - SearchController
+    private let leaguesSearchController = UISearchController(searchResultsController: nil)
+    private var filteredLeagueViewModels: [LeagueCellViewModel] = []
+    
+    // MARK: - ViewModel
+    var leagueViewModels: [LeagueCellViewModel] = [] {
+        didSet {
+            collectionView.refreshControl?.endRefreshing()
+            filteredLeagueViewModels = leagueViewModels
+            collectionView.reloadData()
+        }
+    }
     
     // MARK: - Overrides
     
     override func loadView() {
         super.loadView()
+        
         view.addSubview(collectionView)
         collectionView.fillSuperview()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupCollectionView()
+        setupLeaguesSearchController()
+    }
+    
+    // MARK: - Setup
+    
+    private func setupCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.refreshControl = refreshControl
+    }
+    
+    private func setupLeaguesSearchController() {
+        self.definesPresentationContext = true
+        navigationItem.searchController = leaguesSearchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        leaguesSearchController.dimsBackgroundDuringPresentation = false
+        leaguesSearchController.searchBar.delegate = self
+        leaguesSearchController.searchBar.placeholder = "Search leagues by name or slug"
+    }
+    
+    // MARK: - Target Actions
+    
+    @objc private func handleRefreshControl() {
+        delegate?.leaguesControllerDidRefresh()
+    }
+}
+
+// MARK: - Search Controller
+
+extension LeaguesController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            filteredLeagueViewModels = leagueViewModels
+        } else {
+            filteredLeagueViewModels = leagueViewModels.filter({ (leagueViewModel) -> Bool in
+                return
+                    leagueViewModel.fullNameLabelText.lowercased().contains(searchText.lowercased()) ||
+                    leagueViewModel.slug.lowercased().contains(searchText.lowercased())  
+            })
+        }
+        
+        collectionView.reloadData()
     }
 }
 
@@ -60,7 +129,17 @@ extension LeaguesController: UICollectionViewDelegate {
 
 extension LeaguesController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return leagueViewModels.count
+        if leagueViewModels.count == 0 {
+            collectionView.setEmptyMessage(emptyStateMessage, description: emptyStateDescription)
+        } else {
+            if filteredLeagueViewModels.count == 0 {
+                collectionView.setEmptyMessage("", description: noSearchResultsString)
+            } else {
+                collectionView.restore()
+            }
+        }
+        
+        return filteredLeagueViewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -68,11 +147,10 @@ extension LeaguesController: UICollectionViewDataSource {
             fatalError("Unable to dequeue League Cell")
         }
         
-        cell.leagueViewModel = leagueViewModels[indexPath.item]
+        cell.leagueViewModel = filteredLeagueViewModels[indexPath.item]
         return cell
     }
 }
-
 
 // MARK: - UICollectionViewDelegateFlowLayout
 

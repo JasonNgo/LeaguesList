@@ -16,7 +16,9 @@ struct League {
 
 extension League: Equatable {
     static func == (lhs: League, rhs: League) -> Bool {
-        return lhs.fullName == rhs.fullName && lhs.slug == rhs.slug
+        return
+            lhs.fullName == rhs.fullName &&
+            lhs.slug == rhs.slug
     }
 }
 
@@ -31,11 +33,5 @@ extension League: Decodable {
         
         fullName = try values.decode(String.self, forKey: .fullName)
         slug = try values.decode(String.self, forKey: .slug)
-    }
-}
-
-extension League: LeagueCellViewModelProducer {
-    func toLeagueCellViewModel() -> LeagueCellViewModel {
-        return LeagueCellViewModel(fullNameLabelText: fullName)
     }
 }

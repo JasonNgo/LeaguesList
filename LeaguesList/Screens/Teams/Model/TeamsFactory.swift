@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TeamsFactory {
+struct TeamsFactory {
     let teams: [Team]
     
     init() {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LeaguesFactory {
+struct LeaguesFactory {
     let leagues: [League]
     
     init() {

@@ -34,8 +34,9 @@ final class TeamsDataManager {
             case .success(let data):
                 do {
                     let teams = try JSONDecoder().decode([Team].self, from: data)
-                    self.teamsCache[slug] = teams
-                    completion(.success(teams))
+                    let sortedTeams = teams.sorted { return $0.fullName < $1.fullName }
+                    self.teamsCache[slug] = sortedTeams
+                    completion(.success(sortedTeams))
                 } catch {
                     completion(.failure(TeamsDataManagerError.unableToDecodeListOfTeams))
                     return
@@ -45,4 +46,5 @@ final class TeamsDataManager {
             }
         }
     }
+    
 }

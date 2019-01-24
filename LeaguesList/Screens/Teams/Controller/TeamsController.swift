@@ -21,6 +21,9 @@ final class TeamsController: UIViewController {
     private let cellWidth = UIScreen.main.bounds.width
     private let cellHeight: CGFloat = 50
     private let minimumLineSpacingForSection: CGFloat = 5
+    private let emptyStateMessage = "No Data Found"
+    private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
+    private let noSearchResultsString = "No results found"
     
     // MARK: - UICollectionView
     private let reuseId = "TeamCell"
@@ -38,10 +41,15 @@ final class TeamsController: UIViewController {
         return rc
     }()
     
+    // MARK: - SearchController
+    private let teamsSearchController = UISearchController(searchResultsController: nil)
+    private var filteredTeamViewModels: [TeamCellViewModel] = []
+    
     // MARK: - ViewModel
     var teamViewModels: [TeamCellViewModel] = [] {
         didSet {
             collectionView.refreshControl?.endRefreshing()
+            filteredTeamViewModels = teamViewModels
             collectionView.reloadData()
         }
     }
@@ -59,9 +67,25 @@ final class TeamsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupCollectionView()
+        setupTeamsSearchController()
+    }
+    
+    // MARK: - Setup
+    
+    private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.refreshControl = refreshControl
+    }
+    
+    private func setupTeamsSearchController() {
+        self.definesPresentationContext = true
+        navigationItem.searchController = teamsSearchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        teamsSearchController.dimsBackgroundDuringPresentation = false
+        teamsSearchController.searchBar.delegate = self
+        teamsSearchController.searchBar.placeholder = "Search by name or location"
     }
     
     // MARK: - Target Actions
@@ -72,17 +96,36 @@ final class TeamsController: UIViewController {
     }
 }
 
+extension TeamsController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            filteredTeamViewModels = teamViewModels
+        } else {
+            filteredTeamViewModels = teamViewModels.filter({ (teamViewModel) -> Bool in
+                return
+                    teamViewModel.fullNameLabelText.lowercased().contains(searchText.lowercased()) ||
+                    teamViewModel.name.lowercased().contains(searchText.lowercased()) ||
+                    teamViewModel.location?.lowercased().contains(searchText.lowercased()) ?? false
+            })
+        }
+        
+        collectionView.reloadData()
+    }
+}
+
 extension TeamsController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if teamViewModels.count == 0 {
-            let message = "No Data Found"
-            let description = "\n\nPlease try loading the page\nagain at a later time"
-            collectionView.setEmptyMessage(message, description: description)
+            collectionView.setEmptyMessage(emptyStateMessage, description: emptyStateDescription)
         } else {
-            collectionView.restore()
+            if filteredTeamViewModels.count == 0 {
+                collectionView.setEmptyMessage("", description: noSearchResultsString)
+            } else {
+                collectionView.restore()
+            }
         }
         
-        return teamViewModels.count
+        return filteredTeamViewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -90,7 +133,7 @@ extension TeamsController: UICollectionViewDataSource {
             fatalError("Unable to dequeue Team Cell")
         }
         
-        cell.teamCellViewModel = teamViewModels[indexPath.item]
+        cell.teamCellViewModel = filteredTeamViewModels[indexPath.item]
         return cell
     }
 }

@@ -26,6 +26,7 @@ final class LeaguesController: UIViewController {
     private let minimumLineSpacingForSection: CGFloat = 1
     private let emptyStateMessage = "No Data Found"
     private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
+    private let noSearchResultsString = "No results found"
     
     // MARK: - UICollectionView
     private let reuseId = "LeagueCell"
@@ -53,8 +54,8 @@ final class LeaguesController: UIViewController {
     var leagueViewModels: [LeagueCellViewModel] = [] {
         didSet {
             collectionView.refreshControl?.endRefreshing()
-            collectionView.reloadData()
             filteredLeagueViewModels = leagueViewModels
+            collectionView.reloadData()
         }
     }
     
@@ -131,7 +132,11 @@ extension LeaguesController: UICollectionViewDataSource {
         if leagueViewModels.count == 0 {
             collectionView.setEmptyMessage(emptyStateMessage, description: emptyStateDescription)
         } else {
-            collectionView.restore()
+            if filteredLeagueViewModels.count == 0 {
+                collectionView.setEmptyMessage("", description: noSearchResultsString)
+            } else {
+                collectionView.restore()
+            }
         }
         
         return filteredLeagueViewModels.count

@@ -9,6 +9,4 @@
 #ifndef LeaguesList_Bridging_Header_h
 #define LeaguesList_Bridging_Header_h
 
-#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
-
 #endif /* LeaguesList_Bridging_Header_h */

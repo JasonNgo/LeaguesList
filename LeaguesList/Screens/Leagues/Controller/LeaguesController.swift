@@ -64,9 +64,6 @@ final class LeaguesController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.emptyDataSetDelegate = self
-        collectionView.emptyDataSetSource = self
-        collectionView.backgroundView = UIView()
         collectionView.refreshControl = refreshControl
     }
     
@@ -111,23 +108,5 @@ extension LeaguesController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return minimumLineSpacingForSection
-    }
-}
-
-extension LeaguesController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
-    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
-        let str = "No Data Found"
-        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline).withSize(30)]
-        return NSAttributedString(string: str, attributes: attrs)
-    }
-    
-    func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
-        let str = "Try reloading the page at a later time."
-        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body).withSize(20)]
-        return NSAttributedString(string: str, attributes: attrs)
-    }
-    
-    func emptyDataSetShouldAllowScroll(_ scrollView: UIScrollView!) -> Bool {
-        return true
     }
 }

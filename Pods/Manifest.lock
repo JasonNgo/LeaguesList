@@ -1,22 +1,18 @@
 PODS:
-  - DZNEmptyDataSet (1.8.1)
   - SDWebImage (4.4.3):
     - SDWebImage/Core (= 4.4.3)
   - SDWebImage/Core (4.4.3)
 
 DEPENDENCIES:
-  - DZNEmptyDataSet
   - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - DZNEmptyDataSet
     - SDWebImage
 
 SPEC CHECKSUMS:
-  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
 
-PODFILE CHECKSUM: eff77c5c298ea81fccde4510fdabf3641bbace73
+PODFILE CHECKSUM: b10d4842ddebf012c92b52230e53c440a5e68dd9
 
 COCOAPODS: 1.5.3

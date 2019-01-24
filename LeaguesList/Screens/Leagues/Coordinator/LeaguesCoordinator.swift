@@ -38,9 +38,19 @@ final class LeaguesCoordinator: Coordinator {
 
 extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath) {
-        print(indexPath.item)
-        let teamsController = TeamsController()
-        teamsController.title = "Teams"
-        presenter.show(teamsController, sender: self)
+        let selectedLeague = leaguesDataManager.getLeagueAt(indexPath.item)
+        
+        teamsDataManager.getTeamsForSlug(selectedLeague.slug) { (result) in
+            switch result {
+            case .success(let teams):
+                print(teams)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+//        let teamsController = TeamsController()
+//        teamsController.title = "Teams"
+//        presenter.show(teamsController, sender: self)
     }
 }

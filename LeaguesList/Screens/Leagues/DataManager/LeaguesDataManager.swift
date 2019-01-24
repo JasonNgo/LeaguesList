@@ -35,4 +35,8 @@ final class LeaguesDataManager {
     func getListOfLeagues() -> [League] {
         return leagues
     }
+    
+    func getLeagueAt(_ index: Int) -> League {
+        return leagues[index]
+    }
 }

@@ -19,7 +19,7 @@ final class TeamsController: UIViewController {
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
-    private let cellHeight: CGFloat = 55
+    private let cellHeight: CGFloat = 60
     private let minimumLineSpacingForSection: CGFloat = 0
     private let emptyStateMessage = "No Data Found"
     private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"

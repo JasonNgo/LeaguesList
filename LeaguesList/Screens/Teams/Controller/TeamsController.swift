@@ -22,8 +22,6 @@ final class TeamsController: UIViewController {
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.register(TeamCell.self, forCellWithReuseIdentifier: reuseId)
         cv.backgroundColor = .white
-        cv.delegate = self
-        cv.dataSource = self
         return cv
     }()
     
@@ -36,6 +34,16 @@ final class TeamsController: UIViewController {
         super.loadView()
         view.addSubview(collectionView)
         collectionView.fillSuperview()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.emptyDataSetDelegate = self
+        collectionView.emptyDataSetSource = self
+        collectionView.backgroundView = UIView()
     }
 }
 
@@ -61,6 +69,20 @@ extension TeamsController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return minimumLineSpacingForSection
+    }
+}
+
+extension TeamsController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "No Data Found"
+        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline).withSize(30)]
+        return NSAttributedString(string: str, attributes: attrs)
+    }
+    
+    func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        let str = "Try reloading the page at a later time."
+        let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body).withSize(20)]
+        return NSAttributedString(string: str, attributes: attrs)
     }
 }
 

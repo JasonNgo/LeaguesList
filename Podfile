@@ -7,6 +7,7 @@ target 'LeaguesList' do
 
   # Pods for LeaguesList
   pod 'SDWebImage'
+  pod 'DZNEmptyDataSet'
 
   target 'LeaguesListTests' do
     inherit! :search_paths

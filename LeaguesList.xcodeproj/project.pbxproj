@@ -108,6 +108,7 @@
 		7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesFactory.swift; sourceTree = "<group>"; };
 		7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsController.swift; sourceTree = "<group>"; };
 		7DAE2A2121F953CB00AEA116 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		7DAE2A2721F988F200AEA116 /* LeaguesList-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeaguesList-Bridging-Header.h"; sourceTree = "<group>"; };
 		7DC700E89CBBF329BCC6B3D3 /* Pods-LeaguesList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeaguesList.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeaguesList/Pods-LeaguesList.release.xcconfig"; sourceTree = "<group>"; };
 		7F1D4C29F0164705EE18AC34 /* Pods-LeaguesList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeaguesList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeaguesList/Pods-LeaguesList.debug.xcconfig"; sourceTree = "<group>"; };
 		89E6D90D0FAFFBFDA205ACA0 /* Pods_LeaguesListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeaguesListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,11 +184,12 @@
 				7D06A0DC21F66564000598EB /* LaunchScreen.storyboard */,
 				7D06A0DF21F66564000598EB /* Info.plist */,
 				7D06A0D321F66563000598EB /* AppDelegate.swift */,
+				7DAE2A2721F988F200AEA116 /* LeaguesList-Bridging-Header.h */,
+				7D06A0F721F78230000598EB /* Resources */,
+				7D6C137121F7BB8A002B8A09 /* Util */,
+				7D6C138121F7CBE3002B8A09 /* Networking */,
 				7D6C137B21F7BF76002B8A09 /* Coordinators */,
 				7D6C13AD21F80894002B8A09 /* Screens */,
-				7D6C138121F7CBE3002B8A09 /* Networking */,
-				7D6C137121F7BB8A002B8A09 /* Util */,
-				7D06A0F721F78230000598EB /* Resources */,
 			);
 			path = LeaguesList;
 			sourceTree = "<group>";
@@ -509,10 +511,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LeaguesList/Pods-LeaguesList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,6 +693,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "LeaguesList/LeaguesList-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -743,6 +748,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "LeaguesList/LeaguesList-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};

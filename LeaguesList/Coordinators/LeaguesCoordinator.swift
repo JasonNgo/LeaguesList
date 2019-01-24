@@ -27,7 +27,7 @@ final class LeaguesCoordinator: Coordinator {
         let leaguesController = LeaguesController()
         let leagues = leaguesDataManager.getListOfLeagues()
         let leagueViewModels = leagues.map { LeagueCellViewModel(league: $0) }
-        
+
         leaguesController.title = "Leagues"
         leaguesController.leagueViewModels = leagueViewModels
         leaguesController.delegate = self
@@ -41,18 +41,20 @@ extension LeaguesCoordinator: LeaguesControllerDelegate {
         let selectedLeague = leaguesDataManager.getLeagueAt(indexPath.item)
         
         teamsDataManager.getTeamsForSlug(selectedLeague.slug) { (result) in
+            var teamViewModels: [TeamCellViewModel]
+            
             switch result {
             case .success(let teams):
-                let teamViewModels = teams.map { TeamCellViewModel(team: $0) }
-
-                let teamsController = TeamsController()
-                teamsController.title = selectedLeague.fullName
-                teamsController.teamViewModels = teamViewModels
-                
-                self.presenter.show(teamsController, sender: self)
-            case .failure(let error):
-                print(error)
+                teamViewModels = teams.map { TeamCellViewModel(team: $0) }
+            case .failure:
+                teamViewModels = []
             }
+            
+            let teamsController = TeamsController()
+            teamsController.title = selectedLeague.fullName
+            teamsController.teamViewModels = teamViewModels
+            
+            self.presenter.show(teamsController, sender: self)
         }
         
     }

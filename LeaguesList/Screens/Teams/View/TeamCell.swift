@@ -32,8 +32,20 @@ final class TeamCell: UICollectionViewCell {
         didSet {
             teamFullNameLabel.text = teamCellViewModel.fullNameLabelText
             
-            guard let logoUrl = teamCellViewModel.logoUrl else { return }
-            guard let url = URL(string: logoUrl) else { return }
+            // Attempt to load image if the url exists
+            guard let logoUrl = teamCellViewModel.logoUrl, let url = URL(string: logoUrl) else {
+                // If imageUrl doesn't exist attempt to load teams main colour as an image
+                guard let mainColour = teamCellViewModel.colour1 else {
+                    logoImageView.widthAnchor.constraint(equalToConstant: 0).isActive = true
+                    logoImageView.heightAnchor.constraint(equalToConstant: 0).isActive = true
+                    return
+                }
+                
+                let colourImage = UIColor(hexFromString: mainColour).image()
+                logoImageView.image = colourImage
+                return
+            }
+            
             logoImageView.sd_setImage(with: url, placeholderImage: nil, options: .continueInBackground) {
                 (image, _, _, _) in
                 guard let image = image else { return }

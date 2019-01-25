@@ -14,7 +14,6 @@ public enum TheScoreEndPoint {
 }
 
 extension TheScoreEndPoint: EndPointType {
-    
     var baseUrl: URL {
         switch self {
         case .leagues:
@@ -45,5 +44,4 @@ extension TheScoreEndPoint: EndPointType {
     var headers: HTTPHeaders? {
         return nil
     }
-    
 }

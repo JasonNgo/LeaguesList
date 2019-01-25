@@ -15,6 +15,7 @@ enum TeamsDataManagerError: Error {
 
 typealias TeamsDataManagerCompletion = (Result<[Team], TeamsDataManagerError>) -> Void
 
+/// Interacts with TheScoreAPI to fetch data and transform data into Team models
 final class TeamsDataManager {
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
     private var teamsCache: [String: [Team]] = [:]
@@ -46,5 +47,4 @@ final class TeamsDataManager {
             }
         }
     }
-    
 }

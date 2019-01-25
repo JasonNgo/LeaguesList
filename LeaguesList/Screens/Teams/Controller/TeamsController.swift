@@ -26,6 +26,7 @@ final class TeamsController: UIViewController {
     private let noSearchResultsString = "No results found"
     
     // MARK: - UICollectionView
+    
     private let reuseId = "TeamCell"
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -42,6 +43,7 @@ final class TeamsController: UIViewController {
     }()
     
     // MARK: - SearchController
+    
     private let teamsSearchController = UISearchController(searchResultsController: nil)
     private var filteredTeams: [Team] = []
     
@@ -96,6 +98,9 @@ final class TeamsController: UIViewController {
     }
 }
 
+
+// MARK: - UISearchBarDelegate
+
 extension TeamsController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
@@ -112,6 +117,8 @@ extension TeamsController: UISearchBarDelegate {
         collectionView.reloadData()
     }
 }
+
+// MARK: - UICollectionViewDataSource
 
 extension TeamsController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -137,6 +144,8 @@ extension TeamsController: UICollectionViewDataSource {
         return cell
     }
 }
+
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension TeamsController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

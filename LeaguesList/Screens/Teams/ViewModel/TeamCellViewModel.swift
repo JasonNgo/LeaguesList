@@ -8,6 +8,8 @@
 
 import Foundation
 
+// Using Team model instead of ViewModel because currently the two models are the same and using both
+// in current implementation adds extra level of uncessary abstraction
 struct TeamCellViewModel {
     var fullNameLabelText: String
     var name: String

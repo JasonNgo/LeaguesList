@@ -12,6 +12,7 @@ import UIKit
 final class LeagueCell: UICollectionViewCell {
     
     // MARK: - Subviews
+    
     private let leagueFullNameLabel: UILabel = {
         var label = UILabel()
         label.numberOfLines = 0
@@ -33,7 +34,6 @@ final class LeagueCell: UICollectionViewCell {
             leagueFullNameLabel.text = league.fullName
         }
     }
-
     
     // MARK: - Overrides
     
@@ -70,5 +70,4 @@ final class LeagueCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }

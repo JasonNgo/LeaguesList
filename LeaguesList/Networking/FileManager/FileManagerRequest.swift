@@ -8,11 +8,11 @@
 
 import Foundation
 
-public enum FileAccessorError: Error {
+enum FileAccessorError: Error {
     case unableToFetchData
 }
 
-public typealias FileAccessorCompletion = (Result<Data, FileAccessorError>) -> Void
+typealias FileAccessorCompletion = (Result<Data, FileAccessorError>) -> Void
 
 protocol FileAccessorRequest: class {
     associatedtype EndPointType

@@ -36,6 +36,8 @@ final class LeaguesCoordinator: Coordinator {
     }
 }
 
+// MARK: - LeaguesControllerDelegate
+
 extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath) {
         let selectedLeague = leaguesDataManager.getLeagueAt(indexPath.item)
@@ -58,6 +60,8 @@ extension LeaguesCoordinator: LeaguesControllerDelegate {
     }
 }
 
+// MARK: - TeamsControllerDelegate
+
 extension LeaguesCoordinator: TeamsControllerDelegate {
     func teamsControllerDidRefresh(_ slug: String) {
         fetchTeams(for: slug) { (teams) in
@@ -67,6 +71,7 @@ extension LeaguesCoordinator: TeamsControllerDelegate {
 }
 
 // MARK: - Fetching Helpers
+
 private extension LeaguesCoordinator {
     func fetchLeagues() -> [League] {
         leaguesDataManager.fetchListOfLeagues()

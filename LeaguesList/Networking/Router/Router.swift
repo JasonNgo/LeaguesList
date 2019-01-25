@@ -9,7 +9,7 @@
 import Foundation
 
 /// Builds requests based on endpoints. Executes network requests and handles networking related logic.
-class Router<EndPoint: EndPointType>: NetworkRouter {
+final class Router<EndPoint: EndPointType>: NetworkRouter {
     private let session: URLSession
     // TODO: Change to operation queue to sending multiple requests
     private var task: URLSessionTask?

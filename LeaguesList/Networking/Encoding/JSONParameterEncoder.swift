@@ -8,8 +8,8 @@
 
 import Foundation
 
-public struct JSONParameterEncoder: ParameterEncoder {
-    public static func encode(urlRequest: inout URLRequest, with parameters: Parameters) throws {
+struct JSONParameterEncoder: ParameterEncoder {
+    static func encode(urlRequest: inout URLRequest, with parameters: Parameters) throws {
         guard !parameters.isEmpty else { throw EncodingError.parametersNil }
         
         do {

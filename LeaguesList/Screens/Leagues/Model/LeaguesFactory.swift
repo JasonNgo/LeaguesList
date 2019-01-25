@@ -9,7 +9,7 @@
 import Foundation
 
 struct LeaguesFactory {
-    let leagues: [League]
+    var leagues: [League]
     
     init() {
         leagues = [
@@ -35,5 +35,7 @@ struct LeaguesFactory {
             League(fullName: "Nations League D", slug: "natleagued"),
             League(fullName: "MLS Soccer", slug: "mls")
         ]
+        
+        leagues.sort { return $0.fullName < $1.fullName }
     }
 }

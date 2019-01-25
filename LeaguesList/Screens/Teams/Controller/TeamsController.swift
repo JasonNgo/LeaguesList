@@ -43,13 +43,13 @@ final class TeamsController: UIViewController {
     
     // MARK: - SearchController
     private let teamsSearchController = UISearchController(searchResultsController: nil)
-    private var filteredTeamViewModels: [TeamCellViewModel] = []
+    private var filteredTeams: [Team] = []
     
-    // MARK: - ViewModel
-    var teamViewModels: [TeamCellViewModel] = [] {
+    // MARK: - Model
+    var teams: [Team] = [] {
         didSet {
             collectionView.refreshControl?.endRefreshing()
-            filteredTeamViewModels = teamViewModels
+            filteredTeams = teams
             collectionView.reloadData()
         }
     }
@@ -99,13 +99,13 @@ final class TeamsController: UIViewController {
 extension TeamsController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
-            filteredTeamViewModels = teamViewModels
+            filteredTeams = teams
         } else {
-            filteredTeamViewModels = teamViewModels.filter({ (teamViewModel) -> Bool in
+            filteredTeams = teams.filter({ (team) -> Bool in
                 return
-                    teamViewModel.fullNameLabelText.lowercased().contains(searchText.lowercased()) ||
-                    teamViewModel.name.lowercased().contains(searchText.lowercased()) ||
-                    teamViewModel.location?.lowercased().contains(searchText.lowercased()) ?? false
+                    team.fullName.lowercased().contains(searchText.lowercased()) ||
+                    team.name.lowercased().contains(searchText.lowercased()) ||
+                    team.location?.lowercased().contains(searchText.lowercased()) ?? false
             })
         }
         
@@ -115,17 +115,17 @@ extension TeamsController: UISearchBarDelegate {
 
 extension TeamsController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if teamViewModels.count == 0 {
+        if teams.count == 0 {
             collectionView.setEmptyMessage(emptyStateMessage, description: emptyStateDescription)
         } else {
-            if filteredTeamViewModels.count == 0 {
+            if filteredTeams.count == 0 {
                 collectionView.setEmptyMessage("", description: noSearchResultsString)
             } else {
                 collectionView.restore()
             }
         }
         
-        return filteredTeamViewModels.count
+        return filteredTeams.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -133,7 +133,7 @@ extension TeamsController: UICollectionViewDataSource {
             fatalError("Unable to dequeue Team Cell")
         }
         
-        cell.teamCellViewModel = filteredTeamViewModels[indexPath.item]
+        cell.team = filteredTeams[indexPath.item]
         return cell
     }
 }

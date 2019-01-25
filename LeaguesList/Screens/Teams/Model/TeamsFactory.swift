@@ -9,7 +9,7 @@
 import Foundation
 
 struct TeamsFactory {
-    let teams: [Team]
+    var teams: [Team]
     
     init() {
         teams = [
@@ -49,5 +49,7 @@ struct TeamsFactory {
             Team(fullName: "Pacific All-Stars", name: "All-Stars", location: "Pacific", logoUrl: "https://d12smlnp5321d2.cloudfront.net/hockey/team/68/logo.png", colour1Hex: nil, colour2Hex: nil),
             Team(fullName: "Vegas Golden Knights", name: "Golden Knights", location: "Vegas", logoUrl: "https://d12smlnp5321d2.cloudfront.net/hockey/team/102/logo.png", colour1Hex: "87704E", colour2Hex:  "334049")
         ]
+        
+        teams.sort { $0.fullName < $1.fullName }
     }
 }

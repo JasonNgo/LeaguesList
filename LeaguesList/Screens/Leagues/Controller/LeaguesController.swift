@@ -48,13 +48,13 @@ final class LeaguesController: UIViewController {
     
     // MARK: - SearchController
     private let leaguesSearchController = UISearchController(searchResultsController: nil)
-    private var filteredLeagueViewModels: [LeagueCellViewModel] = []
+    private var filteredLeages: [League] = []
     
-    // MARK: - ViewModel
-    var leagueViewModels: [LeagueCellViewModel] = [] {
+    // MARK: - Model
+    var leagues: [League] = [] {
         didSet {
             collectionView.refreshControl?.endRefreshing()
-            filteredLeagueViewModels = leagueViewModels
+            filteredLeages = leagues
             collectionView.reloadData()
         }
     }
@@ -104,12 +104,12 @@ final class LeaguesController: UIViewController {
 extension LeaguesController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
-            filteredLeagueViewModels = leagueViewModels
+            filteredLeages = leagues
         } else {
-            filteredLeagueViewModels = leagueViewModels.filter({ (leagueViewModel) -> Bool in
+            filteredLeages = leagues.filter({ (league) -> Bool in
                 return
-                    leagueViewModel.fullNameLabelText.lowercased().contains(searchText.lowercased()) ||
-                    leagueViewModel.slug.lowercased().contains(searchText.lowercased())  
+                    league.fullName.lowercased().contains(searchText.lowercased()) ||
+                    league.slug.lowercased().contains(searchText.lowercased())  
             })
         }
         
@@ -129,17 +129,17 @@ extension LeaguesController: UICollectionViewDelegate {
 
 extension LeaguesController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if leagueViewModels.count == 0 {
+        if leagues.count == 0 {
             collectionView.setEmptyMessage(emptyStateMessage, description: emptyStateDescription)
         } else {
-            if filteredLeagueViewModels.count == 0 {
+            if filteredLeages.count == 0 {
                 collectionView.setEmptyMessage("", description: noSearchResultsString)
             } else {
                 collectionView.restore()
             }
         }
         
-        return filteredLeagueViewModels.count
+        return filteredLeages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -147,7 +147,7 @@ extension LeaguesController: UICollectionViewDataSource {
             fatalError("Unable to dequeue League Cell")
         }
         
-        cell.leagueViewModel = filteredLeagueViewModels[indexPath.item]
+        cell.league = filteredLeages[indexPath.item]
         return cell
     }
 }

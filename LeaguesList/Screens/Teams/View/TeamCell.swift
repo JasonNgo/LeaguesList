@@ -9,6 +9,7 @@
 import UIKit
 import SDWebImage
 
+/// UICollectionViewCell Subclass that displays a teams information for the TeamsController cell
 final class TeamCell: UICollectionViewCell {
     
     // MARK: - Subviews
@@ -36,19 +37,21 @@ final class TeamCell: UICollectionViewCell {
     }()
     
     // MARK: - Constraints
+    
     private var logoMaximizedWidthConstraint: NSLayoutConstraint!
     private var logoMinimizedWidthConstraint: NSLayoutConstraint!
     private let logoImageViewSize: CGFloat = 44
     
-    // MARK: - ViewModel
-    var teamCellViewModel: TeamCellViewModel! {
+    // MARK: - Model
+    
+    var team: Team! {
         didSet {
-            teamFullNameLabel.text = teamCellViewModel.fullNameLabelText
+            teamFullNameLabel.text = team.fullName
             
             // Attempt to load image if the url exists
-            guard let logoUrl = teamCellViewModel.logoUrl, let url = URL(string: logoUrl) else {
+            guard let logoUrl = team.logoUrl, let url = URL(string: logoUrl) else {
                 // If imageUrl doesn't exist attempt to load teams main colour as an image
-                guard let mainColour = teamCellViewModel.colour1 else {
+                guard let mainColour = team.colour1Hex else {
                     logoMaximizedWidthConstraint.isActive = false
                     logoMinimizedWidthConstraint.isActive = true
                     return
@@ -77,6 +80,8 @@ final class TeamCell: UICollectionViewCell {
         super.init(frame: frame)
         setupSubviews()
     }
+    
+    // MARK: - Setup
     
     private func setupSubviews() {
         addSubview(teamFullNameLabel)

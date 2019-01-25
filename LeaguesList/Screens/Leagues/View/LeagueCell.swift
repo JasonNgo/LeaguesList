@@ -27,12 +27,13 @@ final class LeagueCell: UICollectionViewCell {
         return view
     }()
     
-    // MARK: - ViewModel
-    var leagueViewModel: LeagueCellViewModel! {
+    // MARK: - Model
+    var league: League! {
         didSet {
-            leagueFullNameLabel.text = leagueViewModel.fullNameLabelText
+            leagueFullNameLabel.text = league.fullName
         }
     }
+
     
     // MARK: - Overrides
     

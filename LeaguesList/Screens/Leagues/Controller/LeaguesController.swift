@@ -10,8 +10,7 @@ import UIKit
 
 /// LeaguesController delegates responsibilities back to LeagueCoordinator
 protocol LeaguesControllerDelegate: class {
-    func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath)
-    func leaguesControllerDidRefresh()
+    func leaguesControllerDidSelectItem(_ league: League)
 }
 
 /// LeaguesController manages a CollectionView of a list of leagues
@@ -24,9 +23,9 @@ final class LeaguesController: UIViewController {
     private let cellWidth = UIScreen.main.bounds.width
     private let cellHeight: CGFloat = 45
     private let minimumLineSpacingForSection: CGFloat = 1
-    private let emptyStateMessage = "No Data Found"
-    private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
-    private let noSearchResultsString = "No results found"
+    
+    // MARK: - DataSource
+    private var leaguesDataSource: LeaguesControllerDataSource
     
     // MARK: - UICollectionView
     private let reuseId = "LeagueCell"
@@ -35,8 +34,6 @@ final class LeaguesController: UIViewController {
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.register(LeagueCell.self, forCellWithReuseIdentifier: reuseId)
         cv.backgroundColor = .white
-        cv.delegate = self
-        cv.dataSource = self
         return cv
     }()
     
@@ -48,15 +45,10 @@ final class LeaguesController: UIViewController {
     
     // MARK: - SearchController
     private let leaguesSearchController = UISearchController(searchResultsController: nil)
-    private var filteredLeages: [League] = []
     
-    // MARK: - Model
-    var leagues: [League] = [] {
-        didSet {
-            collectionView.refreshControl?.endRefreshing()
-            filteredLeages = leagues
-            collectionView.reloadData()
-        }
+    init(leaguesDataSource: LeaguesControllerDataSource) {
+        self.leaguesDataSource = leaguesDataSource
+        super.init(nibName: nil, bundle: nil)
     }
     
     // MARK: - Overrides
@@ -71,16 +63,22 @@ final class LeaguesController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupController()
         setupCollectionView()
         setupLeaguesSearchController()
     }
     
     // MARK: - Setup
     
+    private func setupController() {
+        title = "Leagues"
+    }
+    
     private func setupCollectionView() {
         collectionView.delegate = self
-        collectionView.dataSource = self
+        collectionView.dataSource = leaguesDataSource
         collectionView.refreshControl = refreshControl
+        collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
     }
     
     private func setupLeaguesSearchController() {
@@ -95,7 +93,16 @@ final class LeaguesController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        delegate?.leaguesControllerDidRefresh()
+        leaguesDataSource.fetchLeagueItems()
+        collectionView.refreshControl?.endRefreshing()
+        collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
+        collectionView.reloadData()
+    }
+    
+    // MARK: - Required
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
@@ -103,16 +110,9 @@ final class LeaguesController: UIViewController {
 
 extension LeaguesController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.isEmpty {
-            filteredLeages = leagues
-        } else {
-            filteredLeages = leagues.filter({ (league) -> Bool in
-                return
-                    league.fullName.lowercased().contains(searchText.lowercased()) ||
-                    league.slug.lowercased().contains(searchText.lowercased())  
-            })
-        }
-        
+        collectionView.backgroundView = nil
+        leaguesDataSource.filterResultsBy(searchText)
+        collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
         collectionView.reloadData()
     }
 }
@@ -121,34 +121,8 @@ extension LeaguesController: UISearchBarDelegate {
 
 extension LeaguesController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.leaguesControllerDidSelectItemAt(indexPath)
-    }
-}
-
-// MARK: - UICollectionViewDataSource
-
-extension LeaguesController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if leagues.count == 0 {
-            collectionView.setEmptyMessage(emptyStateMessage, description: emptyStateDescription)
-        } else {
-            if filteredLeages.count == 0 {
-                collectionView.setEmptyMessage("", description: noSearchResultsString)
-            } else {
-                collectionView.restore()
-            }
-        }
-        
-        return filteredLeages.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseId, for: indexPath) as? LeagueCell else {
-            fatalError("Unable to dequeue League Cell")
-        }
-        
-        cell.league = filteredLeages[indexPath.item]
-        return cell
+        let league = leaguesDataSource.item(at: indexPath)
+        delegate?.leaguesControllerDidSelectItem(league)
     }
 }
 

@@ -8,37 +8,35 @@
 
 import Foundation
 
-/// Acts as a bridge between ViewControllers and the data associated with that controller.
+enum LeaguesDataManagerError: Error {
+    case unableToFetchListOfLeagues(Error)
+    case unableToDecodeListOfLeagues
+}
+
+/// Acts as a bridge between API and ViewControllerDataSources.
 /// Interacts with TheScoreEndPoint to fetch data and performs the required data transformations to
-/// League objects that the LeagueController can interact with.
+/// League objects that the LeagueControllerDataSource can store and use.
 final class LeaguesDataManager {
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
-    var leagues: [League] = []
     
     init(fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.fileAccessor = fileAccessor
-        fetchListOfLeagues()
     }
     
-    func fetchListOfLeagues() {
-        fileAccessor.request(.leagues) { (result) in
+    func fetchListOfLeagues(completion: @escaping (Result<[League], LeaguesDataManagerError>) -> Void) {
+        fileAccessor.request(.leagues) { result in
             switch result {
             case .success(let data):
                 do {
                     let leagues = try JSONDecoder().decode([League].self, from: data)
                     let sortedLeagues = leagues.sorted { return $0.fullName < $1.fullName }
-                    self.leagues = sortedLeagues
+                    completion(.success(sortedLeagues))
                 } catch {
-                    print("Failure attempting to decode list of leagues")
-                    self.leagues = []
+                    completion(.failure(LeaguesDataManagerError.unableToDecodeListOfLeagues))
                 }
             case .failure(let error):
-                print("Failure attempting to fetch list of leagues \(error.localizedDescription)")
+                completion(.failure(LeaguesDataManagerError.unableToFetchListOfLeagues(error)))
             }
         }
-    }
-    
-    func getLeagueAt(_ index: Int) -> League {
-        return leagues[index]
     }
 }

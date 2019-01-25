@@ -13,30 +13,22 @@ enum TeamsDataManagerError: Error {
     case unableToDecodeListOfTeams
 }
 
-typealias TeamsDataManagerCompletion = (Result<[Team], TeamsDataManagerError>) -> Void
-
-/// Interacts with TheScoreAPI to fetch data and transform data into Team models
+/// Interacts with TheScoreAPI to provide data for the TeamsControllerDataSource.
+/// Fetches the data and transforms it into Team models.
 final class TeamsDataManager {
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
-    private var teamsCache: [String: [Team]] = [:]
     
     init(fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.fileAccessor = fileAccessor
     }
     
-    func getTeamsForSlug(_ slug: String, completion: @escaping TeamsDataManagerCompletion) {
-        if let teams = teamsCache[slug] {
-            completion(.success(teams))
-            return
-        }
-        
+    func getTeamsForSlug(_ slug: String, completion: @escaping (Result<[Team], TeamsDataManagerError>) -> Void) {
         fileAccessor.request(.teams(slug: slug)) { (result) in
             switch result {
             case .success(let data):
                 do {
                     let teams = try JSONDecoder().decode([Team].self, from: data)
                     let sortedTeams = teams.sorted { return $0.fullName < $1.fullName }
-                    self.teamsCache[slug] = sortedTeams
                     completion(.success(sortedTeams))
                 } catch {
                     completion(.failure(TeamsDataManagerError.unableToDecodeListOfTeams))

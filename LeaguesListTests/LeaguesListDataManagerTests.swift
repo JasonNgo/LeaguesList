@@ -1,5 +1,5 @@
 //
-//  LeaguesDataManagerTests.swift
+//  LeaguesListDataManagerTests.swift
 //  LeaguesListTests
 //
 //  Created by Jason Ngo on 2019-01-23.
@@ -10,35 +10,40 @@ import XCTest
 @testable import LeaguesList
 
 class LeaguesDataManagerTests: XCTestCase {
+    let fileAccessor = FileAccessor<TheScoreEndPoint>()
+    let leagueFactory = LeaguesFactory()
     
-    func testLeaguesDataManagerDataTransformation() {
-        let fileAccessor = FileAccessor<TheScoreEndPoint>()
+    func testLeaguesDataManagerDataFetching() {
         let leaguesDataManager = LeaguesDataManager(fileAccessor: fileAccessor)
-        let leagueFactory = LeaguesFactory()
-        
         let expected = leagueFactory.leagues
-        leaguesDataManager.fetchListOfLeagues()
-        let actual = leaguesDataManager.leagues
         
-        XCTAssert(expected == actual)
-    }
-    
-    func testTeamsDataManagerNHLDataTransformation() {
-        let fileAccessor = FileAccessor<TheScoreEndPoint>()
-        let teamsDataManager = TeamsDataManager(fileAccessor: fileAccessor)
-        let teamsFactory = TeamsFactory()
-        let slug = "nhl"
-        
-        let expected = teamsFactory.teams
-        
-        teamsDataManager.getTeamsForSlug(slug) { (result) in
+        leaguesDataManager.fetchListOfLeagues { result in
             switch result {
-            case .success(let teams):
-                XCTAssert(expected == teams)
-            case .failure(let error):
-                print(error)
+            case .success(let leagues):
+                XCTAssert(leagues == expected)
+            case .failure:
+                XCTFail()
             }
         }
     }
+}
+
+class TeamsDataManagerTests: XCTestCase {
+    let fileAccessor = FileAccessor<TheScoreEndPoint>()
+    let teamsFactory = TeamsFactory()
     
+    func testTeamsDataManagerNHLDataTransformation() {
+        let teamsDataManager = TeamsDataManager(fileAccessor: fileAccessor)
+        let slug = "nhl"
+        let expected = teamsFactory.teams
+        
+        teamsDataManager.getTeamsForSlug(slug) { result in
+            switch result {
+            case .success(let teams):
+                XCTAssert(expected == teams)
+            case .failure:
+                XCTFail()
+            }
+        }
+    }
 }

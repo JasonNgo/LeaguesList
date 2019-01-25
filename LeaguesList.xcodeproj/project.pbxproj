@@ -36,7 +36,6 @@
 		7D6C139C21F7D0B7002B8A09 /* TheScoreEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139B21F7D0B7002B8A09 /* TheScoreEndPoint.swift */; };
 		7D6C139F21F7D369002B8A09 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139E21F7D369002B8A09 /* FileManager.swift */; };
 		7D6C13A121F7D3FA002B8A09 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A021F7D3FA002B8A09 /* RouterError.swift */; };
-		7D6C13A321F7D6AA002B8A09 /* FileManagerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A221F7D6AA002B8A09 /* FileManagerRequest.swift */; };
 		7D6C13A521F7D8CD002B8A09 /* LeaguesFileAccessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A421F7D8CD002B8A09 /* LeaguesFileAccessorTests.swift */; };
 		7D6C13A721F7DB61002B8A09 /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A621F7DB60002B8A09 /* MovieEndPoint.swift */; };
 		7D6C13AA21F80498002B8A09 /* LeaguesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */; };
@@ -99,7 +98,6 @@
 		7D6C139B21F7D0B7002B8A09 /* TheScoreEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheScoreEndPoint.swift; sourceTree = "<group>"; };
 		7D6C139E21F7D369002B8A09 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		7D6C13A021F7D3FA002B8A09 /* RouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterError.swift; sourceTree = "<group>"; };
-		7D6C13A221F7D6AA002B8A09 /* FileManagerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerRequest.swift; sourceTree = "<group>"; };
 		7D6C13A421F7D8CD002B8A09 /* LeaguesFileAccessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesFileAccessorTests.swift; sourceTree = "<group>"; };
 		7D6C13A621F7DB60002B8A09 /* MovieEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
 		7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDataManager.swift; sourceTree = "<group>"; };
@@ -362,7 +360,6 @@
 		7D6C139D21F7D358002B8A09 /* FileManager */ = {
 			isa = PBXGroup;
 			children = (
-				7D6C13A221F7D6AA002B8A09 /* FileManagerRequest.swift */,
 				7D6C139E21F7D369002B8A09 /* FileManager.swift */,
 			);
 			path = FileManager;
@@ -576,7 +573,6 @@
 				7D6C139821F7CD1C002B8A09 /* Result.swift in Sources */,
 				7D6C13BA21F8ECCE002B8A09 /* TeamsFactory.swift in Sources */,
 				7D6C137A21F7BF71002B8A09 /* ApplicationCoordinator.swift in Sources */,
-				7D6C13A321F7D6AA002B8A09 /* FileManagerRequest.swift in Sources */,
 				7D6C13C321F8FD3E002B8A09 /* TeamsController.swift in Sources */,
 				7D6C137E21F7C08A002B8A09 /* LeaguesCoordinator.swift in Sources */,
 				7D6C139221F7CD0D002B8A09 /* HTTPMethod.swift in Sources */,

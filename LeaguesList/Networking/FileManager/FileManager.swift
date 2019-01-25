@@ -8,7 +8,13 @@
 
 import Foundation
 
-final class FileAccessor<EndPoint: EndPointType>: FileAccessorRequest {
+enum FileAccessorError: Error {
+    case unableToFetchData
+}
+
+typealias FileAccessorCompletion = (Result<Data, FileAccessorError>) -> Void
+
+final class FileAccessor<EndPoint: EndPointType> {
     func request(_ endpoint: EndPoint, completion: @escaping FileAccessorCompletion) {
         do {
             let url = endpoint.baseUrl

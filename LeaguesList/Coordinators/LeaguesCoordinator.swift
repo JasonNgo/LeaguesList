@@ -24,39 +24,49 @@ final class LeaguesCoordinator: Coordinator {
     }
     
     func start() {
-        let leaguesController = LeaguesController()
-        let leagues = fetchLeagues()
-        
-        leaguesController.title = "Leagues"
-        leaguesController.delegate = self
-        leaguesController.leagues = leagues
-        
-        presenter.show(leaguesController, sender: self)
-        self.leaguesController = leaguesController
+        leaguesDataManager.fetchListOfLeagues { result in
+            let leaguesController = LeaguesController()
+            leaguesController.delegate = self
+            
+            switch result {
+            case .success(let leagues):
+                leaguesController.leagues = leagues
+            case .failure(let error):
+                leaguesController.leagues = []
+                print("\(error.localizedDescription)")
+            }
+            
+            self.presenter.pushViewController(leaguesController, animated: true)
+            self.leaguesController = leaguesController
+        }
     }
 }
 
 // MARK: - LeaguesControllerDelegate
 
 extension LeaguesCoordinator: LeaguesControllerDelegate {
-    func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath) {
-        let selectedLeague = leaguesDataManager.getLeagueAt(indexPath.item)
-        
-        fetchTeams(for: selectedLeague.slug) { (teams) in
-            let teamsController = TeamsController()
-            teamsController.title = selectedLeague.fullName
+    func leaguesControllerDidSelectItem(_ league: League) {
+        fetchTeams(for: league.slug) { (teams) in
+            let teamsController = TeamsController(league: league)
             teamsController.delegate = self
-            teamsController.slug = selectedLeague.slug
             teamsController.teams = teams
 
             self.presenter.pushViewController(teamsController, animated: true)
-            
             self.teamsController = teamsController
         }
     }
     
     func leaguesControllerDidRefresh() {
-        leaguesController?.leagues = fetchLeagues()
+        guard let leaguesController = self.leaguesController else { return }
+        leaguesDataManager.fetchListOfLeagues { result in
+            switch result {
+            case .success(let leagues):
+                leaguesController.leagues = leagues
+            case .failure(let error):
+                leaguesController.leagues = []
+                print("\(error.localizedDescription)")
+            }
+        }
     }
 }
 
@@ -73,13 +83,6 @@ extension LeaguesCoordinator: TeamsControllerDelegate {
 // MARK: - Fetching Helpers
 
 extension LeaguesCoordinator {
-   private func fetchLeagues() -> [League] {
-        leaguesDataManager.fetchListOfLeagues()
-        let leagues = leaguesDataManager.leagues
-        
-        return leagues
-    }
-    
     private func fetchTeams(for slug: String, completion: @escaping ([Team]) -> Void) {
         teamsDataManager.getTeamsForSlug(slug) { (result) in
             switch result {

@@ -10,7 +10,7 @@ import UIKit
 
 /// LeaguesController delegates responsibilities back to LeagueCoordinator
 protocol LeaguesControllerDelegate: class {
-    func leaguesControllerDidSelectItemAt(_ indexPath: IndexPath)
+    func leaguesControllerDidSelectItem(_ league: League)
     func leaguesControllerDidRefresh()
 }
 
@@ -71,11 +71,16 @@ final class LeaguesController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupController()
         setupCollectionView()
         setupLeaguesSearchController()
     }
     
     // MARK: - Setup
+    
+    private func setupController() {
+        title = "Leagues"
+    }
     
     private func setupCollectionView() {
         collectionView.delegate = self
@@ -121,7 +126,8 @@ extension LeaguesController: UISearchBarDelegate {
 
 extension LeaguesController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.leaguesControllerDidSelectItemAt(indexPath)
+        let league = filteredLeages[indexPath.item]
+        delegate?.leaguesControllerDidSelectItem(league)
     }
 }
 

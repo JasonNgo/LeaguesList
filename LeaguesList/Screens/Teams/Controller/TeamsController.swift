@@ -48,6 +48,7 @@ final class TeamsController: UIViewController {
     private var filteredTeams: [Team] = []
     
     // MARK: - Model
+    private let league: League
     var teams: [Team] = [] {
         didSet {
             collectionView.refreshControl?.endRefreshing()
@@ -55,7 +56,15 @@ final class TeamsController: UIViewController {
             collectionView.reloadData()
         }
     }
-    var slug: String?
+    
+    init(league: League) {
+        self.league = league
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - Overrides
     
@@ -69,9 +78,7 @@ final class TeamsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.prefersLargeTitles = false
-        navigationController?.navigationItem.largeTitleDisplayMode = .never
-        
+        setupController()
         setupCollectionView()
         setupTeamsSearchController()
     }
@@ -82,6 +89,12 @@ final class TeamsController: UIViewController {
     }
     
     // MARK: - Setup
+    
+    private func setupController() {
+        title = league.fullName
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationItem.largeTitleDisplayMode = .never
+    }
     
     private func setupCollectionView() {
         collectionView.delegate = self
@@ -101,8 +114,7 @@ final class TeamsController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        guard let slug = self.slug else { return }
-        delegate?.teamsControllerDidRefresh(slug)
+        delegate?.teamsControllerDidRefresh(league.slug)
     }
 }
 

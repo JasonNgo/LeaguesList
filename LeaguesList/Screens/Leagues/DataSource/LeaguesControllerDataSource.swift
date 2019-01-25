@@ -8,8 +8,7 @@
 
 import UIKit
 
-final class LeaguesControllerDataSource: NSObject, UICollectionViewDataSource {
-    
+final class LeaguesControllerDataSource: NSObject {
     private let leaguesDataManager: LeaguesDataManager
     private let reuseId = "LeagueCell"
     private var leagues: [League] = []
@@ -18,7 +17,10 @@ final class LeaguesControllerDataSource: NSObject, UICollectionViewDataSource {
     init(leaguesDataManager: LeaguesDataManager) {
         self.leaguesDataManager = leaguesDataManager
         super.init()
-        
+        refreshLeagueItems()
+    }
+    
+    func refreshLeagueItems() {
         leaguesDataManager.fetchListOfLeagues { result in
             switch result {
             case .success(let leagues):
@@ -31,6 +33,25 @@ final class LeaguesControllerDataSource: NSObject, UICollectionViewDataSource {
         }
     }
     
+    func item(at indexPath: IndexPath) -> League {
+        return filteredLeagues[indexPath.item]
+    }
+    
+    func filterResultsBy(_ searchText: String) {
+        if searchText.isEmpty {
+            filteredLeagues = leagues
+        } else {
+            filteredLeagues = leagues.filter({ league -> Bool in
+                return
+                    league.fullName.lowercased().contains(searchText.lowercased()) ||
+                    league.slug.lowercased().contains(searchText.lowercased())
+            })
+        }
+    }
+}
+
+// MARK: - UICollectionViewDataSource
+extension LeaguesControllerDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filteredLeagues.count
     }
@@ -43,32 +64,4 @@ final class LeaguesControllerDataSource: NSObject, UICollectionViewDataSource {
         cell.league = filteredLeagues[indexPath.item]
         return cell
     }
-    
 }
-
-// MARK: - UICollectionViewDataSource
-
-//extension LeaguesController: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        if leagues.count == 0 {
-//            collectionView.setEmptyMessage(emptyStateMessage, description: emptyStateDescription)
-//        } else {
-//            if filteredLeages.count == 0 {
-//                collectionView.setEmptyMessage("", description: noSearchResultsString)
-//            } else {
-//                collectionView.restore()
-//            }
-//        }
-//
-//        return filteredLeages.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseId, for: indexPath) as? LeagueCell else {
-//            fatalError("Unable to dequeue League Cell")
-//        }
-//
-//        cell.league = filteredLeages[indexPath.item]
-//        return cell
-//    }
-//}

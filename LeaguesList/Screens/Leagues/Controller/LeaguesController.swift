@@ -11,7 +11,6 @@ import UIKit
 /// LeaguesController delegates responsibilities back to LeagueCoordinator
 protocol LeaguesControllerDelegate: class {
     func leaguesControllerDidSelectItem(_ league: League)
-    func leaguesControllerDidRefresh()
 }
 
 /// LeaguesController manages a CollectionView of a list of leagues
@@ -110,7 +109,9 @@ final class LeaguesController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        delegate?.leaguesControllerDidRefresh()
+        leaguesDataSource.refreshLeagueItems()
+        collectionView.refreshControl?.endRefreshing()
+        collectionView.reloadData()
     }
 }
 
@@ -118,16 +119,7 @@ final class LeaguesController: UIViewController {
 
 extension LeaguesController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.isEmpty {
-            filteredLeages = leagues
-        } else {
-            filteredLeages = leagues.filter({ (league) -> Bool in
-                return
-                    league.fullName.lowercased().contains(searchText.lowercased()) ||
-                    league.slug.lowercased().contains(searchText.lowercased())  
-            })
-        }
-        
+        leaguesDataSource.filterResultsBy(searchText)
         collectionView.reloadData()
     }
 }
@@ -136,7 +128,7 @@ extension LeaguesController: UISearchBarDelegate {
 
 extension LeaguesController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let league = filteredLeages[indexPath.item]
+        let league = leaguesDataSource.item(at: indexPath)
         delegate?.leaguesControllerDidSelectItem(league)
     }
 }

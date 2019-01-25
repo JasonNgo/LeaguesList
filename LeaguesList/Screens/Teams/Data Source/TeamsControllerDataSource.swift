@@ -70,6 +70,8 @@ final class TeamsControllerDataSource: NSObject {
     }
 }
 
+// MARK: - UICollectionViewDataSource
+
 extension TeamsControllerDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filteredTeams.count

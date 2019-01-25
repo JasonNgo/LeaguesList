@@ -17,7 +17,7 @@ final class LeaguesCoordinator: Coordinator {
     private let leaguesControllerDataSource: LeaguesControllerDataSource
     private var leaguesController: LeaguesController?
     
-    private var teamsCoordinator: TeamsCoordinator?
+    private weak var teamsCoordinator: TeamsCoordinator?
     
     init(presenter: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.presenter = presenter
@@ -40,7 +40,16 @@ final class LeaguesCoordinator: Coordinator {
 extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidSelectItem(_ league: League) {
         let teamsCoordinator = TeamsCoordinator(presenter: presenter, fileAccessor: fileAccessor, league: league)
+        teamsCoordinator.delegate = self
         self.teamsCoordinator = teamsCoordinator
         teamsCoordinator.start()
+    }
+}
+
+// MARK: - TeamsCoordinatorDelegate
+
+extension LeaguesCoordinator: TeamsCoordinatorDelegate {
+    func teamsCoordinatorDidDismiss() {
+        teamsCoordinator = nil
     }
 }

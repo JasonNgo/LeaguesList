@@ -67,6 +67,7 @@ final class LeaguesControllerDataSource: NSObject {
 }
 
 // MARK: - UICollectionViewDataSource
+
 extension LeaguesControllerDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filteredLeagues.count

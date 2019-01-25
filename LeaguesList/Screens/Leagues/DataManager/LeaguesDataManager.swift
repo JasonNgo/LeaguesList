@@ -13,9 +13,9 @@ enum LeaguesDataManagerError: Error {
     case unableToDecodeListOfLeagues
 }
 
-/// Acts as a bridge between ViewControllers and the data associated with that controller.
+/// Acts as a bridge between API and ViewControllerDataSources.
 /// Interacts with TheScoreEndPoint to fetch data and performs the required data transformations to
-/// League objects that the LeagueController can interact with.
+/// League objects that the LeagueControllerDataSource can store and use.
 final class LeaguesDataManager {
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
     

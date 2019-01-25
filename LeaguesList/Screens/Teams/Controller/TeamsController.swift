@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol TeamsControllerDelegate: class {
+    func teamsControllerDidDismiss()
+}
+
 final class TeamsController: UIViewController {
+    
+    weak var delegate: TeamsControllerDelegate?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
@@ -67,6 +73,7 @@ final class TeamsController: UIViewController {
     override func willMove(toParent parent: UIViewController?) {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
+        delegate?.teamsControllerDidDismiss()
     }
     
     // MARK: - Setup

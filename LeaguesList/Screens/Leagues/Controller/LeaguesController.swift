@@ -45,24 +45,10 @@ final class LeaguesController: UIViewController {
     
     // MARK: - SearchController
     private let leaguesSearchController = UISearchController(searchResultsController: nil)
-    private var filteredLeages: [League] = []
-    
-    // MARK: - Model
-    var leagues: [League] = [] {
-        didSet {
-            collectionView.refreshControl?.endRefreshing()
-            filteredLeages = leagues
-            collectionView.reloadData()
-        }
-    }
     
     init(leaguesDataSource: LeaguesControllerDataSource) {
         self.leaguesDataSource = leaguesDataSource
         super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - Overrides
@@ -107,10 +93,16 @@ final class LeaguesController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        leaguesDataSource.refreshLeagueItems()
+        leaguesDataSource.fetchLeagueItems()
         collectionView.refreshControl?.endRefreshing()
         collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
         collectionView.reloadData()
+    }
+    
+    // MARK: - Required
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 

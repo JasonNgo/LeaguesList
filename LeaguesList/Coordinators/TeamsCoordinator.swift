@@ -23,10 +23,13 @@ final class TeamsCoordinator: Coordinator {
         self.league = league
         
         self.teamsDataManager = TeamsDataManager(fileAccessor: fileAccessor)
-        self.teamsControllerDataSource = TeamsControllerDataSource(teamsDataManager: teamsDataManager)
+        self.teamsControllerDataSource = TeamsControllerDataSource(league: league, teamsDataManager: teamsDataManager)
     }
     
     func start() {
-        print("Hello world")
+        let teamsController = TeamsController(teamsDataSource: teamsControllerDataSource)
+        
+        self.presenter.pushViewController(teamsController, animated: true)
+        self.teamsController = teamsController
     }
 }

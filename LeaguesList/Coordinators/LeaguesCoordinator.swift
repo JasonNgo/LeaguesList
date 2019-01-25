@@ -42,17 +42,6 @@ extension LeaguesCoordinator: LeaguesControllerDelegate {
         let teamsCoordinator = TeamsCoordinator(presenter: presenter, fileAccessor: fileAccessor, league: league)
         self.teamsCoordinator = teamsCoordinator
         teamsCoordinator.start()
-        
-        
-        
-//        fetchTeams(for: league.slug) { teams in
-//            let teamsController = TeamsController(league: league)
-//            teamsController.delegate = self
-//            teamsController.teams = teams
-//
-//            self.presenter.pushViewController(teamsController, animated: true)
-//            self.teamsController = teamsController
-//        }
     }
 }
 

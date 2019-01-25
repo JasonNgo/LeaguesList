@@ -21,10 +21,10 @@ final class LeaguesControllerDataSource: NSObject {
     init(leaguesDataManager: LeaguesDataManager) {
         self.leaguesDataManager = leaguesDataManager
         super.init()
-//        refreshLeagueItems()
+        fetchLeagueItems()
     }
     
-    func refreshLeagueItems() {
+    func fetchLeagueItems() {
         leaguesDataManager.fetchListOfLeagues { result in
             switch result {
             case .success(let leagues):

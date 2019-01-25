@@ -25,6 +25,9 @@ final class TeamsController: UIViewController {
     private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
     private let noSearchResultsString = "No results found"
     
+    // MARK: - DataSource
+    private var teamsDataSource: TeamsControllerDataSource
+    
     // MARK: - UICollectionView
     
     private let reuseId = "TeamCell"
@@ -48,7 +51,6 @@ final class TeamsController: UIViewController {
     private var filteredTeams: [Team] = []
     
     // MARK: - Model
-    private let league: League
     var teams: [Team] = [] {
         didSet {
             collectionView.refreshControl?.endRefreshing()
@@ -57,8 +59,8 @@ final class TeamsController: UIViewController {
         }
     }
     
-    init(league: League) {
-        self.league = league
+    init(teamsDataSource: TeamsControllerDataSource) {
+        self.teamsDataSource = teamsDataSource
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -81,6 +83,7 @@ final class TeamsController: UIViewController {
         setupController()
         setupCollectionView()
         setupTeamsSearchController()
+        teamsDataSource.fetchTeamsForLeague()
     }
     
     override func willMove(toParent parent: UIViewController?) {
@@ -91,14 +94,14 @@ final class TeamsController: UIViewController {
     // MARK: - Setup
     
     private func setupController() {
-        title = league.fullName
+        title = teamsDataSource.leagueTitle
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationItem.largeTitleDisplayMode = .never
     }
     
     private func setupCollectionView() {
         collectionView.delegate = self
-        collectionView.dataSource = self
+        collectionView.dataSource = teamsDataSource
         collectionView.refreshControl = refreshControl
     }
     
@@ -114,7 +117,7 @@ final class TeamsController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        delegate?.teamsControllerDidRefresh(league.slug)
+//        delegate?.teamsControllerDidRefresh(league.slug)
     }
 }
 
@@ -135,33 +138,6 @@ extension TeamsController: UISearchBarDelegate {
         }
         
         collectionView.reloadData()
-    }
-}
-
-// MARK: - UICollectionViewDataSource
-
-extension TeamsController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if teams.count == 0 {
-            collectionView.setEmptyMessage(emptyStateMessage, description: emptyStateDescription)
-        } else {
-            if filteredTeams.count == 0 {
-                collectionView.setEmptyMessage("", description: noSearchResultsString)
-            } else {
-                collectionView.restore()
-            }
-        }
-        
-        return filteredTeams.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseId, for: indexPath) as? TeamCell else {
-            fatalError("Unable to dequeue Team Cell")
-        }
-        
-        cell.team = filteredTeams[indexPath.item]
-        return cell
     }
 }
 

@@ -11,24 +11,19 @@ import UIKit
 /// ApplicationCoordinator is represents the initial Coordinator that instantiates all the dependencies required by
 /// the project. It uses dependency injection to insert the required dependencies to other coordinators.
 final class ApplicationCoordinator: Coordinator {
-    let window: UIWindow
-    let rootViewController: UINavigationController
-    let fileAccessor: FileAccessor<TheScoreEndPoint>
-    let leaguesDataManager: LeaguesDataManager
-    let teamsDataManager: TeamsDataManager
+    private let window: UIWindow
+    private let rootViewController: UINavigationController
+    private let fileAccessor: FileAccessor<TheScoreEndPoint>
     
-    let leaguesCoordinator: LeaguesCoordinator
+    private let leaguesCoordinator: LeaguesCoordinator
     
     init(window: UIWindow) {
         self.window = window
         rootViewController = UINavigationController()
         rootViewController.navigationBar.prefersLargeTitles = true
-        
         fileAccessor = FileAccessor<TheScoreEndPoint>()
-        leaguesDataManager = LeaguesDataManager(fileAccessor: fileAccessor)
-        teamsDataManager = TeamsDataManager(fileAccessor: fileAccessor)
-        
-        leaguesCoordinator = LeaguesCoordinator(presenter: rootViewController, leaguesDataManager: leaguesDataManager, teamsDataManager: teamsDataManager)
+
+        leaguesCoordinator = LeaguesCoordinator(presenter: rootViewController, fileAccessor: fileAccessor)
     }
     
     func start() {

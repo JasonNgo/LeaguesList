@@ -18,7 +18,6 @@ enum LeaguesDataManagerError: Error {
 /// League objects that the LeagueController can interact with.
 final class LeaguesDataManager {
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
-    var leagues: [League] = []
     
     init(fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.fileAccessor = fileAccessor
@@ -31,7 +30,6 @@ final class LeaguesDataManager {
                 do {
                     let leagues = try JSONDecoder().decode([League].self, from: data)
                     let sortedLeagues = leagues.sorted { return $0.fullName < $1.fullName }
-                    self.leagues = sortedLeagues
                     completion(.success(sortedLeagues))
                 } catch {
                     completion(.failure(LeaguesDataManagerError.unableToDecodeListOfLeagues))

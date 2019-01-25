@@ -23,9 +23,6 @@ final class LeaguesController: UIViewController {
     private let cellWidth = UIScreen.main.bounds.width
     private let cellHeight: CGFloat = 45
     private let minimumLineSpacingForSection: CGFloat = 1
-    private let emptyStateMessage = "No Data Found"
-    private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
-    private let noSearchResultsString = "No results found"
     
     // MARK: - DataSource
     private var leaguesDataSource: LeaguesControllerDataSource
@@ -121,7 +118,9 @@ final class LeaguesController: UIViewController {
 
 extension LeaguesController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        collectionView.backgroundView = nil
         leaguesDataSource.filterResultsBy(searchText)
+        collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
         collectionView.reloadData()
     }
 }

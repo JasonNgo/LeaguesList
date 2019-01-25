@@ -16,6 +16,7 @@ final class LeaguesControllerDataSource: NSObject {
     
     private let emptyStateMessage = "No Data Found"
     private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
+    private let noSearchResultsString = "No results found"
     
     init(leaguesDataManager: LeaguesDataManager) {
         self.leaguesDataManager = leaguesDataManager
@@ -55,15 +56,13 @@ final class LeaguesControllerDataSource: NSObject {
     func backgroundView(for collectionView: UICollectionView) -> UIView? {
         if leagues.count == 0 {
             return createEmptyStateView(for: collectionView)
-        } else {
-            return nil
-            
-//            if filteredTeams.count == 0 {
-//                collectionView.setEmptyMessage("", description: noSearchResultsString)
-//            } else {
-//                return nil
-//            }
         }
+        
+        if filteredLeagues.count == 0 {
+            return createNoSearchResultsStateView(for: collectionView)
+        }
+        
+        return nil
     }
     
     private func createEmptyStateView(for collectionView: UICollectionView) -> UIView {
@@ -89,6 +88,28 @@ final class LeaguesControllerDataSource: NSObject {
         )
         
         attributedText.append(descriptionText)
+        messageLabel.attributedText = attributedText
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0;
+        messageLabel.textAlignment = .center;
+        messageLabel.sizeToFit()
+        
+        return messageLabel
+    }
+    
+    private func createNoSearchResultsStateView(for collectionView: UICollectionView) -> UIView {
+        let frame = CGRect(x: 0, y: 0, width: collectionView.bounds.size.width, height: collectionView.bounds.size.height)
+        let messageLabel = UILabel(frame: frame)
+        
+        let messageTextAttributes = [
+            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline).withSize(22)
+        ]
+        
+        let attributedText = NSMutableAttributedString(
+            string: noSearchResultsString,
+            attributes: messageTextAttributes
+        )
+        
         messageLabel.attributedText = attributedText
         messageLabel.textColor = .black
         messageLabel.numberOfLines = 0;

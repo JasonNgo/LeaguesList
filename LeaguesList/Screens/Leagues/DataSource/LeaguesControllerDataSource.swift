@@ -14,10 +14,13 @@ final class LeaguesControllerDataSource: NSObject {
     private var leagues: [League] = []
     private var filteredLeagues: [League] = []
     
+    private let emptyStateMessage = "No Data Found"
+    private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
+    
     init(leaguesDataManager: LeaguesDataManager) {
         self.leaguesDataManager = leaguesDataManager
         super.init()
-        refreshLeagueItems()
+//        refreshLeagueItems()
     }
     
     func refreshLeagueItems() {
@@ -47,6 +50,52 @@ final class LeaguesControllerDataSource: NSObject {
                     league.slug.lowercased().contains(searchText.lowercased())
             })
         }
+    }
+    
+    func backgroundView(for collectionView: UICollectionView) -> UIView? {
+        if leagues.count == 0 {
+            return createEmptyStateView(for: collectionView)
+        } else {
+            return nil
+            
+//            if filteredTeams.count == 0 {
+//                collectionView.setEmptyMessage("", description: noSearchResultsString)
+//            } else {
+//                return nil
+//            }
+        }
+    }
+    
+    private func createEmptyStateView(for collectionView: UICollectionView) -> UIView {
+        let frame = CGRect(x: 0, y: 0, width: collectionView.bounds.size.width, height: collectionView.bounds.size.height)
+        let messageLabel = UILabel(frame: frame)
+        
+        let messageTextAttributes = [
+            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline).withSize(30)
+        ]
+        
+        let descriptionTextAttributes = [
+            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .subheadline).withSize(22)
+        ]
+        
+        let attributedText = NSMutableAttributedString(
+            string: emptyStateMessage,
+            attributes: messageTextAttributes
+        )
+        
+        let descriptionText = NSAttributedString(
+            string: emptyStateDescription,
+            attributes: descriptionTextAttributes
+        )
+        
+        attributedText.append(descriptionText)
+        messageLabel.attributedText = attributedText
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0;
+        messageLabel.textAlignment = .center;
+        messageLabel.sizeToFit()
+        
+        return messageLabel
     }
 }
 

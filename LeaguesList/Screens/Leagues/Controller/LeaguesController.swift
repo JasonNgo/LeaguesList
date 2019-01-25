@@ -95,6 +95,7 @@ final class LeaguesController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = leaguesDataSource
         collectionView.refreshControl = refreshControl
+        collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
     }
     
     private func setupLeaguesSearchController() {
@@ -111,6 +112,7 @@ final class LeaguesController: UIViewController {
     @objc private func handleRefreshControl() {
         leaguesDataSource.refreshLeagueItems()
         collectionView.refreshControl?.endRefreshing()
+        collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
         collectionView.reloadData()
     }
 }

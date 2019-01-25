@@ -17,7 +17,8 @@ class LeaguesDataManagerTests: XCTestCase {
         let leagueFactory = LeaguesFactory()
         
         let expected = leagueFactory.leagues
-        let actual = leaguesDataManager.getListOfLeagues()
+        leaguesDataManager.fetchListOfLeagues()
+        let actual = leaguesDataManager.leagues
         
         XCTAssert(expected == actual)
     }

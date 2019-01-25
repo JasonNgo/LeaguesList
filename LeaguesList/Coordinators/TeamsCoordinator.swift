@@ -28,7 +28,6 @@ final class TeamsCoordinator: Coordinator {
     
     func start() {
         let teamsController = TeamsController(teamsDataSource: teamsControllerDataSource)
-        
         self.presenter.pushViewController(teamsController, animated: true)
         self.teamsController = teamsController
     }

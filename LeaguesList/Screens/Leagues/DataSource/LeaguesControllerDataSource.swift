@@ -55,68 +55,14 @@ final class LeaguesControllerDataSource: NSObject {
     
     func backgroundView(for collectionView: UICollectionView) -> UIView? {
         if leagues.count == 0 {
-            return createEmptyStateView(for: collectionView)
+            return UIView.createEmptyStateView(for: collectionView)
         }
         
         if filteredLeagues.count == 0 {
-            return createNoSearchResultsStateView(for: collectionView)
+            return UIView.createNoSearchResultsStateView(for: collectionView)
         }
         
         return nil
-    }
-    
-    private func createEmptyStateView(for collectionView: UICollectionView) -> UIView {
-        let frame = CGRect(x: 0, y: 0, width: collectionView.bounds.size.width, height: collectionView.bounds.size.height)
-        let messageLabel = UILabel(frame: frame)
-        
-        let messageTextAttributes = [
-            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline).withSize(30)
-        ]
-        
-        let descriptionTextAttributes = [
-            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .subheadline).withSize(22)
-        ]
-        
-        let attributedText = NSMutableAttributedString(
-            string: emptyStateMessage,
-            attributes: messageTextAttributes
-        )
-        
-        let descriptionText = NSAttributedString(
-            string: emptyStateDescription,
-            attributes: descriptionTextAttributes
-        )
-        
-        attributedText.append(descriptionText)
-        messageLabel.attributedText = attributedText
-        messageLabel.textColor = .black
-        messageLabel.numberOfLines = 0;
-        messageLabel.textAlignment = .center;
-        messageLabel.sizeToFit()
-        
-        return messageLabel
-    }
-    
-    private func createNoSearchResultsStateView(for collectionView: UICollectionView) -> UIView {
-        let frame = CGRect(x: 0, y: 0, width: collectionView.bounds.size.width, height: collectionView.bounds.size.height)
-        let messageLabel = UILabel(frame: frame)
-        
-        let messageTextAttributes = [
-            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline).withSize(22)
-        ]
-        
-        let attributedText = NSMutableAttributedString(
-            string: noSearchResultsString,
-            attributes: messageTextAttributes
-        )
-        
-        messageLabel.attributedText = attributedText
-        messageLabel.textColor = .black
-        messageLabel.numberOfLines = 0;
-        messageLabel.textAlignment = .center;
-        messageLabel.sizeToFit()
-        
-        return messageLabel
     }
 }
 

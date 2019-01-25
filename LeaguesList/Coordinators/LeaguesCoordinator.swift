@@ -44,28 +44,3 @@ extension LeaguesCoordinator: LeaguesControllerDelegate {
         teamsCoordinator.start()
     }
 }
-
-// MARK: - TeamsControllerDelegate
-
-extension LeaguesCoordinator: TeamsControllerDelegate {
-    func teamsControllerDidRefresh(_ slug: String) {
-//        fetchTeams(for: slug) { teams in
-//            self.teamsController?.teams = teams
-//        }
-    }
-}
-
-// MARK: - Fetching Helpers
-
-extension LeaguesCoordinator {
-//    private func fetchTeams(for slug: String, completion: @escaping ([Team]) -> Void) {
-//        teamsDataManager.getTeamsForSlug(slug) { result in
-//            switch result {
-//            case .success(let teams):
-//                completion(teams)
-//            case .failure:
-//                completion([])
-//            }
-//        }
-//    }
-}

@@ -8,22 +8,12 @@
 
 import UIKit
 
-protocol TeamsControllerDelegate: class {
-    func teamsControllerDidRefresh(_ slug: String)
-}
-
 final class TeamsController: UIViewController {
-    
-    // MARK: - Delegate
-    weak var delegate: TeamsControllerDelegate?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
     private let cellHeight: CGFloat = 60
     private let minimumLineSpacingForSection: CGFloat = 0
-    private let emptyStateMessage = "No Data Found"
-    private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
-    private let noSearchResultsString = "No results found"
     
     // MARK: - DataSource
     private var teamsDataSource: TeamsControllerDataSource
@@ -46,18 +36,7 @@ final class TeamsController: UIViewController {
     }()
     
     // MARK: - SearchController
-    
     private let teamsSearchController = UISearchController(searchResultsController: nil)
-    private var filteredTeams: [Team] = []
-    
-    // MARK: - Model
-    var teams: [Team] = [] {
-        didSet {
-            collectionView.refreshControl?.endRefreshing()
-            filteredTeams = teams
-            collectionView.reloadData()
-        }
-    }
     
     init(teamsDataSource: TeamsControllerDataSource) {
         self.teamsDataSource = teamsDataSource
@@ -83,7 +62,6 @@ final class TeamsController: UIViewController {
         setupController()
         setupCollectionView()
         setupTeamsSearchController()
-        teamsDataSource.fetchTeamsForLeague()
     }
     
     override func willMove(toParent parent: UIViewController?) {
@@ -117,7 +95,10 @@ final class TeamsController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-//        delegate?.teamsControllerDidRefresh(league.slug)
+        teamsDataSource.fetchTeamsForLeague()
+        collectionView.refreshControl?.endRefreshing()
+        collectionView.backgroundView = teamsDataSource.backgroundView(for: collectionView)
+        collectionView.reloadData()
     }
 }
 
@@ -126,17 +107,9 @@ final class TeamsController: UIViewController {
 
 extension TeamsController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.isEmpty {
-            filteredTeams = teams
-        } else {
-            filteredTeams = teams.filter({ (team) -> Bool in
-                return
-                    team.fullName.lowercased().contains(searchText.lowercased()) ||
-                    team.name.lowercased().contains(searchText.lowercased()) ||
-                    team.location?.lowercased().contains(searchText.lowercased()) ?? false
-            })
-        }
-        
+        collectionView.backgroundView = nil
+        teamsDataSource.filterResultsBy(searchText)
+        collectionView.backgroundView = teamsDataSource.backgroundView(for: collectionView)
         collectionView.reloadData()
     }
 }

@@ -101,3 +101,59 @@ extension UIView {
     }
     
 }
+
+extension UIView {
+    static func createEmptyStateView(for collectionView: UICollectionView) -> UIView {
+        let frame = CGRect(x: 0, y: 0, width: collectionView.bounds.size.width, height: collectionView.bounds.size.height)
+        let messageLabel = UILabel(frame: frame)
+        
+        let messageTextAttributes = [
+            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline).withSize(30)
+        ]
+        
+        let descriptionTextAttributes = [
+            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .subheadline).withSize(22)
+        ]
+        
+        let attributedText = NSMutableAttributedString(
+            string: "No Data Found",
+            attributes: messageTextAttributes
+        )
+        
+        let descriptionText = NSAttributedString(
+            string: "\n\nPlease try loading the page\nagain at a later time",
+            attributes: descriptionTextAttributes
+        )
+        
+        attributedText.append(descriptionText)
+        messageLabel.attributedText = attributedText
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0;
+        messageLabel.textAlignment = .center;
+        messageLabel.sizeToFit()
+        
+        return messageLabel
+    }
+    
+    static func createNoSearchResultsStateView(for collectionView: UICollectionView) -> UIView {
+        let frame = CGRect(x: 0, y: 0, width: collectionView.bounds.size.width, height: collectionView.bounds.size.height)
+        let messageLabel = UILabel(frame: frame)
+        
+        let messageTextAttributes = [
+            NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline).withSize(22)
+        ]
+        
+        let attributedText = NSMutableAttributedString(
+            string:  "No results found",
+            attributes: messageTextAttributes
+        )
+        
+        messageLabel.attributedText = attributedText
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0;
+        messageLabel.textAlignment = .center;
+        messageLabel.sizeToFit()
+        
+        return messageLabel
+    }
+}

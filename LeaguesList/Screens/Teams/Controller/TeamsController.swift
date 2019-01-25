@@ -69,8 +69,16 @@ final class TeamsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationItem.largeTitleDisplayMode = .never
+        
         setupCollectionView()
         setupTeamsSearchController()
+    }
+    
+    override func willMove(toParent parent: UIViewController?) {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
     }
     
     // MARK: - Setup

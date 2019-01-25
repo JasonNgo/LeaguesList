@@ -48,8 +48,8 @@ extension LeaguesCoordinator: LeaguesControllerDelegate {
             teamsController.delegate = self
             teamsController.slug = selectedLeague.slug
             teamsController.teams = teams
-            
-            self.presenter.show(teamsController, sender: self)
+
+            self.presenter.pushViewController(teamsController, animated: true)
             
             self.teamsController = teamsController
         }
@@ -72,15 +72,15 @@ extension LeaguesCoordinator: TeamsControllerDelegate {
 
 // MARK: - Fetching Helpers
 
-private extension LeaguesCoordinator {
-    func fetchLeagues() -> [League] {
+extension LeaguesCoordinator {
+   private func fetchLeagues() -> [League] {
         leaguesDataManager.fetchListOfLeagues()
         let leagues = leaguesDataManager.leagues
         
         return leagues
     }
     
-    func fetchTeams(for slug: String, completion: @escaping ([Team]) -> Void) {
+    private func fetchTeams(for slug: String, completion: @escaping ([Team]) -> Void) {
         teamsDataManager.getTeamsForSlug(slug) { (result) in
             switch result {
             case .success(let teams):

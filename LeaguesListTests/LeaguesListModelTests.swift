@@ -9,7 +9,7 @@
 import XCTest
 @testable import LeaguesList
 
-class LeaguesModelTests: XCTestCase {
+class LeaguesListModelTests: XCTestCase {
     
     // MARK: - League Model Tests
     

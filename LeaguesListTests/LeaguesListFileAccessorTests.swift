@@ -13,11 +13,10 @@ import XCTest
 // a fatal error is used to ensure the URL is correctly built. In the case where we were accessing a REST API
 // these tests would be valid to test for if the Router class was able to fetch data, check response codes etc,
 // and send it back.
-class LeaguesFileAccessorTests: XCTestCase {
+class LeaguesListFileAccessorTests: XCTestCase {
+    let fileAccessor = FileAccessor<TheScoreEndPoint>()
     
     func testFetchLeaguesDataFromBundleURL() {
-        let fileAccessor = FileAccessor<TheScoreEndPoint>()
-        
         fileAccessor.request(.leagues) { (result) in
             switch result {
             case .success(let data):
@@ -29,7 +28,6 @@ class LeaguesFileAccessorTests: XCTestCase {
     }
     
     func testFetchNHLTeamsDataFromBundleURL() {
-        let fileAccessor = FileAccessor<TheScoreEndPoint>()
         let slug = "nhl"
         
         fileAccessor.request(.teams(slug: slug)) { (result) in
@@ -43,7 +41,6 @@ class LeaguesFileAccessorTests: XCTestCase {
     }
     
     func testFetchNBATeamsDataFromBundleURL() {
-        let fileAccessor = FileAccessor<TheScoreEndPoint>()
         let slug = "nba"
         
         fileAccessor.request(.teams(slug: slug)) { (result) in
@@ -55,5 +52,4 @@ class LeaguesFileAccessorTests: XCTestCase {
             }
         }
     }
-    
 }

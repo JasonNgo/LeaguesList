@@ -12,22 +12,24 @@ import UIKit
 final class LeaguesCoordinator: Coordinator {
     private let presenter: UINavigationController
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
-    private let leaguesDataManager: LeaguesDataManager
     
+    private let leaguesDataManager: LeaguesDataManager
+    private let leaguesControllerDataSource: LeaguesControllerDataSource
     private var leaguesController: LeaguesController?
-
-    //    private let teamsDataManager: TeamsDataManager
-    //    private var teamsController: TeamsController?
+    
+    private var teamsCoordinator: TeamsCoordinator?
     
     init(presenter: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.presenter = presenter
         self.fileAccessor = fileAccessor
         self.leaguesDataManager = LeaguesDataManager(fileAccessor: fileAccessor)
+        self.leaguesControllerDataSource = LeaguesControllerDataSource(leaguesDataManager: leaguesDataManager)
     }
     
     func start() {
-        let leaguesControllerDataSource = LeaguesControllerDataSource(leaguesDataManager: leaguesDataManager)
         let leaguesController = LeaguesController(leaguesDataSource: leaguesControllerDataSource)
+        leaguesController.delegate = self
+        
         self.presenter.pushViewController(leaguesController, animated: true)
         self.leaguesController = leaguesController
     }
@@ -37,6 +39,12 @@ final class LeaguesCoordinator: Coordinator {
 
 extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidSelectItem(_ league: League) {
+        let teamsCoordinator = TeamsCoordinator(presenter: presenter, fileAccessor: fileAccessor, league: league)
+        self.teamsCoordinator = teamsCoordinator
+        teamsCoordinator.start()
+        
+        
+        
 //        fetchTeams(for: league.slug) { teams in
 //            let teamsController = TeamsController(league: league)
 //            teamsController.delegate = self
@@ -45,19 +53,6 @@ extension LeaguesCoordinator: LeaguesControllerDelegate {
 //            self.presenter.pushViewController(teamsController, animated: true)
 //            self.teamsController = teamsController
 //        }
-    }
-
-    func leaguesControllerDidRefresh() {
-        guard let leaguesController = self.leaguesController else { return }
-        leaguesDataManager.fetchListOfLeagues { result in
-            switch result {
-            case .success(let leagues):
-                leaguesController.leagues = leagues
-            case .failure(let error):
-                leaguesController.leagues = []
-                print("\(error.localizedDescription)")
-            }
-        }
     }
 }
 

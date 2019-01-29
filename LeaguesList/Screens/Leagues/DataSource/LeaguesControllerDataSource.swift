@@ -25,21 +25,21 @@ final class LeaguesControllerDataSource: NSObject {
     }
     
     // Previous implementation that didn't use Promises
-//    func fetchLeagueItems() {
-//        leaguesDataManager.fetchListOfLeagues { result in
-//            switch result {
-//            case .success(let leagues):
-//                self.leagues = leagues
-//                self.filteredLeagues = leagues
-//            case .failure:
-//                self.leagues = []
-//                self.filteredLeagues = []
-//            }
-//        }
-//    }
+    func fetchLeagueItems() {
+        leaguesDataManager.fetchListOfLeagues { result in
+            switch result {
+            case .success(let leagues):
+                self.leagues = leagues
+                self.filteredLeagues = leagues
+            case .failure:
+                self.leagues = []
+                self.filteredLeagues = []
+            }
+        }
+    }
     
     @discardableResult
-    func fetchLeagueItems() -> Promise<Void> {
+    func fetchLeagues() -> Promise<Void> {
         return Promise { seal in
             leaguesDataManager.fetchListOfLeagues().done { leagues in
                 self.leagues = leagues

@@ -68,7 +68,7 @@ final class LeaguesController: UIViewController {
         setupCollectionView()
         setupLeaguesSearchController()
         
-        leaguesDataSource.fetchLeagueItems().catch { error in
+        leaguesDataSource.fetchLeagues().catch { error in
             print("Error fetching data: \(error.localizedDescription)")
         }.finally { [weak self] in
             guard let self = self else { return }
@@ -102,7 +102,7 @@ final class LeaguesController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        leaguesDataSource.fetchLeagueItems().catch { error in
+        leaguesDataSource.fetchLeagues().catch { error in
             print("Error fetching data: \(error.localizedDescription)")
         }.finally { [weak self] in
             guard let self = self else { return }

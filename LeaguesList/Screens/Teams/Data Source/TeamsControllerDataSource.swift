@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PromiseKit
 
 final class TeamsControllerDataSource: NSObject {
     private let league: League
@@ -23,8 +24,6 @@ final class TeamsControllerDataSource: NSObject {
         self.league = league
         self.teamsDataManager = teamsDataManager
         super.init()
-        
-        fetchTeamsForLeague()
     }
     
     func fetchTeamsForLeague() {
@@ -36,6 +35,21 @@ final class TeamsControllerDataSource: NSObject {
             case .failure:
                 self.teams = []
                 self.filteredTeams = []
+            }
+        }
+    }
+    
+    @discardableResult
+    func fetchTeams() -> Promise<Void> {
+        return Promise { seal in
+            teamsDataManager.getTeamsForSlug(league.slug).done { teams in
+                self.teams = teams
+                self.filteredTeams = teams
+                seal.fulfill()
+            }.catch { error in
+                self.teams = []
+                self.filteredTeams = []
+                seal.reject(error)
             }
         }
     }

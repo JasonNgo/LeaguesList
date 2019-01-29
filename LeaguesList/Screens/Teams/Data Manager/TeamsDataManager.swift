@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 enum TeamsDataManagerError: Error {
     case unableToFetchListOfTeams
@@ -37,6 +38,16 @@ final class TeamsDataManager {
             case .failure:
                 completion(.failure(TeamsDataManagerError.unableToFetchListOfTeams))
             }
+        }
+    }
+    
+    func getTeamsForSlug(_ slug: String) -> Promise<[Team]> {
+        return firstly {
+            fileAccessor.request(.teams(slug: slug))
+        }.compactMap {
+            let teams = try JSONDecoder().decode([Team].self, from: $0)
+            let sortedTeams = teams.sorted { return $0.fullName < $1.fullName }
+            return sortedTeams
         }
     }
 }

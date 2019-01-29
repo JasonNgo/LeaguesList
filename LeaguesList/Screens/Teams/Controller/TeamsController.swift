@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PromiseKit
 
 protocol TeamsControllerDelegate: class {
     func teamsControllerDidDismiss()
@@ -68,6 +69,15 @@ final class TeamsController: UIViewController {
         setupController()
         setupCollectionView()
         setupTeamsSearchController()
+        
+        teamsDataSource.fetchTeams().catch { error in
+            print("Error fetching teams: \(error.localizedDescription)")
+        }.finally { [weak self] in
+            guard let self = self else { return }
+            let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
+            self.collectionView.backgroundView = backgroundView
+            self.collectionView.reloadData()
+        }
     }
     
     override func willMove(toParent parent: UIViewController?) {
@@ -102,10 +112,18 @@ final class TeamsController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        teamsDataSource.fetchTeamsForLeague()
-        collectionView.refreshControl?.endRefreshing()
-        collectionView.backgroundView = teamsDataSource.backgroundView(for: collectionView)
-        collectionView.reloadData()
+        teamsDataSource.fetchTeams().catch { error in
+            print("Error fetching teams data: \(error.localizedDescription)")
+        }.finally { [weak self] in
+            guard let self = self else { return }
+            self.collectionView.refreshControl?.endRefreshing()
+            self.collectionView.backgroundView = nil
+            
+            let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
+            self.collectionView.backgroundView = backgroundView
+            self.collectionView.reloadData()
+            
+        }
     }
 }
 

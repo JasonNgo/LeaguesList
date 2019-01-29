@@ -72,6 +72,7 @@ final class LeaguesController: UIViewController {
             print("Error fetching data: \(error.localizedDescription)")
         }.finally { [weak self] in
             guard let self = self else { return }
+            self.collectionView.backgroundView = nil
             let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
             self.collectionView.backgroundView = backgroundView
             self.collectionView.reloadData()
@@ -88,6 +89,7 @@ final class LeaguesController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = leaguesDataSource
         collectionView.refreshControl = refreshControl
+        collectionView.backgroundView = UIView.createEmptyStateView(for: collectionView)
     }
     
     private func setupLeaguesSearchController() {

@@ -74,6 +74,7 @@ final class TeamsController: UIViewController {
             print("Error fetching teams: \(error.localizedDescription)")
         }.finally { [weak self] in
             guard let self = self else { return }
+            self.collectionView.backgroundView = nil
             let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
             self.collectionView.backgroundView = backgroundView
             self.collectionView.reloadData()
@@ -98,6 +99,7 @@ final class TeamsController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = teamsDataSource
         collectionView.refreshControl = refreshControl
+        collectionView.backgroundView = UIView.createEmptyStateView(for: collectionView)
     }
     
     private func setupTeamsSearchController() {

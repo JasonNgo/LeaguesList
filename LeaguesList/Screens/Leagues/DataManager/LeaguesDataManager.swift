@@ -32,10 +32,10 @@ final class LeaguesDataManager {
                     let sortedLeagues = leagues.sorted { return $0.fullName < $1.fullName }
                     completion(.success(sortedLeagues))
                 } catch {
-                    completion(.failure(LeaguesDataManagerError.unableToDecodeListOfLeagues))
+                    completion(.failure(.unableToDecodeListOfLeagues))
                 }
             case .failure(let error):
-                completion(.failure(LeaguesDataManagerError.unableToFetchListOfLeagues(error)))
+                completion(.failure(.unableToFetchListOfLeagues(error)))
             }
         }
     }

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D386C75EFD4F03725E4EFB866B600B9A"
-               BlueprintName = "DZNEmptyDataSet"
+               BlueprintIdentifier = "CA09C788313CBAED4E659FE4A15BC2E0"
+               BlueprintName = "PromiseKit"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "DZNEmptyDataSet.framework">
+               BuildableName = "PromiseKit.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

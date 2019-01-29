@@ -7,6 +7,7 @@ target 'LeaguesList' do
 
   # Pods for LeaguesList
   pod 'SDWebImage'
+  pod 'PromiseKit'
 
   target 'LeaguesListTests' do
     inherit! :search_paths

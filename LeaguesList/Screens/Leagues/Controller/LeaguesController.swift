@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PromiseKit
 
 /// LeaguesController delegates responsibilities back to LeagueCoordinator
 protocol LeaguesControllerDelegate: class {
@@ -66,6 +67,15 @@ final class LeaguesController: UIViewController {
         setupController()
         setupCollectionView()
         setupLeaguesSearchController()
+        
+        leaguesDataSource.fetchLeagueItems().catch { error in
+            print("Error fetching data: \(error.localizedDescription)")
+        }.finally { [weak self] in
+            guard let self = self else { return }
+            let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
+            self.collectionView.backgroundView = backgroundView
+            self.collectionView.reloadData()
+        }
     }
     
     // MARK: - Setup
@@ -78,7 +88,6 @@ final class LeaguesController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = leaguesDataSource
         collectionView.refreshControl = refreshControl
-        collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
     }
     
     private func setupLeaguesSearchController() {
@@ -93,10 +102,16 @@ final class LeaguesController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        leaguesDataSource.fetchLeagueItems()
-        collectionView.refreshControl?.endRefreshing()
-        collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
-        collectionView.reloadData()
+        leaguesDataSource.fetchLeagueItems().catch { error in
+            print("Error fetching data: \(error.localizedDescription)")
+        }.finally { [weak self] in
+            guard let self = self else { return }
+            self.collectionView.refreshControl?.endRefreshing()
+            self.collectionView.backgroundView = nil
+            let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
+            self.collectionView.backgroundView = backgroundView
+            self.collectionView.reloadData()
+        }
     }
     
     // MARK: - Required

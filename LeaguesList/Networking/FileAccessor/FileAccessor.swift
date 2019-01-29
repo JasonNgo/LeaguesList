@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 enum FileAccessorError: Error {
     case unableToFetchData
@@ -20,6 +21,18 @@ final class FileAccessor<EndPoint: EndPointType> {
             completion(.success(data))
         } catch {
             completion(.failure(FileAccessorError.unableToFetchData))
+        }
+    }
+    
+    func request(_ endpoint: EndPoint) -> Promise<Data> {
+        return Promise { seal in
+            let url = endpoint.baseUrl
+            do {
+                let data = try Data(contentsOf: url)
+                seal.fulfill(data)
+            } catch {
+                seal.reject(FileAccessorError.unableToFetchData)
+            }
         }
     }
 }

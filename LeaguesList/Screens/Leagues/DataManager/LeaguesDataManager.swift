@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 enum LeaguesDataManagerError: Error {
     case unableToFetchListOfLeagues(Error)
@@ -37,6 +38,16 @@ final class LeaguesDataManager {
             case .failure(let error):
                 completion(.failure(.unableToFetchListOfLeagues(error)))
             }
+        }
+    }
+    
+    func fetchListOfLeagues() -> Promise<[League]> {
+        return firstly {
+            fileAccessor.request(.leagues)
+        }.compactMap {
+            let leagues = try JSONDecoder().decode([League].self, from: $0)
+            let sortedLeagues = leagues.sorted { return $0.fullName < $1.fullName }
+            return sortedLeagues
         }
     }
 }

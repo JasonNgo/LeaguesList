@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PromiseKit
 
 final class LeaguesControllerDataSource: NSObject {
     private let leaguesDataManager: LeaguesDataManager
@@ -21,18 +22,33 @@ final class LeaguesControllerDataSource: NSObject {
     init(leaguesDataManager: LeaguesDataManager) {
         self.leaguesDataManager = leaguesDataManager
         super.init()
-        fetchLeagueItems()
     }
     
-    func fetchLeagueItems() {
-        leaguesDataManager.fetchListOfLeagues { result in
-            switch result {
-            case .success(let leagues):
+    // Previous implementation that didn't use Promises
+//    func fetchLeagueItems() {
+//        leaguesDataManager.fetchListOfLeagues { result in
+//            switch result {
+//            case .success(let leagues):
+//                self.leagues = leagues
+//                self.filteredLeagues = leagues
+//            case .failure:
+//                self.leagues = []
+//                self.filteredLeagues = []
+//            }
+//        }
+//    }
+    
+    @discardableResult
+    func fetchLeagueItems() -> Promise<Void> {
+        return Promise { seal in
+            leaguesDataManager.fetchListOfLeagues().done { leagues in
                 self.leagues = leagues
                 self.filteredLeagues = leagues
-            case .failure:
+                seal.fulfill()
+            }.catch { error in
                 self.leagues = []
                 self.filteredLeagues = []
+                seal.reject(error)
             }
         }
     }

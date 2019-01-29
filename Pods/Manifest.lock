@@ -11,20 +11,24 @@ PODS:
   - SDWebImage (4.4.3):
     - SDWebImage/Core (= 4.4.3)
   - SDWebImage/Core (4.4.3)
+  - SwiftLint (0.29.1)
 
 DEPENDENCIES:
   - PromiseKit
   - SDWebImage
+  - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - PromiseKit
     - SDWebImage
+    - SwiftLint
 
 SPEC CHECKSUMS:
   PromiseKit: 453ddcc947fe7b302f3ef41882b81d31c554df7f
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: 6e27c844b07e002620cfd00f9c369f655e3f3500
+PODFILE CHECKSUM: 96e224c7c8099bab2858d2fd3bea6b0caf29dfea
 
 COCOAPODS: 1.5.3

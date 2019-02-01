@@ -17,7 +17,7 @@ final class LeaguesCoordinator: Coordinator {
     private let leaguesControllerDataSource: LeaguesControllerDataSource
     private var leaguesController: LeaguesController?
     
-    private weak var teamsCoordinator: TeamsCoordinator?
+    private var teamsCoordinator: TeamsCoordinator?
     
     init(presenter: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.presenter = presenter

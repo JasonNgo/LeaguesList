@@ -54,6 +54,18 @@
 		B05E3288F70D24FF726BC116 /* Pods_LeaguesList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039D02DF234421F74D09D52D /* Pods_LeaguesList.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		7DD9810E2204CF3500DC9250 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		7D06A0E521F66564000598EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -197,39 +209,6 @@
 			path = LeaguesListTests;
 			sourceTree = "<group>";
 		};
-		7D06A0F321F781FC000598EB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7D06A12521F7826E000598EB /* League.swift */,
-				7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7D06A0F421F78200000598EB /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7D6C136F21F7B2AB002B8A09 /* LeaguesController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		7D06A0F521F78212000598EB /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7D6C137F21F7C5DC002B8A09 /* LeagueCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7D06A0F621F7821F000598EB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				7D06A12921F78336000598EB /* LeagueCellViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		7D06A0F721F78230000598EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,12 +221,13 @@
 		7D06A12C21F785E4000598EB /* Leagues */ = {
 			isa = PBXGroup;
 			children = (
-				7D6C13A821F8037C002B8A09 /* DataManager */,
-				7D06A0F321F781FC000598EB /* Model */,
-				7DD01D7C21FB7DAC00824BD1 /* DataSource */,
-				7D06A0F621F7821F000598EB /* ViewModel */,
-				7D06A0F421F78200000598EB /* Controller */,
-				7D06A0F521F78212000598EB /* View */,
+				7D06A12521F7826E000598EB /* League.swift */,
+				7D6C137F21F7C5DC002B8A09 /* LeagueCell.swift */,
+				7D06A12921F78336000598EB /* LeagueCellViewModel.swift */,
+				7D6C136F21F7B2AB002B8A09 /* LeaguesController.swift */,
+				7DD01D7A21FB7D9600824BD1 /* LeaguesControllerDataSource.swift */,
+				7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */,
+				7D6C13BF21F8EDCC002B8A09 /* LeaguesFactory.swift */,
 			);
 			path = Leagues;
 			sourceTree = "<group>";
@@ -255,47 +235,15 @@
 		7D06A12D21F785F4000598EB /* Teams */ = {
 			isa = PBXGroup;
 			children = (
-				7D6C13B021F8CDBB002B8A09 /* Data Manager */,
-				7D06A12E21F78B76000598EB /* Model */,
-				7DD01D7F21FB8A1A00824BD1 /* Data Source */,
-				7D06A13121F78B89000598EB /* ViewModel */,
-				7D06A13021F78B84000598EB /* Controller */,
-				7D06A12F21F78B7F000598EB /* View */,
-			);
-			path = Teams;
-			sourceTree = "<group>";
-		};
-		7D06A12E21F78B76000598EB /* Model */ = {
-			isa = PBXGroup;
-			children = (
 				7D06A13221F78BB0000598EB /* Team.swift */,
+				7DAE2A2121F953CB00AEA116 /* TeamCell.swift */,
+				7D06A13621F78D6F000598EB /* TeamCellViewModel.swift */,
+				7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */,
+				7DD01D8021FB8A2A00824BD1 /* TeamsControllerDataSource.swift */,
+				7D6C13B121F8CDCC002B8A09 /* TeamsDataManager.swift */,
 				7D6C13B921F8ECCE002B8A09 /* TeamsFactory.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7D06A12F21F78B7F000598EB /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7DAE2A2121F953CB00AEA116 /* TeamCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7D06A13021F78B84000598EB /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		7D06A13121F78B89000598EB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				7D06A13621F78D6F000598EB /* TeamCellViewModel.swift */,
-			);
-			path = ViewModel;
+			path = Teams;
 			sourceTree = "<group>";
 		};
 		7D6C137121F7BB8A002B8A09 /* Util */ = {
@@ -363,14 +311,6 @@
 			path = Encoding;
 			sourceTree = "<group>";
 		};
-		7D6C13A821F8037C002B8A09 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
 		7D6C13AD21F80894002B8A09 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,36 +320,12 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		7D6C13B021F8CDBB002B8A09 /* Data Manager */ = {
-			isa = PBXGroup;
-			children = (
-				7D6C13B121F8CDCC002B8A09 /* TeamsDataManager.swift */,
-			);
-			path = "Data Manager";
-			sourceTree = "<group>";
-		};
 		7DD01D7721FB673D00824BD1 /* FileAccessor */ = {
 			isa = PBXGroup;
 			children = (
 				7DD01D7821FB673D00824BD1 /* FileAccessor.swift */,
 			);
 			path = FileAccessor;
-			sourceTree = "<group>";
-		};
-		7DD01D7C21FB7DAC00824BD1 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				7DD01D7A21FB7D9600824BD1 /* LeaguesControllerDataSource.swift */,
-			);
-			path = DataSource;
-			sourceTree = "<group>";
-		};
-		7DD01D7F21FB8A1A00824BD1 /* Data Source */ = {
-			isa = PBXGroup;
-			children = (
-				7DD01D8021FB8A2A00824BD1 /* TeamsControllerDataSource.swift */,
-			);
-			path = "Data Source";
 			sourceTree = "<group>";
 		};
 		ED6E26F6E8C0724593AB784A /* Pods */ = {
@@ -437,6 +353,7 @@
 				E1F33E9459CDD5D4DC764303 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
+				7DD9810E2204CF3500DC9250 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);

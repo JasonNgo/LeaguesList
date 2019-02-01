@@ -17,8 +17,8 @@ protocol LeaguesControllerDelegate: class {
 /// LeaguesController manages a CollectionView of a list of leagues
 final class LeaguesController: UIViewController {
     
-    // MARK: - Delegate
-    weak var delegate: LeaguesControllerDelegate?
+    // MARK: - Coordinator
+    var coordinator: LeaguesCoordinator?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
@@ -139,7 +139,7 @@ extension LeaguesController: UISearchBarDelegate {
 extension LeaguesController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let league = leaguesDataSource.item(at: indexPath)
-        delegate?.leaguesControllerDidSelectItem(league)
+        coordinator?.leaguesControllerDidSelectItem(league)
     }
 }
 

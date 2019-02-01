@@ -70,7 +70,7 @@ final class LeaguesController: UIViewController {
         
         leaguesDataSource.fetchLeagues().catch { error in
             print("Error fetching data: \(error.localizedDescription)")
-        }.finally { [weak self] in
+        }.finally(on: DispatchQueue.main, flags: nil) { [weak self] in
             guard let self = self else { return }
             self.collectionView.backgroundView = nil
             let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
@@ -106,7 +106,7 @@ final class LeaguesController: UIViewController {
     @objc private func handleRefreshControl() {
         leaguesDataSource.fetchLeagues().catch { error in
             print("Error fetching data: \(error.localizedDescription)")
-        }.finally { [weak self] in
+        }.finally(on: DispatchQueue.main, flags: nil) { [weak self] in
             guard let self = self else { return }
             self.collectionView.refreshControl?.endRefreshing()
             self.collectionView.backgroundView = nil

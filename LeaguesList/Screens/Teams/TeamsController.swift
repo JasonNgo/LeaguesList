@@ -72,7 +72,7 @@ final class TeamsController: UIViewController {
         
         teamsDataSource.fetchTeams().catch { error in
             print("Error fetching teams: \(error.localizedDescription)")
-        }.finally { [weak self] in
+        }.finally(on: DispatchQueue.main, flags: nil) { [weak self] in
             guard let self = self else { return }
             self.collectionView.backgroundView = nil
             let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
@@ -116,7 +116,7 @@ final class TeamsController: UIViewController {
     @objc private func handleRefreshControl() {
         teamsDataSource.fetchTeams().catch { error in
             print("Error fetching teams data: \(error.localizedDescription)")
-        }.finally { [weak self] in
+        }.finally(on: DispatchQueue.main, flags: nil) { [weak self] in
             guard let self = self else { return }
             self.collectionView.refreshControl?.endRefreshing()
             self.collectionView.backgroundView = nil

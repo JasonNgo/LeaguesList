@@ -33,17 +33,14 @@ class TeamsDataManagerTests: XCTestCase {
     let teamsFactory = TeamsFactory()
     
     func testTeamsDataManagerNHLDataTransformation() {
-        let teamsDataManager = TeamsDataManager(fileAccessor: fileAccessor)
-        let slug = "nhl"
+        let league = League(fullName: "National Hockey League", slug: "nhl")
+        let teamsDataManager = TeamsDataManager(league: league, fileAccessor: fileAccessor)
         let expected = teamsFactory.teams
         
-        teamsDataManager.getTeamsForSlug(slug) { result in
-            switch result {
-            case .success(let teams):
-                XCTAssert(expected == teams)
-            case .failure:
-                XCTFail()
-            }
+        teamsDataManager.getTeams().done { teams in
+            XCTAssert(expected == teams)
+        }.catch { error in
+            XCTFail(error.localizedDescription)
         }
     }
 }

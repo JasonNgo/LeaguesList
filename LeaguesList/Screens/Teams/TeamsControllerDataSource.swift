@@ -26,23 +26,10 @@ final class TeamsControllerDataSource: NSObject {
         super.init()
     }
     
-    func fetchTeamsForLeague() {
-        teamsDataManager.getTeamsForSlug(league.slug) { result in
-            switch result {
-            case .success(let teams):
-                self.teams = teams
-                self.filteredTeams = teams
-            case .failure:
-                self.teams = []
-                self.filteredTeams = []
-            }
-        }
-    }
-    
     @discardableResult
     func fetchTeams() -> Promise<Void> {
         return Promise { seal in
-            teamsDataManager.getTeamsForSlug(league.slug).done { teams in
+            teamsDataManager.getTeams().done { teams in
                 self.teams = teams
                 self.filteredTeams = teams
                 seal.fulfill()
@@ -82,6 +69,20 @@ final class TeamsControllerDataSource: NSObject {
         
         return nil
     }
+    
+    //    func fetchTeamsForLeague() {
+    //        teamsDataManager.getTeamsForSlug(league.slug) { result in
+    //            switch result {
+    //            case .success(let teams):
+    //                self.teams = teams
+    //                self.filteredTeams = teams
+    //            case .failure:
+    //                self.teams = []
+    //                self.filteredTeams = []
+    //            }
+    //        }
+    //    }
+
 }
 
 // MARK: - UICollectionViewDataSource

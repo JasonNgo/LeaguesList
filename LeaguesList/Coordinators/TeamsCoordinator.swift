@@ -9,41 +9,39 @@
 import UIKit
 
 protocol TeamsCoordinatorDelegate: class {
-    func teamsCoordinatorDidDismiss()
+    func teamsCoordinatorDidDismiss(teamsCoordinator: TeamsCoordinator)
 }
 
 /// Coordinator in charge of handling navigations and dependencies associated with the TeamsController.
 final class TeamsCoordinator: Coordinator {
-    private let presenter: UINavigationController
-    private let fileAccessor: FileAccessor<TheScoreEndPoint>
+    var navigationController: UINavigationController
+    var childCoordinators: [Coordinator]
     
-    private let league: League
+    // MARK: Dependencies
+    private let fileAccessor: FileAccessor<TheScoreEndPoint>
     private let teamsDataManager: TeamsDataManager
     private let teamsControllerDataSource: TeamsControllerDataSource
     
-    private var teamsController: TeamsController?
-    
     weak var delegate: TeamsCoordinatorDelegate?
     
-    init(presenter: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>, league: League) {
-        self.presenter = presenter
-        self.fileAccessor = fileAccessor
-        self.league = league
+    init(navigationController: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>, league: League) {
+        self.navigationController = navigationController
+        self.childCoordinators = []
         
-        self.teamsDataManager = TeamsDataManager(fileAccessor: fileAccessor)
+        self.fileAccessor = fileAccessor
+        self.teamsDataManager = TeamsDataManager(league: league, fileAccessor: fileAccessor)
         self.teamsControllerDataSource = TeamsControllerDataSource(league: league, teamsDataManager: teamsDataManager)
     }
     
     func start() {
         let teamsController = TeamsController(teamsDataSource: teamsControllerDataSource)
-        self.presenter.pushViewController(teamsController, animated: true)
-        self.teamsController = teamsController
+        teamsController.coordinator = self
+        navigationController.pushViewController(teamsController, animated: true)
     }
 }
 
 extension TeamsCoordinator: TeamsControllerDelegate {
     func teamsControllerDidDismiss() {
-        teamsController = nil
-        delegate?.teamsCoordinatorDidDismiss()
+        delegate?.teamsCoordinatorDidDismiss(teamsCoordinator: self)
     }
 }

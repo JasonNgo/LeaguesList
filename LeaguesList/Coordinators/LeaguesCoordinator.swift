@@ -48,10 +48,10 @@ final class LeaguesCoordinator: Coordinator {
 
 extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidSelectItem(_ league: League) {
-//        let teamsCoordinator = TeamsCoordinator(presenter: presenter, fileAccessor: fileAccessor, league: league)
-//        teamsCoordinator.delegate = self
-//        self.teamsCoordinator = teamsCoordinator
-//        teamsCoordinator.start()
+        let teamsCoordinator = TeamsCoordinator(navigationController: navigationController, fileAccessor: fileAccessor, league: league)
+        teamsCoordinator.delegate = self
+        teamsCoordinator.start()
+        add(childCoordinator: teamsCoordinator)
     }
 }
 

@@ -15,7 +15,7 @@ protocol TeamsControllerDelegate: class {
 
 final class TeamsController: UIViewController {
     
-    weak var delegate: TeamsControllerDelegate?
+    var coordinator: TeamsCoordinator?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
@@ -84,7 +84,7 @@ final class TeamsController: UIViewController {
     override func willMove(toParent parent: UIViewController?) {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
-        delegate?.teamsControllerDidDismiss()
+        coordinator?.teamsControllerDidDismiss()
     }
     
     // MARK: - Setup
@@ -124,7 +124,6 @@ final class TeamsController: UIViewController {
             let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
             self.collectionView.backgroundView = backgroundView
             self.collectionView.reloadData()
-            
         }
     }
 }

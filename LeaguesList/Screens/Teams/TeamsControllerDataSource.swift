@@ -12,6 +12,8 @@ import PromiseKit
 final class TeamsControllerDataSource: NSObject {
     private let league: League
     private let teamsDataManager: TeamsDataManager
+    private let teamCellConfigurator: TeamCellConfigurator
+    
     private let reuseId = "TeamCell"
     private var teams: [Team] = []
     private var filteredTeams: [Team] = []
@@ -23,6 +25,7 @@ final class TeamsControllerDataSource: NSObject {
     init(league: League, teamsDataManager: TeamsDataManager) {
         self.league = league
         self.teamsDataManager = teamsDataManager
+        self.teamCellConfigurator = TeamCellConfigurator()
         super.init()
     }
     
@@ -69,20 +72,6 @@ final class TeamsControllerDataSource: NSObject {
         
         return nil
     }
-    
-    //    func fetchTeamsForLeague() {
-    //        teamsDataManager.getTeamsForSlug(league.slug) { result in
-    //            switch result {
-    //            case .success(let teams):
-    //                self.teams = teams
-    //                self.filteredTeams = teams
-    //            case .failure:
-    //                self.teams = []
-    //                self.filteredTeams = []
-    //            }
-    //        }
-    //    }
-
 }
 
 // MARK: - UICollectionViewDataSource
@@ -97,7 +86,9 @@ extension TeamsControllerDataSource: UICollectionViewDataSource {
             fatalError("Unable to dequeue cell")
         }
         
-        cell.team = filteredTeams[indexPath.item]
+        let team = filteredTeams[indexPath.item]
+        teamCellConfigurator.configure(cell: cell, with: team)
+        
         return cell
     }
 }

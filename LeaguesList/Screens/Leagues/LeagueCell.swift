@@ -13,7 +13,7 @@ final class LeagueCell: UICollectionViewCell {
     
     // MARK: - Subviews
     
-    private let leagueFullNameLabel: UILabel = {
+    var leagueFullNameLabel: UILabel = {
         var label = UILabel()
         label.numberOfLines = 0
         label.text = "League Name"
@@ -27,13 +27,6 @@ final class LeagueCell: UICollectionViewCell {
         view.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
         return view
     }()
-    
-    // MARK: - Model
-    var league: League! {
-        didSet {
-            leagueFullNameLabel.text = league.fullName
-        }
-    }
     
     // MARK: - Overrides
     

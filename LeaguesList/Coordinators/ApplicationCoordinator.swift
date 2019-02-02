@@ -12,23 +12,37 @@ import UIKit
 /// the project. It uses dependency injection to insert the required dependencies to other coordinators.
 final class ApplicationCoordinator: Coordinator {
     private let window: UIWindow
-    private let rootViewController: UINavigationController
-    private let fileAccessor: FileAccessor<TheScoreEndPoint>
+    var navigationController: UINavigationController
+    var childCoordinators: [Coordinator]
     
-    private let leaguesCoordinator: LeaguesCoordinator
+    // MARK: Dependencies
+    private let fileAccessor: FileAccessor<TheScoreEndPoint>
     
     init(window: UIWindow) {
         self.window = window
-        rootViewController = UINavigationController()
-        rootViewController.navigationBar.prefersLargeTitles = true
-        fileAccessor = FileAccessor<TheScoreEndPoint>()
-
-        leaguesCoordinator = LeaguesCoordinator(presenter: rootViewController, fileAccessor: fileAccessor)
+        self.navigationController = UINavigationController()
+        self.navigationController.navigationBar.prefersLargeTitles = true
+        self.childCoordinators = []
+        self.fileAccessor = FileAccessor<TheScoreEndPoint>()
+        
+        window.rootViewController = navigationController
     }
     
     func start() {
-        window.rootViewController = rootViewController
-        leaguesCoordinator.start()
+        showLeaguesList()
         window.makeKeyAndVisible()
+    }
+    
+    func showLeaguesList() {
+        let leaguesCoordinator = LeaguesCoordinator(navigationController: navigationController, fileAccessor: fileAccessor)
+        leaguesCoordinator.delegate = self
+        leaguesCoordinator.start()
+        add(childCoordinator: leaguesCoordinator)
+    }
+}
+
+extension ApplicationCoordinator: LeaguesCoordinatorDelegate {
+    func leaguesCoordinatorDidDismiss(leaguesCoordinator: LeaguesCoordinator) {
+        remove(childCoordinator: leaguesCoordinator)
     }
 }

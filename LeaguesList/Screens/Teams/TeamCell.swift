@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import SDWebImage
 
 /// UICollectionViewCell Subclass that displays a teams information for the TeamsController cell
 final class TeamCell: UICollectionViewCell {
     
     // MARK: - Subviews
     
-    private let teamFullNameLabel: UILabel = {
+    var teamFullNameLabel: UILabel = {
         var label = UILabel()
         label.numberOfLines = 0
         label.text = "Team Name"
@@ -22,7 +21,7 @@ final class TeamCell: UICollectionViewCell {
         return label
     }()
     
-    private let logoImageView: UIImageView = {
+    var logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
@@ -40,38 +39,6 @@ final class TeamCell: UICollectionViewCell {
     private var logoMaximizedWidthConstraint: NSLayoutConstraint!
     private var logoMinimizedWidthConstraint: NSLayoutConstraint!
     private let logoImageViewSize: CGFloat = 44
-    
-    // MARK: - Model
-    
-    var team: Team! {
-        didSet {
-            teamFullNameLabel.text = team.fullName
-            
-            // Attempt to load image if the url exists
-            guard let logoUrl = team.logoUrl, let url = URL(string: logoUrl) else {
-                // If imageUrl doesn't exist attempt to load teams main colour as an image
-                guard let mainColour = team.colour1Hex else {
-                    logoMaximizedWidthConstraint.isActive = false
-                    logoMinimizedWidthConstraint.isActive = true
-                    return
-                }
-                
-                let colourImage = UIColor(hexFromString: mainColour).image()
-                logoImageView.image = colourImage
-                logoMinimizedWidthConstraint.isActive = false
-                logoMaximizedWidthConstraint.isActive = true
-                return
-            }
-            
-            logoImageView.sd_setImage(with: url, placeholderImage: nil, options: .continueInBackground) {
-                (image, _, _, _) in
-                guard let image = image else { return }
-                self.logoImageView.image = image
-                self.logoMinimizedWidthConstraint.isActive = false
-                self.logoMaximizedWidthConstraint.isActive = true
-            }
-        }
-    }
     
     // MARK: - Overrides
     
@@ -98,8 +65,7 @@ final class TeamCell: UICollectionViewCell {
             padding: .init(top: 8, left: 8, bottom: 0, right: 0)
         )
         logoImageView.heightAnchor.constraint(equalToConstant: logoImageViewSize).isActive = true
-        logoMaximizedWidthConstraint.isActive = true
-        logoMinimizedWidthConstraint.isActive = false
+        showImageView()
         
         teamFullNameLabel.anchor(
             top: topAnchor,
@@ -116,6 +82,16 @@ final class TeamCell: UICollectionViewCell {
             trailing: trailingAnchor,
             padding: .init(top: 0, left: 16, bottom: 0, right: 0)
         )
+    }
+    
+    func hideImageView() {
+        logoMaximizedWidthConstraint.isActive = false
+        logoMinimizedWidthConstraint.isActive = true
+    }
+    
+    func showImageView() {
+        logoMinimizedWidthConstraint.isActive = false
+        logoMaximizedWidthConstraint.isActive = true
     }
     
     // MARK: - Required

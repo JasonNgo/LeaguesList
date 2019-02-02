@@ -8,30 +8,39 @@
 
 import UIKit
 
+protocol LeaguesCoordinatorDelegate: AnyObject {
+    func leaguesCoordinatorDidDismiss(leaguesCoordinator: LeaguesCoordinator)
+}
+
 /// Coordinator in charge of handling navigations and dependencies associated with the LeaguesController.
 final class LeaguesCoordinator: Coordinator {
-    private let presenter: UINavigationController
-    private let fileAccessor: FileAccessor<TheScoreEndPoint>
+    var navigationController: UINavigationController
+    var childCoordinators: [Coordinator]
     
+    // MARK: Dependencies
+    private let fileAccessor: FileAccessor<TheScoreEndPoint>
     private let leaguesDataManager: LeaguesDataManager
     private let leaguesControllerDataSource: LeaguesControllerDataSource
-    private var leaguesController: LeaguesController?
     
-    private var teamsCoordinator: TeamsCoordinator?
+    weak var delegate: LeaguesCoordinatorDelegate?
     
-    init(presenter: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>) {
-        self.presenter = presenter
+    init(navigationController: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>) {
+        self.navigationController = navigationController
+        self.childCoordinators = []
+        
         self.fileAccessor = fileAccessor
         self.leaguesDataManager = LeaguesDataManager(fileAccessor: fileAccessor)
         self.leaguesControllerDataSource = LeaguesControllerDataSource(leaguesDataManager: leaguesDataManager)
     }
     
+    deinit {
+        delegate?.leaguesCoordinatorDidDismiss(leaguesCoordinator: self)
+    }
+    
     func start() {
         let leaguesController = LeaguesController(leaguesDataSource: leaguesControllerDataSource)
-        leaguesController.delegate = self
-        
-        self.presenter.pushViewController(leaguesController, animated: true)
-        self.leaguesController = leaguesController
+        leaguesController.coordinator = self
+        navigationController.pushViewController(leaguesController, animated: true)
     }
 }
 
@@ -39,17 +48,17 @@ final class LeaguesCoordinator: Coordinator {
 
 extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidSelectItem(_ league: League) {
-        let teamsCoordinator = TeamsCoordinator(presenter: presenter, fileAccessor: fileAccessor, league: league)
+        let teamsCoordinator = TeamsCoordinator(navigationController: navigationController, fileAccessor: fileAccessor, league: league)
         teamsCoordinator.delegate = self
-        self.teamsCoordinator = teamsCoordinator
         teamsCoordinator.start()
+        add(childCoordinator: teamsCoordinator)
     }
 }
 
 // MARK: - TeamsCoordinatorDelegate
 
 extension LeaguesCoordinator: TeamsCoordinatorDelegate {
-    func teamsCoordinatorDidDismiss() {
-        teamsCoordinator = nil
+    func teamsCoordinatorDidDismiss(teamsCoordinator: TeamsCoordinator) {
+        remove(childCoordinator: teamsCoordinator)
     }
 }

@@ -13,7 +13,6 @@ struct AnchoredConstraints {
 }
 
 extension UIView {
-    
     @discardableResult
     func anchor(top: NSLayoutYAxisAnchor?,
                 leading: NSLayoutXAxisAnchor?,
@@ -99,7 +98,6 @@ extension UIView {
             heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
     }
-    
 }
 
 extension UIView {

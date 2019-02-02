@@ -44,6 +44,7 @@ final class TeamsController: UIViewController {
     
     // MARK: - SearchController
     private let teamsSearchController = UISearchController(searchResultsController: nil)
+    var isSearching: Bool = false
     
     init(teamsDataSource: TeamsControllerDataSource) {
         self.teamsDataSource = teamsDataSource
@@ -70,14 +71,13 @@ final class TeamsController: UIViewController {
         setupCollectionView()
         setupTeamsSearchController()
         
-        teamsDataSource.fetchTeams().catch { error in
-            print("Error fetching teams: \(error.localizedDescription)")
-        }.finally(on: DispatchQueue.main, flags: nil) { [weak self] in
+        teamsDataSource.fetchTeams().done(on: DispatchQueue.main, flags: nil) { [weak self] in
             guard let self = self else { return }
             self.collectionView.backgroundView = nil
-            let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
-            self.collectionView.backgroundView = backgroundView
             self.collectionView.reloadData()
+        }.catch { error in
+            // Already showing the empty collection view state
+            print("Error fetching teams: \(error.localizedDescription)")
         }
     }
     
@@ -114,16 +114,23 @@ final class TeamsController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        teamsDataSource.fetchTeams().catch { error in
-            print("Error fetching teams data: \(error.localizedDescription)")
-        }.finally(on: DispatchQueue.main, flags: nil) { [weak self] in
+        guard !isSearching else {
+            collectionView.refreshControl?.endRefreshing()
+            return
+        }
+        
+        teamsDataSource.fetchTeams().done(on: DispatchQueue.main, flags: nil) { [weak self] in
             guard let self = self else { return }
-            self.collectionView.refreshControl?.endRefreshing()
+            self.collectionView.reloadData()
+        }.ensure { [weak self] in
+            guard let self = self else { return }
             self.collectionView.backgroundView = nil
-            
             let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
             self.collectionView.backgroundView = backgroundView
-            self.collectionView.reloadData()
+            self.collectionView.refreshControl?.endRefreshing()
+        }.catch { [weak self] error in
+//            guard let self = self else { return }
+            print("Error fetching teams: \(error.localizedDescription)")
         }
     }
 }
@@ -132,7 +139,23 @@ final class TeamsController: UIViewController {
 // MARK: - UISearchBarDelegate
 
 extension TeamsController: UISearchBarDelegate {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        isSearching = true
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        isSearching = false
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filterCollectionResults(with: searchText)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        filterCollectionResults(with: "")
+    }
+    
+    private func filterCollectionResults(with searchText: String) {
         collectionView.backgroundView = nil
         teamsDataSource.filterResultsBy(searchText)
         collectionView.backgroundView = teamsDataSource.backgroundView(for: collectionView)

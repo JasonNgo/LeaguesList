@@ -31,16 +31,9 @@ final class TeamsControllerDataSource: NSObject {
     
     @discardableResult
     func fetchTeams() -> Promise<Void> {
-        return Promise { seal in
-            teamsDataManager.getTeams().done { teams in
-                self.teams = teams
-                self.filteredTeams = teams
-                seal.fulfill()
-            }.catch { error in
-                self.teams = []
-                self.filteredTeams = []
-                seal.reject(error)
-            }
+        return teamsDataManager.getTeams().done { teams in
+            self.teams = teams
+            self.filteredTeams = teams
         }
     }
     
@@ -49,16 +42,18 @@ final class TeamsControllerDataSource: NSObject {
     }
     
     func filterResultsBy(_ searchText: String) {
-        if searchText.isEmpty {
+        guard !searchText.isEmpty else {
             filteredTeams = teams
-        } else {
-            filteredTeams = teams.filter({ team -> Bool in
-                return
-                    team.fullName.lowercased().contains(searchText.lowercased()) ||
-                    team.name.lowercased().contains(searchText.lowercased()) ||
-                    team.location?.lowercased().contains(searchText.lowercased()) ?? false
-            })
+            return
         }
+        
+        let filterPredicate: (Team) -> Bool = { team in
+            team.fullName.lowercased().contains(searchText.lowercased()) ||
+            team.name.lowercased().contains(searchText.lowercased()) ||
+            team.location?.lowercased().contains(searchText.lowercased()) ?? false
+        }
+        
+        filteredTeams = teams.filter(filterPredicate)
     }
     
     func backgroundView(for collectionView: UICollectionView) -> UIView? {

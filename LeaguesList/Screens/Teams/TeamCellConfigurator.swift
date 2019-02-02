@@ -1,5 +1,5 @@
 //
-//  TeamCellFactory.swift
+//  TeamCellConfigurator.swift
 //  LeaguesList
 //
 //  Created by Jason Ngo on 2019-02-02.

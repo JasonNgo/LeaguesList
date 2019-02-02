@@ -9,7 +9,6 @@
 import UIKit
 
 extension UIColor {
-    
     // https://stackoverflow.com/questions/24263007/how-to-use-hex-color-values?page=1&tab=active#tab-top
     convenience init(hexFromString: String, alpha: CGFloat = 1.0) {
         var cString: String = hexFromString.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
@@ -42,5 +41,4 @@ extension UIColor {
             rendererContext.fill(CGRect(origin: .zero, size: size))
         }
     }
-    
 }

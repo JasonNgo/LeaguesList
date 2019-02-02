@@ -73,7 +73,7 @@ private extension Router {
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             case .requestParameters(let urlParameters, let bodyParameters):
                 try self.configureParameters(urlParameters: urlParameters, bodyParameters: bodyParameters, request: &request)
-            case .requestParametersAndHeaders(let urlParameters, let bodyParameters,let additionalHeaders):
+            case .requestParametersAndHeaders(let urlParameters, let bodyParameters, let additionalHeaders):
                 self.addAdditionalHeaders(additionalHeaders, request: &request)
                 try self.configureParameters(urlParameters: urlParameters, bodyParameters: bodyParameters, request: &request)
             }

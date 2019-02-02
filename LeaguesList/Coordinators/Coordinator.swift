@@ -10,7 +10,7 @@ import UIKit
 
 /// Coordinators are a class used to control the navigation flow and are used to inject the
 /// required depenecies into the screens they control.
-public protocol Coordinator: AnyObject {
+protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }
     

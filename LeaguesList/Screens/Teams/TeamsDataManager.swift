@@ -34,22 +34,4 @@ final class TeamsDataManager {
                 return sortedTeams
         }
     }
-    
-//    func getTeamsForSlug(_ slug: String, completion: @escaping (Result<[Team], TeamsDataManagerError>) -> Void) {
-//        fileAccessor.request(.teams(slug: slug)) { (result) in
-//            switch result {
-//            case .success(let data):
-//                do {
-//                    let teams = try JSONDecoder().decode([Team].self, from: data)
-//                    let sortedTeams = teams.sorted { return $0.fullName < $1.fullName }
-//                    completion(.success(sortedTeams))
-//                } catch {
-//                    completion(.failure(TeamsDataManagerError.unableToDecodeListOfTeams))
-//                    return
-//                }
-//            case .failure:
-//                completion(.failure(TeamsDataManagerError.unableToFetchListOfTeams))
-//            }
-//        }
-//    }
 }

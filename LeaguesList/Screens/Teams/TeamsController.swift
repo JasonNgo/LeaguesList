@@ -15,6 +15,7 @@ protocol TeamsControllerDelegate: class {
 
 final class TeamsController: UIViewController {
     
+    // MARK: - Coordinator
     var coordinator: TeamsCoordinator?
     
     // MARK: - Styling Constants
@@ -26,7 +27,6 @@ final class TeamsController: UIViewController {
     private var teamsDataSource: TeamsControllerDataSource
     
     // MARK: - UICollectionView
-    
     private let reuseId = "TeamCell"
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -45,6 +45,8 @@ final class TeamsController: UIViewController {
     // MARK: - SearchController
     private let teamsSearchController = UISearchController(searchResultsController: nil)
     var isSearching: Bool = false
+    
+    // MARK: - Initializer
     
     init(teamsDataSource: TeamsControllerDataSource) {
         self.teamsDataSource = teamsDataSource

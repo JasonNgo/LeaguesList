@@ -11,45 +11,23 @@ import PromiseKit
 
 final class LeaguesControllerDataSource: NSObject {
     private let leaguesDataManager: LeaguesDataManager
+    private let leagueCellConfigurator: LeagueCellConfigurator
+    
     private let reuseId = "LeagueCell"
     private var leagues: [League] = []
     private var filteredLeagues: [League] = []
     
-    private let emptyStateMessage = "No Data Found"
-    private let emptyStateDescription = "\n\nPlease try loading the page\nagain at a later time"
-    private let noSearchResultsString = "No results found"
-    
     init(leaguesDataManager: LeaguesDataManager) {
         self.leaguesDataManager = leaguesDataManager
+        self.leagueCellConfigurator = LeagueCellConfigurator()
         super.init()
-    }
-    
-    // Previous implementation that didn't use Promises
-    func fetchLeagueItems() {
-        leaguesDataManager.fetchListOfLeagues { result in
-            switch result {
-            case .success(let leagues):
-                self.leagues = leagues
-                self.filteredLeagues = leagues
-            case .failure:
-                self.leagues = []
-                self.filteredLeagues = []
-            }
-        }
     }
     
     @discardableResult
     func fetchLeagues() -> Promise<Void> {
-        return Promise { seal in
-            leaguesDataManager.fetchListOfLeagues().done { leagues in
-                self.leagues = leagues
-                self.filteredLeagues = leagues
-                seal.fulfill()
-            }.catch { error in
-                self.leagues = []
-                self.filteredLeagues = []
-                seal.reject(error)
-            }
+        return leaguesDataManager.fetchListOfLeagues().done { leagues in
+            self.leagues = leagues
+            self.filteredLeagues = leagues
         }
     }
     
@@ -58,15 +36,17 @@ final class LeaguesControllerDataSource: NSObject {
     }
     
     func filterResultsBy(_ searchText: String) {
-        if searchText.isEmpty {
+        guard !searchText.isEmpty else {
             filteredLeagues = leagues
-        } else {
-            filteredLeagues = leagues.filter({ league -> Bool in
-                return
-                    league.fullName.lowercased().contains(searchText.lowercased()) ||
-                    league.slug.lowercased().contains(searchText.lowercased())
-            })
+            return
         }
+        
+        let filterPredicate: (League) -> Bool = { league in
+            league.fullName.lowercased().contains(searchText.lowercased()) ||
+            league.slug.lowercased().contains(searchText.lowercased())
+        }
+        
+        filteredLeagues = leagues.filter(filterPredicate)
     }
     
     func backgroundView(for collectionView: UICollectionView) -> UIView? {
@@ -94,7 +74,9 @@ extension LeaguesControllerDataSource: UICollectionViewDataSource {
             fatalError("Unable to dequeue cell")
         }
         
-        cell.league = filteredLeagues[indexPath.item]
+        let league = filteredLeagues[indexPath.item]
+        leagueCellConfigurator.configure(cell: cell, with: league)
+        
         return cell
     }
 }

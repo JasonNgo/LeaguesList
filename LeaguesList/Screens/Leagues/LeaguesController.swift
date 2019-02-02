@@ -46,6 +46,7 @@ final class LeaguesController: UIViewController {
     
     // MARK: - SearchController
     private let leaguesSearchController = UISearchController(searchResultsController: nil)
+    var isSearching = false
     
     init(leaguesDataSource: LeaguesControllerDataSource) {
         self.leaguesDataSource = leaguesDataSource
@@ -68,14 +69,12 @@ final class LeaguesController: UIViewController {
         setupCollectionView()
         setupLeaguesSearchController()
         
-        leaguesDataSource.fetchLeagues().catch { error in
-            print("Error fetching data: \(error.localizedDescription)")
-        }.finally(on: DispatchQueue.main, flags: nil) { [weak self] in
+        leaguesDataSource.fetchLeagues().done(on: DispatchQueue.main, flags: nil) { [weak self] in
             guard let self = self else { return }
             self.collectionView.backgroundView = nil
-            let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
-            self.collectionView.backgroundView = backgroundView
             self.collectionView.reloadData()
+        }.catch { error in
+            print("Error fetching data: \(error.localizedDescription)")
         }
     }
     
@@ -104,15 +103,22 @@ final class LeaguesController: UIViewController {
     // MARK: - Target Actions
     
     @objc private func handleRefreshControl() {
-        leaguesDataSource.fetchLeagues().catch { error in
-            print("Error fetching data: \(error.localizedDescription)")
-        }.finally(on: DispatchQueue.main, flags: nil) { [weak self] in
+        guard !isSearching else {
+            collectionView.refreshControl?.endRefreshing()
+            return
+        }
+        
+        leaguesDataSource.fetchLeagues().done(on: DispatchQueue.main, flags: nil) { [weak self] in
             guard let self = self else { return }
-            self.collectionView.refreshControl?.endRefreshing()
+            self.collectionView.reloadData()
+        }.ensure { [weak self] in
+            guard let self = self else { return }
             self.collectionView.backgroundView = nil
             let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
             self.collectionView.backgroundView = backgroundView
-            self.collectionView.reloadData()
+            self.collectionView.refreshControl?.endRefreshing()
+        }.catch { [weak self] error in
+            print("Error fetching data: \(error.localizedDescription)")
         }
     }
     
@@ -126,7 +132,23 @@ final class LeaguesController: UIViewController {
 // MARK: - Search Controller
 
 extension LeaguesController: UISearchBarDelegate {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        isSearching = true
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        isSearching = false
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filterCollectionResults(with: searchText)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        filterCollectionResults(with: "")
+    }
+    
+    private func filterCollectionResults(with searchText: String) {
         collectionView.backgroundView = nil
         leaguesDataSource.filterResultsBy(searchText)
         collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)

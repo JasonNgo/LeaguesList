@@ -45,8 +45,9 @@ final class LeaguesDataManager {
         return firstly {
             fileAccessor.request(.leagues)
         }.compactMap {
-            let leagues = try JSONDecoder().decode([League].self, from: $0)
-            let sortedLeagues = leagues.sorted { return $0.fullName < $1.fullName }
+            let leagues = try JSONDecoder().decode([Safe<League>].self, from: $0)
+            let leaguesWithoutNil = leagues.compactMap { $0.value }
+            let sortedLeagues = leaguesWithoutNil.sorted { $0.fullName < $1.fullName }
             return sortedLeagues
         }
     }

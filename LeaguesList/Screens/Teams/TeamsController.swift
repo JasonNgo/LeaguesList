@@ -73,14 +73,31 @@ final class TeamsController: UIViewController {
         setupCollectionView()
         setupTeamsSearchController()
         
-        teamsDataSource.fetchTeams().done(on: DispatchQueue.main, flags: nil) { [weak self] in
+        // Using completion handlers
+        teamsDataSource.fetchTeams { [weak self] error in
             guard let self = self else { return }
-            self.collectionView.backgroundView = nil
-            self.collectionView.reloadData()
-        }.catch { error in
-            // Already showing the empty collection view state
-            print("Error fetching teams: \(error.localizedDescription)")
+
+            if let error = error {
+                // There was an error, show an error message
+                print(error)
+                return
+            }
+
+            DispatchQueue.main.async {
+                self.collectionView.backgroundView = nil
+                self.collectionView.reloadData()
+            }
         }
+        
+//        // Using Promises
+//        teamsDataSource.fetchTeams().done(on: DispatchQueue.main, flags: nil) { [weak self] in
+//            guard let self = self else { return }
+//            self.collectionView.backgroundView = nil
+//            self.collectionView.reloadData()
+//        }.catch { error in
+//            // Already showing the empty collection view state
+//            print("Error fetching teams: \(error.localizedDescription)")
+//        }
     }
     
     override func willMove(toParent parent: UIViewController?) {
@@ -121,19 +138,36 @@ final class TeamsController: UIViewController {
             return
         }
         
-        teamsDataSource.fetchTeams().done(on: DispatchQueue.main, flags: nil) { [weak self] in
+        teamsDataSource.fetchTeams { [weak self] error in
             guard let self = self else { return }
-            self.collectionView.reloadData()
-        }.ensure { [weak self] in
-            guard let self = self else { return }
-            self.collectionView.backgroundView = nil
-            let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
-            self.collectionView.backgroundView = backgroundView
             self.collectionView.refreshControl?.endRefreshing()
-        }.catch { [weak self] error in
-//            guard let self = self else { return }
-            print("Error fetching teams: \(error.localizedDescription)")
+            
+            if let error = error {
+                // There was an error, show an error message
+                print(error)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.collectionView.backgroundView = nil
+                self.collectionView.reloadData()
+            }
         }
+        
+        // Using Promises
+//        teamsDataSource.fetchTeams().done(on: DispatchQueue.main, flags: nil) { [weak self] in
+//            guard let self = self else { return }
+//            self.collectionView.reloadData()
+//        }.ensure { [weak self] in
+//            guard let self = self else { return }
+//            self.collectionView.backgroundView = nil
+//            let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
+//            self.collectionView.backgroundView = backgroundView
+//            self.collectionView.refreshControl?.endRefreshing()
+//        }.catch { [weak self] error in
+//            guard let self = self else { return }
+//            print("Error fetching teams: \(error.localizedDescription)")
+//        }
     }
 }
 

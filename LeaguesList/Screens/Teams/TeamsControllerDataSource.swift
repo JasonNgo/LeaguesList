@@ -29,6 +29,21 @@ final class TeamsControllerDataSource: NSObject {
         super.init()
     }
     
+    // Using completion handlers
+    func fetchTeams(completion: @escaping (Error?) -> Void) {
+        teamsDataManager.getTeams { result in
+            switch result {
+            case .success(let teams):
+                self.teams = teams
+                self.filteredTeams = teams
+                completion(nil)
+            case .failure(let error):
+                completion(error)
+            }
+        }
+    }
+    
+    // Using promises
     @discardableResult
     func fetchTeams() -> Promise<Void> {
         return teamsDataManager.getTeams().done { teams in

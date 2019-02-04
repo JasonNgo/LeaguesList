@@ -69,13 +69,29 @@ final class LeaguesController: UIViewController {
         setupCollectionView()
         setupLeaguesSearchController()
         
-        leaguesDataSource.fetchLeagues().done(on: DispatchQueue.main, flags: nil) { [weak self] in
+        // Using completion handlers
+        leaguesDataSource.fetchLeagues { [weak self] error in
             guard let self = self else { return }
-            self.collectionView.backgroundView = nil
-            self.collectionView.reloadData()
-        }.catch { error in
-            print("Error fetching data: \(error.localizedDescription)")
+            
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.collectionView.backgroundView = nil
+                self.collectionView.reloadData()
+            }
         }
+        
+        // Using Promises
+//        leaguesDataSource.fetchLeagues().done(on: DispatchQueue.main, flags: nil) { [weak self] in
+//            guard let self = self else { return }
+//            self.collectionView.backgroundView = nil
+//            self.collectionView.reloadData()
+//        }.catch { error in
+//            print("Error fetching data: \(error.localizedDescription)")
+//        }
     }
     
     // MARK: - Setup
@@ -108,18 +124,37 @@ final class LeaguesController: UIViewController {
             return
         }
         
-        leaguesDataSource.fetchLeagues().done(on: DispatchQueue.main, flags: nil) { [weak self] in
+        // Using completion handlers
+        leaguesDataSource.fetchLeagues { [weak self] error in
             guard let self = self else { return }
-            self.collectionView.reloadData()
-        }.ensure { [weak self] in
-            guard let self = self else { return }
-            self.collectionView.backgroundView = nil
-            let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
-            self.collectionView.backgroundView = backgroundView
             self.collectionView.refreshControl?.endRefreshing()
-        }.catch { [weak self] error in
-            print("Error fetching data: \(error.localizedDescription)")
+            
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.collectionView.backgroundView = nil
+                let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
+                self.collectionView.backgroundView = backgroundView
+                self.collectionView.reloadData()
+            }
         }
+        
+        // Using promises
+//        leaguesDataSource.fetchLeagues().done(on: DispatchQueue.main, flags: nil) { [weak self] in
+//            guard let self = self else { return }
+//            self.collectionView.reloadData()
+//        }.ensure { [weak self] in
+//            guard let self = self else { return }
+//            self.collectionView.backgroundView = nil
+//            let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
+//            self.collectionView.backgroundView = backgroundView
+//            self.collectionView.refreshControl?.endRefreshing()
+//        }.catch { [weak self] error in
+//            print("Error fetching data: \(error.localizedDescription)")
+//        }
     }
     
     // MARK: - Required

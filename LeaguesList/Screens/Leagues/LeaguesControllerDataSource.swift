@@ -23,6 +23,21 @@ final class LeaguesControllerDataSource: NSObject {
         super.init()
     }
     
+    // Using completion handlers
+    func fetchLeagues(completion: @escaping (Error?) -> Void) {
+        leaguesDataManager.fetchListOfLeagues { result in
+            switch result {
+            case .success(let leagues):
+                self.leagues = leagues
+                self.filteredLeagues = leagues
+                completion(nil)
+            case .failure(let error):
+                completion(error)
+            }
+        }
+    }
+    
+    // Using Promises
     @discardableResult
     func fetchLeagues() -> Promise<Void> {
         return leaguesDataManager.fetchListOfLeagues().done { leagues in
@@ -30,6 +45,7 @@ final class LeaguesControllerDataSource: NSObject {
             self.filteredLeagues = leagues
         }
     }
+    
     
     func item(at indexPath: IndexPath) -> League {
         return filteredLeagues[indexPath.item]

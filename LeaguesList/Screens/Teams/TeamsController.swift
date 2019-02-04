@@ -138,6 +138,7 @@ final class TeamsController: UIViewController {
             return
         }
         
+        // Using completion handlers
         teamsDataSource.fetchTeams { [weak self] error in
             guard let self = self else { return }
             self.collectionView.refreshControl?.endRefreshing()
@@ -150,6 +151,8 @@ final class TeamsController: UIViewController {
             
             DispatchQueue.main.async {
                 self.collectionView.backgroundView = nil
+                let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
+                self.collectionView.backgroundView = backgroundView
                 self.collectionView.reloadData()
             }
         }

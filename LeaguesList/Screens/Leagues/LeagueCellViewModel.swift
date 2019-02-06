@@ -8,16 +8,16 @@
 
 import Foundation
 
+// TODO: Update View Models
+
 // Using League model instead of ViewModel because currently the two models are the same and using both
 // in current implementation adds extra level of uncessary abstraction
 struct LeagueCellViewModel {
     var fullNameLabelText: String
-    var slug: String
 }
 
 extension LeagueCellViewModel {
     init(league: League) {
         self.fullNameLabelText = league.fullName
-        self.slug = league.slug
     }
 }

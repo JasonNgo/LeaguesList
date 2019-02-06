@@ -11,7 +11,6 @@ import PromiseKit
 
 final class LeaguesControllerDataSource: NSObject {
     private let leaguesDataManager: LeaguesDataManager
-    private let leagueCellConfigurator: LeagueCellConfigurator
     
     private let reuseId = "LeagueCell"
     private var leagues: [League] = []
@@ -19,7 +18,6 @@ final class LeaguesControllerDataSource: NSObject {
     
     init(leaguesDataManager: LeaguesDataManager) {
         self.leaguesDataManager = leaguesDataManager
-        self.leagueCellConfigurator = LeagueCellConfigurator()
         super.init()
     }
     
@@ -91,7 +89,8 @@ extension LeaguesControllerDataSource: UICollectionViewDataSource {
         }
         
         let league = filteredLeagues[indexPath.item]
-        leagueCellConfigurator.configure(cell: cell, with: league)
+        let leagueCellViewModel = LeagueCellViewModel(league: league)
+        cell.configureCell(using: leagueCellViewModel)
         
         return cell
     }

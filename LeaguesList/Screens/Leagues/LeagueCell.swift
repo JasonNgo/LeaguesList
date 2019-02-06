@@ -9,11 +9,10 @@
 import UIKit
 
 /// CollectionViewCell displayed on collectionView of Leagues Controller
-final class LeagueCell: UICollectionViewCell {
+class LeagueCell: UICollectionViewCell {
     
     // MARK: - Subviews
-    
-    var leagueFullNameLabel: UILabel = {
+    private let leagueFullNameLabel: UILabel = {
         var label = UILabel()
         label.numberOfLines = 0
         label.text = "League Name"
@@ -38,24 +37,30 @@ final class LeagueCell: UICollectionViewCell {
     // MARK: - Setup
     
     private func setupSubviews() {
-        addSubview(leagueFullNameLabel)
-        addSubview(dividerView)
+        contentView.addSubview(leagueFullNameLabel)
+        contentView.addSubview(dividerView)
         
         leagueFullNameLabel.anchor(
-            top: topAnchor,
-            leading: leadingAnchor,
-            bottom: bottomAnchor,
-            trailing: trailingAnchor,
+            top: contentView.topAnchor,
+            leading: contentView.leadingAnchor,
+            bottom: contentView.bottomAnchor,
+            trailing: contentView.trailingAnchor,
             padding: .init(top: 8, left: 16, bottom: 8, right: 16)
         )
         
         dividerView.anchor(
             top: nil,
-            leading: leadingAnchor,
-            bottom: bottomAnchor,
-            trailing: trailingAnchor,
+            leading: contentView.leadingAnchor,
+            bottom: contentView.bottomAnchor,
+            trailing: contentView.trailingAnchor,
             padding: .init(top: 0, left: 16, bottom: 0, right: 0)
         )
+    }
+    
+    // MARK: - Configuration
+    
+    func configureCell(using viewModel: LeagueCellViewModel) {
+        leagueFullNameLabel.text = viewModel.fullNameLabelText
     }
     
     // MARK: - Required

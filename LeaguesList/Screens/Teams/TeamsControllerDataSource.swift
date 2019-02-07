@@ -12,7 +12,6 @@ import PromiseKit
 final class TeamsControllerDataSource: NSObject {
     private let league: League
     private let teamsDataManager: TeamsDataManager
-    private let teamCellConfigurator: TeamCellConfigurator
     
     private let reuseId = "TeamCell"
     private var teams: [Team] = []
@@ -25,7 +24,6 @@ final class TeamsControllerDataSource: NSObject {
     init(league: League, teamsDataManager: TeamsDataManager) {
         self.league = league
         self.teamsDataManager = teamsDataManager
-        self.teamCellConfigurator = TeamCellConfigurator()
         super.init()
     }
     
@@ -97,7 +95,8 @@ extension TeamsControllerDataSource: UICollectionViewDataSource {
         }
         
         let team = filteredTeams[indexPath.item]
-        teamCellConfigurator.configure(cell: cell, with: team)
+        let teamViewModel = TeamCellViewModel(team: team)
+        cell.configureCell(using: teamViewModel)
         
         return cell
     }

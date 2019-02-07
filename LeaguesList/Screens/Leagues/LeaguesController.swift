@@ -78,15 +78,6 @@ final class LeaguesController: UIViewController {
                 self.collectionView.reloadData()
             }
         }
-        
-        // Using Promises
-//        leaguesDataSource.fetchLeagues().done(on: DispatchQueue.main, flags: nil) { [weak self] in
-//            guard let self = self else { return }
-//            self.collectionView.backgroundView = nil
-//            self.collectionView.reloadData()
-//        }.catch { error in
-//            print("Error fetching data: \(error.localizedDescription)")
-//        }
     }
     
     // MARK: - Setup
@@ -138,20 +129,6 @@ final class LeaguesController: UIViewController {
                 self.collectionView.reloadData()
             }
         }
-        
-        // Using promises
-//        leaguesDataSource.fetchLeagues().done(on: DispatchQueue.main, flags: nil) { [weak self] in
-//            guard let self = self else { return }
-//            self.collectionView.reloadData()
-//        }.ensure { [weak self] in
-//            guard let self = self else { return }
-//            self.collectionView.backgroundView = nil
-//            let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
-//            self.collectionView.backgroundView = backgroundView
-//            self.collectionView.refreshControl?.endRefreshing()
-//        }.catch { [weak self] error in
-//            print("Error fetching data: \(error.localizedDescription)")
-//        }
     }
     
     // MARK: - Required
@@ -192,7 +169,7 @@ extension LeaguesController: UISearchBarDelegate {
 
 extension LeaguesController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let league = leaguesDataSource.item(at: indexPath)
+        guard let league = leaguesDataSource.item(at: indexPath) else { return }
         coordinator?.leaguesControllerDidSelectItem(league)
     }
 }

@@ -37,6 +37,7 @@ final class TeamCell: UICollectionViewCell {
     }()
     
     // MARK: - Constraints
+    
     private var logoMaximizedWidthConstraint: NSLayoutConstraint!
     private var logoMinimizedWidthConstraint: NSLayoutConstraint!
     private let logoImageViewSize: CGFloat = 44
@@ -85,6 +86,8 @@ final class TeamCell: UICollectionViewCell {
         )
     }
     
+    // MARK: - Configuration
+    
     func configureCell(using viewModel: TeamCellViewModel) {
         teamFullNameLabel.text = viewModel.fullNameLabelText
         
@@ -111,12 +114,14 @@ final class TeamCell: UICollectionViewCell {
         hideImageView()
     }
     
-    func hideImageView() {
+    // MARK: - Helpers
+    
+    private func hideImageView() {
         logoMaximizedWidthConstraint.isActive = false
         logoMinimizedWidthConstraint.isActive = true
     }
     
-    func showImageView() {
+    private func showImageView() {
         logoMinimizedWidthConstraint.isActive = false
         logoMaximizedWidthConstraint.isActive = true
     }

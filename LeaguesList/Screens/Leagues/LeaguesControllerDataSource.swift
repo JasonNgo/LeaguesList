@@ -44,8 +44,11 @@ final class LeaguesControllerDataSource: NSObject {
         }
     }
     
-    
-    func item(at indexPath: IndexPath) -> League {
+    func item(at indexPath: IndexPath) -> League? {
+        guard !filteredLeagues.isEmpty else {
+            return nil
+        }
+        
         return filteredLeagues[indexPath.item]
     }
     

@@ -20,10 +20,7 @@ final class FileAccessor<EndPoint: EndPointType> {
                 sleep(2)
                 let url = endpoint.baseUrl
                 let data = try Data(contentsOf: url)
-                
-                DispatchQueue.main.async {
-                    completion(.success(data))
-                }
+                completion(.success(data))
             } catch {
                 completion(.failure(FileAccessorError.unableToFetchData))
             }

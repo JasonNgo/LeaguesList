@@ -22,8 +22,8 @@ final class ApplicationCoordinator: Coordinator {
         self.window = window
         self.navigationController = UINavigationController()
         self.navigationController.navigationBar.prefersLargeTitles = true
-        self.childCoordinators = []
         self.fileAccessor = FileAccessor<TheScoreEndPoint>()
+        self.childCoordinators = []
         
         window.rootViewController = navigationController
     }

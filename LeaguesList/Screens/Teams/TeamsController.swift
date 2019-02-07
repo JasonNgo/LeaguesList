@@ -24,23 +24,18 @@ final class TeamsController: UIViewController {
     private let minimumLineSpacingForSection: CGFloat = 0
     
     // MARK: - DataSource
-    private var teamsDataSource: TeamsControllerDataSource
+    private let teamsDataSource: TeamsControllerDataSource
     
     // MARK: - UICollectionView
     private let reuseId = "TeamCell"
-    private lazy var collectionView: UICollectionView = {
+    private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.register(TeamCell.self, forCellWithReuseIdentifier: reuseId)
         cv.backgroundColor = .white
         return cv
     }()
     
-    private lazy var refreshControl: UIRefreshControl = {
-        let rc = UIRefreshControl()
-        rc.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
-        return rc
-    }()
+    private let refreshControl = UIRefreshControl()
     
     // MARK: - SearchController
     private let teamsSearchController = UISearchController(searchResultsController: nil)
@@ -88,16 +83,6 @@ final class TeamsController: UIViewController {
                 self.collectionView.reloadData()
             }
         }
-        
-//        // Using Promises
-//        teamsDataSource.fetchTeams().done(on: DispatchQueue.main, flags: nil) { [weak self] in
-//            guard let self = self else { return }
-//            self.collectionView.backgroundView = nil
-//            self.collectionView.reloadData()
-//        }.catch { error in
-//            // Already showing the empty collection view state
-//            print("Error fetching teams: \(error.localizedDescription)")
-//        }
     }
     
     override func willMove(toParent parent: UIViewController?) {
@@ -117,8 +102,11 @@ final class TeamsController: UIViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = teamsDataSource
-        collectionView.refreshControl = refreshControl
+        collectionView.register(TeamCell.self, forCellWithReuseIdentifier: reuseId)
         collectionView.backgroundView = UIView.createEmptyStateView(with: collectionView.bounds)
+        
+        refreshControl.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
+        collectionView.refreshControl = refreshControl
     }
     
     private func setupTeamsSearchController() {

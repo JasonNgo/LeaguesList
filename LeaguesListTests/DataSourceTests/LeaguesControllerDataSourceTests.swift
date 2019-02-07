@@ -15,8 +15,8 @@ class LeaguesControllerDataSourceTests: XCTestCase {
     lazy var dataSource = LeaguesControllerDataSource(leaguesDataManager: leaguesDataManager)
 
     func testFetchingLeagues() {
-        let expectation = self.expectation(description: "Fetching Leagues")
         var unexpectedError: NSError?
+        let expectation = self.expectation(description: "Fetching Leagues")
         
         dataSource.fetchLeagues { error in
             if let error = error {
@@ -31,22 +31,42 @@ class LeaguesControllerDataSourceTests: XCTestCase {
     }
     
     func testFetchingFirstLeague() {
-        let expectation = self.expectation(description: "Fetching Leagues")
-        var unexpectedError: NSError?
+        fetchLeagues()
+        
         let expectedLeague = League(fullName: "CFL Football", slug: "cfl")
+        let actualLeague = dataSource.item(at: IndexPath(item: 0, section: 0))
+        XCTAssert(actualLeague! == expectedLeague)
+    }
+    
+    func testNoSearchResults() {
+        fetchLeagues()
+        
+        dataSource.filterResultsBy("helloworldomgfoobar")
+        
+        let expectedLeague: League? = nil
+        let actualLeague = dataSource.item(at: IndexPath(item: 0, section: 0))
+        XCTAssert(expectedLeague == actualLeague)
+    }
+    
+    func testSearchFilter() {
+        fetchLeagues()
+        
+        let searchText = "w"
+        dataSource.filterResultsBy(searchText)
+        
+        let expectedLeague = League(fullName: "NCAA Women's Basketball", slug: "wcbk")
+        let actualLeague = dataSource.item(at: IndexPath(item: 0, section: 0))
+        XCTAssert(actualLeague == expectedLeague)
+    }
+    
+    private func fetchLeagues() {
+        let expectation = self.expectation(description: "Fetching Leagues")
         
         dataSource.fetchLeagues { error in
-            if let error = error {
-                unexpectedError = error as NSError
-            }
-            
+            if let _ = error { return }
             expectation.fulfill()
         }
         
         waitForExpectations(timeout: 5, handler: nil)
-        
-        let actualLeague = dataSource.item(at: IndexPath(item: 0, section: 0))
-        XCTAssert(actualLeague == expectedLeague)
-        XCTAssertNil(unexpectedError)
     }
 }

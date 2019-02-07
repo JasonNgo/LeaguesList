@@ -67,11 +67,11 @@ final class LeaguesControllerDataSource: NSObject {
     }
     
     func backgroundView(with rect: CGRect) -> UIView? {
-        if leagues.count == 0 {
+        if leagues.isEmpty {
             return UIView.createEmptyStateView(with: rect)
         }
         
-        if filteredLeagues.count == 0 {
+        if filteredLeagues.isEmpty {
             return UIView.createNoSearchResultsStateView(with: rect)
         }
         

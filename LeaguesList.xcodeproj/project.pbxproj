@@ -753,6 +753,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngo.jason.LeaguesList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -772,6 +773,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngo.jason.LeaguesList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -793,6 +795,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngo.jason.LeaguesListTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeaguesList.app/LeaguesList";
@@ -815,6 +818,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ngo.jason.LeaguesListTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeaguesList.app/LeaguesList";

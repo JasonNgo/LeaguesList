@@ -30,7 +30,7 @@ final class TeamsCoordinator: Coordinator {
         
         self.fileAccessor = fileAccessor
         self.teamsDataManager = TeamsDataManager(league: league, fileAccessor: fileAccessor)
-        self.teamsControllerDataSource = TeamsControllerDataSource(league: league, teamsDataManager: teamsDataManager)
+        self.teamsControllerDataSource = TeamsControllerDataSource(teamsDataManager: teamsDataManager)
     }
     
     func start() {

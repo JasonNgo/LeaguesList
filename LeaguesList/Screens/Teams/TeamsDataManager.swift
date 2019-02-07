@@ -17,7 +17,7 @@ enum TeamsDataManagerError: Error {
 /// Interacts with TheScoreAPI to provide data for the TeamsControllerDataSource.
 /// Fetches the data and transforms it into Team models.
 final class TeamsDataManager {
-    private let league: League
+    private(set) var league: League
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
     
     init(league: League, fileAccessor: FileAccessor<TheScoreEndPoint>) {

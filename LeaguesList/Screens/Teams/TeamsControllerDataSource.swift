@@ -10,7 +10,6 @@ import UIKit
 import PromiseKit
 
 final class TeamsControllerDataSource: NSObject {
-    private let league: League
     private let teamsDataManager: TeamsDataManager
     
     private let reuseId = "TeamCell"
@@ -18,11 +17,10 @@ final class TeamsControllerDataSource: NSObject {
     private var filteredTeams: [Team] = []
     
     var leagueTitle: String {
-        return league.fullName
+        return teamsDataManager.league.fullName
     }
     
-    init(league: League, teamsDataManager: TeamsDataManager) {
-        self.league = league
+    init(teamsDataManager: TeamsDataManager) {
         self.teamsDataManager = teamsDataManager
         super.init()
     }

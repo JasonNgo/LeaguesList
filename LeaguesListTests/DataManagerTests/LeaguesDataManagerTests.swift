@@ -1,5 +1,5 @@
 //
-//  LeaguesListDataManagerTests.swift
+//  LeaguesDataManagerTests.swift
 //  LeaguesListTests
 //
 //  Created by Jason Ngo on 2019-01-23.

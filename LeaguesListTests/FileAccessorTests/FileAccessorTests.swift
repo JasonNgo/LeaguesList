@@ -1,5 +1,5 @@
 //
-//  LeaguesFileAccessorTests.swift
+//  AccessorTests.swift
 //  LeaguesListTests
 //
 //  Created by Jason Ngo on 2019-01-22.
@@ -13,7 +13,7 @@ import XCTest
 // a fatal error is used to ensure the URL is correctly built. In the case where we were accessing a REST API
 // these tests would be valid to test for if the Router class was able to fetch data, check response codes etc,
 // and send it back.
-class LeaguesListFileAccessorTests: XCTestCase {
+class FileAccessorTests: XCTestCase {
     let fileAccessor = FileAccessor<TheScoreEndPoint>()
     
     func testFetchLeaguesDataFromBundleURL() {

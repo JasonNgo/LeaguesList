@@ -1,5 +1,5 @@
 //
-//  LeaguesListLeagueModelTests
+//  LeagueModelTests
 //  LeaguesListTests
 //
 //  Created by Jason Ngo on 2019-01-22.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import LeaguesList
 
-class LeaguesListLeagueModelTests: XCTestCase {
+class LeagueModelTests: XCTestCase {
     
     // MARK: - Model
 

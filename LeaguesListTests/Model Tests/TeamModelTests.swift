@@ -1,5 +1,5 @@
 //
-//  LeaguesListTeamModelTests.swift
+//  TeamModelTests.swift
 //  LeaguesListTests
 //
 //  Created by Jason Ngo on 2019-02-07.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import LeaguesList
 
-class LeaguesListTeamModelTests: XCTestCase {
+class TeamModelTests: XCTestCase {
     
     // MARK: - Model
     

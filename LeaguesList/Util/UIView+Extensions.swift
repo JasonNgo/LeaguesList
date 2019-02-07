@@ -101,8 +101,8 @@ extension UIView {
 }
 
 extension UIView {
-    static func createEmptyStateView(for collectionView: UICollectionView) -> UIView {
-        let frame = CGRect(x: 0, y: 0, width: collectionView.bounds.size.width, height: collectionView.bounds.size.height)
+    static func createEmptyStateView(with rect: CGRect ) -> UIView {
+        let frame = CGRect(x: 0, y: 0, width: rect.size.width, height: rect.size.height)
         let messageLabel = UILabel(frame: frame)
         
         let messageTextAttributes = [
@@ -133,8 +133,8 @@ extension UIView {
         return messageLabel
     }
     
-    static func createNoSearchResultsStateView(for collectionView: UICollectionView) -> UIView {
-        let frame = CGRect(x: 0, y: 0, width: collectionView.bounds.size.width, height: collectionView.bounds.size.height)
+    static func createNoSearchResultsStateView(with rect: CGRect) -> UIView {
+        let frame = CGRect(x: 0, y: 0, width: rect.size.width, height: rect.size.height)
         let messageLabel = UILabel(frame: frame)
         
         let messageTextAttributes = [

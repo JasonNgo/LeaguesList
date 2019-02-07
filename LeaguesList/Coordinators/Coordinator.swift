@@ -8,6 +8,8 @@
 
 import UIKit
 
+// TODO: Update coordinators to handle coordinator lifecycle
+
 /// Coordinators are a class used to control the navigation flow and are used to inject the
 /// required depenecies into the screens they control.
 protocol Coordinator: AnyObject {

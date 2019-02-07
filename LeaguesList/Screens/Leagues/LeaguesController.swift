@@ -26,27 +26,22 @@ final class LeaguesController: UIViewController {
     private let minimumLineSpacingForSection: CGFloat = 1
     
     // MARK: - DataSource
-    private var leaguesDataSource: LeaguesControllerDataSource
+    private let leaguesDataSource: LeaguesControllerDataSource
     
     // MARK: - UICollectionView
     private let reuseId = "LeagueCell"
-    private lazy var collectionView: UICollectionView = {
+    private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.register(LeagueCell.self, forCellWithReuseIdentifier: reuseId)
         cv.backgroundColor = .white
         return cv
     }()
     
-    private lazy var refreshControl: UIRefreshControl = {
-        let rc = UIRefreshControl()
-        rc.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
-        return rc
-    }()
+    private let refreshControl = UIRefreshControl()
     
     // MARK: - SearchController
     private let leaguesSearchController = UISearchController(searchResultsController: nil)
-    var isSearching = false
+    private var isSearching = false
     
     init(leaguesDataSource: LeaguesControllerDataSource) {
         self.leaguesDataSource = leaguesDataSource
@@ -103,8 +98,10 @@ final class LeaguesController: UIViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = leaguesDataSource
+        collectionView.register(LeagueCell.self, forCellWithReuseIdentifier: reuseId)
         collectionView.refreshControl = refreshControl
-        collectionView.backgroundView = UIView.createEmptyStateView(for: collectionView)
+        collectionView.backgroundView = UIView.createEmptyStateView(with: collectionView.bounds)
+        refreshControl.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
     }
     
     private func setupLeaguesSearchController() {
@@ -136,7 +133,7 @@ final class LeaguesController: UIViewController {
             
             DispatchQueue.main.async {
                 self.collectionView.backgroundView = nil
-                let backgroundView = self.leaguesDataSource.backgroundView(for: self.collectionView)
+                let backgroundView = self.leaguesDataSource.backgroundView(with: self.collectionView.bounds)
                 self.collectionView.backgroundView = backgroundView
                 self.collectionView.reloadData()
             }
@@ -186,7 +183,7 @@ extension LeaguesController: UISearchBarDelegate {
     private func filterCollectionResults(with searchText: String) {
         collectionView.backgroundView = nil
         leaguesDataSource.filterResultsBy(searchText)
-        collectionView.backgroundView = leaguesDataSource.backgroundView(for: collectionView)
+        collectionView.backgroundView = leaguesDataSource.backgroundView(with: collectionView.bounds)
         collectionView.reloadData()
     }
 }

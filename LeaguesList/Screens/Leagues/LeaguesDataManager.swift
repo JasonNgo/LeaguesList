@@ -29,8 +29,9 @@ final class LeaguesDataManager {
             switch result {
             case .success(let data):
                 do {
-                    let leagues = try JSONDecoder().decode([League].self, from: data)
-                    let sortedLeagues = leagues.sorted { return $0.fullName < $1.fullName }
+                    let leagues = try JSONDecoder().decode([Safe<League>].self, from: data)
+                    let leaguesNoNil = leagues.compactMap { $0.value }
+                    let sortedLeagues = leaguesNoNil.sorted { return $0.fullName < $1.fullName }
                     completion(.success(sortedLeagues))
                 } catch {
                     completion(.failure(.unableToDecodeListOfLeagues))

@@ -118,7 +118,7 @@ final class TeamsController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = teamsDataSource
         collectionView.refreshControl = refreshControl
-        collectionView.backgroundView = UIView.createEmptyStateView(for: collectionView)
+        collectionView.backgroundView = UIView.createEmptyStateView(with: collectionView.bounds)
     }
     
     private func setupTeamsSearchController() {
@@ -151,7 +151,7 @@ final class TeamsController: UIViewController {
             
             DispatchQueue.main.async {
                 self.collectionView.backgroundView = nil
-                let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
+                let backgroundView = self.teamsDataSource.backgroundView(with: self.collectionView.bounds)
                 self.collectionView.backgroundView = backgroundView
                 self.collectionView.reloadData()
             }
@@ -197,7 +197,7 @@ extension TeamsController: UISearchBarDelegate {
     private func filterCollectionResults(with searchText: String) {
         collectionView.backgroundView = nil
         teamsDataSource.filterResultsBy(searchText)
-        collectionView.backgroundView = teamsDataSource.backgroundView(for: collectionView)
+        collectionView.backgroundView = teamsDataSource.backgroundView(with: collectionView.bounds)
         collectionView.reloadData()
     }
 }

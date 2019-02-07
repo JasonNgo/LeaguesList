@@ -69,17 +69,18 @@ final class TeamsControllerDataSource: NSObject {
         filteredTeams = teams.filter(filterPredicate)
     }
     
-    func backgroundView(for collectionView: UICollectionView) -> UIView? {
+    func backgroundView(with rect: CGRect) -> UIView? {
         if teams.count == 0 {
-            return UIView.createEmptyStateView(for: collectionView)
+            return UIView.createEmptyStateView(with: rect)
         }
         
         if filteredTeams.count == 0 {
-            return UIView.createNoSearchResultsStateView(for: collectionView)
+            return UIView.createNoSearchResultsStateView(with: rect)
         }
         
         return nil
     }
+    
 }
 
 // MARK: - UICollectionViewDataSource

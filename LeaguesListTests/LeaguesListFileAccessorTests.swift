@@ -17,39 +17,39 @@ class LeaguesListFileAccessorTests: XCTestCase {
     let fileAccessor = FileAccessor<TheScoreEndPoint>()
     
     func testFetchLeaguesDataFromBundleURL() {
+        let expectation = self.expectation(description: "Fetching Data")
+        var expectedData: Data?
+        
         fileAccessor.request(.leagues) { (result) in
             switch result {
             case .success(let data):
-                XCTAssertNotNil(data)
-            case .failure:
-                XCTFail()
+                expectedData = data
+                expectation.fulfill()
+            case .failure(let error):
+                print("Error: \(error)")
             }
         }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertNotNil(expectedData)
     }
     
-    func testFetchNHLTeamsDataFromBundleURL() {
+    func testFetchTeamsDataFromBundleURL() {
+        let expectation = self.expectation(description: "Fetching Data")
+        var expectedData: Data?
         let slug = "nhl"
         
         fileAccessor.request(.teams(slug: slug)) { (result) in
             switch result {
             case .success(let data):
-                XCTAssertNotNil(data)
+                expectedData = data
+                expectation.fulfill()
             case .failure:
                 XCTFail()
             }
         }
-    }
-    
-    func testFetchNBATeamsDataFromBundleURL() {
-        let slug = "nba"
         
-        fileAccessor.request(.teams(slug: slug)) { (result) in
-            switch result {
-            case .success(let data):
-                XCTAssertNotNil(data)
-            case .failure:
-                XCTFail()
-            }
-        }
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertNotNil(expectedData)
     }
 }

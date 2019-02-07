@@ -9,16 +9,11 @@
 import UIKit
 import PromiseKit
 
-/// LeaguesController delegates responsibilities back to LeagueCoordinator
-protocol LeaguesControllerDelegate: class {
-    func leaguesControllerDidSelectItem(_ league: League)
-}
-
 /// LeaguesController manages a CollectionView of a list of leagues
 final class LeaguesController: UIViewController {
     
     // MARK: - Coordinator
-    var coordinator: LeaguesCoordinator?
+    weak var coordinator: LeaguesCoordinator?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width

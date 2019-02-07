@@ -9,10 +9,6 @@
 import UIKit
 import PromiseKit
 
-protocol TeamsControllerDelegate: class {
-    func teamsControllerDidDismiss()
-}
-
 final class TeamsController: UIViewController {
     
     // MARK: - Coordinator
@@ -88,7 +84,6 @@ final class TeamsController: UIViewController {
     override func willMove(toParent parent: UIViewController?) {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
-        coordinator?.teamsControllerDidDismiss()
     }
     
     // MARK: - Setup
@@ -144,24 +139,8 @@ final class TeamsController: UIViewController {
                 self.collectionView.reloadData()
             }
         }
-        
-        // Using Promises
-//        teamsDataSource.fetchTeams().done(on: DispatchQueue.main, flags: nil) { [weak self] in
-//            guard let self = self else { return }
-//            self.collectionView.reloadData()
-//        }.ensure { [weak self] in
-//            guard let self = self else { return }
-//            self.collectionView.backgroundView = nil
-//            let backgroundView = self.teamsDataSource.backgroundView(for: self.collectionView)
-//            self.collectionView.backgroundView = backgroundView
-//            self.collectionView.refreshControl?.endRefreshing()
-//        }.catch { [weak self] error in
-//            guard let self = self else { return }
-//            print("Error fetching teams: \(error.localizedDescription)")
-//        }
     }
 }
-
 
 // MARK: - UISearchBarDelegate
 

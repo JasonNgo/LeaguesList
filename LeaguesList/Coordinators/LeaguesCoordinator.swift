@@ -8,12 +8,9 @@
 
 import UIKit
 
-protocol LeaguesCoordinatorDelegate: AnyObject {
-    func leaguesCoordinatorDidDismiss(leaguesCoordinator: LeaguesCoordinator)
-}
-
 /// Coordinator in charge of handling navigations and dependencies associated with the LeaguesController.
 final class LeaguesCoordinator: Coordinator {
+    weak var parentCoordinator: Coordinator?
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator]
     
@@ -22,7 +19,7 @@ final class LeaguesCoordinator: Coordinator {
     private let leaguesDataManager: LeaguesDataManager
     private let leaguesControllerDataSource: LeaguesControllerDataSource
     
-    weak var delegate: LeaguesCoordinatorDelegate?
+    private var leaguesController: LeaguesController?
     
     init(navigationController: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.navigationController = navigationController
@@ -33,32 +30,17 @@ final class LeaguesCoordinator: Coordinator {
         self.leaguesControllerDataSource = LeaguesControllerDataSource(leaguesDataManager: leaguesDataManager)
     }
     
-    deinit {
-        delegate?.leaguesCoordinatorDidDismiss(leaguesCoordinator: self)
-    }
-    
     func start() {
         let leaguesController = LeaguesController(leaguesDataSource: leaguesControllerDataSource)
         leaguesController.coordinator = self
         navigationController.pushViewController(leaguesController, animated: true)
+        self.leaguesController = leaguesController
     }
-}
-
-// MARK: - LeaguesControllerDelegate
-
-extension LeaguesCoordinator: LeaguesControllerDelegate {
+    
     func leaguesControllerDidSelectItem(_ league: League) {
         let teamsCoordinator = TeamsCoordinator(navigationController: navigationController, fileAccessor: fileAccessor, league: league)
-        teamsCoordinator.delegate = self
+        teamsCoordinator.parentCoordinator = self
         teamsCoordinator.start()
         add(childCoordinator: teamsCoordinator)
-    }
-}
-
-// MARK: - TeamsCoordinatorDelegate
-
-extension LeaguesCoordinator: TeamsCoordinatorDelegate {
-    func teamsCoordinatorDidDismiss(teamsCoordinator: TeamsCoordinator) {
-        remove(childCoordinator: teamsCoordinator)
     }
 }

@@ -8,12 +8,9 @@
 
 import UIKit
 
-protocol TeamsCoordinatorDelegate: class {
-    func teamsCoordinatorDidDismiss(teamsCoordinator: TeamsCoordinator)
-}
-
 /// Coordinator in charge of handling navigations and dependencies associated with the TeamsController.
 final class TeamsCoordinator: Coordinator {
+    weak var parentCoordinator: Coordinator?
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator]
     
@@ -22,7 +19,7 @@ final class TeamsCoordinator: Coordinator {
     private let teamsDataManager: TeamsDataManager
     private let teamsControllerDataSource: TeamsControllerDataSource
     
-    weak var delegate: TeamsCoordinatorDelegate?
+    private var teamsController: TeamsController?
     
     init(navigationController: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>, league: League) {
         self.navigationController = navigationController
@@ -37,11 +34,6 @@ final class TeamsCoordinator: Coordinator {
         let teamsController = TeamsController(teamsDataSource: teamsControllerDataSource)
         teamsController.coordinator = self
         navigationController.pushViewController(teamsController, animated: true)
-    }
-}
-
-extension TeamsCoordinator: TeamsControllerDelegate {
-    func teamsControllerDidDismiss() {
-        delegate?.teamsCoordinatorDidDismiss(teamsCoordinator: self)
+        self.teamsController = teamsController
     }
 }

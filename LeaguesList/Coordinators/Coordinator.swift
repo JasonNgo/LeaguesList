@@ -8,11 +8,10 @@
 
 import UIKit
 
-// TODO: Update coordinators to handle coordinator lifecycle
-
 /// Coordinators are a class used to control the navigation flow and are used to inject the
 /// required depenecies into the screens they control.
 protocol Coordinator: AnyObject {
+    var parentCoordinator: Coordinator? { get set }
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }
     
@@ -26,5 +25,9 @@ extension Coordinator {
     
     func remove(childCoordinator: Coordinator) {
         self.childCoordinators = childCoordinators.filter { $0 !== childCoordinator }
+    }
+    
+    func completed() {
+        parentCoordinator?.remove(childCoordinator: self)
     }
 }

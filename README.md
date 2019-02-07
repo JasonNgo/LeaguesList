@@ -1,3 +1,3 @@
 # LeaguesList
 
-Sample Project created for a coding challenge
+Sample project created for a coding challenge

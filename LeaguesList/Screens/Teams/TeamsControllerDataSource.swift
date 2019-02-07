@@ -48,7 +48,11 @@ final class TeamsControllerDataSource: NSObject {
         }
     }
     
-    func item(at indexPath: IndexPath) -> Team {
+    func item(at indexPath: IndexPath) -> Team? {
+        guard !filteredTeams.isEmpty else {
+            return nil
+        }
+        
         return filteredTeams[indexPath.item]
     }
     

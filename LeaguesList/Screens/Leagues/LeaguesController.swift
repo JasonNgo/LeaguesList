@@ -9,11 +9,15 @@
 import UIKit
 import PromiseKit
 
+protocol LeaguesControllerDelegate: AnyObject {
+    func leaguesControllerDidSelectItem(_ league: League)
+}
+
 /// LeaguesController manages a CollectionView of a list of leagues
 final class LeaguesController: UIViewController {
     
     // MARK: - Coordinator
-    weak var coordinator: LeaguesCoordinator?
+    weak var coordinator: (Coordinator & LeaguesControllerDelegate)?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width

@@ -25,8 +25,8 @@ final class Router<EndPoint: EndPointType>: NetworkRouter {
     func request(_ endpoint: EndPoint, completion: @escaping (Result<Data, RouterError>) -> Void) {
         do {
             let request = try self.buildRequest(from: endpoint)
-            task = session.dataTask(with: request, completionHandler: {
-                (data, response, error) in
+            task = session.dataTask(with: request) {
+                data, response, error in
                 
                 // Example response handling
                 if let error = error {
@@ -47,7 +47,7 @@ final class Router<EndPoint: EndPointType>: NetworkRouter {
                 if httpResponse.statusCode == 200 {
                     completion(.success(data))
                 }
-            })
+            }
         } catch {
             completion(.failure(RouterError.unableToBuildRequest))
         }
@@ -58,11 +58,10 @@ final class Router<EndPoint: EndPointType>: NetworkRouter {
     func cancel() {
         self.task?.cancel()
     }
-    
 }
 
-private extension Router {
-    func buildRequest(from endpoint: EndPointType) throws -> URLRequest {
+extension Router {
+    private func buildRequest(from endpoint: EndPointType) throws -> URLRequest {
         let url = endpoint.baseUrl.appendingPathComponent(endpoint.path)
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10.0)
         request.httpMethod = endpoint.httpMethod.rawValue
@@ -84,7 +83,7 @@ private extension Router {
         return request
     }
     
-    func configureParameters(urlParameters: Parameters?, bodyParameters: Parameters?, request: inout URLRequest) throws {
+    private func configureParameters(urlParameters: Parameters?, bodyParameters: Parameters?, request: inout URLRequest) throws {
         do {
             if let urlParameters = urlParameters {
                 try URLParameterEncoder.encode(urlRequest: &request, with: urlParameters)
@@ -97,7 +96,7 @@ private extension Router {
         }
     }
     
-    func addAdditionalHeaders(_ additionalHeaders: HTTPHeaders?, request: inout URLRequest) {
+    private func addAdditionalHeaders(_ additionalHeaders: HTTPHeaders?, request: inout URLRequest) {
         guard let headers = additionalHeaders else { return }
         headers.forEach { request.setValue($0.value, forHTTPHeaderField: $0.key) }
     }   

@@ -36,7 +36,9 @@ final class LeaguesCoordinator: Coordinator {
         navigationController.pushViewController(leaguesController, animated: true)
         self.leaguesController = leaguesController
     }
-    
+}
+
+extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidSelectItem(_ league: League) {
         let teamsCoordinator = TeamsCoordinator(navigationController: navigationController, fileAccessor: fileAccessor, league: league)
         teamsCoordinator.parentCoordinator = self

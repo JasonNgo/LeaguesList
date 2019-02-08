@@ -12,7 +12,7 @@ import PromiseKit
 final class TeamsController: UIViewController {
     
     // MARK: - Coordinator
-    var coordinator: TeamsCoordinator?
+    weak var coordinator: Coordinator?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width

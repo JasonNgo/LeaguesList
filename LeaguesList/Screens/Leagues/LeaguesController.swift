@@ -10,21 +10,19 @@ import UIKit
 import PromiseKit
 import JGProgressHUD
 
-enum LeaguesControllerState {
+protocol LeaguesControllerDelegate: AnyObject {
+    func leaguesControllerDidSelectItem(_ league: League)
+}
+
+private enum LeaguesControllerState {
     case loading
     case populated
     case empty
     case error(Error)
 }
 
-protocol LeaguesControllerDelegate: AnyObject {
-    func leaguesControllerDidSelectItem(_ league: League)
-}
-
 /// LeaguesController manages a CollectionView of a list of leagues
 final class LeaguesController: UIViewController {
-    
-    // MARK: - Coordinator
     weak var coordinator: (Coordinator & LeaguesControllerDelegate)?
     
     // MARK: - Styling Constants
@@ -32,10 +30,8 @@ final class LeaguesController: UIViewController {
     private let cellHeight: CGFloat = 45
     private let minimumLineSpacingForSection: CGFloat = 1
     
-    // MARK: - DataSource
-    private let leaguesDataSource: LeaguesControllerDataSource
-    
     // MARK: - UICollectionView
+    private let dataSource: LeaguesControllerDataSource
     private let reuseId = "LeagueCell"
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -50,16 +46,15 @@ final class LeaguesController: UIViewController {
         return rc
     }()
     
-    // MARK: - SearchController
-    private let leaguesSearchController = UISearchController(searchResultsController: nil)
-    private var isSearching = false
-    
-    // MARK: - ProgressHUD
     private let progressHUD: JGProgressHUD = {
         let hud = JGProgressHUD(style: .dark)
         hud.textLabel.text = "Loading leagues"
         return hud
     }()
+    
+    // MARK: - SearchController
+    private let searchController = UISearchController(searchResultsController: nil)
+    private var isSearching = false
     
     // MARK: - State
     private var state: LeaguesControllerState {
@@ -77,7 +72,7 @@ final class LeaguesController: UIViewController {
                     self.collectionView.backgroundView = nil
                     self.progressHUD.dismiss()
                     
-                    let backgroundView = self.leaguesDataSource.backgroundView(with: self.collectionView.bounds)
+                    let backgroundView = self.dataSource.backgroundView(with: self.collectionView.bounds)
                     self.collectionView.backgroundView = backgroundView
                     self.collectionView.reloadData()
                 }
@@ -85,7 +80,7 @@ final class LeaguesController: UIViewController {
             case .empty:
                 DispatchQueue.main.async {
                     self.progressHUD.dismiss()
-                    let backgroundView = self.leaguesDataSource.backgroundView(with: self.collectionView.bounds)
+                    let backgroundView = self.dataSource.backgroundView(with: self.collectionView.bounds)
                     self.collectionView.backgroundView = backgroundView
                 }
                 break
@@ -99,8 +94,10 @@ final class LeaguesController: UIViewController {
         }
     }
     
+    // MARK: Initializer
+    
     init(leaguesDataSource: LeaguesControllerDataSource) {
-        self.leaguesDataSource = leaguesDataSource
+        self.dataSource = leaguesDataSource
         self.state = .empty
         super.init(nibName: nil, bundle: nil)
     }
@@ -132,7 +129,7 @@ final class LeaguesController: UIViewController {
     
     private func setupCollectionView() {
         collectionView.delegate = self
-        collectionView.dataSource = leaguesDataSource
+        collectionView.dataSource = dataSource
         collectionView.register(LeagueCell.self, forCellWithReuseIdentifier: reuseId)
         collectionView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
@@ -141,16 +138,16 @@ final class LeaguesController: UIViewController {
     
     private func setupLeaguesSearchController() {
         self.definesPresentationContext = true
-        navigationItem.searchController = leaguesSearchController
+        navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        leaguesSearchController.dimsBackgroundDuringPresentation = false
-        leaguesSearchController.searchBar.delegate = self
-        leaguesSearchController.searchBar.placeholder = "Search leagues by name or slug"
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
+        searchController.searchBar.placeholder = "Search leagues by name or slug"
     }
     
     private func loadLeagueItems() {
         state = .loading
-        leaguesDataSource.fetchLeagues { [weak self] error in
+        dataSource.fetchLeagues { [weak self] error in
             guard let self = self else { return }
             
             if let error = error {
@@ -216,7 +213,7 @@ extension LeaguesController: UISearchBarDelegate {
     }
     
     private func filterCollectionResults(with searchText: String) {
-        self.leaguesDataSource.filterResultsBy(searchText)
+        self.dataSource.filterResultsBy(searchText)
         self.state = .populated
     }
 }
@@ -225,7 +222,7 @@ extension LeaguesController: UISearchBarDelegate {
 
 extension LeaguesController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let league = leaguesDataSource.item(at: indexPath) else { return }
+        guard let league = dataSource.item(at: indexPath) else { return }
         coordinator?.leaguesControllerDidSelectItem(league)
     }
 }

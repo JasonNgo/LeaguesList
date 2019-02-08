@@ -1,4 +1,5 @@
 PODS:
+  - JGProgressHUD (2.0.3)
   - PromiseKit (6.7.0):
     - PromiseKit/CorePromise (= 6.7.0)
     - PromiseKit/Foundation (= 6.7.0)
@@ -14,21 +15,24 @@ PODS:
   - SwiftLint (0.29.1)
 
 DEPENDENCIES:
+  - JGProgressHUD
   - PromiseKit
   - SDWebImage
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - JGProgressHUD
     - PromiseKit
     - SDWebImage
     - SwiftLint
 
 SPEC CHECKSUMS:
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
   PromiseKit: 453ddcc947fe7b302f3ef41882b81d31c554df7f
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: 96e224c7c8099bab2858d2fd3bea6b0caf29dfea
+PODFILE CHECKSUM: dd657d348f0e2e43ee2bac54235eebde8b5fff32
 
 COCOAPODS: 1.5.3

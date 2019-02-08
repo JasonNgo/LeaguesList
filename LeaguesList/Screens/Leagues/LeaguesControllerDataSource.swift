@@ -9,6 +9,11 @@
 import UIKit
 import PromiseKit
 
+enum LeaguesControllerDataSourceError: Error {
+    case noResults
+    case error(Error)
+}
+
 final class LeaguesControllerDataSource: NSObject {
     private let leaguesDataManager: LeaguesDataManager
     
@@ -21,16 +26,21 @@ final class LeaguesControllerDataSource: NSObject {
         super.init()
     }
     
-    // Using completion handlers
-    func fetchLeagues(completion: @escaping (Error?) -> Void) {
+    func fetchLeagues(completion: @escaping (LeaguesControllerDataSourceError?) -> Void) {
         leaguesDataManager.fetchListOfLeagues { result in
             switch result {
             case .success(let leagues):
                 self.leagues = leagues
                 self.filteredLeagues = leagues
+                
+                if leagues.isEmpty {
+                    completion(LeaguesControllerDataSourceError.noResults)
+                    return
+                }
+
                 completion(nil)
             case .failure(let error):
-                completion(error)
+                completion(LeaguesControllerDataSourceError.error(error))
             }
         }
     }
@@ -70,7 +80,7 @@ final class LeaguesControllerDataSource: NSObject {
         if leagues.isEmpty {
             return UIView.createEmptyStateView(with: rect)
         }
-        
+
         if filteredLeagues.isEmpty {
             return UIView.createNoSearchResultsStateView(with: rect)
         }

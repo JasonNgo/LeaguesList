@@ -9,6 +9,7 @@ target 'LeaguesList' do
   pod 'SDWebImage'
   pod 'PromiseKit'
   pod 'SwiftLint'
+  pod 'JGProgressHUD'
 
   target 'LeaguesListTests' do
     inherit! :search_paths

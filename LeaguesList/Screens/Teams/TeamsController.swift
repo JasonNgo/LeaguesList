@@ -8,6 +8,14 @@
 
 import UIKit
 import PromiseKit
+import JGProgressHUD
+
+private enum TeamsControllerState {
+    case loading
+    case populated
+    case empty
+    case error(Error)
+}
 
 final class TeamsController: UIViewController {
     
@@ -19,10 +27,8 @@ final class TeamsController: UIViewController {
     private let cellHeight: CGFloat = 60
     private let minimumLineSpacingForSection: CGFloat = 0
     
-    // MARK: - DataSource
-    private let teamsDataSource: TeamsControllerDataSource
-    
     // MARK: - UICollectionView
+    private let dataSource: TeamsControllerDataSource
     private let reuseId = "TeamCell"
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -31,24 +37,68 @@ final class TeamsController: UIViewController {
         return cv
     }()
     
-    private let refreshControl = UIRefreshControl()
+    private let refreshControl: UIRefreshControl = {
+        let rc = UIRefreshControl()
+        rc.tintColor = .clear
+        return rc
+    }()
+    
+    private let progressHUD: JGProgressHUD = {
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = "Loading Teams"
+        return hud
+    }()
     
     // MARK: - SearchController
-    private let teamsSearchController = UISearchController(searchResultsController: nil)
+    private let searchController = UISearchController(searchResultsController: nil)
     var isSearching: Bool = false
+    
+    private var state: TeamsControllerState = .empty {
+        didSet {
+            DispatchQueue.main.async {
+                switch self.state {
+                case .loading:
+                    self.collectionView.refreshControl?.endRefreshing()
+                    self.collectionView.backgroundView = nil
+                    self.progressHUD.show(in: self.view)
+                    
+                    break
+                case .populated:
+                    self.progressHUD.dismiss()
+                    let bounds = self.collectionView.bounds
+                    let backgroundView = self.dataSource.backgroundView(with: bounds)
+                    self.collectionView.backgroundView = backgroundView
+                    
+                    break
+                case .empty:
+                    self.progressHUD.dismiss()
+                    let bounds = self.collectionView.bounds
+                    let backgroundView = self.dataSource.backgroundView(with: bounds)
+                    self.collectionView.backgroundView = backgroundView
+                    
+                    break
+                case .error(let error):
+                    self.progressHUD.dismiss()
+                    self.collectionView.backgroundView = nil
+                    self.showErrorMessage(with: error)
+                }
+            }
+        }
+    }
     
     // MARK: - Initializer
     
     init(teamsDataSource: TeamsControllerDataSource) {
-        self.teamsDataSource = teamsDataSource
+        self.dataSource = teamsDataSource
         super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     // MARK: - Overrides
+    
+    override func willMove(toParent parent: UIViewController?) {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
+    }
     
     override func loadView() {
         super.loadView()
@@ -64,39 +114,44 @@ final class TeamsController: UIViewController {
         setupCollectionView()
         setupTeamsSearchController()
         
-        // Using completion handlers
-        teamsDataSource.fetchTeams { [weak self] error in
+        loadTeamItems()
+    }
+    
+    private func loadTeamItems() {
+        state = .loading
+        dataSource.fetchTeams { [weak self] error in
             guard let self = self else { return }
-
+            
             if let error = error {
-                // There was an error, show an error message
-                print(error)
-                return
+                switch error {
+                case TeamsControllerDataSourceError.noResults:
+                    self.state = .empty
+                    return
+                case TeamsControllerDataSourceError.otherError(let error):
+                    self.state = .error(error)
+                    print(error.localizedDescription)
+                    return
+                }
             }
-
+            
+            self.state = .populated
             DispatchQueue.main.async {
-                self.collectionView.backgroundView = nil
                 self.collectionView.reloadData()
             }
         }
     }
     
-    override func willMove(toParent parent: UIViewController?) {
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.largeTitleDisplayMode = .always
-    }
-    
     // MARK: - Setup
     
     private func setupController() {
-        title = teamsDataSource.leagueTitle
+        title = dataSource.leagueTitle
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationItem.largeTitleDisplayMode = .never
     }
     
     private func setupCollectionView() {
         collectionView.delegate = self
-        collectionView.dataSource = teamsDataSource
+        collectionView.dataSource = dataSource
         collectionView.register(TeamCell.self, forCellWithReuseIdentifier: reuseId)
         collectionView.backgroundView = UIView.createEmptyStateView(with: collectionView.bounds)
         
@@ -106,11 +161,11 @@ final class TeamsController: UIViewController {
     
     private func setupTeamsSearchController() {
         self.definesPresentationContext = true
-        navigationItem.searchController = teamsSearchController
+        navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        teamsSearchController.dimsBackgroundDuringPresentation = false
-        teamsSearchController.searchBar.delegate = self
-        teamsSearchController.searchBar.placeholder = "Search by name or location"
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
+        searchController.searchBar.placeholder = "Search by name or location"
     }
     
     // MARK: - Target Actions
@@ -121,24 +176,22 @@ final class TeamsController: UIViewController {
             return
         }
         
-        // Using completion handlers
-        teamsDataSource.fetchTeams { [weak self] error in
-            guard let self = self else { return }
-            self.collectionView.refreshControl?.endRefreshing()
-            
-            if let error = error {
-                // There was an error, show an error message
-                print(error)
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.collectionView.backgroundView = nil
-                let backgroundView = self.teamsDataSource.backgroundView(with: self.collectionView.bounds)
-                self.collectionView.backgroundView = backgroundView
-                self.collectionView.reloadData()
-            }
-        }
+        loadTeamItems()
+    }
+    
+    // MARK: - Helpers
+    
+    private func showErrorMessage(with error: Error) {
+        let alertController = UIAlertController(title: "Error!", message: error.localizedDescription, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    // MARK: - Required
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
@@ -162,9 +215,8 @@ extension TeamsController: UISearchBarDelegate {
     }
     
     private func filterCollectionResults(with searchText: String) {
-        collectionView.backgroundView = nil
-        teamsDataSource.filterResultsBy(searchText)
-        collectionView.backgroundView = teamsDataSource.backgroundView(with: collectionView.bounds)
+        dataSource.filterResultsBy(searchText)
+        state = .populated
         collectionView.reloadData()
     }
 }

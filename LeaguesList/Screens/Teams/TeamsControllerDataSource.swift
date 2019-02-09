@@ -9,6 +9,11 @@
 import UIKit
 import PromiseKit
 
+enum TeamsControllerDataSourceError: Error {
+    case noResults
+    case otherError(Error)
+}
+
 final class TeamsControllerDataSource: NSObject {
     private let teamsDataManager: TeamsDataManager
     
@@ -26,16 +31,23 @@ final class TeamsControllerDataSource: NSObject {
     }
     
     // Using completion handlers
-    func fetchTeams(completion: @escaping (Error?) -> Void) {
+    func fetchTeams(completion: @escaping (TeamsControllerDataSourceError?) -> Void) {
         teamsDataManager.getTeams { result in
             switch result {
             case .success(let teams):
+                guard !teams.isEmpty else {
+                    completion(TeamsControllerDataSourceError.noResults)
+                    return
+                }
+                
                 self.teams = teams
                 self.filteredTeams = teams
-                completion(nil)
             case .failure(let error):
-                completion(error)
+                completion(TeamsControllerDataSourceError.otherError(error))
+                return
             }
+            
+            completion(nil)
         }
     }
     
@@ -82,7 +94,6 @@ final class TeamsControllerDataSource: NSObject {
         
         return nil
     }
-    
 }
 
 // MARK: - UICollectionViewDataSource

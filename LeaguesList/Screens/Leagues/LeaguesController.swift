@@ -57,38 +57,36 @@ final class LeaguesController: UIViewController {
     private var isSearching = false
     
     // MARK: - State
-    private var state: LeaguesControllerState {
+    private var state: LeaguesControllerState = .empty {
         didSet {
-            switch state {
-            case .loading:
-                DispatchQueue.main.async {
+            DispatchQueue.main.async {
+                switch self.state {
+                case .loading:
                     self.collectionView.refreshControl?.endRefreshing()
                     self.collectionView.backgroundView = nil
                     self.progressHUD.show(in: self.view)
-                }
-                break
-            case .populated:
-                DispatchQueue.main.async {
-                    self.collectionView.backgroundView = nil
-                    self.progressHUD.dismiss()
                     
-                    let backgroundView = self.dataSource.backgroundView(with: self.collectionView.bounds)
-                    self.collectionView.backgroundView = backgroundView
-                    self.collectionView.reloadData()
-                }
-                break
-            case .empty:
-                DispatchQueue.main.async {
+                    break
+                case .populated:
                     self.progressHUD.dismiss()
-                    let backgroundView = self.dataSource.backgroundView(with: self.collectionView.bounds)
+                    let bounds = self.collectionView.bounds
+                    let backgroundView = self.dataSource.backgroundView(with: bounds)
                     self.collectionView.backgroundView = backgroundView
-                }
-                break
-            case .error(let error):
-                DispatchQueue.main.async {
+                    
+                    break
+                case .empty:
+                    self.progressHUD.dismiss()
+                    let bounds = self.collectionView.bounds
+                    let backgroundView = self.dataSource.backgroundView(with: bounds)
+                    self.collectionView.backgroundView = backgroundView
+                    
+                    break
+                case .error(let error):
                     self.progressHUD.dismiss()
                     self.collectionView.backgroundView = nil
                     self.showErrorMessage(with: error)
+                    
+                    break
                 }
             }
         }
@@ -98,7 +96,6 @@ final class LeaguesController: UIViewController {
     
     init(leaguesDataSource: LeaguesControllerDataSource) {
         self.dataSource = leaguesDataSource
-        self.state = .empty
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -163,6 +160,9 @@ final class LeaguesController: UIViewController {
             }
             
             self.state = .populated
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
         }
     }
     
@@ -213,8 +213,9 @@ extension LeaguesController: UISearchBarDelegate {
     }
     
     private func filterCollectionResults(with searchText: String) {
-        self.dataSource.filterResultsBy(searchText)
-        self.state = .populated
+        dataSource.filterResultsBy(searchText)
+        state = .populated
+        collectionView.reloadData()
     }
 }
 

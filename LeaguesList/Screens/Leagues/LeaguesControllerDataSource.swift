@@ -30,18 +30,19 @@ final class LeaguesControllerDataSource: NSObject {
         leaguesDataManager.fetchListOfLeagues { result in
             switch result {
             case .success(let leagues):
-                self.leagues = leagues
-                self.filteredLeagues = leagues
-                
-                if leagues.isEmpty {
+                guard !leagues.isEmpty else {
                     completion(LeaguesControllerDataSourceError.noResults)
                     return
                 }
-
-                completion(nil)
+                
+                self.leagues = leagues
+                self.filteredLeagues = leagues
             case .failure(let error):
                 completion(LeaguesControllerDataSourceError.error(error))
+                return
             }
+            
+            completion(nil)
         }
     }
     

@@ -8,10 +8,16 @@
 
 import Foundation
 
-/// Model object representing a League. Conforms to Decodable and is able to produce LeagueCellViewModels.
 struct League {
-    var fullName: String
-    var slug: String
+    let fullName: String
+    let slug: String
+}
+
+extension League: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case fullName = "full_name"
+        case slug
+    }
 }
 
 extension League: Equatable {
@@ -22,16 +28,3 @@ extension League: Equatable {
     }
 }
 
-extension League: Decodable {
-    enum LeagueDecodingKeys: String, CodingKey {
-        case fullName = "full_name"
-        case slug
-    }
-    
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: LeagueDecodingKeys.self)
-        
-        fullName = try values.decode(String.self, forKey: .fullName)
-        slug = try values.decode(String.self, forKey: .slug)
-    }
-}

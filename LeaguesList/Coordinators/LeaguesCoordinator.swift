@@ -9,40 +9,37 @@
 import UIKit
 
 /// Coordinator in charge of handling navigations and dependencies associated with the LeaguesController.
-final class LeaguesCoordinator: Coordinator {
-    weak var parentCoordinator: Coordinator?
-    var navigationController: UINavigationController
-    var childCoordinators: [Coordinator]
-    
+class LeaguesCoordinator: Coordinator {
     // MARK: Dependencies
     private let fileAccessor: FileAccessor<TheScoreEndPoint>
     private let leaguesDataManager: LeaguesDataManager
     private let leaguesControllerDataSource: LeaguesControllerDataSource
     
-    private var leaguesController: LeaguesController?
+    private let navigationController: UINavigationController
+    private var teamsCoordinator: TeamsCoordinator?
     
     init(navigationController: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.navigationController = navigationController
-        self.childCoordinators = []
-        
         self.fileAccessor = fileAccessor
         self.leaguesDataManager = LeaguesDataManager(fileAccessor: fileAccessor)
         self.leaguesControllerDataSource = LeaguesControllerDataSource(leaguesDataManager: leaguesDataManager)
     }
     
-    func start() {
+    override func start() {
         let leaguesController = LeaguesController(leaguesDataSource: leaguesControllerDataSource)
-        leaguesController.coordinator = self
+        leaguesController.delegate = self
+        setDeallocallable(with: leaguesController)
         navigationController.pushViewController(leaguesController, animated: true)
-        self.leaguesController = leaguesController
     }
 }
 
 extension LeaguesCoordinator: LeaguesControllerDelegate {
     func leaguesControllerDidSelectItem(_ league: League) {
         let teamsCoordinator = TeamsCoordinator(navigationController: navigationController, fileAccessor: fileAccessor, league: league)
-        teamsCoordinator.parentCoordinator = self
         teamsCoordinator.start()
-        add(childCoordinator: teamsCoordinator)
+        teamsCoordinator.stop = { [weak self] in
+            self?.teamsCoordinator = nil
+        }
+        self.teamsCoordinator = teamsCoordinator
     }
 }

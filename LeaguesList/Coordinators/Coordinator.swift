@@ -8,26 +8,31 @@
 
 import UIKit
 
-/// Coordinators are a class used to control the navigation flow and are used to inject the
-/// required depenecies into the screens they control.
-protocol Coordinator: AnyObject {
-    var parentCoordinator: Coordinator? { get set }
-    var childCoordinators: [Coordinator] { get set }
-    var navigationController: UINavigationController { get set }
+protocol Deinitcallable: AnyObject {
+    var onDeinit: (() -> Void)? { get set }
+}
+
+protocol CoordinatorProtocol: AnyObject {
+    var deallocallable: Deinitcallable? { get set }
+    var stop: (() -> Void)? { get set }
     
+    func setDeallocallable(with object: Deinitcallable)
     func start()
 }
 
-extension Coordinator {
-    func add(childCoordinator: Coordinator) {
-        childCoordinators.append(childCoordinator)
+extension CoordinatorProtocol {
+    func setDeallocallable(with object: Deinitcallable) {
+        deallocallable?.onDeinit = nil
+        object.onDeinit = { [weak self] in
+            self?.stop?()
+        }
+        deallocallable = object
     }
+}
+
+class Coordinator: NSObject, CoordinatorProtocol {
+    weak var deallocallable: Deinitcallable?
+    var stop: (() -> Void)?
     
-    func remove(childCoordinator: Coordinator) {
-        self.childCoordinators = childCoordinators.filter { $0 !== childCoordinator }
-    }
-    
-    func completed() {
-        parentCoordinator?.remove(childCoordinator: self)
-    }
+    func start() {}
 }

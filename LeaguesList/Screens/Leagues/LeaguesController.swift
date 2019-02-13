@@ -22,8 +22,10 @@ private enum LeaguesControllerState {
 }
 
 /// LeaguesController manages a CollectionView of a list of leagues
-final class LeaguesController: UIViewController {
-    weak var coordinator: (Coordinator & LeaguesControllerDelegate)?
+final class LeaguesController: UIViewController, Deinitcallable {
+    
+    weak var delegate: LeaguesControllerDelegate?
+    var onDeinit: (() -> Void)?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
@@ -90,6 +92,10 @@ final class LeaguesController: UIViewController {
                 }
             }
         }
+    }
+    
+    deinit {
+        onDeinit?()
     }
     
     // MARK: Initializer
@@ -224,7 +230,7 @@ extension LeaguesController: UISearchBarDelegate {
 extension LeaguesController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let league = dataSource.item(at: indexPath) else { return }
-        coordinator?.leaguesControllerDidSelectItem(league)
+        delegate?.leaguesControllerDidSelectItem(league)
     }
 }
 

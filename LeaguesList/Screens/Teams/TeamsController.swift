@@ -17,10 +17,8 @@ private enum TeamsControllerState {
     case error(Error)
 }
 
-final class TeamsController: UIViewController {
-    
-    // MARK: - Coordinator
-    weak var coordinator: Coordinator?
+final class TeamsController: UIViewController, Deinitcallable {
+    var onDeinit: (() -> Void)?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
@@ -84,6 +82,10 @@ final class TeamsController: UIViewController {
                 }
             }
         }
+    }
+    
+    deinit {
+        onDeinit?()
     }
     
     // MARK: - Initializer

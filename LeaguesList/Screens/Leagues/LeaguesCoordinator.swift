@@ -27,19 +27,22 @@ class LeaguesCoordinator: Coordinator {
     
     override func start() {
         let leaguesController = LeaguesController(leaguesDataSource: leaguesControllerDataSource)
-        leaguesController.delegate = self
+        leaguesController.didSelectItem = { [weak self] league in
+            self?.createTeamsCoordinator(with: league)
+        }
+        
         setDeallocallable(with: leaguesController)
         navigationController.pushViewController(leaguesController, animated: true)
     }
-}
-
-extension LeaguesCoordinator: LeaguesControllerDelegate {
-    func leaguesControllerDidSelectItem(_ league: League) {
+    
+    func createTeamsCoordinator(with league: League) {
         let teamsCoordinator = TeamsCoordinator(navigationController: navigationController, fileAccessor: fileAccessor, league: league)
         teamsCoordinator.start()
         teamsCoordinator.stop = { [weak self] in
             self?.teamsCoordinator = nil
         }
+        
         self.teamsCoordinator = teamsCoordinator
     }
 }
+

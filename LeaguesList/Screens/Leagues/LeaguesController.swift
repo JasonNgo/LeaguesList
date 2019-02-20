@@ -10,10 +10,6 @@ import UIKit
 import PromiseKit
 import JGProgressHUD
 
-protocol LeaguesControllerDelegate: AnyObject {
-    func leaguesControllerDidSelectItem(_ league: League)
-}
-
 private enum LeaguesControllerState {
     case loading
     case populated
@@ -24,8 +20,9 @@ private enum LeaguesControllerState {
 /// LeaguesController manages a CollectionView of a list of leagues
 final class LeaguesController: UIViewController, Deinitcallable {
     
-    weak var delegate: LeaguesControllerDelegate?
+    // MARK: - Closures
     var onDeinit: (() -> Void)?
+    var didSelectItem: ((League) -> Void)?
     
     // MARK: - Styling Constants
     private let cellWidth = UIScreen.main.bounds.width
@@ -230,7 +227,7 @@ extension LeaguesController: UISearchBarDelegate {
 extension LeaguesController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let league = dataSource.item(at: indexPath) else { return }
-        delegate?.leaguesControllerDidSelectItem(league)
+        didSelectItem?(league)
     }
 }
 

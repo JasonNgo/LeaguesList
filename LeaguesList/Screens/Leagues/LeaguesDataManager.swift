@@ -23,7 +23,10 @@ final class LeaguesDataManager {
     init(fileAccessor: FileAccessor<TheScoreEndPoint>) {
         self.fileAccessor = fileAccessor
     }
-    
+}
+
+// MARK: - Fetching Methods
+extension LeaguesDataManager {
     func fetchListOfLeagues(completion: @escaping (Result<[League], LeaguesDataManagerError>) -> Void) {
         fileAccessor.request(.leagues) { result in
             switch result {
@@ -45,11 +48,11 @@ final class LeaguesDataManager {
     func fetchListOfLeagues() -> Promise<[League]> {
         return firstly {
             fileAccessor.request(.leagues)
-        }.compactMap {
-            let leagues = try JSONDecoder().decode([Safe<League>].self, from: $0)
-            let leaguesWithoutNil = leagues.compactMap { $0.value }
-            let sortedLeagues = leaguesWithoutNil.sorted { $0.fullName < $1.fullName }
-            return sortedLeagues
+            }.compactMap {
+                let leagues = try JSONDecoder().decode([Safe<League>].self, from: $0)
+                let leaguesWithoutNil = leagues.compactMap { $0.value }
+                let sortedLeagues = leaguesWithoutNil.sorted { $0.fullName < $1.fullName }
+                return sortedLeagues
         }
     }
 }

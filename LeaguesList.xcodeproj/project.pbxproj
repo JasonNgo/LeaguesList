@@ -195,10 +195,10 @@
 				7D06A0DC21F66564000598EB /* LaunchScreen.storyboard */,
 				7D06A0DF21F66564000598EB /* Info.plist */,
 				7D06A0D321F66563000598EB /* AppDelegate.swift */,
+				7D6C137921F7BF71002B8A09 /* ApplicationCoordinator.swift */,
 				7D06A0F721F78230000598EB /* Resources */,
 				7D6C137121F7BB8A002B8A09 /* Util */,
 				7D6C138121F7CBE3002B8A09 /* Networking */,
-				7D6C137B21F7BF76002B8A09 /* Coordinators */,
 				7D6C13AD21F80894002B8A09 /* Screens */,
 			);
 			path = LeaguesList;
@@ -233,6 +233,7 @@
 				7D06A12921F78336000598EB /* LeagueCellViewModel.swift */,
 				7D6C136F21F7B2AB002B8A09 /* LeaguesController.swift */,
 				7DD01D7A21FB7D9600824BD1 /* LeaguesControllerDataSource.swift */,
+				7D6C137D21F7C08A002B8A09 /* LeaguesCoordinator.swift */,
 				7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */,
 			);
 			path = Leagues;
@@ -246,6 +247,7 @@
 				7D06A13621F78D6F000598EB /* TeamCellViewModel.swift */,
 				7D6C13C221F8FD3E002B8A09 /* TeamsController.swift */,
 				7DD01D8021FB8A2A00824BD1 /* TeamsControllerDataSource.swift */,
+				7DD01D7D21FB896F00824BD1 /* TeamsCoordinator.swift */,
 				7D6C13B121F8CDCC002B8A09 /* TeamsDataManager.swift */,
 			);
 			path = Teams;
@@ -254,23 +256,13 @@
 		7D6C137121F7BB8A002B8A09 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				7D6C137721F7BF41002B8A09 /* Coordinator.swift */,
 				7D6C139721F7CD1C002B8A09 /* Result.swift */,
 				7D89712A2208CDD200B698C6 /* Safe.swift */,
 				7D6C137521F7BBFB002B8A09 /* UIColor+Extensions.swift */,
 				7D6C137321F7BBD5002B8A09 /* UIView+Extensions.swift */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		7D6C137B21F7BF76002B8A09 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				7D6C137721F7BF41002B8A09 /* Coordinator.swift */,
-				7D6C137921F7BF71002B8A09 /* ApplicationCoordinator.swift */,
-				7D6C137D21F7C08A002B8A09 /* LeaguesCoordinator.swift */,
-				7DD01D7D21FB896F00824BD1 /* TeamsCoordinator.swift */,
-			);
-			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		7D6C138121F7CBE3002B8A09 /* Networking */ = {

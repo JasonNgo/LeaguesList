@@ -10,7 +10,7 @@ import XCTest
 @testable import LeaguesList
 
 class FileAccessorTests: XCTestCase {
-    let fileAccessor = FileAccessor<TheScoreEndPoint>()
+    let fileAccessor = FileAccessor<SportsEndPoint>()
     
     func testFetchLeaguesDataFromBundleURL() {
         let expectation = self.expectation(description: "Fetching Data")

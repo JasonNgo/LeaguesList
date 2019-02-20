@@ -1,5 +1,5 @@
 //
-//  TheScoreEndPoint.swift
+//  SportsEndPoint.swift
 //  LeaguesList
 //
 //  Created by Jason Ngo on 2019-01-22.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-public enum TheScoreEndPoint {
+public enum SportsEndPoint {
     case leagues
     case teams(slug: String)
 }
 
-extension TheScoreEndPoint: EndPointType {
+extension SportsEndPoint: EndPointType {
     var baseUrl: URL {
         switch self {
         case .leagues:

@@ -18,9 +18,9 @@ enum TeamsDataManagerError: Error {
 /// Fetches the data and transforms it into Team models.
 final class TeamsDataManager {
     private(set) var league: League
-    private let fileAccessor: FileAccessor<TheScoreEndPoint>
+    private let fileAccessor: FileAccessor<SportsEndPoint>
     
-    init(league: League, fileAccessor: FileAccessor<TheScoreEndPoint>) {
+    init(league: League, fileAccessor: FileAccessor<SportsEndPoint>) {
         self.league = league
         self.fileAccessor = fileAccessor
     }

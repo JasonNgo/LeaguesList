@@ -15,12 +15,12 @@ enum LeaguesDataManagerError: Error {
 }
 
 /// Acts as a bridge between API and ViewControllerDataSources.
-/// Interacts with TheScoreEndPoint to fetch data and performs the required data transformations to
+/// Interacts with SportsEndPoint to fetch data and performs the required data transformations to
 /// League objects that the LeagueControllerDataSource can store and use.
 final class LeaguesDataManager {
-    private let fileAccessor: FileAccessor<TheScoreEndPoint>
+    private let fileAccessor: FileAccessor<SportsEndPoint>
     
-    init(fileAccessor: FileAccessor<TheScoreEndPoint>) {
+    init(fileAccessor: FileAccessor<SportsEndPoint>) {
         self.fileAccessor = fileAccessor
     }
 }

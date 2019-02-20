@@ -10,7 +10,7 @@ import XCTest
 @testable import LeaguesList
 
 class LeaguesControllerDataSourceTests: XCTestCase {
-    let fileAccessor = FileAccessor<TheScoreEndPoint>()
+    let fileAccessor = FileAccessor<SportsEndPoint>()
     lazy var leaguesDataManager = LeaguesDataManager(fileAccessor: fileAccessor)
     lazy var dataSource = LeaguesControllerDataSource(leaguesDataManager: leaguesDataManager)
 

@@ -11,13 +11,13 @@ import UIKit
 /// Coordinator in charge of handling navigations and dependencies associated with the TeamsController.
 final class TeamsCoordinator: Coordinator {
     // MARK: Dependencies
-    private let fileAccessor: FileAccessor<TheScoreEndPoint>
+    private let fileAccessor: FileAccessor<SportsEndPoint>
     private let teamsDataManager: TeamsDataManager
     private let teamsControllerDataSource: TeamsControllerDataSource
     
     private let navigationController: UINavigationController
     
-    init(navigationController: UINavigationController, fileAccessor: FileAccessor<TheScoreEndPoint>, league: League) {
+    init(navigationController: UINavigationController, fileAccessor: FileAccessor<SportsEndPoint>, league: League) {
         self.navigationController = navigationController
         self.fileAccessor = fileAccessor
         self.teamsDataManager = TeamsDataManager(league: league, fileAccessor: fileAccessor)

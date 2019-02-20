@@ -10,7 +10,7 @@ import XCTest
 @testable import LeaguesList
 
 class TeamsDataManagerTests: XCTestCase {
-    let fileAccessor = FileAccessor<TheScoreEndPoint>()
+    let fileAccessor = FileAccessor<SportsEndPoint>()
     let teamsFactory = TeamsFactory()
     
     func testTeamsDataManagerNHLDataTransformation() {

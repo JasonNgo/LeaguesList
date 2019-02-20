@@ -13,7 +13,7 @@ import UIKit
 class ApplicationCoordinator: Coordinator {
     // MARK: Dependencies
     private let window: UIWindow
-    private let fileAccessor: FileAccessor<TheScoreEndPoint>
+    private let fileAccessor: FileAccessor<SportsEndPoint>
     
     private let navigationController: UINavigationController
     private var leaguesCoordinator: LeaguesCoordinator?
@@ -22,7 +22,7 @@ class ApplicationCoordinator: Coordinator {
         self.window = window
         self.navigationController = UINavigationController()
         self.navigationController.navigationBar.prefersLargeTitles = true
-        self.fileAccessor = FileAccessor<TheScoreEndPoint>()
+        self.fileAccessor = FileAccessor<SportsEndPoint>()
         super.init()
         
         window.rootViewController = navigationController

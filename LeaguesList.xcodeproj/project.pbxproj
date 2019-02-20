@@ -32,7 +32,7 @@
 		7D6C139521F7CD0D002B8A09 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139021F7CD0D002B8A09 /* Router.swift */; };
 		7D6C139621F7CD0D002B8A09 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139121F7CD0D002B8A09 /* HTTPTask.swift */; };
 		7D6C139821F7CD1C002B8A09 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139721F7CD1C002B8A09 /* Result.swift */; };
-		7D6C139C21F7D0B7002B8A09 /* TheScoreEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139B21F7D0B7002B8A09 /* TheScoreEndPoint.swift */; };
+		7D6C139C21F7D0B7002B8A09 /* SportsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C139B21F7D0B7002B8A09 /* SportsEndPoint.swift */; };
 		7D6C13A121F7D3FA002B8A09 /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A021F7D3FA002B8A09 /* RouterError.swift */; };
 		7D6C13A521F7D8CD002B8A09 /* FileAccessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A421F7D8CD002B8A09 /* FileAccessorTests.swift */; };
 		7D6C13AA21F80498002B8A09 /* LeaguesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */; };
@@ -113,7 +113,7 @@
 		7D6C139021F7CD0D002B8A09 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		7D6C139121F7CD0D002B8A09 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
 		7D6C139721F7CD1C002B8A09 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		7D6C139B21F7D0B7002B8A09 /* TheScoreEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheScoreEndPoint.swift; sourceTree = "<group>"; };
+		7D6C139B21F7D0B7002B8A09 /* SportsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEndPoint.swift; sourceTree = "<group>"; };
 		7D6C13A021F7D3FA002B8A09 /* RouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterError.swift; sourceTree = "<group>"; };
 		7D6C13A421F7D8CD002B8A09 /* FileAccessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAccessorTests.swift; sourceTree = "<group>"; };
 		7D6C13A921F80498002B8A09 /* LeaguesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDataManager.swift; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 		7D6C138221F7CC29002B8A09 /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
-				7D6C139B21F7D0B7002B8A09 /* TheScoreEndPoint.swift */,
+				7D6C139B21F7D0B7002B8A09 /* SportsEndPoint.swift */,
 			);
 			path = EndPoint;
 			sourceTree = "<group>";
@@ -556,7 +556,7 @@
 				7D6C137E21F7C08A002B8A09 /* LeaguesCoordinator.swift in Sources */,
 				7D6C139221F7CD0D002B8A09 /* HTTPMethod.swift in Sources */,
 				7D6C137421F7BBD5002B8A09 /* UIView+Extensions.swift in Sources */,
-				7D6C139C21F7D0B7002B8A09 /* TheScoreEndPoint.swift in Sources */,
+				7D6C139C21F7D0B7002B8A09 /* SportsEndPoint.swift in Sources */,
 				7D06A12A21F78336000598EB /* LeagueCellViewModel.swift in Sources */,
 				7D6C139621F7CD0D002B8A09 /* HTTPTask.swift in Sources */,
 				7DD01D7921FB673D00824BD1 /* FileAccessor.swift in Sources */,
